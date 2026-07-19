@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../../../"
+      data-current-page="guides/projects/app/index.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../../../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../../../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../../../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../../../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/framework/index.html">Framework</a></h4><div class="wb-group is-open" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item is-active" href="../../../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../../../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../../../packages/app.html">app</a></li>
+                            <li><a class="" href="../../../packages/api.html">api</a></li>
+                            <li><a class="" href="../../../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../../../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../../../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../../../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../../../packages/config.html">config</a></li>
+                            <li><a class="" href="../../../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../../../packages/database.html">database</a></li>
+                            <li><a class="" href="../../../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../../../packages/date.html">date</a></li>
+                            <li><a class="" href="../../../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../../../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../../../packages/email.html">email</a></li>
+                            <li><a class="" href="../../../packages/events.html">events</a></li>
+                            <li><a class="" href="../../../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../../../packages/front.html">front</a></li>
+                            <li><a class="" href="../../../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../../../packages/http.html">http</a></li>
+                            <li><a class="" href="../../../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../../../packages/image.html">image</a></li>
+                            <li><a class="" href="../../../packages/language.html">language</a></li>
+                            <li><a class="" href="../../../packages/log.html">log</a></li>
+                            <li><a class="" href="../../../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../../../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../../../packages/one.html">one</a></li>
+                            <li><a class="" href="../../../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../../../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../../../packages/session.html">session</a></li>
+                            <li><a class="" href="../../../packages/site.html">site</a></li>
+                            <li><a class="" href="../../../packages/template.html">template</a></li>
+                            <li><a class="" href="../../../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../../../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../../../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Guides</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li><a href="../../../guides/projects/index.html">Projects</a></li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">App</li>
+                        </ol>
+</nav>
+<div class="section" id="app">
+<h1>App</h1>
+<p>Webisters App Project.</p>
+<ul>
+    <li>
+            <a href="#installation">Installation</a>
+        </li>
+    <li>
+            <a href="#structure">Structure</a>
+        </li>
+    <li>
+            <a href="https://getbootstrap.com/">Bootstrap</a>
+        </li>
+    <li>
+            <a href="#configuration">Configuration</a>
+        </li>
+    <li>
+            <a href="#storage">Storage</a>
+        </li>
+    <li>
+            <a href="#the-global-class-app">The global class App</a>
+        </li>
+    <li>
+            <a href="#the-app-namespace">The App namespace</a>
+        </li>
+    <li>
+            <a href="#running-an-Webisters-app">Running an Webisters App</a>
+        </li>
+    <li>
+            <a href="#testing">Testing</a>
+        </li>
+    <li>
+            <a href="#deployment">Deployment</a>
+        </li>
+    <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>The installation of this project can be done with Composer:</p>
+<pre><code class="language- " >composer create-project webisters/app app</code></pre>
+<p>Or, using the Webisters CLI:</p>
+<pre><code class="language- " >composer global require webisters/webisters
+composer global exec webisters setup
+webisters new-app app
+# If `webisters` is not on PATH yet:
+# composer global exec webisters new-app app
+cd app
+composer install</code></pre>
+</div>
+<div class="section" id="structure">
+<h2>Structure</h2>
+<p>The App has a standard structure to organize business logic.</p>
+<p>And remember, it&#039;s highly customizable. You can adapt it as you like.</p>
+<p>This is the basic directory tree:</p>
+<pre><code class="language- " >.
+├── .editorconfig
+├── .env.php
+├── .gitignore
+├── .htaccess
+├── .php-cs-fixer.dist.php
+├── App.php
+├── app/
+│   ├── Commands/
+│   ├── Controllers/
+│   ├── Languages/
+│   ├── Models/
+│   └── Views/
+├── bin/
+│   └── console
+├── boot/
+│   ├── app.php
+│   ├── constants.php
+│   ├── helpers.php
+│   ├── init.php
+│   └── routes.php
+├── composer.json
+├── composer.local.json
+├── config/
+├── phpdoc.dist.xml
+├── phpunit.xml.dist
+├── preload.php
+├── public/
+│   └── index.php
+├── README.md
+├── SECURITY.md
+├── storage/
+├── tests/
+├── vendor/
+└── webisters
+</code></pre>
+</div>
+<div class="section" id="bootstrap">
+<h2>Bootstrap</h2>
+<p>Inside the <strong>boot</strong> directory are located files that are part of the application
+startup.</p>
+<div class="section" id="app">
+<h3>App</h3>
+<p>The <strong>app.php</strong> file is responsible for loading the files needed for the app to work.
+Such as the Composer autoloader or the initialization files.</p>
+<p>It returns an instance of the <code>App</code> class, which is called to run the application
+in HTTP or CLI.</p>
+</div>
+<div class="section" id="init">
+<h3>Init</h3>
+<p>The <strong>init.php</strong> file is responsible for setting the environment variables
+that are defined in the <strong>.env.php</strong> file.</p>
+<p>Also, initial settings are performed, such as setting
+<a href="https://www.php.net/manual/en/function.error-reporting.php">error_reporting</a>
+and <a href="https://www.php.net/manual/en/errorfunc.configuration.php#ini.display-errors">display_errors</a>.</p>
+</div>
+<div class="section" id="constants">
+<h3>Constants</h3>
+<p>In the <strong>constants.php</strong> file, the constants that will be available throughout
+the application are set, such as the <strong>ENVIRONMENT</strong> and the paths to the
+different directories.</p>
+</div>
+<div class="section" id="helpers">
+<h3>Helpers</h3>
+<p>The <strong>helpers.php</strong> file contains common functions that will always be available
+in the application.</p>
+</div>
+<div class="section" id="routes">
+<h3>Routes</h3>
+<p>In the <strong>routes.php</strong> file, the application routes are served.</p>
+</div>
+</div>
+<div class="section" id="configuration">
+<h2>Configuration</h2>
+<p>Webisters App is organized in such a way that its configuration files are all in the
+same directory.</p>
+<p>By default, the directory is called <strong>config</strong>. Located in the application&#039;s root
+directory.</p>
+<p>Configuration files serve to pre-establish values used by services
+or routines needed for <a href="#helpers">helpers</a> and <a href="https://docs.webisters.com/guides/libraries/index.php">libraries</a>.</p>
+<p>For more details see the <a href="../../libraries/config/index.html">Config</a>
+and <a href="../../libraries/mvc/index.html">MVC</a>
+libraries documentation.</p>
+</div>
+<div class="section" id="storage">
+<h2>Storage</h2>
+<p>In the <strong>storage</strong> directory, different types of files are stored in
+subdirectories:</p>
+<div class="section" id="cache">
+<h3>Cache</h3>
+<p>Cache files are stored in the <strong>cache</strong> directory.</p>
+</div>
+<div class="section" id="logs">
+<h3>Logs</h3>
+<p>Log files are stored in the <strong>logs</strong> directory.</p>
+</div>
+<div class="section" id="sessions">
+<h3>Sessions</h3>
+<p>Session files are stored in the <strong>sessions</strong> directory.</p>
+</div>
+<div class="section" id="uploads">
+<h3>Uploads</h3>
+<p>Upload files are stored in the <strong>uploads</strong> directory.</p>
+</div>
+</div>
+<div class="section" id="the-global-class-app">
+<h2>The global class App</h2>
+<p>The global class <code>App</code>, whose file is located in the root directory, extends
+the <code>Framework\MVC\App</code> class.</p>
+<p>Through it, it is possible to customize features and
+<a href="../../libraries/mvc/index.html#services">services</a>.</p>
+</div>
+<div class="section" id="the-app-namespace">
+<h2>The App namespace</h2>
+<p>Inside the <strong>app</strong> directory is registered the <code>App</code> namespace.</p>
+<p>By default, some files are already inside it:</p>
+<div class="section" id="commands">
+<h3>Commands</h3>
+<p>In the <strong>Commands</strong> directory is the <code>App\Commands</code> namespace.</p>
+<p>In it, you can add commands that will be available in the console.</p>
+</div>
+<div class="section" id="controllers">
+<h3>Controllers</h3>
+<p>In the <strong>Controllers</strong> directory is the <code>App\Controllers</code> namespace.</p>
+<p>In it, you can add controllers with methods that will act as routes.</p>
+</div>
+<div class="section" id="languages">
+<h3>Languages</h3>
+<p>In the subdirectories of <strong>Languages</strong> are stored application language files.</p>
+</div>
+<div class="section" id="models">
+<h3>Models</h3>
+<p>In the <strong>Models</strong> directory is the <code>App\Models</code> namespace.</p>
+<p>In it it is possible to add models that represent tables of the application&#039;s
+database schema.</p>
+</div>
+<div class="section" id="views">
+<h3>Views</h3>
+<p>In the <strong>Views</strong> directory are stored application view files.</p>
+</div>
+</div>
+<div class="section" id="running-an-Webisters-app">
+<h2>Running an Webisters App</h2>
+<p>The Webisters App project is designed to run on HTTP and CLI.</p>
+<div class="section" id="run-http">
+<h3>Run HTTP</h3>
+<p>Inside the <strong>public</strong> directory is the front-controller <strong>index.php</strong>.</p>
+<p>The <strong>public</strong> directory must be the document root configured on the server.</p>
+<p>Note that the directory name may vary by server. In some it may be called
+<strong>publichtml</strong> and in others <strong>web</strong>, etc.</p>
+<p>In development, you can use PHP server running <code>vendor/bin/php-server</code> or
+Docker Compose.</p>
+</div>
+<div class="section" id="run-cli">
+<h3>Run CLI</h3>
+<p>Inside the <strong>bin</strong> directory is the <strong>console</strong> file.</p>
+<p>Through it it is possible to run the various commands of the application,
+running <code>./bin/console</code>.</p>
+</div>
+</div>
+<div class="section" id="testing">
+<h2>Testing</h2>
+<p>Unit tests can be created within the <strong>tests</strong> directory. See the tests that
+come inside it as an example.</p>
+</div>
+<div class="section" id="deployment">
+<h2>Deployment</h2>
+<p>We will see how to deploy to a <a href="#shared-hosting">Shared Hosting</a> and a <a href="#private-server">Private Server</a>:</p>
+<p>In the following examples, configurations will be made for the domain <strong>domain.tld</strong>.
+Replace it with the domain of your application.</p>
+<div class="section" id="shared-hosting">
+<h3>Shared Hosting</h3>
+<p>In shared hosting, it is common that you can upload the project files only by FTP.</p>
+<p>Also, typically the document root is a publicly accessible directory called
+<strong>www</strong>, <strong>web</strong> or <strong>publichtml</strong>.</p>
+<p>And the server is Apache, which allows configurations through files called
+<strong>.htaccess</strong>.</p>
+<p>In the following example the settings can be made locally and then sent to the
+hosting server.</p>
+<div class="section" id="environment-variables">
+<h4>Environment Variables</h4>
+<p>Environment variables are defined in the <strong>.env.php</strong> file.</p>
+<p>Edit them according to the examples below:</p>
+<div class="section" id="environment">
+<h5>ENVIRONMENT</h5>
+<p>Make sure ENVIRONMENT is set to <code>production</code>:</p>
+<pre><code class="language-php " >$_ENV[&#039;ENVIRONMENT&#039;] = &#039;production&#039;;
+</code></pre>
+</div>
+<div class="section" id="url-origin">
+<h5>URL Origin</h5>
+<p>Make sure that the URL Origin has the correct domain:</p>
+<pre><code class="language-php " >$_ENV[&#039;app.default.origin&#039;] = &#039;http://domain.tld&#039;;
+</code></pre>
+</div>
+</div>
+</div>
+<div class="section" id="install-dependencies">
+<h4>Install Dependencies</h4>
+<p>Install dependencies with Composer:</p>
+<pre><code class="language- " >composer install --no-dev
+</code></pre>
+</div>
+<div class="section" id="htaccess-files">
+<h4>.htaccess files</h4>
+<p>In the document root and in the <strong>public</strong> directory of the application has
+<strong>.htaccess</strong> files that can be configured as needed.</p>
+<p>For example, redirecting insecure requests to <strong>HTTPS</strong> or redirecting to the
+<strong>www</strong> subdomain.</p>
+</div>
+<div class="section" id="finishing">
+<h4>Finishing</h4>
+<p>Upload the files to the public directory of your hosting.</p>
+<p>Access the domain through the browser: <a href="http://domain.tld/">http://domain.tld</a></p>
+<p>It should open the home page of your project.</p>
+</div>
+</div>
+<div class="section" id="private-server">
+<h3>Private Server</h3>
+<p>We will be using Ubuntu 24.04 LTS which is supported until 2029 and already
+comes with PHP 8.3.</p>
+<p>Replace <code>domain.tld</code> with your domain.</p>
+<p>Installing PHP and required packages:</p>
+<pre><code class="language- " >sudo apt-get -y install \
+composer \
+curl \
+git \
+php8.3-apcu \
+php8.3-cli \
+php8.3-curl \
+php8.3-fpm \
+php8.3-gd \
+php8.3-igbinary \
+php8.3-intl \
+php8.3-mbstring \
+php8.3-memcached \
+php8.3-msgpack \
+php8.3-mysql \
+php8.3-opcache \
+php8.3-readline \
+php8.3-redis \
+php8.3-xml \
+php8.3-yaml \
+php8.3-zip \
+unzip
+</code></pre>
+<p>Make the application directory:</p>
+<pre><code class="language- " >sudo mkdir -p /var/www/domain.tld
+</code></pre>
+<p>Set directory ownership. Replace &quot;username&quot; with your username:</p>
+<pre><code class="language- " >sudo chown username:username /var/www/domain.tld
+</code></pre>
+<p>Enter the application directory...</p>
+<pre><code class="language- " >cd /var/www/domain.tld
+</code></pre>
+<p>... and clone or download your project.</p>
+<p>As an example, we&#039;ll install a new app:</p>
+<pre><code class="language- " >git clone https://github.com/webisters/app.git .
+</code></pre>
+<p>Set the owner of the storage directory:</p>
+<pre><code class="language- " >sudo chown -R www-data:www-data storage
+</code></pre>
+<p>Edit the Environment and the URL Origin of your project in the <strong>.env.php</strong>
+file:</p>
+<pre><code class="language-php " >$_ENV[&#039;ENVIRONMENT&#039;] = &#039;production&#039;;
+$_ENV[&#039;app.default.origin&#039;] = &#039;http://domain.tld&#039;;
+</code></pre>
+<p>Install the necessary PHP packages through Composer:</p>
+<pre><code class="language- " >composer install --no-dev --ignore-platform-req=ext-xdebug
+</code></pre>
+<ul>
+    <li>
+            We use <code>install</code> instead of <code>update</code> to respect the <strong>composer.lock</strong> file if it exists in your repository.
+        </li>
+    <li>
+            We use <code>--ignore-platform-req=ext-xdebug</code> because we don&#039;t need the xdebug extension in production.
+        </li>
+</ul>
+<div class="section" id="web-servers">
+<h4>Web Servers</h4>
+<p>In these examples, we will see how to install and configure two web servers:</p>
+<ul>
+    <li>
+            <a href="#apache">Apache</a>
+        </li>
+    <li>
+            <a href="#nginx-recommended">Nginx (recommended)</a>
+        </li>
+</ul>
+<div class="section" id="apache">
+<h5>Apache</h5>
+<p>Install required packages:</p>
+<pre><code class="language- " >sudo apt install apache2 libapache2-mod-php
+</code></pre>
+<p>Enable modules:</p>
+<pre><code class="language- " >sudo a2enmod rewrite
+</code></pre>
+<p>Create the file <strong>/etc/apache2/sites-available/domain.tld.conf</strong>:</p>
+<pre><code class="language-apacheconf " >&lt;Directory /var/www/domain.tld/public&gt;
+    Options Indexes FollowSymLinks
+    AllowOverride All
+    Require all granted
+&lt;/Directory&gt;
+&lt;VirtualHost *:80&gt;
+    ServerName domain.tld
+    SetEnv ENVIRONMENT production
+    DocumentRoot /var/www/domain.tld/public
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>Enable the site:</p>
+<pre><code class="language- " >sudo a2ensite domain.tld
+</code></pre>
+<p>Reload the server:</p>
+<pre><code class="language- " >sudo systemctl reload apache2
+</code></pre>
+<p>Access the domain through the browser: <a href="http://domain.tld/">http://domain.tld</a></p>
+<p>It should open the home page of your project.</p>
+</div>
+<div class="section" id="nginx-recommended">
+<h5>Nginx (recommended)</h5>
+<p>Edit the <strong>php.ini</strong> file:</p>
+<pre><code class="language- " >sudo sed -i &#039;s/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g&#039; /etc/php/8.3/fpm/php.ini
+</code></pre>
+<p>Restart PHP-FPM:</p>
+<pre><code class="language- " >sudo systemctl restart php8.3-fpm
+</code></pre>
+<p>Install required packages:</p>
+<pre><code class="language- " >sudo apt install nginx
+</code></pre>
+<p>Create the file <strong>/etc/nginx/sites-available/domain.tld.conf</strong>:</p>
+<pre><code class="language-nginx " >server {
+    listen 80;
+    root /var/www/domain.tld/public;
+    index index.php;
+    server_name domain.tld;
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_param ENVIRONMENT production;
+        fastcgi_pass unix:/var/run/php/php8.3-fpm.sock;
+    }
+    location ~ /\. {
+        deny all;
+    }
+}
+</code></pre>
+<p>Enable the site:</p>
+<pre><code class="language- " >sudo ln -s /etc/nginx/sites-available/domain.tld.conf /etc/nginx/sites-enabled/
+</code></pre>
+<p>Test Nginx configurations:</p>
+<pre><code class="language- " >sudo nginx -t
+</code></pre>
+<p>Restart Nginx:</p>
+<pre><code class="language- " >sudo systemctl restart nginx
+</code></pre>
+<p>Access the domain through the browser: <a href="http://domain.tld/">http://domain.tld</a></p>
+<p>It should open the home page of your project.</p>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Webisters App Project is an easy-to-use tool for, beginners and experienced, PHP developers.<br>It is perfect for building powerful, high-performance applications.<br>The more you use it, the more you will learn.</p>
+<div class="phpdocumentor-admonition -note ">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        <p>Did you find something wrong?<br>Be sure to let us know about it with an
+<a href="https://github.com/webisters/app/issues">issue</a>.<br>Thank you!</p>
+    </article>
+</div>
+</div>
+</div>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+<nav class="wb-pager" aria-label="Page navigation">
+            <a class="wb-pager__link -prev" href="../../../guides/projects/index.html">
+            <span class="wb-pager__label">← Previous</span>
+            <span class="wb-pager__title">Projects Overview</span>
+        </a>
+    
+            <a class="wb-pager__link -next" href="../../../guides/projects/api/index.html">
+            <span class="wb-pager__label">Next →</span>
+            <span class="wb-pager__title">API Project</span>
+        </a>
+    </nav>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../../../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../../../guides/framework/index.html">Framework</a></li>
+                <li><a href="../../../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../../../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../../../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../../../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../../../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../../../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../../../assets/layout.js" defer></script>
+</body>
+</html>

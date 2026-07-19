@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class ColumnDefinition · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Database-Definition-Table-Columns-ColumnDefinition.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Database Definition Table Columns ColumnDefinition</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            ColumnDefinition            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Database\Definition\Table\Columns\ColumnDefinition</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class ColumnDefinition.</p>
+                
+                            <p class="phpdocumentor-element__extends">
+                Extends <a href="../classes/Framework-Database-Definition-Table-DefinitionPart.html"><code>Framework\Database\Definition\Table\DefinitionPart</code></a>
+            </p>
+                
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/database/src/Definition/Table/Columns/ColumnDefinition.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-database">$database</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-column">$column</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-database">
+                <h4>$database</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Database\Database $database</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-column">
+                <h4>$column</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Database\Definition\Table\Columns\Column $column</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-bigint">bigint()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-binary">binary()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-bit">bit()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-blob">blob()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-boolean">boolean()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-char">char()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-date">date()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-datetime">datetime()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-decimal">decimal()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-enum">enum()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-float">float()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-geometry">geometry()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-geometrycollection">geometrycollection()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-int">int()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-json">json()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-linestring">linestring()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-longblob">longblob()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-longtext">longtext()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-mediumblob">mediumblob()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-mediumint">mediumint()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-mediumtext">mediumtext()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-multilinestring">multilinestring()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-multipoint">multipoint()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-multipolygon">multipolygon()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-point">point()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-polygon">polygon()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-set">set()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-smallint">smallint()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-text">text()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-time">time()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-timestamp">timestamp()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-tinyblob">tinyblob()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-tinyint">tinyint()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-tinytext">tinytext()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-varbinary">varbinary()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-varchar">varchar()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-year">year()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sql">sql()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(\Framework\Database\Database $database)</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Database\Database</span>
+                                                                        <span class="phpdocumentor-parameters__name">$database</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-bigint">
+                <h4>bigint()</h4>
+                <div class="phpdocumentor-signature">public function bigint(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\BigintColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\BigintColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-binary">
+                <h4>binary()</h4>
+                <div class="phpdocumentor-signature">public function binary(): \Framework\Database\Definition\Table\Columns\String\BinaryColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\BinaryColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-bit">
+                <h4>bit()</h4>
+                <div class="phpdocumentor-signature">public function bit(): \Framework\Database\Definition\Table\Columns\Numeric\BitColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\BitColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-blob">
+                <h4>blob()</h4>
+                <div class="phpdocumentor-signature">public function blob(): \Framework\Database\Definition\Table\Columns\String\BlobColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\BlobColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-boolean">
+                <h4>boolean()</h4>
+                <div class="phpdocumentor-signature">public function boolean(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\BooleanColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\BooleanColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-char">
+                <h4>char()</h4>
+                <div class="phpdocumentor-signature">public function char(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\String\CharColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\CharColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-date">
+                <h4>date()</h4>
+                <div class="phpdocumentor-signature">public function date(): \Framework\Database\Definition\Table\Columns\DateTime\DateColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\DateTime\DateColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-datetime">
+                <h4>datetime()</h4>
+                <div class="phpdocumentor-signature">public function datetime(): \Framework\Database\Definition\Table\Columns\DateTime\DatetimeColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\DateTime\DatetimeColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-decimal">
+                <h4>decimal()</h4>
+                <div class="phpdocumentor-signature">public function decimal(?int $maximum = NULL, ?int $decimals = NULL): \Framework\Database\Definition\Table\Columns\Numeric\DecimalColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$decimals</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\DecimalColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-enum">
+                <h4>enum()</h4>
+                <div class="phpdocumentor-signature">public function enum(string $value, string ...$values): \Framework\Database\Definition\Table\Columns\String\EnumColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$values</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\EnumColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-float">
+                <h4>float()</h4>
+                <div class="phpdocumentor-signature">public function float(?int $maximum = NULL, ?int $decimals = NULL): \Framework\Database\Definition\Table\Columns\Numeric\FloatColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$decimals</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\FloatColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-geometry">
+                <h4>geometry()</h4>
+                <div class="phpdocumentor-signature">public function geometry(): \Framework\Database\Definition\Table\Columns\Geometry\GeometryColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\GeometryColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-geometrycollection">
+                <h4>geometrycollection()</h4>
+                <div class="phpdocumentor-signature">public function geometrycollection(): \Framework\Database\Definition\Table\Columns\Geometry\GeometryCollectionColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\GeometryCollectionColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-int">
+                <h4>int()</h4>
+                <div class="phpdocumentor-signature">public function int(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\IntColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\IntColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-json">
+                <h4>json()</h4>
+                <div class="phpdocumentor-signature">public function json(): \Framework\Database\Definition\Table\Columns\String\JsonColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\JsonColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-linestring">
+                <h4>linestring()</h4>
+                <div class="phpdocumentor-signature">public function linestring(): \Framework\Database\Definition\Table\Columns\Geometry\LinestringColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\LinestringColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-longblob">
+                <h4>longblob()</h4>
+                <div class="phpdocumentor-signature">public function longblob(): \Framework\Database\Definition\Table\Columns\String\LongblobColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\LongblobColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-longtext">
+                <h4>longtext()</h4>
+                <div class="phpdocumentor-signature">public function longtext(): \Framework\Database\Definition\Table\Columns\String\LongtextColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\LongtextColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-mediumblob">
+                <h4>mediumblob()</h4>
+                <div class="phpdocumentor-signature">public function mediumblob(): \Framework\Database\Definition\Table\Columns\String\MediumblobColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\MediumblobColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-mediumint">
+                <h4>mediumint()</h4>
+                <div class="phpdocumentor-signature">public function mediumint(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\MediumintColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\MediumintColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-mediumtext">
+                <h4>mediumtext()</h4>
+                <div class="phpdocumentor-signature">public function mediumtext(): \Framework\Database\Definition\Table\Columns\String\MediumtextColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\MediumtextColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-multilinestring">
+                <h4>multilinestring()</h4>
+                <div class="phpdocumentor-signature">public function multilinestring(): \Framework\Database\Definition\Table\Columns\Geometry\MultilinestringColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\MultilinestringColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-multipoint">
+                <h4>multipoint()</h4>
+                <div class="phpdocumentor-signature">public function multipoint(): \Framework\Database\Definition\Table\Columns\Geometry\MultipointColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\MultipointColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-multipolygon">
+                <h4>multipolygon()</h4>
+                <div class="phpdocumentor-signature">public function multipolygon(): \Framework\Database\Definition\Table\Columns\Geometry\MultipolygonColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\MultipolygonColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-point">
+                <h4>point()</h4>
+                <div class="phpdocumentor-signature">public function point(): \Framework\Database\Definition\Table\Columns\Geometry\PointColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\PointColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-polygon">
+                <h4>polygon()</h4>
+                <div class="phpdocumentor-signature">public function polygon(): \Framework\Database\Definition\Table\Columns\Geometry\PolygonColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Geometry\PolygonColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-set">
+                <h4>set()</h4>
+                <div class="phpdocumentor-signature">public function set(string $value, string ...$values): \Framework\Database\Definition\Table\Columns\String\SetColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$values</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\SetColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-smallint">
+                <h4>smallint()</h4>
+                <div class="phpdocumentor-signature">public function smallint(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\SmallintColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\SmallintColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-text">
+                <h4>text()</h4>
+                <div class="phpdocumentor-signature">public function text(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\String\TextColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\TextColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-time">
+                <h4>time()</h4>
+                <div class="phpdocumentor-signature">public function time(): \Framework\Database\Definition\Table\Columns\DateTime\TimeColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\DateTime\TimeColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-timestamp">
+                <h4>timestamp()</h4>
+                <div class="phpdocumentor-signature">public function timestamp(): \Framework\Database\Definition\Table\Columns\DateTime\TimestampColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\DateTime\TimestampColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-tinyblob">
+                <h4>tinyblob()</h4>
+                <div class="phpdocumentor-signature">public function tinyblob(): \Framework\Database\Definition\Table\Columns\String\TinyblobColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\TinyblobColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-tinyint">
+                <h4>tinyint()</h4>
+                <div class="phpdocumentor-signature">public function tinyint(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\Numeric\TinyintColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\Numeric\TinyintColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-tinytext">
+                <h4>tinytext()</h4>
+                <div class="phpdocumentor-signature">public function tinytext(): \Framework\Database\Definition\Table\Columns\String\TinytextColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\TinytextColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-varbinary">
+                <h4>varbinary()</h4>
+                <div class="phpdocumentor-signature">public function varbinary(): \Framework\Database\Definition\Table\Columns\String\VarbinaryColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\VarbinaryColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-varchar">
+                <h4>varchar()</h4>
+                <div class="phpdocumentor-signature">public function varchar(?int $maximum = NULL): \Framework\Database\Definition\Table\Columns\String\VarcharColumn</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$maximum</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\String\VarcharColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-year">
+                <h4>year()</h4>
+                <div class="phpdocumentor-signature">public function year(): \Framework\Database\Definition\Table\Columns\DateTime\YearColumn</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\Table\Columns\DateTime\YearColumn</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sql">
+                <h4>sql()</h4>
+                <div class="phpdocumentor-signature">protected function sql(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                
+                <h3 id="inherited">
+            Inherited methods <a href="#inherited" class="headerlink">#</a>
+        </h3>
+        <ul class="phpdocumentor-list-of-elements">
+                            <li>
+                    <code>__call()</code>
+                    from <a href="../classes/Framework-Database-Definition-Table-DefinitionPart.html#method-__call"><code>Framework\Database\Definition\Table\DefinitionPart</code></a>
+                </li>
+                    </ul>
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

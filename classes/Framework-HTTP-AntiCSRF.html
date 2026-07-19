@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class AntiCSRF · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-HTTP-AntiCSRF.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework HTTP AntiCSRF</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            AntiCSRF            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\HTTP\AntiCSRF</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class AntiCSRF.</p>
+                
+                        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/http/src/AntiCSRF.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-tokenName">$tokenName</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-request">$request</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-verified">$verified</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-enabled">$enabled</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-tokenBytesLength">$tokenBytesLength</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-generateTokenFunction">$generateTokenFunction</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-generateTokenFunctions">$generateTokenFunctions</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-tokenName">
+                <h4>$tokenName</h4>
+                <div class="phpdocumentor-signature">protected string $tokenName = &#039;csrf_token&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-request">
+                <h4>$request</h4>
+                <div class="phpdocumentor-signature">protected \Framework\HTTP\Request $request</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-verified">
+                <h4>$verified</h4>
+                <div class="phpdocumentor-signature">protected bool $verified = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-enabled">
+                <h4>$enabled</h4>
+                <div class="phpdocumentor-signature">protected bool $enabled = true</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-tokenBytesLength">
+                <h4>$tokenBytesLength</h4>
+                <div class="phpdocumentor-signature">protected int $tokenBytesLength = 8</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-generateTokenFunction">
+                <h4>$generateTokenFunction</h4>
+                <div class="phpdocumentor-signature">protected string $generateTokenFunction = &#039;base64_encode&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-generateTokenFunctions">
+                <h4>$generateTokenFunctions</h4>
+                <div class="phpdocumentor-signature">protected array $generateTokenFunctions = array (
+  0 =&gt; &#039;base64_encode&#039;,
+  1 =&gt; &#039;bin2hex&#039;,
+  2 =&gt; &#039;md5&#039;,
+)</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>AntiCSRF constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-disable">disable()</a>
+                </dt>
+                <dd>Disables the Anti CSRF verification.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-enable">enable()</a>
+                </dt>
+                <dd>Enables the Anti CSRF verification.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-generateToken">generateToken()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getGenerateTokenFunction">getGenerateTokenFunction()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getToken">getToken()</a>
+                </dt>
+                <dd>Gets the anti-csrf token from the session.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getTokenBytesLength">getTokenBytesLength()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getTokenName">getTokenName()</a>
+                </dt>
+                <dd>Gets the anti-csrf token name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getUserToken">getUserToken()</a>
+                </dt>
+                <dd>Gets the user token from the request input form.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-input">input()</a>
+                </dt>
+                <dd>Gets the HTML form hidden input if the verification is enabled.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isEnabled">isEnabled()</a>
+                </dt>
+                <dd>Tells if the verification is enabled.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isSafeMethod">isSafeMethod()</a>
+                </dt>
+                <dd>Safe HTTP Request methods are: GET, HEAD and OPTIONS.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setGenerateTokenFunction">setGenerateTokenFunction()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setToken">setToken()</a>
+                </dt>
+                <dd>Sets the anti-csrf token into the session.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setTokenBytesLength">setTokenBytesLength()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setTokenName">setTokenName()</a>
+                </dt>
+                <dd>Sets the anti-csrf token name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-validate">validate()</a>
+                </dt>
+                <dd>Validates if a user token is equals the session token.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-verify">verify()</a>
+                </dt>
+                <dd>Verifies the request input token, if the verification is enabled. The verification always succeed on HTTP GET, HEAD and OPTIONS methods. If verification is successful with other HTTP methods, a new token is generated.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isVerified">isVerified()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setVerified">setVerified()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(\Framework\HTTP\Request $request, ?int $tokenBytesLength = NULL, ?string $generateTokenFunction = NULL)</div>
+                                    <p class="phpdocumentor-summary">AntiCSRF constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\HTTP\Request</span>
+                                                                        <span class="phpdocumentor-parameters__name">$request</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$tokenBytesLength</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$generateTokenFunction</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-disable">
+                <h4>disable()</h4>
+                <div class="phpdocumentor-signature">public function disable(): static</div>
+                                    <p class="phpdocumentor-summary">Disables the Anti CSRF verification.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-enable">
+                <h4>enable()</h4>
+                <div class="phpdocumentor-signature">public function enable(): static</div>
+                                    <p class="phpdocumentor-summary">Enables the Anti CSRF verification.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-generateToken">
+                <h4>generateToken()</h4>
+                <div class="phpdocumentor-signature">public function generateToken(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getGenerateTokenFunction">
+                <h4>getGenerateTokenFunction()</h4>
+                <div class="phpdocumentor-signature">public function getGenerateTokenFunction(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getToken">
+                <h4>getToken()</h4>
+                <div class="phpdocumentor-signature">public function getToken(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the anti-csrf token from the session.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getTokenBytesLength">
+                <h4>getTokenBytesLength()</h4>
+                <div class="phpdocumentor-signature">public function getTokenBytesLength(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getTokenName">
+                <h4>getTokenName()</h4>
+                <div class="phpdocumentor-signature">public function getTokenName(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the anti-csrf token name.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getUserToken">
+                <h4>getUserToken()</h4>
+                <div class="phpdocumentor-signature">public function getUserToken(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the user token from the request input form.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-input">
+                <h4>input()</h4>
+                <div class="phpdocumentor-signature">public function input(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the HTML form hidden input if the verification is enabled.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isEnabled">
+                <h4>isEnabled()</h4>
+                <div class="phpdocumentor-signature">public function isEnabled(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if the verification is enabled.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isSafeMethod">
+                <h4>isSafeMethod()</h4>
+                <div class="phpdocumentor-signature">public function isSafeMethod(): bool</div>
+                                    <p class="phpdocumentor-summary">Safe HTTP Request methods are: GET, HEAD and OPTIONS.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setGenerateTokenFunction">
+                <h4>setGenerateTokenFunction()</h4>
+                <div class="phpdocumentor-signature">public function setGenerateTokenFunction(string $function): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$function</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setToken">
+                <h4>setToken()</h4>
+                <div class="phpdocumentor-signature">public function setToken(?string $token = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Sets the anti-csrf token into the session.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$token</span>
+                                                                            — A custom anti-csrf token or null to generate one                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setTokenBytesLength">
+                <h4>setTokenBytesLength()</h4>
+                <div class="phpdocumentor-signature">public function setTokenBytesLength(int $length): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$length</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setTokenName">
+                <h4>setTokenName()</h4>
+                <div class="phpdocumentor-signature">public function setTokenName(string $tokenName): static</div>
+                                    <p class="phpdocumentor-summary">Sets the anti-csrf token name.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$tokenName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-validate">
+                <h4>validate()</h4>
+                <div class="phpdocumentor-signature">public function validate(string $userToken): bool</div>
+                                    <p class="phpdocumentor-summary">Validates if a user token is equals the session token.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This method can be used to validate tokens not received through forms.<br />
+For example: Through a request header, JSON, etc.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$userToken</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-verify">
+                <h4>verify()</h4>
+                <div class="phpdocumentor-signature">public function verify(): bool</div>
+                                    <p class="phpdocumentor-summary">Verifies the request input token, if the verification is enabled. The verification always succeed on HTTP GET, HEAD and OPTIONS methods. If verification is successful with other HTTP methods, a new token is generated.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isVerified">
+                <h4>isVerified()</h4>
+                <div class="phpdocumentor-signature">protected function isVerified(): bool</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setVerified">
+                <h4>setVerified()</h4>
+                <div class="phpdocumentor-signature">protected function setVerified(bool $status = true): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$status</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

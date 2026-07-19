@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Image · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Image-Image.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Image Image</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Image            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Image\Image</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Image.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/JsonSerializable.html"><code>JsonSerializable</code></a>, <a href="../classes/Stringable.html"><code>Stringable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/image/src/Image.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-filename">$filename</a>
+                </dt>
+                <dd>Path to the image file.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-type">$type</a>
+                </dt>
+                <dd>Image type. One of IMAGETYPE_* constants.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mime">$mime</a>
+                </dt>
+                <dd>MIME type.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-instance">$instance</a>
+                </dt>
+                <dd>GdImage instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-quality">$quality</a>
+                </dt>
+                <dd>The image quality/compression level.</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-filename">
+                <h4>$filename</h4>
+                <div class="phpdocumentor-signature">protected string $filename</div>
+                                    <p class="phpdocumentor-summary">Path to the image file.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-type">
+                <h4>$type</h4>
+                <div class="phpdocumentor-signature">protected int $type</div>
+                                    <p class="phpdocumentor-summary">Image type. One of IMAGETYPE_* constants.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-mime">
+                <h4>$mime</h4>
+                <div class="phpdocumentor-signature">protected string $mime</div>
+                                    <p class="phpdocumentor-summary">MIME type.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-instance">
+                <h4>$instance</h4>
+                <div class="phpdocumentor-signature">protected GdImage $instance</div>
+                                    <p class="phpdocumentor-summary">GdImage instance.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-quality">
+                <h4>$quality</h4>
+                <div class="phpdocumentor-signature">protected ?int $quality = NULL</div>
+                                    <p class="phpdocumentor-summary">The image quality/compression level.</p>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Image constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__toString">__toString()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-crop">crop()</a>
+                </dt>
+                <dd>Crops the image.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-destroy">destroy()</a>
+                </dt>
+                <dd>Destroys the GdImage instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-filter">filter()</a>
+                </dt>
+                <dd>Applies a filter to the image.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-flatten">flatten()</a>
+                </dt>
+                <dd>Flattens the image.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-flip">flip()</a>
+                </dt>
+                <dd>Flips the image.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDataUrl">getDataUrl()</a>
+                </dt>
+                <dd>Allow embed the image contents in a document.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getExtension">getExtension()</a>
+                </dt>
+                <dd>Gets the file extension for image type.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getHeight">getHeight()</a>
+                </dt>
+                <dd>Gets the image height.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getInstance">getInstance()</a>
+                </dt>
+                <dd>Gets the GdImage instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMime">getMime()</a>
+                </dt>
+                <dd>Gets the image MIME type.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getQuality">getQuality()</a>
+                </dt>
+                <dd>Gets the image quality/compression level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getResolution">getResolution()</a>
+                </dt>
+                <dd>Gets the image resolution.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getWidth">getWidth()</a>
+                </dt>
+                <dd>Gets the image width.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isAcceptable">isAcceptable()</a>
+                </dt>
+                <dd>Indicates if a given filename has an acceptable image type.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-jsonSerialize">jsonSerialize()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-opacity">opacity()</a>
+                </dt>
+                <dd>Sets the image opacity level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-render">render()</a>
+                </dt>
+                <dd>Renders the image contents.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-rotate">rotate()</a>
+                </dt>
+                <dd>Rotates the image with a given angle.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-save">save()</a>
+                </dt>
+                <dd>Saves the image contents to a given filename.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-scale">scale()</a>
+                </dt>
+                <dd>Scales the image.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-send">send()</a>
+                </dt>
+                <dd>Sends the image contents to the output buffer.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setInstance">setInstance()</a>
+                </dt>
+                <dd>Sets the GdImage instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setQuality">setQuality()</a>
+                </dt>
+                <dd>Sets the image quality/compression level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setResolution">setResolution()</a>
+                </dt>
+                <dd>Sets the image resolution.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-watermark">watermark()</a>
+                </dt>
+                <dd>Adds a watermark to the image.</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(string $filename)</div>
+                                    <p class="phpdocumentor-summary">Image constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                            — Path to the image file. Acceptable types are: GIF, JPEG and PNG                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException for invalid file</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for unsupported image type of could not get image info</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__toString">
+                <h4>__toString()</h4>
+                <div class="phpdocumentor-signature">public function __toString(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-crop">
+                <h4>crop()</h4>
+                <div class="phpdocumentor-signature">public function crop(int $width, int $height, int $marginLeft = 0, int $marginTop = 0): static</div>
+                                    <p class="phpdocumentor-summary">Crops the image.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$width</span>
+                                                                            — Width in pixels                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$height</span>
+                                                                            — Height in pixels                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$marginLeft</span>
+                                                                            — Margin left in pixels                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$marginTop</span>
+                                                                            — Margin top in pixels                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not to crop</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-destroy">
+                <h4>destroy()</h4>
+                <div class="phpdocumentor-signature">public function destroy(): bool</div>
+                                    <p class="phpdocumentor-summary">Destroys the GdImage instance.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-filter">
+                <h4>filter()</h4>
+                <div class="phpdocumentor-signature">public function filter(int $type, int ...$arguments): static</div>
+                                    <p class="phpdocumentor-summary">Applies a filter to the image.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$type</span>
+                                                                            — IMG_FILTER_* constants                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not apply the filter</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-flatten">
+                <h4>flatten()</h4>
+                <div class="phpdocumentor-signature">public function flatten(int $red = 255, int $green = 255, int $blue = 255): static</div>
+                                    <p class="phpdocumentor-summary">Flattens the image.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Replaces transparency with an RGB color.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$red</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$green</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$blue</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for could not create a true color image, could not allocate a color or image could not to flatten</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-flip">
+                <h4>flip()</h4>
+                <div class="phpdocumentor-signature">public function flip(string $direction = &#039;horizontal&#039;): static</div>
+                                    <p class="phpdocumentor-summary">Flips the image.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$direction</span>
+                                                                            — Allowed values are: h or horizontal. v or vertical. b or both.                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException for invalid image flip direction</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not to flip</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDataUrl">
+                <h4>getDataUrl()</h4>
+                <div class="phpdocumentor-signature">public function getDataUrl(): string</div>
+                                    <p class="phpdocumentor-summary">Allow embed the image contents in a document.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — The image &quot;data&quot; URL                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getExtension">
+                <h4>getExtension()</h4>
+                <div class="phpdocumentor-signature">public function getExtension(): string|false</div>
+                                    <p class="phpdocumentor-summary">Gets the file extension for image type.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string|false</span>
+                                                    — a string with the extension corresponding to the given image type or false on fail                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getHeight">
+                <h4>getHeight()</h4>
+                <div class="phpdocumentor-signature">public function getHeight(): int</div>
+                                    <p class="phpdocumentor-summary">Gets the image height.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getInstance">
+                <h4>getInstance()</h4>
+                <div class="phpdocumentor-signature">public function getInstance(): GdImage</div>
+                                    <p class="phpdocumentor-summary">Gets the GdImage instance.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">GdImage</span>
+                                                    — GdImage instance                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMime">
+                <h4>getMime()</h4>
+                <div class="phpdocumentor-signature">public function getMime(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the image MIME type.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getQuality">
+                <h4>getQuality()</h4>
+                <div class="phpdocumentor-signature">public function getQuality(): ?int</div>
+                                    <p class="phpdocumentor-summary">Gets the image quality/compression level.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?int</span>
+                                                    — An integer for PNG and JPEG types or null for GIF                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getResolution">
+                <h4>getResolution()</h4>
+                <div class="phpdocumentor-signature">public function getResolution(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the image resolution.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Returns an array containing two keys, horizontal and vertical, with integers as values                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not get resolution</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getWidth">
+                <h4>getWidth()</h4>
+                <div class="phpdocumentor-signature">public function getWidth(): int</div>
+                                    <p class="phpdocumentor-summary">Gets the image width.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isAcceptable">
+                <h4>isAcceptable()</h4>
+                <div class="phpdocumentor-signature">public static function isAcceptable(string $filename): bool</div>
+                                    <p class="phpdocumentor-summary">Indicates if a given filename has an acceptable image type.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-jsonSerialize">
+                <h4>jsonSerialize()</h4>
+                <div class="phpdocumentor-signature">public function jsonSerialize(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-opacity">
+                <h4>opacity()</h4>
+                <div class="phpdocumentor-signature">public function opacity(int $opacity = 100): static</div>
+                                    <p class="phpdocumentor-summary">Sets the image opacity level.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$opacity</span>
+                                                                            — Opacity percentage: from 0 to 100                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-render">
+                <h4>render()</h4>
+                <div class="phpdocumentor-signature">public function render(): string</div>
+                                    <p class="phpdocumentor-summary">Renders the image contents.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — The image contents                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not be rendered</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-rotate">
+                <h4>rotate()</h4>
+                <div class="phpdocumentor-signature">public function rotate(float $angle): static</div>
+                                    <p class="phpdocumentor-summary">Rotates the image with a given angle.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">float</span>
+                                                                        <span class="phpdocumentor-parameters__name">$angle</span>
+                                                                            — Rotation angle, in degrees. Clockwise direction.                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not allocate a color or could not rotate</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-save">
+                <h4>save()</h4>
+                <div class="phpdocumentor-signature">public function save(?string $filename = NULL): bool</div>
+                                    <p class="phpdocumentor-summary">Saves the image contents to a given filename.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                            — Optional filename or null to use the original                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-scale">
+                <h4>scale()</h4>
+                <div class="phpdocumentor-signature">public function scale(int $width, int $height = -1): static</div>
+                                    <p class="phpdocumentor-summary">Scales the image.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$width</span>
+                                                                            — Width in pixels                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$height</span>
+                                                                            — Height in pixels. Use -1 to use a proportional height based on the width.                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not to scale</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-send">
+                <h4>send()</h4>
+                <div class="phpdocumentor-signature">public function send(): bool</div>
+                                    <p class="phpdocumentor-summary">Sends the image contents to the output buffer.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setInstance">
+                <h4>setInstance()</h4>
+                <div class="phpdocumentor-signature">public function setInstance(GdImage $instance): static</div>
+                                    <p class="phpdocumentor-summary">Sets the GdImage instance.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">GdImage</span>
+                                                                        <span class="phpdocumentor-parameters__name">$instance</span>
+                                                                            — GdImage instance                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setQuality">
+                <h4>setQuality()</h4>
+                <div class="phpdocumentor-signature">public function setQuality(int $quality): static</div>
+                                    <p class="phpdocumentor-summary">Sets the image quality/compression level.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$quality</span>
+                                                                            — The quality/compression level                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>LogicException when trying to set a quality value for a GIF image</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException if the image type is PNG and the value is not between 0 and 9 or if the image type is JPEG and the value is not between 0 and 100</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setResolution">
+                <h4>setResolution()</h4>
+                <div class="phpdocumentor-signature">public function setResolution(int $horizontal = 96, int $vertical = 96): static</div>
+                                    <p class="phpdocumentor-summary">Sets the image resolution.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$horizontal</span>
+                                                                            — The horizontal resolution in DPI                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$vertical</span>
+                                                                            — The vertical resolution in DPI                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not to set resolution</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-watermark">
+                <h4>watermark()</h4>
+                <div class="phpdocumentor-signature">public function watermark(\Framework\Image\Image $watermark, int $horizontalPosition = 0, int $verticalPosition = 0): static</div>
+                                    <p class="phpdocumentor-summary">Adds a watermark to the image.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Image\Image</span>
+                                                                        <span class="phpdocumentor-parameters__name">$watermark</span>
+                                                                            — The image to use as watermark                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$horizontalPosition</span>
+                                                                            — Horizontal position                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$verticalPosition</span>
+                                                                            — Vertical position                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException for image could not to create watermark</code></dd>
+                                            </dl>
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

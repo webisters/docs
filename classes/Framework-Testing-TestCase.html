@@ -1,0 +1,1953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class TestCase · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Testing-TestCase.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Testing TestCase</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            TestCase            <span class="phpdocumentor-element__type">class</span>
+                            <span class="phpdocumentor-element__type">abstract</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Testing\TestCase</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class TestCase.</p>
+                
+                            <p class="phpdocumentor-element__extends">
+                Extends <a href="../classes/PHPUnit-Framework-TestCase.html"><code>PHPUnit\Framework\TestCase</code></a>
+            </p>
+                            <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/Countable.html"><code>Countable</code></a>, <a href="../classes/PHPUnit-Framework-Test.html"><code>PHPUnit\Framework\Test</code></a>, <a href="../classes/PHPUnit-Framework-SelfDescribing.html"><code>PHPUnit\Framework\SelfDescribing</code></a>, <a href="../classes/PHPUnit-Framework-Reorderable.html"><code>PHPUnit\Framework\Reorderable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/testing/src/TestCase.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-configs">$configs</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-config">$config</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-app">$app</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-configs">
+                <h4>$configs</h4>
+                <div class="phpdocumentor-signature">protected array|string|null $configs = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-config">
+                <h4>$config</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Config\Config $config</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-app">
+                <h4>$app</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Testing\AppTesting $app</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertMatchedRouteName">assertMatchedRouteName()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseBodyContains">assertResponseBodyContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseBodyNotContains">assertResponseBodyNotContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseContainsHeader">assertResponseContainsHeader()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseHeader">assertResponseHeader()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseNotContainsHeader">assertResponseNotContainsHeader()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseStatus">assertResponseStatus()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseStatusCode">assertResponseStatusCode()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertResponseStatusReason">assertResponseStatusReason()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertStderrContains">assertStderrContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertStderrNotContains">assertStderrNotContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertStdoutContains">assertStdoutContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-assertStdoutNotContains">assertStdoutNotContains()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-prepareDefaults">prepareDefaults()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setUp">setUp()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-assertMatchedRouteName">
+                <h4>assertMatchedRouteName()</h4>
+                <div class="phpdocumentor-signature">public static function assertMatchedRouteName(?string $name, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseBodyContains">
+                <h4>assertResponseBodyContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseBodyContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseBodyNotContains">
+                <h4>assertResponseBodyNotContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseBodyNotContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseContainsHeader">
+                <h4>assertResponseContainsHeader()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseContainsHeader(string $name, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseHeader">
+                <h4>assertResponseHeader()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseHeader(string $name, string $value, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseNotContainsHeader">
+                <h4>assertResponseNotContainsHeader()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseNotContainsHeader(string $name, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseStatus">
+                <h4>assertResponseStatus()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseStatus(string $status, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$status</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseStatusCode">
+                <h4>assertResponseStatusCode()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseStatusCode(int $code, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$code</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertResponseStatusReason">
+                <h4>assertResponseStatusReason()</h4>
+                <div class="phpdocumentor-signature">public static function assertResponseStatusReason(string $reason, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$reason</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertStderrContains">
+                <h4>assertStderrContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertStderrContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertStderrNotContains">
+                <h4>assertStderrNotContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertStderrNotContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertStdoutContains">
+                <h4>assertStdoutContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertStdoutContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-assertStdoutNotContains">
+                <h4>assertStdoutNotContains()</h4>
+                <div class="phpdocumentor-signature">public static function assertStdoutNotContains(string $string, string $message = &#039;&#039;): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-prepareDefaults">
+                <h4>prepareDefaults()</h4>
+                <div class="phpdocumentor-signature">protected function prepareDefaults(): void</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setUp">
+                <h4>setUp()</h4>
+                <div class="phpdocumentor-signature">protected function setUp(): void</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                
+                <h3 id="inherited">
+            Inherited methods <a href="#inherited" class="headerlink">#</a>
+        </h3>
+        <ul class="phpdocumentor-list-of-elements">
+                            <li>
+                    <code>__construct()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-__construct"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setUpBeforeClass()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setUpBeforeClass"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>tearDownAfterClass()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-tearDownAfterClass"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>assertPreConditions()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-assertPreConditions"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>assertPostConditions()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-assertPostConditions"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>tearDown()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-tearDown"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>toString()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-toString"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>count()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-count"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>status()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-status"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>run()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-run"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>groups()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-groups"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setGroups()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setGroups"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>nameWithDataSet()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-nameWithDataSet"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>name()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-name"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>size()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-size"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>hasUnexpectedOutput()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-hasUnexpectedOutput"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>output()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-output"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>doesNotPerformAssertions()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-doesNotPerformAssertions"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectsOutput()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectsOutput"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>runBare()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-runBare"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setDependencies()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setDependencies"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setDependencyInput()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setDependencyInput"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>dependencyInput()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-dependencyInput"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>hasDependencyInput()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-hasDependencyInput"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setBackupGlobals()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setBackupGlobals"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setBackupGlobalsExcludeList()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setBackupGlobalsExcludeList"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setBackupStaticProperties()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setBackupStaticProperties"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setBackupStaticPropertiesExcludeList()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setBackupStaticPropertiesExcludeList"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setRunTestInSeparateProcess()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setRunTestInSeparateProcess"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setRunClassInSeparateProcess()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setRunClassInSeparateProcess"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setPreserveGlobalState()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setPreserveGlobalState"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setInIsolation()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setInIsolation"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>result()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-result"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setResult()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setResult"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>registerMockObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-registerMockObject"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>addToAssertionCount()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-addToAssertionCount"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>numberOfAssertionsPerformed()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-numberOfAssertionsPerformed"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>usesDataProvider()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-usesDataProvider"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>dataName()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-dataName"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>dataSetAsString()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-dataSetAsString"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>dataSetAsStringWithData()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-dataSetAsStringWithData"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>providedData()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-providedData"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>sortId()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-sortId"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>provides()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-provides"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>requires()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-requires"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setData()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setData"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>valueObjectForEvents()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-valueObjectForEvents"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>wasPrepared()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-wasPrepared"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>any()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-any"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>never()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-never"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>atLeast()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-atLeast"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>atLeastOnce()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-atLeastOnce"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>once()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-once"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>exactly()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-exactly"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>atMost()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-atMost"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>returnValue()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-returnValue"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>returnValueMap()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-returnValueMap"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>returnArgument()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-returnArgument"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>returnCallback()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-returnCallback"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>returnSelf()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-returnSelf"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>throwException()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-throwException"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>onConsecutiveCalls()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-onConsecutiveCalls"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getActualOutputForAssertion()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getActualOutputForAssertion"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectOutputRegex()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectOutputRegex"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectOutputString()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectOutputString"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectException()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectException"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectExceptionCode()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectExceptionCode"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectExceptionMessage()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectExceptionMessage"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectExceptionMessageMatches()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectExceptionMessageMatches"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectExceptionObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectExceptionObject"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectNotToPerformAssertions()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectNotToPerformAssertions"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectUserDeprecationMessage()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectUserDeprecationMessage"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>expectUserDeprecationMessageMatches()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-expectUserDeprecationMessageMatches"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getMockBuilder()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getMockBuilder"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>registerComparator()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-registerComparator"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>registerFailureType()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-registerFailureType"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>iniSet()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-iniSet"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>setLocale()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-setLocale"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createMock()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createMock"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createMockForIntersectionOfInterfaces()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createMockForIntersectionOfInterfaces"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createConfiguredMock()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createConfiguredMock"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createPartialMock()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createPartialMock"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createTestProxy()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createTestProxy"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getMockForAbstractClass()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getMockForAbstractClass"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getMockFromWsdl()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getMockFromWsdl"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getMockForTrait()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getMockForTrait"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>getObjectForTrait()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-getObjectForTrait"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>transformException()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-transformException"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>onNotSuccessfulTest()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-onNotSuccessfulTest"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createStub()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createStub"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createStubForIntersectionOfInterfaces()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createStubForIntersectionOfInterfaces"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>createConfiguredStub()</code>
+                    from <a href="../classes/PHPUnit-Framework-TestCase.html#method-createConfiguredStub"><code>PHPUnit\Framework\TestCase</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayIsEqualToArrayOnlyConsideringListOfKeys()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayIsEqualToArrayOnlyConsideringListOfKeys"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayIsEqualToArrayIgnoringListOfKeys()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayIsEqualToArrayIgnoringListOfKeys"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayIsIdenticalToArrayOnlyConsideringListOfKeys"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayIsIdenticalToArrayIgnoringListOfKeys()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayIsIdenticalToArrayIgnoringListOfKeys"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayHasKey()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayHasKey"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertArrayNotHasKey()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertArrayNotHasKey"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsList()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsList"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContains()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContains"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotContains()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotContains"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotContainsEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotContainsEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnly()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnly"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsOnlyInstancesOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsOnlyInstancesOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotContainsOnly()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotContainsOnly"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertContainsNotOnlyInstancesOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertContainsNotOnlyInstancesOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertCount()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertCount"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotCount()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotCount"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertEqualsCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertEqualsCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertEqualsIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertEqualsIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertEqualsWithDelta()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertEqualsWithDelta"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotEqualsCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotEqualsCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotEqualsIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotEqualsIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotEqualsWithDelta()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotEqualsWithDelta"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertObjectEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertObjectEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertObjectNotEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertObjectNotEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertEmpty()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertEmpty"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotEmpty()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotEmpty"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertGreaterThan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertGreaterThan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertGreaterThanOrEqual()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertGreaterThanOrEqual"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertLessThan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertLessThan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertLessThanOrEqual()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertLessThanOrEqual"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileEqualsCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileEqualsCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileEqualsIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileEqualsIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileNotEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileNotEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileNotEqualsCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileNotEqualsCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileNotEqualsIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileNotEqualsIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEqualsFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEqualsFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEqualsFileCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEqualsFileCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEqualsFileIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEqualsFileIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotEqualsFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotEqualsFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotEqualsFileCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotEqualsFileCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotEqualsFileIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotEqualsFileIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryExists()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryExists"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryDoesNotExist()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryDoesNotExist"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryIsReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryIsReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryIsNotReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryIsNotReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryIsWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryIsWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDirectoryIsNotWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDirectoryIsNotWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileExists()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileExists"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileDoesNotExist()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileDoesNotExist"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileIsReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileIsReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileIsNotReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileIsNotReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileIsWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileIsWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileIsNotWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileIsNotWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertTrue()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertTrue"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotTrue()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotTrue"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFalse()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFalse"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotFalse()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotFalse"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFinite()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFinite"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertInfinite()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertInfinite"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertObjectHasProperty()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertObjectHasProperty"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertObjectNotHasProperty()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertObjectNotHasProperty"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertSame()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertSame"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotSame()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotSame"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertInstanceOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertInstanceOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotInstanceOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotInstanceOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertIsNotIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertIsNotIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertMatchesRegularExpression()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertMatchesRegularExpression"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertDoesNotMatchRegularExpression()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertDoesNotMatchRegularExpression"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertSameSize()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertSameSize"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertNotSameSize()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertNotSameSize"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringContainsStringIgnoringLineEndings()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringContainsStringIgnoringLineEndings"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEqualsStringIgnoringLineEndings()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEqualsStringIgnoringLineEndings"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileMatchesFormat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileMatchesFormat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertFileMatchesFormatFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertFileMatchesFormatFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringMatchesFormat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringMatchesFormat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotMatchesFormat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotMatchesFormat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringMatchesFormatFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringMatchesFormatFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotMatchesFormatFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotMatchesFormatFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringStartsWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringStartsWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringStartsNotWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringStartsNotWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringContainsString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringContainsString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringContainsStringIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringContainsStringIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotContainsString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotContainsString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringNotContainsStringIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringNotContainsStringIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEndsWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEndsWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertStringEndsNotWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertStringEndsNotWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlFileEqualsXmlFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlFileEqualsXmlFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlFileNotEqualsXmlFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlFileNotEqualsXmlFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlStringEqualsXmlFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlStringEqualsXmlFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlStringNotEqualsXmlFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlStringNotEqualsXmlFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlStringEqualsXmlString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlStringEqualsXmlString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertXmlStringNotEqualsXmlString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertXmlStringNotEqualsXmlString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertThat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertThat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJson()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJson"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonStringEqualsJsonString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonStringEqualsJsonString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonStringNotEqualsJsonString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonStringNotEqualsJsonString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonStringEqualsJsonFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonStringEqualsJsonFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonStringNotEqualsJsonFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonStringNotEqualsJsonFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonFileEqualsJsonFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonFileEqualsJsonFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>assertJsonFileNotEqualsJsonFile()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-assertJsonFileNotEqualsJsonFile"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>logicalAnd()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-logicalAnd"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>logicalOr()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-logicalOr"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>logicalNot()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-logicalNot"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>logicalXor()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-logicalXor"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>anything()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-anything"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isTrue()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isTrue"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>callback()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-callback"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isFalse()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isFalse"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isJson()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isJson"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isFinite()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isFinite"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isInfinite()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isInfinite"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isNan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isNan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsEqual()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsEqual"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsIdentical()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsIdentical"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnly()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnly"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyNull()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyNull"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>containsOnlyInstancesOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-containsOnlyInstancesOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>arrayHasKey()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-arrayHasKey"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isList()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isList"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>equalTo()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-equalTo"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>equalToCanonicalizing()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-equalToCanonicalizing"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>equalToIgnoringCase()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-equalToIgnoringCase"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>equalToWithDelta()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-equalToWithDelta"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isEmpty()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isEmpty"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isWritable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isWritable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isReadable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isReadable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>directoryExists()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-directoryExists"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>fileExists()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-fileExists"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>greaterThan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-greaterThan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>greaterThanOrEqual()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-greaterThanOrEqual"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>identicalTo()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-identicalTo"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isInstanceOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isInstanceOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isArray()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isArray"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isBool()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isBool"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isCallable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isCallable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isFloat()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isFloat"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isInt()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isInt"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isIterable()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isIterable"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isNumeric()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isNumeric"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isObject()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isObject"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isClosedResource()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isClosedResource"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isScalar()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isScalar"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isString()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isString"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>isType()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-isType"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>lessThan()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-lessThan"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>lessThanOrEqual()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-lessThanOrEqual"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>matchesRegularExpression()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-matchesRegularExpression"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>matches()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-matches"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>stringStartsWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-stringStartsWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>stringContains()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-stringContains"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>stringEndsWith()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-stringEndsWith"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>stringEqualsStringIgnoringLineEndings()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-stringEqualsStringIgnoringLineEndings"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>countOf()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-countOf"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>objectEquals()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-objectEquals"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>fail()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-fail"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>markTestIncomplete()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-markTestIncomplete"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>markTestSkipped()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-markTestSkipped"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>getCount()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-getCount"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                            <li>
+                    <code>resetCount()</code>
+                    from <a href="../classes/PHPUnit-Framework-Assert.html#method-resetCount"><code>PHPUnit\Framework\Assert</code></a>
+                </li>
+                    </ul>
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

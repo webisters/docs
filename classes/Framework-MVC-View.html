@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class View · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-MVC-View.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework MVC View</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            View            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\MVC\View</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class View.</p>
+                
+                        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/mvc/src/View.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-baseDir">$baseDir</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-extension">$extension</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-layout">$layout</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-openBlock">$openBlock</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-openBlocks">$openBlocks</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-layoutsOpen">$layoutsOpen</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-blocks">$blocks</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-currentView">$currentView</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-debugCollector">$debugCollector</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-layoutPrefix">$layoutPrefix</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-includePrefix">$includePrefix</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-inInclude">$inInclude</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-showDebugComments">$showDebugComments</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-viewsPaths">$viewsPaths</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-instanceName">$instanceName</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-throwExceptionsInDestructor">$throwExceptionsInDestructor</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-baseDir">
+                <h4>$baseDir</h4>
+                <div class="phpdocumentor-signature">protected ?string $baseDir = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-extension">
+                <h4>$extension</h4>
+                <div class="phpdocumentor-signature">protected string $extension</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-layout">
+                <h4>$layout</h4>
+                <div class="phpdocumentor-signature">protected string $layout</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-openBlock">
+                <h4>$openBlock</h4>
+                <div class="phpdocumentor-signature">protected ?string $openBlock</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-openBlocks">
+                <h4>$openBlocks</h4>
+                <div class="phpdocumentor-signature">protected array $openBlocks = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-layoutsOpen">
+                <h4>$layoutsOpen</h4>
+                <div class="phpdocumentor-signature">protected array $layoutsOpen = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-blocks">
+                <h4>$blocks</h4>
+                <div class="phpdocumentor-signature">protected array $blocks</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-currentView">
+                <h4>$currentView</h4>
+                <div class="phpdocumentor-signature">protected string $currentView</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-debugCollector">
+                <h4>$debugCollector</h4>
+                <div class="phpdocumentor-signature">protected \Framework\MVC\Debug\ViewsCollector $debugCollector</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-layoutPrefix">
+                <h4>$layoutPrefix</h4>
+                <div class="phpdocumentor-signature">protected string $layoutPrefix = &#039;&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-includePrefix">
+                <h4>$includePrefix</h4>
+                <div class="phpdocumentor-signature">protected string $includePrefix = &#039;&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-inInclude">
+                <h4>$inInclude</h4>
+                <div class="phpdocumentor-signature">protected bool $inInclude = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-showDebugComments">
+                <h4>$showDebugComments</h4>
+                <div class="phpdocumentor-signature">protected bool $showDebugComments = true</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-viewsPaths">
+                <h4>$viewsPaths</h4>
+                <div class="phpdocumentor-signature">protected array $viewsPaths = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-instanceName">
+                <h4>$instanceName</h4>
+                <div class="phpdocumentor-signature">protected string $instanceName</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-throwExceptionsInDestructor">
+                <h4>$throwExceptionsInDestructor</h4>
+                <div class="phpdocumentor-signature">protected bool $throwExceptionsInDestructor = true</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__destruct">__destruct()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-block">block()</a>
+                </dt>
+                <dd>Open a block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-currentBlock">currentBlock()</a>
+                </dt>
+                <dd>Tells the name of the current block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-disableDebugComments">disableDebugComments()</a>
+                </dt>
+                <dd>Disable debug comments when in debug mode.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-enableDebugComments">enableDebugComments()</a>
+                </dt>
+                <dd>Enable debug comments when in debug mode.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-endBlock">endBlock()</a>
+                </dt>
+                <dd>Close an open block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-extends">extends()</a>
+                </dt>
+                <dd>Extends a layout.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-extendsWithoutPrefix">extendsWithoutPrefix()</a>
+                </dt>
+                <dd>Extends a layout without prefix.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getBaseDir">getBaseDir()</a>
+                </dt>
+                <dd>Get the base directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getExtension">getExtension()</a>
+                </dt>
+                <dd>Get the extension of view files.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getIncludePrefix">getIncludePrefix()</a>
+                </dt>
+                <dd>Get the name of the includes directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getInstanceName">getInstanceName()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getInstanceNameWithPath">getInstanceNameWithPath()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLayoutPrefix">getLayoutPrefix()</a>
+                </dt>
+                <dd>Get the name of the layouts directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-hasBlock">hasBlock()</a>
+                </dt>
+                <dd>Tells whether a given block is set.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-inBlock">inBlock()</a>
+                </dt>
+                <dd>Tells whether the current content is inside a block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-inLayout">inLayout()</a>
+                </dt>
+                <dd>Tells whether the current contents is inside a layout.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-include">include()</a>
+                </dt>
+                <dd>Returns the contents of an include.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-includeWithoutPrefix">includeWithoutPrefix()</a>
+                </dt>
+                <dd>Returns the contents of an include without prefix.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isShowingDebugComments">isShowingDebugComments()</a>
+                </dt>
+                <dd>Tells if it is showing debug comments when in debug mode.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isThrowExceptionsInDestructor">isThrowExceptionsInDestructor()</a>
+                </dt>
+                <dd>Tells whether it is able to throw exceptions in the destructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeBlock">removeBlock()</a>
+                </dt>
+                <dd>Remove a block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-render">render()</a>
+                </dt>
+                <dd>Render a view file.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderBlock">renderBlock()</a>
+                </dt>
+                <dd>Render a block.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setBaseDir">setBaseDir()</a>
+                </dt>
+                <dd>Sets the base directory where the views files are located.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDebugCollector">setDebugCollector()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setExtension">setExtension()</a>
+                </dt>
+                <dd>Set the extension of views files.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setIncludePrefix">setIncludePrefix()</a>
+                </dt>
+                <dd>Set the name of a directory for includes within the base directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setInstanceName">setInstanceName()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setLayoutPrefix">setLayoutPrefix()</a>
+                </dt>
+                <dd>Set the name of a directory for layouts within the base directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setThrowExceptionsInDestructor">setThrowExceptionsInDestructor()</a>
+                </dt>
+                <dd>Enables/disables exceptions in the destructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCommentPath">getCommentPath()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getContents">getContents()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFilepath">getFilepath()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getIncludeContents">getIncludeContents()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getIncludeContentsWithDebug">getIncludeContentsWithDebug()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getNamespacedFilepath">getNamespacedFilepath()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-involveInclude">involveInclude()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makeDirectoryPrefix">makeDirectoryPrefix()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDebugData">setDebugData()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(?string $baseDir = NULL, string $extension = &#039;.php&#039;)</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$baseDir</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$extension</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__destruct">
+                <h4>__destruct()</h4>
+                <div class="phpdocumentor-signature">public function __destruct()</div>
+                                
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-block">
+                <h4>block()</h4>
+                <div class="phpdocumentor-signature">public function block(string $name): static</div>
+                                    <p class="phpdocumentor-summary">Open a block.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — Block name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-currentBlock">
+                <h4>currentBlock()</h4>
+                <div class="phpdocumentor-signature">public function currentBlock(): ?string</div>
+                                    <p class="phpdocumentor-summary">Tells the name of the current block.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-disableDebugComments">
+                <h4>disableDebugComments()</h4>
+                <div class="phpdocumentor-signature">public function disableDebugComments(): static</div>
+                                    <p class="phpdocumentor-summary">Disable debug comments when in debug mode.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-enableDebugComments">
+                <h4>enableDebugComments()</h4>
+                <div class="phpdocumentor-signature">public function enableDebugComments(): static</div>
+                                    <p class="phpdocumentor-summary">Enable debug comments when in debug mode.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-endBlock">
+                <h4>endBlock()</h4>
+                <div class="phpdocumentor-signature">public function endBlock(): static</div>
+                                    <p class="phpdocumentor-summary">Close an open block.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-extends">
+                <h4>extends()</h4>
+                <div class="phpdocumentor-signature">public function extends(string $layout, ?string $openBlock = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Extends a layout.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$layout</span>
+                                                                            — The name of the file within the layouts directory                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$openBlock</span>
+                                                                            — Optionally opens and closes this block automatically                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-extendsWithoutPrefix">
+                <h4>extendsWithoutPrefix()</h4>
+                <div class="phpdocumentor-signature">public function extendsWithoutPrefix(string $layout): static</div>
+                                    <p class="phpdocumentor-summary">Extends a layout without prefix.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$layout</span>
+                                                                            — The name of the file within the base directory                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getBaseDir">
+                <h4>getBaseDir()</h4>
+                <div class="phpdocumentor-signature">public function getBaseDir(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the base directory.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getExtension">
+                <h4>getExtension()</h4>
+                <div class="phpdocumentor-signature">public function getExtension(): string</div>
+                                    <p class="phpdocumentor-summary">Get the extension of view files.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getIncludePrefix">
+                <h4>getIncludePrefix()</h4>
+                <div class="phpdocumentor-signature">public function getIncludePrefix(): string</div>
+                                    <p class="phpdocumentor-summary">Get the name of the includes directory.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getInstanceName">
+                <h4>getInstanceName()</h4>
+                <div class="phpdocumentor-signature">public function getInstanceName(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getInstanceNameWithPath">
+                <h4>getInstanceNameWithPath()</h4>
+                <div class="phpdocumentor-signature">public function getInstanceNameWithPath(string $name): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLayoutPrefix">
+                <h4>getLayoutPrefix()</h4>
+                <div class="phpdocumentor-signature">public function getLayoutPrefix(): string</div>
+                                    <p class="phpdocumentor-summary">Get the name of the layouts directory.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-hasBlock">
+                <h4>hasBlock()</h4>
+                <div class="phpdocumentor-signature">public function hasBlock(string $name): bool</div>
+                                    <p class="phpdocumentor-summary">Tells whether a given block is set.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — Block name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-inBlock">
+                <h4>inBlock()</h4>
+                <div class="phpdocumentor-signature">public function inBlock(string $name): bool</div>
+                                    <p class="phpdocumentor-summary">Tells whether the current content is inside a block.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — Block name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-inLayout">
+                <h4>inLayout()</h4>
+                <div class="phpdocumentor-signature">public function inLayout(string $layout): bool</div>
+                                    <p class="phpdocumentor-summary">Tells whether the current contents is inside a layout.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$layout</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-include">
+                <h4>include()</h4>
+                <div class="phpdocumentor-signature">public function include(string $view, array $data = array (
+)): string</div>
+                                    <p class="phpdocumentor-summary">Returns the contents of an include.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                            — The path of the file within the includes directory                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                            — Data passed to the view. The array keys will be variables                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-includeWithoutPrefix">
+                <h4>includeWithoutPrefix()</h4>
+                <div class="phpdocumentor-signature">public function includeWithoutPrefix(string $view, array $data = array (
+)): string</div>
+                                    <p class="phpdocumentor-summary">Returns the contents of an include without prefix.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                            — The path of the file within the base directory                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                            — Data passed to the view. The array keys will be variables                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isShowingDebugComments">
+                <h4>isShowingDebugComments()</h4>
+                <div class="phpdocumentor-signature">public function isShowingDebugComments(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if it is showing debug comments when in debug mode.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isThrowExceptionsInDestructor">
+                <h4>isThrowExceptionsInDestructor()</h4>
+                <div class="phpdocumentor-signature">public function isThrowExceptionsInDestructor(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells whether it is able to throw exceptions in the destructor.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeBlock">
+                <h4>removeBlock()</h4>
+                <div class="phpdocumentor-signature">public function removeBlock(string $name): static</div>
+                                    <p class="phpdocumentor-summary">Remove a block.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — Block name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-render">
+                <h4>render()</h4>
+                <div class="phpdocumentor-signature">public function render(string $view, array $data = array (
+)): string</div>
+                                    <p class="phpdocumentor-summary">Render a view file.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                            — View path within the base directory                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                            — Data passed to the view. The array keys will be variables                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderBlock">
+                <h4>renderBlock()</h4>
+                <div class="phpdocumentor-signature">public function renderBlock(string $name): ?string</div>
+                                    <p class="phpdocumentor-summary">Render a block.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — Block name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setBaseDir">
+                <h4>setBaseDir()</h4>
+                <div class="phpdocumentor-signature">public function setBaseDir(string $baseDir): static</div>
+                                    <p class="phpdocumentor-summary">Sets the base directory where the views files are located.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$baseDir</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDebugCollector">
+                <h4>setDebugCollector()</h4>
+                <div class="phpdocumentor-signature">public function setDebugCollector(\Framework\MVC\Debug\ViewsCollector $debugCollector): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\MVC\Debug\ViewsCollector</span>
+                                                                        <span class="phpdocumentor-parameters__name">$debugCollector</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setExtension">
+                <h4>setExtension()</h4>
+                <div class="phpdocumentor-signature">public function setExtension(string $extension): static</div>
+                                    <p class="phpdocumentor-summary">Set the extension of views files.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$extension</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setIncludePrefix">
+                <h4>setIncludePrefix()</h4>
+                <div class="phpdocumentor-signature">public function setIncludePrefix(string $prefix): static</div>
+                                    <p class="phpdocumentor-summary">Set the name of a directory for includes within the base directory.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$prefix</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setInstanceName">
+                <h4>setInstanceName()</h4>
+                <div class="phpdocumentor-signature">public function setInstanceName(string $instanceName): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$instanceName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setLayoutPrefix">
+                <h4>setLayoutPrefix()</h4>
+                <div class="phpdocumentor-signature">public function setLayoutPrefix(string $prefix): static</div>
+                                    <p class="phpdocumentor-summary">Set the name of a directory for layouts within the base directory.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$prefix</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setThrowExceptionsInDestructor">
+                <h4>setThrowExceptionsInDestructor()</h4>
+                <div class="phpdocumentor-signature">public function setThrowExceptionsInDestructor(bool $active = true): static</div>
+                                    <p class="phpdocumentor-summary">Enables/disables exceptions in the destructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$active</span>
+                                                                            — True to throw exceptions, false otherwise                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCommentPath">
+                <h4>getCommentPath()</h4>
+                <div class="phpdocumentor-signature">protected function getCommentPath(string $name): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getContents">
+                <h4>getContents()</h4>
+                <div class="phpdocumentor-signature">protected function getContents(string $view, array $data): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFilepath">
+                <h4>getFilepath()</h4>
+                <div class="phpdocumentor-signature">protected function getFilepath(string $view): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getIncludeContents">
+                <h4>getIncludeContents()</h4>
+                <div class="phpdocumentor-signature">protected function getIncludeContents(string $view, array $data = array (
+)): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getIncludeContentsWithDebug">
+                <h4>getIncludeContentsWithDebug()</h4>
+                <div class="phpdocumentor-signature">protected function getIncludeContentsWithDebug(string $view, array $data = array (
+)): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$data</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getNamespacedFilepath">
+                <h4>getNamespacedFilepath()</h4>
+                <div class="phpdocumentor-signature">protected function getNamespacedFilepath(string $view): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-involveInclude">
+                <h4>involveInclude()</h4>
+                <div class="phpdocumentor-signature">protected function involveInclude(string $view, string $contents): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$contents</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makeDirectoryPrefix">
+                <h4>makeDirectoryPrefix()</h4>
+                <div class="phpdocumentor-signature">protected function makeDirectoryPrefix(string $prefix): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$prefix</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDebugData">
+                <h4>setDebugData()</h4>
+                <div class="phpdocumentor-signature">protected function setDebugData(string $file, float $start, string $type): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">float</span>
+                                                                        <span class="phpdocumentor-parameters__name">$start</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$type</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

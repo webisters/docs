@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Route · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Routing-Route.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Routing Route</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Route            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Routing\Route</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Route.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/JsonSerializable.html"><code>JsonSerializable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/routing/src/Route.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-router">$router</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-origin">$origin</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-path">$path</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-action">$action</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-actionArguments">$actionArguments</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-name">$name</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-options">$options</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-router">
+                <h4>$router</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Routing\Router $router</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-origin">
+                <h4>$origin</h4>
+                <div class="phpdocumentor-signature">protected string $origin</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-path">
+                <h4>$path</h4>
+                <div class="phpdocumentor-signature">protected string $path</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-action">
+                <h4>$action</h4>
+                <div class="phpdocumentor-signature">protected Closure|string $action</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-actionArguments">
+                <h4>$actionArguments</h4>
+                <div class="phpdocumentor-signature">protected array $actionArguments = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-name">
+                <h4>$name</h4>
+                <div class="phpdocumentor-signature">protected ?string $name = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-options">
+                <h4>$options</h4>
+                <div class="phpdocumentor-signature">protected array $options = array (
+)</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Route constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getAction">getAction()</a>
+                </dt>
+                <dd>Gets the Route action.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getActionArguments">getActionArguments()</a>
+                </dt>
+                <dd>Gets the Route action arguments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getName">getName()</a>
+                </dt>
+                <dd>Gets the Route name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getOptions">getOptions()</a>
+                </dt>
+                <dd>Gets Route options.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getOrigin">getOrigin()</a>
+                </dt>
+                <dd>Gets the Route URL origin.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPath">getPath()</a>
+                </dt>
+                <dd>Gets the Route URL path.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getUrl">getUrl()</a>
+                </dt>
+                <dd>Gets the Route URL.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-jsonSerialize">jsonSerialize()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-run">run()</a>
+                </dt>
+                <dd>Runs the Route action.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setAction">setAction()</a>
+                </dt>
+                <dd>Sets the Route action.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setActionArguments">setActionArguments()</a>
+                </dt>
+                <dd>Sets the Route action arguments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setName">setName()</a>
+                </dt>
+                <dd>Sets the Route name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setOptions">setOptions()</a>
+                </dt>
+                <dd>Sets options to be used in a specific environment application. For example: its possible set Access Control List options, Locations, Middleware filters, etc.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setPath">setPath()</a>
+                </dt>
+                <dd>Sets the Route URL path.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-extractMethodAndArguments">extractMethodAndArguments()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makeResponse">makeResponse()</a>
+                </dt>
+                <dd>Make the final Response used in the &#039;run&#039; method.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makeResponseBodyPart">makeResponseBodyPart()</a>
+                </dt>
+                <dd>Make a string to be appended in the Response body based in the route action result.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-onNamedRoutePart">onNamedRoutePart()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setOrigin">setOrigin()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-toArrayOfStrings">toArrayOfStrings()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(\Framework\Routing\Router $router, string $origin, string $path, Closure|string $action)</div>
+                                    <p class="phpdocumentor-summary">Route constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\Router</span>
+                                                                        <span class="phpdocumentor-parameters__name">$router</span>
+                                                                            — A Router instance                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                            — URL Origin. A string in the following format: {scheme}://{hostname}[:{port}]                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$path</span>
+                                                                            — URL Path. A string starting with &#039;/&#039;                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$action</span>
+                                                                            — The action                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getAction">
+                <h4>getAction()</h4>
+                <div class="phpdocumentor-signature">public function getAction(): Closure|string</div>
+                                    <p class="phpdocumentor-summary">Gets the Route action.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">Closure|string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getActionArguments">
+                <h4>getActionArguments()</h4>
+                <div class="phpdocumentor-signature">public function getActionArguments(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the Route action arguments.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getName">
+                <h4>getName()</h4>
+                <div class="phpdocumentor-signature">public function getName(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the Route name.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getOptions">
+                <h4>getOptions()</h4>
+                <div class="phpdocumentor-signature">public function getOptions(): array</div>
+                                    <p class="phpdocumentor-summary">Gets Route options.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getOrigin">
+                <h4>getOrigin()</h4>
+                <div class="phpdocumentor-signature">public function getOrigin(string ...$arguments): string</div>
+                                    <p class="phpdocumentor-summary">Gets the Route URL origin.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPath">
+                <h4>getPath()</h4>
+                <div class="phpdocumentor-signature">public function getPath(string ...$arguments): string</div>
+                                    <p class="phpdocumentor-summary">Gets the Route URL path.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getUrl">
+                <h4>getUrl()</h4>
+                <div class="phpdocumentor-signature">public function getUrl(array $originArgs = array (
+), array $pathArgs = array (
+)): string</div>
+                                    <p class="phpdocumentor-summary">Gets the Route URL.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Note: Arguments must be passed if placeholders need to be filled.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$originArgs</span>
+                                                                            — Arguments to fill the URL Origin placeholders                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$pathArgs</span>
+                                                                            — Arguments to fill the URL Path placeholders                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-jsonSerialize">
+                <h4>jsonSerialize()</h4>
+                <div class="phpdocumentor-signature">public function jsonSerialize(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-run">
+                <h4>run()</h4>
+                <div class="phpdocumentor-signature">public function run(mixed ...$construct): \Framework\HTTP\Response</div>
+                                    <p class="phpdocumentor-summary">Runs the Route action.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">mixed</span>
+                                                                        <span class="phpdocumentor-parameters__name">$construct</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\HTTP\Response</span>
+                                                    — The Response with the action result appended on the body                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>JsonException if the action result is an array, or an instance of JsonSerializable, and the Response cannot be set as JSON</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RoutingException if class is not an instance of {@see RouteActions}, action method not exists or if the result of the action method has not a valid type</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setAction">
+                <h4>setAction()</h4>
+                <div class="phpdocumentor-signature">public function setAction(Closure|string $action): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Route action.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$action</span>
+                                                                            — A Closure or a string in the format of the `__METHOD__` constant. Example: `App\Blog::show`. The action can be suffixed with ordered parameters, separated by slashes, to set how the arguments will be passed to the class method. Example: `App\Blog::show/0/2/1`. And, also with the asterisk wildcard, to pass all arguments in the incoming order. Example: `App\Blog::show/*`                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setActionArguments">
+                <h4>setActionArguments()</h4>
+                <div class="phpdocumentor-signature">public function setActionArguments(array $arguments): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Route action arguments.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                            — The arguments. Note that the indexes set the order of how the arguments are passed to the Action                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setName">
+                <h4>setName()</h4>
+                <div class="phpdocumentor-signature">public function setName(string $name): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Route name.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setOptions">
+                <h4>setOptions()</h4>
+                <div class="phpdocumentor-signature">public function setOptions(array $options): static</div>
+                                    <p class="phpdocumentor-summary">Sets options to be used in a specific environment application. For example: its possible set Access Control List options, Locations, Middleware filters, etc.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$options</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setPath">
+                <h4>setPath()</h4>
+                <div class="phpdocumentor-signature">public function setPath(string $path): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Route URL path.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$path</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-extractMethodAndArguments">
+                <h4>extractMethodAndArguments()</h4>
+                <div class="phpdocumentor-signature">protected function extractMethodAndArguments(string $part): array</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$part</span>
+                                                                            — An action part like: index/0/2/1                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — The action method in the first index, the action arguments in the second                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException for undefined action argument</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makeResponse">
+                <h4>makeResponse()</h4>
+                <div class="phpdocumentor-signature">protected function makeResponse(mixed $result): \Framework\HTTP\Response</div>
+                                    <p class="phpdocumentor-summary">Make the final Response used in the &#039;run&#039; method.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">mixed</span>
+                                                                        <span class="phpdocumentor-parameters__name">$result</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\HTTP\Response</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>JsonException if the $result is an array, or an instance of JsonSerializable, and the Response cannot be set as JSON</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RoutingException if the $result type is invalid</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makeResponseBodyPart">
+                <h4>makeResponseBodyPart()</h4>
+                <div class="phpdocumentor-signature">protected function makeResponseBodyPart(mixed $result): string</div>
+                                    <p class="phpdocumentor-summary">Make a string to be appended in the Response body based in the route action result.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">mixed</span>
+                                                                        <span class="phpdocumentor-parameters__name">$result</span>
+                                                                            — The return value of the matched route action                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>JsonException if the $result is an array, or an instance of JsonSerializable, and the Response cannot be set as JSON</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RoutingException if the $result type is invalid</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-onNamedRoutePart">
+                <h4>onNamedRoutePart()</h4>
+                <div class="phpdocumentor-signature">protected function onNamedRoutePart(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setOrigin">
+                <h4>setOrigin()</h4>
+                <div class="phpdocumentor-signature">protected function setOrigin(string $origin): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-toArrayOfStrings">
+                <h4>toArrayOfStrings()</h4>
+                <div class="phpdocumentor-signature">protected static function toArrayOfStrings(array $array): array</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$array</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

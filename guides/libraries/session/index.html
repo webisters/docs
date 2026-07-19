@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../../../"
+      data-current-page="guides/libraries/session/index.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../../../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../../../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../../../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../../../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group is-open" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item is-active" href="../../../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../../../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../../../packages/app.html">app</a></li>
+                            <li><a class="" href="../../../packages/api.html">api</a></li>
+                            <li><a class="" href="../../../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../../../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../../../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../../../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../../../packages/config.html">config</a></li>
+                            <li><a class="" href="../../../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../../../packages/database.html">database</a></li>
+                            <li><a class="" href="../../../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../../../packages/date.html">date</a></li>
+                            <li><a class="" href="../../../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../../../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../../../packages/email.html">email</a></li>
+                            <li><a class="" href="../../../packages/events.html">events</a></li>
+                            <li><a class="" href="../../../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../../../packages/front.html">front</a></li>
+                            <li><a class="" href="../../../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../../../packages/http.html">http</a></li>
+                            <li><a class="" href="../../../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../../../packages/image.html">image</a></li>
+                            <li><a class="" href="../../../packages/language.html">language</a></li>
+                            <li><a class="" href="../../../packages/log.html">log</a></li>
+                            <li><a class="" href="../../../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../../../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../../../packages/one.html">one</a></li>
+                            <li><a class="" href="../../../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../../../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../../../packages/session.html">session</a></li>
+                            <li><a class="" href="../../../packages/site.html">site</a></li>
+                            <li><a class="" href="../../../packages/template.html">template</a></li>
+                            <li><a class="" href="../../../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../../../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../../../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Guides</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Session</li>
+                        </ol>
+</nav>
+<div class="section" id="session">
+<h1>Session</h1>
+<p>Webisters Session Library.</p>
+<ul>
+    <li>
+            <a href="#installation">Installation</a>
+        </li>
+    <li>
+            <a href="#getting-started">Getting Started</a>
+        </li>
+    <li>
+            <a href="#managing-data">Managing Data</a>
+        </li>
+    <li>
+            <a href="#temporary-data">Temporary Data</a>
+        </li>
+    <li>
+            <a href="#flash-data">Flash Data</a>
+        </li>
+    <li>
+            <a href="#save-handlers">Save Handlers</a>
+        </li>
+    <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>The installation of this library can be done with Composer:</p>
+<pre><code class="language- " >composer require Webisters/session
+</code></pre>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started</h2>
+<p>The Session class has methods that facilitate session management.</p>
+<pre><code class="language-php " >use Framework\Session\Session;
+$session = new Session();
+// Start the session
+$session-&gt;start(); // bool
+// Check if the session is active
+$active = $session-&gt;isActive(); // bool
+// Regenerate the session id
+$session-&gt;regenerateId(); // bool
+// Destroy the session
+$session-&gt;destroy(); // bool
+$session-&gt;destroyCookie(); // bool
+// Stop the session, write and close
+$session-&gt;stop(); // bool
+</code></pre>
+<p>To make sure the session is active you can use the <code>activate</code> method:</p>
+<pre><code class="language-php " >$session-&gt;activate(); // bool
+</code></pre>
+<div class="section" id="options">
+<h3>Options</h3>
+<p>Options can be passed through the Session class constructor:</p>
+<pre><code class="language-php " >$session = new Session([
+    &#039;name&#039; =&gt; &#039;session_id&#039;
+]);
+</code></pre>
+<p>or by the <code>start</code> method:</p>
+<pre><code class="language-php " >$session = new Session();
+$session-&gt;start([
+    &#039;name&#039; =&gt; &#039;session_id&#039;
+]); // bool
+</code></pre>
+</div>
+<div class="section" id="custom-options">
+<h3>Custom Options</h3>
+<p>Custom options only work if they are passed through the Session constructor.</p>
+<ul>
+    <li>
+            <a href="#auto-regenerate-id">Auto Regenerate ID</a>
+        </li>
+    <li>
+            <a href="#set-cookie-permanent">Set-Cookie Permanent</a>
+        </li>
+</ul>
+<div class="section" id="auto-regenerate-id">
+<h4>Auto Regenerate ID</h4>
+<p>It is possible to auto-regenerate the session id by passing the following
+options:</p>
+<ul>
+    <li>
+            <code>auto_regenerate_maxlifetime</code> to set the maximum file lifetime and
+        </li>
+    <li>
+            <code>auto_regenerate_destroy</code> to destroy the old session file.
+        </li>
+</ul>
+<pre><code class="language-php " >$session = new Session([
+    &#039;auto_regenerate_maxlifetime&#039; =&gt; 7200,
+    &#039;auto_regenerate_destroy&#039; =&gt; true,
+]));
+</code></pre>
+<p>This will help avoid
+<a href="https://owasp.org/www-community/attacks/Session_fixation">Session Fixation</a>.</p>
+</div>
+<div class="section" id="set-cookie-permanent">
+<h4>Set-Cookie Permanent</h4>
+<p>It is possible to send the session&#039;s Set-Cookie header in all HTTP responses by
+setting the <code>set_cookie_permanent</code> option:</p>
+<pre><code class="language-php " >$session = new Session([
+    &#039;set_cookie_permanent&#039; =&gt; true,
+]));
+</code></pre>
+<p>This will cause the session cookie expiration date to be updated in the browser
+on every response.</p>
+</div>
+</div>
+<div class="section" id="managing-data">
+<h2>Managing Data</h2>
+<p>Data manipulation can be performed with the <code>get</code> and <code>set</code> methods or by
+calling the properties directly using the magic methods:</p>
+<pre><code class="language-php " >// Set user_id as 1
+$session-&gt;set(&#039;user_id&#039;, 1); // static
+// Set user_id as 1 using magic setter
+$session-&gt;user_id = 1;
+// Get the value of user_id
+$uid = $session-&gt;get(&#039;user_id&#039;); // 1
+// Get the value of user_id using magic getter
+$uid = $session-&gt;user_id; // 1
+</code></pre>
+<div class="section" id="multiple-items-at-once">
+<h3>Multiple Items at Once</h3>
+<p>Multiple items can be handled at once:</p>
+<pre><code class="language-php " >$session-&gt;setMulti([
+    &#039;user_id&#039; =&gt; 1,
+    &#039;active&#039; =&gt; true,
+]); // static
+// Get an array with the two keys
+$data = $session-&gt;getMulti([
+    &#039;user_id&#039;,
+    &#039;active&#039;,
+]); // array
+</code></pre>
+</div>
+<div class="section" id="abort">
+<h3>Abort</h3>
+<p>If necessary, you can abort the current session&#039;s modifications by returning to
+the previous one using the <code>abort</code> method:</p>
+<pre><code class="language-php " >$session-&gt;abort(); // bool
+</code></pre>
+</div>
+<div class="section" id="session-id">
+<h3>Session ID</h3>
+<p>The session id can be obtained through the <code>id</code> method:</p>
+<pre><code class="language-php " >$id = $session-&gt;id(); // string or false
+</code></pre>
+<p>and also set as follows:</p>
+<pre><code class="language-php " >$oldId = $session-&gt;id(&#039;foo&#039;); // string or false
+</code></pre>
+</div>
+<div class="section" id="getting-all-items">
+<h3>Getting All Items</h3>
+<p>Using the <code>getAll</code> method, you can get all the items in the session:</p>
+<pre><code class="language-php " >$data = $session-&gt;getAll(); // array
+</code></pre>
+<p>With the <code>has</code> method, you can check if there is an item with a certain key:</p>
+<pre><code class="language-php " >// Check if user_id key exists
+$exists = $session-&gt;has(&#039;user_id&#039;); // bool
+</code></pre>
+</div>
+<div class="section" id="removing-items">
+<h3>Removing Items</h3>
+<p>Item removal can be performed individually or multiple at once:</p>
+<pre><code class="language-php " >// Remove user_id
+$session-&gt;remove(&#039;user_id&#039;); // static
+// Remove &#039;active&#039; and &#039;foo&#039;
+$session-&gt;removeMulti([
+    &#039;active&#039;,
+    &#039;foo&#039;,
+]); // static
+</code></pre>
+</div>
+</div>
+<div class="section" id="temporary-data">
+<h2>Temporary Data</h2>
+<p>Temporary data are items saved with a TTL (Time To Live) in seconds of how long
+the item will be in the session.</p>
+<pre><code class="language-php " >// Set &#039;message&#039; for 15 seconds
+$session-&gt;setTemp(&#039;message&#039;, &#039;Hello!&#039;, 15); // static
+// Get &#039;message&#039; value or null if expired
+$msg = $session-&gt;getTemp(&#039;message&#039;); // mixed
+</code></pre>
+</div>
+<div class="section" id="flash-data">
+<h2>Flash Data</h2>
+<p>Flash data are items to be used only for the next request.</p>
+<pre><code class="language-php " >// Set &#039;message&#039; for the next request
+$session-&gt;setFlash(&#039;message&#039;, &#039;Hi, John!&#039;); // static
+// Get &#039;message&#039; value or null if expired
+$session-&gt;getFlash(&#039;message&#039;); // mixed
+</code></pre>
+<p>Expired Flash and Temp data are automatically removed when the session starts.</p>
+</div>
+<div class="section" id="save-handlers">
+<h2>Save Handlers</h2>
+<p>Save Handlers make it possible to store session data in different ways.</p>
+<p>Save Handlers are classes that can be set in the second argument of the Session
+class:</p>
+<pre><code class="language-php " >use Framework\Session\Session;
+$session = new Session($options, $saveHandler);
+</code></pre>
+<p>These are the Save Handlers available by default:</p>
+<div class="section" id="database-handler">
+<h3>Database Handler</h3>
+<p>Allows you to store session data in a database.</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\DatabaseHandler;
+$saveHandler = new DatabaseHandler($configs);
+</code></pre>
+<p>These are the DatabaseHandler configs:</p>
+<pre><code class="language-php " >$configs = [
+    // The name of the table used for sessions
+    &#039;table&#039; =&gt; &#039;Sessions&#039;,
+    // The maxlifetime used for locking
+    &#039;maxlifetime&#039; =&gt; null, // Null to use the ini value of session.gc_maxlifetime
+    // The custom column names as values
+    &#039;columns&#039; =&gt; [
+        &#039;id&#039; =&gt; &#039;id&#039;,
+        &#039;data&#039; =&gt; &#039;data&#039;,
+        &#039;timestamp&#039; =&gt; &#039;timestamp&#039;,
+        &#039;ip&#039; =&gt; &#039;ip&#039;,
+        &#039;ua&#039; =&gt; &#039;ua&#039;,
+        &#039;ua&#039; =&gt; &#039;ua&#039;,
+        &#039;user_id&#039; =&gt; &#039;user_id&#039;,
+    ],
+    // Match IP?
+    &#039;match_ip&#039; =&gt; false,
+    // Match User-Agent?
+    &#039;match_ua&#039; =&gt; false,
+    // Independent of match_ip, save the initial IP in the ip column?
+    &#039;save_ip&#039; =&gt; false,
+    // Independent of match_ua, save the initial User-Agent in the ua column?
+    &#039;save_ua&#039; =&gt; false,
+    // Save the user_id?
+    &#039;save_user_id&#039; =&gt; false,
+];
+</code></pre>
+<p>Note that the database connection configs must also be set.</p>
+<div class="section" id="database-instance">
+<h4>Database Instance</h4>
+<p>It is also possible to pass an instance of the Database class directly, as in
+the example below:</p>
+<pre><code class="language-php " >use Framework\Database\Database;
+use Framework\Session\SaveHandlers\DatabaseHandler;
+$database = new Database(&#039;root&#039;, &#039;pass&#039;, &#039;app&#039;);
+$saveHandler = new DatabaseHandler();
+$saveHandler-&gt;setDatabase($database); // static
+</code></pre>
+</div>
+<div class="section" id="database-table">
+<h4>Database Table</h4>
+<p>A basic example of a table for sessions is below:</p>
+<pre><code class="language-sql " >CREATE TABLE `Sessions` (
+    `id` varchar(128) NOT NULL,
+    `timestamp` timestamp NOT NULL,
+    `data` blob NOT NULL,
+    `ip` varchar(45) NOT NULL, -- optional
+    `ua` varchar(255) NOT NULL, -- optional
+    PRIMARY KEY (`id`),
+    KEY `timestamp` (`timestamp`),
+    KEY `ip` (`ip`), -- optional
+    KEY `ua` (`ua`) -- optional
+);
+</code></pre>
+</div>
+</div>
+</div>
+<div class="section" id="files-handler">
+<h3>Files Handler</h3>
+<p>Allows you to store session data as files in a directory.</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\FilesHandler;
+$saveHandler = new FilesHandler($configs);
+</code></pre>
+<p>These are the FilesHandler configs:</p>
+<pre><code class="language-php " >$configs = [
+    // The directory path where the session files will be saved
+    &#039;directory&#039; =&gt; &#039;&#039;,
+    // A custom directory name inside the `directory` path
+    &#039;prefix&#039; =&gt; &#039;&#039;,
+    // Match IP?
+    &#039;match_ip&#039; =&gt; false,
+    // Match User-Agent?
+    &#039;match_ua&#039; =&gt; false,
+];
+</code></pre>
+</div>
+<div class="section" id="memcached-handler">
+<h3>Memcached Handler</h3>
+<p>Allows you to store session data on Memcached servers.</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\MemcachedHandler;
+$saveHandler = new MemcachedHandler($configs);
+</code></pre>
+<p>These are the MemcachedHandler configs:</p>
+<pre><code class="language-php " >$configs = [
+    // A custom prefix prepended in the keys
+    &#039;prefix&#039; =&gt; &#039;&#039;,
+    // A list of Memcached servers
+    &#039;servers&#039; =&gt; [
+        [
+            &#039;host&#039; =&gt; &#039;127.0.0.1&#039;, // host always is required
+            &#039;port&#039; =&gt; 11211, // port is optional, default to 11211
+            &#039;weight&#039; =&gt; 0, // weight is optional, default to 0
+        ],
+    ],
+    // An associative array of Memcached::OPT_* constants
+    &#039;options&#039; =&gt; [
+        Memcached::OPT_BINARY_PROTOCOL =&gt; true,
+    ],
+    // Maximum attempts to try lock a session id
+    &#039;lock_attempts&#039; =&gt; 60,
+    // Interval between the lock attempts in microseconds
+    &#039;lock_sleep&#039; =&gt; 1_000_000,
+    // TTL to the lock (valid for the current session only)
+    &#039;lock_ttl&#039; =&gt; 600,
+    // The maxlifetime (TTL) used for cache item expiration
+    &#039;maxlifetime&#039; =&gt; null, // Null to use the ini value of session.gc_maxlifetime
+    // Match IP?
+    &#039;match_ip&#039; =&gt; false,
+    // Match User-Agent?
+    &#039;match_ua&#039; =&gt; false,
+];
+</code></pre>
+<div class="section" id="memcached-instance">
+<h4>Memcached Instance</h4>
+<p>It is also possible to pass an instance of the Memcached class directly, as in
+the example below:</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\MemcachedHandler;
+$memcached = new Memcached();
+$saveHandler = new MemcachedHandler();
+$saveHandler-&gt;setMemcached($memcached); // static
+</code></pre>
+</div>
+</div>
+<div class="section" id="redis-handler">
+<h3>Redis Handler</h3>
+<p>Allows you to store session data on a Redis server.</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\RedisHandler;
+$saveHandler = new RedisHandler($configs);
+</code></pre>
+<p>These are the RedisHandler configs:</p>
+<pre><code class="language-php " >$configs = [
+    // A custom prefix prepended in the keys
+    &#039;prefix&#039; =&gt; &#039;&#039;,
+    // The Redis host
+    &#039;host&#039; =&gt; &#039;127.0.0.1&#039;,
+    // The Redis host port
+    &#039;port&#039; =&gt; 6379,
+    // The connection timeout
+    &#039;timeout&#039; =&gt; 0.0,
+    // Optional auth password
+    &#039;password&#039; =&gt; null,
+    // Optional database to select
+    &#039;database&#039; =&gt; null,
+    // Maximum attempts to try lock a session id
+    &#039;lock_attempts&#039; =&gt; 60,
+    // Interval between the lock attempts in microseconds
+    &#039;lock_sleep&#039; =&gt; 1_000_000,
+    // TTL to the lock (valid for the current session only)
+    &#039;lock_ttl&#039; =&gt; 600,
+    // The maxlifetime (TTL) used for cache item expiration
+    &#039;maxlifetime&#039; =&gt; null, // Null to use the ini value of session.gc_maxlifetime
+    // Match IP?
+    &#039;match_ip&#039; =&gt; false,
+    // Match User-Agent?
+    &#039;match_ua&#039; =&gt; false,
+];
+</code></pre>
+<div class="section" id="redis-instance">
+<h4>Redis Instance</h4>
+<p>It is also possible to pass an instance of the Redis class directly, as in the
+example below:</p>
+<pre><code class="language-php " >use Framework\Session\SaveHandlers\RedisHandler;
+$redis = new Redis();
+$saveHandler = new RedisHandler();
+$saveHandler-&gt;setRedis($redis); // static
+</code></pre>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Webisters Session Library is an easy-to-use tool for, beginners and experienced, PHP developers.<br>It is perfect for saving user sessions that can be easily scalable.<br>The more you use it, the more you will learn.</p>
+<div class="phpdocumentor-admonition -note ">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        <p>Did you find something wrong?<br>Be sure to let us know about it with an
+<a href="https://github.com/webisters/session/issues">issue</a>.<br>Thank you!</p>
+    </article>
+</div>
+</div>
+</div>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+<nav class="wb-pager" aria-label="Page navigation">
+            <a class="wb-pager__link -prev" href="../../../guides/libraries/routing/index.html">
+            <span class="wb-pager__label">← Previous</span>
+            <span class="wb-pager__title">Routing</span>
+        </a>
+    
+            <a class="wb-pager__link -next" href="../../../guides/libraries/testing/index.html">
+            <span class="wb-pager__label">Next →</span>
+            <span class="wb-pager__title">Testing</span>
+        </a>
+    </nav>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../../../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../../../guides/framework/index.html">Framework</a></li>
+                <li><a href="../../../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../../../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../../../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../../../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../../../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../../../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../../../assets/layout.js" defer></script>
+</body>
+</html>

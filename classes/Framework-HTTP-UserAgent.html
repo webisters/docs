@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class UserAgent · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-HTTP-UserAgent.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework HTTP UserAgent</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            UserAgent            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\HTTP\UserAgent</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class UserAgent.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/JsonSerializable.html"><code>JsonSerializable</code></a>, <a href="../classes/Stringable.html"><code>Stringable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/http/src/UserAgent.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-agent">$agent</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-browser">$browser</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-browserVersion">$browserVersion</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mobile">$mobile</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-platform">$platform</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-robot">$robot</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-isBrowser">$isBrowser</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-isMobile">$isMobile</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-isRobot">$isRobot</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-config">$config</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-agent">
+                <h4>$agent</h4>
+                <div class="phpdocumentor-signature">protected ?string $agent = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-browser">
+                <h4>$browser</h4>
+                <div class="phpdocumentor-signature">protected ?string $browser = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-browserVersion">
+                <h4>$browserVersion</h4>
+                <div class="phpdocumentor-signature">protected ?string $browserVersion = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-mobile">
+                <h4>$mobile</h4>
+                <div class="phpdocumentor-signature">protected ?string $mobile = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-platform">
+                <h4>$platform</h4>
+                <div class="phpdocumentor-signature">protected ?string $platform = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-robot">
+                <h4>$robot</h4>
+                <div class="phpdocumentor-signature">protected ?string $robot = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-isBrowser">
+                <h4>$isBrowser</h4>
+                <div class="phpdocumentor-signature">protected bool $isBrowser = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-isMobile">
+                <h4>$isMobile</h4>
+                <div class="phpdocumentor-signature">protected bool $isMobile = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-isRobot">
+                <h4>$isRobot</h4>
+                <div class="phpdocumentor-signature">protected bool $isRobot = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-config">
+                <h4>$config</h4>
+                <div class="phpdocumentor-signature">protected static array $config = array (
+  &#039;platforms&#039; =&gt; 
+  array (
+    &#039;windows nt 10.0&#039; =&gt; &#039;Windows 10&#039;,
+    &#039;windows nt 6.3&#039; =&gt; &#039;Windows 8.1&#039;,
+    &#039;windows nt 6.2&#039; =&gt; &#039;Windows 8&#039;,
+    &#039;windows nt 6.1&#039; =&gt; &#039;Windows 7&#039;,
+    &#039;windows nt 6.0&#039; =&gt; &#039;Windows Vista&#039;,
+    &#039;windows nt 5.2&#039; =&gt; &#039;Windows 2003&#039;,
+    &#039;windows nt 5.1&#039; =&gt; &#039;Windows XP&#039;,
+    &#039;windows nt 5.0&#039; =&gt; &#039;Windows 2000&#039;,
+    &#039;windows nt 4.0&#039; =&gt; &#039;Windows NT 4.0&#039;,
+    &#039;winnt4.0&#039; =&gt; &#039;Windows NT 4.0&#039;,
+    &#039;winnt 4.0&#039; =&gt; &#039;Windows NT&#039;,
+    &#039;winnt&#039; =&gt; &#039;Windows NT&#039;,
+    &#039;windows 98&#039; =&gt; &#039;Windows 98&#039;,
+    &#039;win98&#039; =&gt; &#039;Windows 98&#039;,
+    &#039;windows 95&#039; =&gt; &#039;Windows 95&#039;,
+    &#039;win95&#039; =&gt; &#039;Windows 95&#039;,
+    &#039;windows phone&#039; =&gt; &#039;Windows Phone&#039;,
+    &#039;windows&#039; =&gt; &#039;Unknown Windows OS&#039;,
+    &#039;android&#039; =&gt; &#039;Android&#039;,
+    &#039;blackberry&#039; =&gt; &#039;BlackBerry&#039;,
+    &#039;iphone&#039; =&gt; &#039;iOS&#039;,
+    &#039;ipad&#039; =&gt; &#039;iOS&#039;,
+    &#039;ipod&#039; =&gt; &#039;iOS&#039;,
+    &#039;os x&#039; =&gt; &#039;Mac OS X&#039;,
+    &#039;ppc mac&#039; =&gt; &#039;Power PC Mac&#039;,
+    &#039;freebsd&#039; =&gt; &#039;FreeBSD&#039;,
+    &#039;ppc&#039; =&gt; &#039;Macintosh&#039;,
+    &#039;ubuntu&#039; =&gt; &#039;Ubuntu&#039;,
+    &#039;debian&#039; =&gt; &#039;Debian&#039;,
+    &#039;fedora&#039; =&gt; &#039;Fedora&#039;,
+    &#039;linux&#039; =&gt; &#039;Linux&#039;,
+    &#039;sunos&#039; =&gt; &#039;Sun Solaris&#039;,
+    &#039;beos&#039; =&gt; &#039;BeOS&#039;,
+    &#039;apachebench&#039; =&gt; &#039;ApacheBench&#039;,
+    &#039;aix&#039; =&gt; &#039;AIX&#039;,
+    &#039;irix&#039; =&gt; &#039;Irix&#039;,
+    &#039;osf&#039; =&gt; &#039;DEC OSF&#039;,
+    &#039;hp-ux&#039; =&gt; &#039;HP-UX&#039;,
+    &#039;netbsd&#039; =&gt; &#039;NetBSD&#039;,
+    &#039;bsdi&#039; =&gt; &#039;BSDi&#039;,
+    &#039;openbsd&#039; =&gt; &#039;OpenBSD&#039;,
+    &#039;gnu&#039; =&gt; &#039;GNU/Linux&#039;,
+    &#039;unix&#039; =&gt; &#039;Unknown Unix OS&#039;,
+    &#039;symbian&#039; =&gt; &#039;Symbian OS&#039;,
+  ),
+  &#039;browsers&#039; =&gt; 
+  array (
+    &#039;curl&#039; =&gt; &#039;Curl&#039;,
+    &#039;PostmanRuntime&#039; =&gt; &#039;Postman&#039;,
+    &#039;OPR&#039; =&gt; &#039;Opera&#039;,
+    &#039;Flock&#039; =&gt; &#039;Flock&#039;,
+    &#039;Edge&#039; =&gt; &#039;Spartan&#039;,
+    &#039;Edg&#039; =&gt; &#039;Edge&#039;,
+    &#039;EdgA&#039; =&gt; &#039;Edge&#039;,
+    &#039;Chrome&#039; =&gt; &#039;Chrome&#039;,
+    &#039;Opera.*?Version&#039; =&gt; &#039;Opera&#039;,
+    &#039;Opera&#039; =&gt; &#039;Opera&#039;,
+    &#039;MSIE&#039; =&gt; &#039;Internet Explorer&#039;,
+    &#039;Internet Explorer&#039; =&gt; &#039;Internet Explorer&#039;,
+    &#039;Trident.* rv&#039; =&gt; &#039;Internet Explorer&#039;,
+    &#039;Shiira&#039; =&gt; &#039;Shiira&#039;,
+    &#039;Firefox&#039; =&gt; &#039;Firefox&#039;,
+    &#039;Chimera&#039; =&gt; &#039;Chimera&#039;,
+    &#039;Phoenix&#039; =&gt; &#039;Phoenix&#039;,
+    &#039;Firebird&#039; =&gt; &#039;Firebird&#039;,
+    &#039;Camino&#039; =&gt; &#039;Camino&#039;,
+    &#039;Netscape&#039; =&gt; &#039;Netscape&#039;,
+    &#039;OmniWeb&#039; =&gt; &#039;OmniWeb&#039;,
+    &#039;Safari&#039; =&gt; &#039;Safari&#039;,
+    &#039;Mozilla&#039; =&gt; &#039;Mozilla&#039;,
+    &#039;Konqueror&#039; =&gt; &#039;Konqueror&#039;,
+    &#039;icab&#039; =&gt; &#039;iCab&#039;,
+    &#039;Lynx&#039; =&gt; &#039;Lynx&#039;,
+    &#039;Links&#039; =&gt; &#039;Links&#039;,
+    &#039;hotjava&#039; =&gt; &#039;HotJava&#039;,
+    &#039;amaya&#039; =&gt; &#039;Amaya&#039;,
+    &#039;IBrowse&#039; =&gt; &#039;IBrowse&#039;,
+    &#039;Maxthon&#039; =&gt; &#039;Maxthon&#039;,
+    &#039;Ubuntu&#039; =&gt; &#039;Ubuntu Web Browser&#039;,
+    &#039;Vivaldi&#039; =&gt; &#039;Vivaldi&#039;,
+  ),
+  &#039;mobiles&#039; =&gt; 
+  array (
+    &#039;mobileexplorer&#039; =&gt; &#039;Mobile Explorer&#039;,
+    &#039;palmsource&#039; =&gt; &#039;Palm&#039;,
+    &#039;palmscape&#039; =&gt; &#039;Palmscape&#039;,
+    &#039;motorola&#039; =&gt; &#039;Motorola&#039;,
+    &#039;nokia&#039; =&gt; &#039;Nokia&#039;,
+    &#039;palm&#039; =&gt; &#039;Palm&#039;,
+    &#039;iphone&#039; =&gt; &#039;Apple iPhone&#039;,
+    &#039;ipad&#039; =&gt; &#039;iPad&#039;,
+    &#039;ipod&#039; =&gt; &#039;Apple iPod Touch&#039;,
+    &#039;sony&#039; =&gt; &#039;Sony Ericsson&#039;,
+    &#039;ericsson&#039; =&gt; &#039;Sony Ericsson&#039;,
+    &#039;blackberry&#039; =&gt; &#039;BlackBerry&#039;,
+    &#039;cocoon&#039; =&gt; &#039;O2 Cocoon&#039;,
+    &#039;blazer&#039; =&gt; &#039;Treo&#039;,
+    &#039;lg&#039; =&gt; &#039;LG&#039;,
+    &#039;amoi&#039; =&gt; &#039;Amoi&#039;,
+    &#039;xda&#039; =&gt; &#039;XDA&#039;,
+    &#039;mda&#039; =&gt; &#039;MDA&#039;,
+    &#039;vario&#039; =&gt; &#039;Vario&#039;,
+    &#039;htc&#039; =&gt; &#039;HTC&#039;,
+    &#039;samsung&#039; =&gt; &#039;Samsung&#039;,
+    &#039;sharp&#039; =&gt; &#039;Sharp&#039;,
+    &#039;sie-&#039; =&gt; &#039;Siemens&#039;,
+    &#039;alcatel&#039; =&gt; &#039;Alcatel&#039;,
+    &#039;benq&#039; =&gt; &#039;BenQ&#039;,
+    &#039;ipaq&#039; =&gt; &#039;HP iPaq&#039;,
+    &#039;mot-&#039; =&gt; &#039;Motorola&#039;,
+    &#039;playstation portable&#039; =&gt; &#039;PlayStation Portable&#039;,
+    &#039;playstation 3&#039; =&gt; &#039;PlayStation 3&#039;,
+    &#039;playstation vita&#039; =&gt; &#039;PlayStation Vita&#039;,
+    &#039;hiptop&#039; =&gt; &#039;Danger Hiptop&#039;,
+    &#039;nec-&#039; =&gt; &#039;NEC&#039;,
+    &#039;panasonic&#039; =&gt; &#039;Panasonic&#039;,
+    &#039;philips&#039; =&gt; &#039;Philips&#039;,
+    &#039;sagem&#039; =&gt; &#039;Sagem&#039;,
+    &#039;sanyo&#039; =&gt; &#039;Sanyo&#039;,
+    &#039;spv&#039; =&gt; &#039;SPV&#039;,
+    &#039;zte&#039; =&gt; &#039;ZTE&#039;,
+    &#039;sendo&#039; =&gt; &#039;Sendo&#039;,
+    &#039;nintendo dsi&#039; =&gt; &#039;Nintendo DSi&#039;,
+    &#039;nintendo ds&#039; =&gt; &#039;Nintendo DS&#039;,
+    &#039;nintendo 3ds&#039; =&gt; &#039;Nintendo 3DS&#039;,
+    &#039;wii&#039; =&gt; &#039;Nintendo Wii&#039;,
+    &#039;open web&#039; =&gt; &#039;Open Web&#039;,
+    &#039;openweb&#039; =&gt; &#039;OpenWeb&#039;,
+    &#039;android&#039; =&gt; &#039;Android&#039;,
+    &#039;symbian&#039; =&gt; &#039;Symbian&#039;,
+    &#039;SymbianOS&#039; =&gt; &#039;SymbianOS&#039;,
+    &#039;elaine&#039; =&gt; &#039;Palm&#039;,
+    &#039;series60&#039; =&gt; &#039;Symbian S60&#039;,
+    &#039;windows ce&#039; =&gt; &#039;Windows CE&#039;,
+    &#039;obigo&#039; =&gt; &#039;Obigo&#039;,
+    &#039;netfront&#039; =&gt; &#039;Netfront Browser&#039;,
+    &#039;openwave&#039; =&gt; &#039;Openwave Browser&#039;,
+    &#039;mobilexplorer&#039; =&gt; &#039;Mobile Explorer&#039;,
+    &#039;operamini&#039; =&gt; &#039;Opera Mini&#039;,
+    &#039;opera mini&#039; =&gt; &#039;Opera Mini&#039;,
+    &#039;opera mobi&#039; =&gt; &#039;Opera Mobile&#039;,
+    &#039;fennec&#039; =&gt; &#039;Firefox Mobile&#039;,
+    &#039;digital paths&#039; =&gt; &#039;Digital Paths&#039;,
+    &#039;avantgo&#039; =&gt; &#039;AvantGo&#039;,
+    &#039;xiino&#039; =&gt; &#039;Xiino&#039;,
+    &#039;novarra&#039; =&gt; &#039;Novarra Transcoder&#039;,
+    &#039;vodafone&#039; =&gt; &#039;Vodafone&#039;,
+    &#039;docomo&#039; =&gt; &#039;NTT DoCoMo&#039;,
+    &#039;o2&#039; =&gt; &#039;O2&#039;,
+    &#039;mobile&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;wireless&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;j2me&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;midp&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;cldc&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;up.link&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;up.browser&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;smartphone&#039; =&gt; &#039;Generic Mobile&#039;,
+    &#039;cellphone&#039; =&gt; &#039;Generic Mobile&#039;,
+  ),
+  &#039;robots&#039; =&gt; 
+  array (
+    &#039;googlebot&#039; =&gt; &#039;Googlebot&#039;,
+    &#039;msnbot&#039; =&gt; &#039;MSNBot&#039;,
+    &#039;baiduspider&#039; =&gt; &#039;Baiduspider&#039;,
+    &#039;bingbot&#039; =&gt; &#039;Bing&#039;,
+    &#039;slurp&#039; =&gt; &#039;Inktomi Slurp&#039;,
+    &#039;yahoo&#039; =&gt; &#039;Yahoo&#039;,
+    &#039;ask jeeves&#039; =&gt; &#039;Ask Jeeves&#039;,
+    &#039;fastcrawler&#039; =&gt; &#039;FastCrawler&#039;,
+    &#039;infoseek&#039; =&gt; &#039;InfoSeek Robot 1.0&#039;,
+    &#039;lycos&#039; =&gt; &#039;Lycos&#039;,
+    &#039;yandex&#039; =&gt; &#039;YandexBot&#039;,
+    &#039;mediapartners-google&#039; =&gt; &#039;MediaPartners Google&#039;,
+    &#039;CRAZYWEBCRAWLER&#039; =&gt; &#039;Crazy Webcrawler&#039;,
+    &#039;adsbot-google&#039; =&gt; &#039;AdsBot Google&#039;,
+    &#039;feedfetcher-google&#039; =&gt; &#039;Feedfetcher Google&#039;,
+    &#039;curious george&#039; =&gt; &#039;Curious George&#039;,
+    &#039;ia_archiver&#039; =&gt; &#039;Alexa Crawler&#039;,
+    &#039;MJ12bot&#039; =&gt; &#039;Majestic-12&#039;,
+    &#039;Uptimebot&#039; =&gt; &#039;Uptimebot&#039;,
+  ),
+)</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>UserAgent constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__toString">__toString()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getBrowser">getBrowser()</a>
+                </dt>
+                <dd>Gets the Browser name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getBrowserVersion">getBrowserVersion()</a>
+                </dt>
+                <dd>Gets the Browser Version.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMobile">getMobile()</a>
+                </dt>
+                <dd>Gets the Mobile device.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getName">getName()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPlatform">getPlatform()</a>
+                </dt>
+                <dd>Gets the OS Platform.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRobot">getRobot()</a>
+                </dt>
+                <dd>Gets the Robot name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getType">getType()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isBrowser">isBrowser()</a>
+                </dt>
+                <dd>Is Browser.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isMobile">isMobile()</a>
+                </dt>
+                <dd>Is Mobile.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isRobot">isRobot()</a>
+                </dt>
+                <dd>Is Robot.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-jsonSerialize">jsonSerialize()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-toString">toString()</a>
+                </dt>
+                <dd>Get the User-Agent as string.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-compileData">compileData()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-parse">parse()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setBrowser">setBrowser()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMobile">setMobile()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setPlatform">setPlatform()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setRobot">setRobot()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(string $userAgent)</div>
+                                    <p class="phpdocumentor-summary">UserAgent constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$userAgent</span>
+                                                                            — User-Agent string                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__toString">
+                <h4>__toString()</h4>
+                <div class="phpdocumentor-signature">public function __toString(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getBrowser">
+                <h4>getBrowser()</h4>
+                <div class="phpdocumentor-signature">public function getBrowser(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the Browser name.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getBrowserVersion">
+                <h4>getBrowserVersion()</h4>
+                <div class="phpdocumentor-signature">public function getBrowserVersion(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the Browser Version.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMobile">
+                <h4>getMobile()</h4>
+                <div class="phpdocumentor-signature">public function getMobile(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the Mobile device.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getName">
+                <h4>getName()</h4>
+                <div class="phpdocumentor-signature">public function getName(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPlatform">
+                <h4>getPlatform()</h4>
+                <div class="phpdocumentor-signature">public function getPlatform(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the OS Platform.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRobot">
+                <h4>getRobot()</h4>
+                <div class="phpdocumentor-signature">public function getRobot(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the Robot name.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getType">
+                <h4>getType()</h4>
+                <div class="phpdocumentor-signature">public function getType(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isBrowser">
+                <h4>isBrowser()</h4>
+                <div class="phpdocumentor-signature">public function isBrowser(?string $key = NULL): bool</div>
+                                    <p class="phpdocumentor-summary">Is Browser.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$key</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isMobile">
+                <h4>isMobile()</h4>
+                <div class="phpdocumentor-signature">public function isMobile(?string $key = NULL): bool</div>
+                                    <p class="phpdocumentor-summary">Is Mobile.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$key</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isRobot">
+                <h4>isRobot()</h4>
+                <div class="phpdocumentor-signature">public function isRobot(?string $key = NULL): bool</div>
+                                    <p class="phpdocumentor-summary">Is Robot.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$key</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-jsonSerialize">
+                <h4>jsonSerialize()</h4>
+                <div class="phpdocumentor-signature">public function jsonSerialize(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-toString">
+                <h4>toString()</h4>
+                <div class="phpdocumentor-signature">public function toString(): string</div>
+                                    <p class="phpdocumentor-summary">Get the User-Agent as string.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-compileData">
+                <h4>compileData()</h4>
+                <div class="phpdocumentor-signature">protected function compileData(): void</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-parse">
+                <h4>parse()</h4>
+                <div class="phpdocumentor-signature">protected function parse(string $string): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setBrowser">
+                <h4>setBrowser()</h4>
+                <div class="phpdocumentor-signature">protected function setBrowser(): bool</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMobile">
+                <h4>setMobile()</h4>
+                <div class="phpdocumentor-signature">protected function setMobile(): bool</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setPlatform">
+                <h4>setPlatform()</h4>
+                <div class="phpdocumentor-signature">protected function setPlatform(): bool</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setRobot">
+                <h4>setRobot()</h4>
+                <div class="phpdocumentor-signature">protected function setRobot(): bool</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

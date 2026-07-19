@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Language · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Language-Language.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Language Language</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Language            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Language\Language</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Language.</p>
+                
+                        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/language/src/Language.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-currentLocale">$currentLocale</a>
+                </dt>
+                <dd>The current locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-defaultLocale">$defaultLocale</a>
+                </dt>
+                <dd>The default locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-directories">$directories</a>
+                </dt>
+                <dd>List of directories to find for files.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-fallbackLevel">$fallbackLevel</a>
+                </dt>
+                <dd>The locale fallback level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-findedLocales">$findedLocales</a>
+                </dt>
+                <dd>List with locales of already scanned directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-languages">$languages</a>
+                </dt>
+                <dd>Language lines.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-supportedLocales">$supportedLocales</a>
+                </dt>
+                <dd>Supported locales. Any other will be ignored.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-debugCollector">$debugCollector</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-currentLocale">
+                <h4>$currentLocale</h4>
+                <div class="phpdocumentor-signature">protected string $currentLocale</div>
+                                    <p class="phpdocumentor-summary">The current locale.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-defaultLocale">
+                <h4>$defaultLocale</h4>
+                <div class="phpdocumentor-signature">protected string $defaultLocale</div>
+                                    <p class="phpdocumentor-summary">The default locale.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-directories">
+                <h4>$directories</h4>
+                <div class="phpdocumentor-signature">protected array $directories = array (
+)</div>
+                                    <p class="phpdocumentor-summary">List of directories to find for files.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-fallbackLevel">
+                <h4>$fallbackLevel</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Language\FallbackLevel $fallbackLevel = \Framework\Language\FallbackLevel::default</div>
+                                    <p class="phpdocumentor-summary">The locale fallback level.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-findedLocales">
+                <h4>$findedLocales</h4>
+                <div class="phpdocumentor-signature">protected array $findedLocales = array (
+)</div>
+                                    <p class="phpdocumentor-summary">List with locales of already scanned directories.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-languages">
+                <h4>$languages</h4>
+                <div class="phpdocumentor-signature">protected array $languages = array (
+)</div>
+                                    <p class="phpdocumentor-summary">Language lines.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-supportedLocales">
+                <h4>$supportedLocales</h4>
+                <div class="phpdocumentor-signature">protected array $supportedLocales = array (
+)</div>
+                                    <p class="phpdocumentor-summary">Supported locales. Any other will be ignored.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-debugCollector">
+                <h4>$debugCollector</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Language\Debug\LanguageCollector $debugCollector</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Language constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addDirectory">addDirectory()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addLines">addLines()</a>
+                </dt>
+                <dd>Adds custom lines for a specific locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-currency">currency()</a>
+                </dt>
+                <dd>Gets a currency value formatted in a given locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-date">date()</a>
+                </dt>
+                <dd>Gets a formatted date in a given locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-formatMessage">formatMessage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCurrentLocale">getCurrentLocale()</a>
+                </dt>
+                <dd>Gets the current locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCurrentLocaleDirection">getCurrentLocaleDirection()</a>
+                </dt>
+                <dd>Gets the current locale directionality.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDefaultLocale">getDefaultLocale()</a>
+                </dt>
+                <dd>Gets the default locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDirectories">getDirectories()</a>
+                </dt>
+                <dd>Gets the list of directories where language files can be finded.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFallbackLevel">getFallbackLevel()</a>
+                </dt>
+                <dd>Gets the Fallback Level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLines">getLines()</a>
+                </dt>
+                <dd>Gets the list of available locales, lines and texts.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLocaleDirection">getLocaleDirection()</a>
+                </dt>
+                <dd>Gets text directionality based on locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getSupportedLocales">getSupportedLocales()</a>
+                </dt>
+                <dd>Gets the list of Supported Locales.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-hasLine">hasLine()</a>
+                </dt>
+                <dd>Checks if Language has a line.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-lang">lang()</a>
+                </dt>
+                <dd>Renders a language file line with dot notation format.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ordinal">ordinal()</a>
+                </dt>
+                <dd>Gets an ordinal number in a given locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-render">render()</a>
+                </dt>
+                <dd>Renders a language file line.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-resetLines">resetLines()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setCurrentLocale">setCurrentLocale()</a>
+                </dt>
+                <dd>Sets the current locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDebugCollector">setDebugCollector()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDefaultLocale">setDefaultLocale()</a>
+                </dt>
+                <dd>Sets the default locale.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDirectories">setDirectories()</a>
+                </dt>
+                <dd>Sets a list of directories where language files can be found.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setFallbackLevel">setFallbackLevel()</a>
+                </dt>
+                <dd>Sets the Fallback Level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setSupportedLocales">setSupportedLocales()</a>
+                </dt>
+                <dd>Sets a list of Supported Locales.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addFindedLocale">addFindedLocale()</a>
+                </dt>
+                <dd>Adds a locale to the list of already scanned directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-findFilenames">findFilenames()</a>
+                </dt>
+                <dd>Find for absolute file paths from where language lines can be loaded.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-findLines">findLines()</a>
+                </dt>
+                <dd>Find and add lines.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFallbackLine">getFallbackLine()</a>
+                </dt>
+                <dd>Gets a text line and locale according the Fallback Level.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFileLines">getFileLines()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLine">getLine()</a>
+                </dt>
+                <dd>Gets a language line text.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRenderedLine">getRenderedLine()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isFindedLocale">isFindedLocale()</a>
+                </dt>
+                <dd>Tells if a locale already was found in the directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-reindex">reindex()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(string $locale = &#039;en&#039;, array $directories = array (
+))</div>
+                                    <p class="phpdocumentor-summary">Language constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The default (and current) locale code                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$directories</span>
+                                                                            — List of directory paths to find for language files                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addDirectory">
+                <h4>addDirectory()</h4>
+                <div class="phpdocumentor-signature">public function addDirectory(string $directory): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$directory</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addLines">
+                <h4>addLines()</h4>
+                <div class="phpdocumentor-signature">public function addLines(string $locale, string $file, array $lines): static</div>
+                                    <p class="phpdocumentor-summary">Adds custom lines for a specific locale.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Useful to set lines from a database or any parsed file.</p>
+                                                    <p>NOTE: This function will always replace the old lines, as given from files.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The locale code                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The file name                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$lines</span>
+                                                                            — An array of &quot;line&quot; =&gt; &quot;text&quot;                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-currency">
+                <h4>currency()</h4>
+                <div class="phpdocumentor-signature">public function currency(float $value, string $currency, ?string $locale = NULL): string</div>
+                                    <p class="phpdocumentor-summary">Gets a currency value formatted in a given locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">float</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                            — The money value                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$currency</span>
+                                                                            — The Currency code. i.e. USD, BRL, JPY                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-date">
+                <h4>date()</h4>
+                <div class="phpdocumentor-signature">public function date(int $time, ?string $style = NULL, ?string $locale = NULL): string</div>
+                                    <p class="phpdocumentor-summary">Gets a formatted date in a given locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$time</span>
+                                                                            — An Unix timestamp                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$style</span>
+                                                                            — One of: short, medium, long or full. Leave null to use short                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException for invalid style format</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-formatMessage">
+                <h4>formatMessage()</h4>
+                <div class="phpdocumentor-signature">public function formatMessage(string $text, array $args = array (
+), ?string $locale = NULL): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$text</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$args</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCurrentLocale">
+                <h4>getCurrentLocale()</h4>
+                <div class="phpdocumentor-signature">public function getCurrentLocale(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the current locale.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCurrentLocaleDirection">
+                <h4>getCurrentLocaleDirection()</h4>
+                <div class="phpdocumentor-signature">public function getCurrentLocaleDirection(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the current locale directionality.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — &#039;ltr&#039; for Left-To-Right ot &#039;rtl&#039; for Right-To-Left                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDefaultLocale">
+                <h4>getDefaultLocale()</h4>
+                <div class="phpdocumentor-signature">public function getDefaultLocale(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the default locale.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDirectories">
+                <h4>getDirectories()</h4>
+                <div class="phpdocumentor-signature">public function getDirectories(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the list of directories where language files can be finded.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFallbackLevel">
+                <h4>getFallbackLevel()</h4>
+                <div class="phpdocumentor-signature">public function getFallbackLevel(): \Framework\Language\FallbackLevel</div>
+                                    <p class="phpdocumentor-summary">Gets the Fallback Level.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Language\FallbackLevel</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLines">
+                <h4>getLines()</h4>
+                <div class="phpdocumentor-signature">public function getLines(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the list of available locales, lines and texts.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLocaleDirection">
+                <h4>getLocaleDirection()</h4>
+                <div class="phpdocumentor-signature">public static function getLocaleDirection(string $locale): string</div>
+                                    <p class="phpdocumentor-summary">Gets text directionality based on locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The locale code                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — &#039;ltr&#039; for Left-To-Right ot &#039;rtl&#039; for Right-To-Left                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getSupportedLocales">
+                <h4>getSupportedLocales()</h4>
+                <div class="phpdocumentor-signature">public function getSupportedLocales(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the list of Supported Locales.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-hasLine">
+                <h4>hasLine()</h4>
+                <div class="phpdocumentor-signature">public function hasLine(string $file, string $line, ?string $locale = NULL): bool</div>
+                                    <p class="phpdocumentor-summary">Checks if Language has a line.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The file                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                            — The file line                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                                    — True if the line is found, otherwise false                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-lang">
+                <h4>lang()</h4>
+                <div class="phpdocumentor-signature">public function lang(string $line, array $args = array (
+), ?string $locale = NULL): ?string</div>
+                                    <p class="phpdocumentor-summary">Renders a language file line with dot notation format.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>E.g. home.hello matches home for file and hello for line.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                            — The dot notation file line                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$args</span>
+                                                                            — The arguments to be used in the formatted text                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The rendered text or null if not found                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ordinal">
+                <h4>ordinal()</h4>
+                <div class="phpdocumentor-signature">public function ordinal(int $number, ?string $locale = NULL): string</div>
+                                    <p class="phpdocumentor-summary">Gets an ordinal number in a given locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$number</span>
+                                                                            — The number to be converted to ordinal                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-render">
+                <h4>render()</h4>
+                <div class="phpdocumentor-signature">public function render(string $file, string $line, array $args = array (
+), ?string $locale = NULL): string</div>
+                                    <p class="phpdocumentor-summary">Renders a language file line.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The file                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                            — The file line                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$args</span>
+                                                                            — The arguments to be used in the formatted text                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — A custom locale or null to use the current                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — The rendered text or file.line expression                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-resetLines">
+                <h4>resetLines()</h4>
+                <div class="phpdocumentor-signature">public function resetLines(): static</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setCurrentLocale">
+                <h4>setCurrentLocale()</h4>
+                <div class="phpdocumentor-signature">public function setCurrentLocale(string $locale): static</div>
+                                    <p class="phpdocumentor-summary">Sets the current locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The current locale. This automatically is set as one of Supported Locales.                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDebugCollector">
+                <h4>setDebugCollector()</h4>
+                <div class="phpdocumentor-signature">public function setDebugCollector(\Framework\Language\Debug\LanguageCollector $debugCollector): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Language\Debug\LanguageCollector</span>
+                                                                        <span class="phpdocumentor-parameters__name">$debugCollector</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDefaultLocale">
+                <h4>setDefaultLocale()</h4>
+                <div class="phpdocumentor-signature">public function setDefaultLocale(string $locale): static</div>
+                                    <p class="phpdocumentor-summary">Sets the default locale.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The default locale. This automatically is set as one of Supported Locales.                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDirectories">
+                <h4>setDirectories()</h4>
+                <div class="phpdocumentor-signature">public function setDirectories(array $directories): static</div>
+                                    <p class="phpdocumentor-summary">Sets a list of directories where language files can be found.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$directories</span>
+                                                                            — a list of valid directory paths                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException if a directory path is inaccessible</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setFallbackLevel">
+                <h4>setFallbackLevel()</h4>
+                <div class="phpdocumentor-signature">public function setFallbackLevel(\Framework\Language\FallbackLevel|int $level): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Fallback Level.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Language\FallbackLevel|int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$level</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setSupportedLocales">
+                <h4>setSupportedLocales()</h4>
+                <div class="phpdocumentor-signature">public function setSupportedLocales(array $locales): static</div>
+                                    <p class="phpdocumentor-summary">Sets a list of Supported Locales.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>NOTE: the default locale always is supported. But the current can be exclude<br />
+if this function is called after {@see Language::setCurrentLocale()}.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locales</span>
+                                                                            — the supported locales                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addFindedLocale">
+                <h4>addFindedLocale()</h4>
+                <div class="phpdocumentor-signature">protected function addFindedLocale(string $locale): static</div>
+                                    <p class="phpdocumentor-summary">Adds a locale to the list of already scanned directories.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-findFilenames">
+                <h4>findFilenames()</h4>
+                <div class="phpdocumentor-signature">protected function findFilenames(string $locale, string $file): array</div>
+                                    <p class="phpdocumentor-summary">Find for absolute file paths from where language lines can be loaded.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The required locale                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The required file                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — a list of valid filenames                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-findLines">
+                <h4>findLines()</h4>
+                <div class="phpdocumentor-signature">protected function findLines(string $locale, string $file): static</div>
+                                    <p class="phpdocumentor-summary">Find and add lines.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This method can be overridden to find lines in custom storage, such as<br />
+in a database table.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFallbackLine">
+                <h4>getFallbackLine()</h4>
+                <div class="phpdocumentor-signature">protected function getFallbackLine(string $locale, string $file, string $line): array</div>
+                                    <p class="phpdocumentor-summary">Gets a text line and locale according the Fallback Level.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The locale to get his fallback line                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The file                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                            — The line                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Two numeric keys containg the used locale and text                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFileLines">
+                <h4>getFileLines()</h4>
+                <div class="phpdocumentor-signature">protected function getFileLines(string $filename): array</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLine">
+                <h4>getLine()</h4>
+                <div class="phpdocumentor-signature">protected function getLine(string $locale, string $file, string $line): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets a language line text.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The required locale                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — The required file                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                            — The required line                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The text of the line or null if the line is not found                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRenderedLine">
+                <h4>getRenderedLine()</h4>
+                <div class="phpdocumentor-signature">protected function getRenderedLine(string $file, string $line, array $args = array (
+), ?string $locale = NULL): array</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$line</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$args</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isFindedLocale">
+                <h4>isFindedLocale()</h4>
+                <div class="phpdocumentor-signature">protected function isFindedLocale(string $locale): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if a locale already was found in the directories.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$locale</span>
+                                                                            — The locale                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-reindex">
+                <h4>reindex()</h4>
+                <div class="phpdocumentor-signature">protected function reindex(): void</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

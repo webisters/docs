@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Message · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Email-Message.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Email Message</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Message            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Email\Message</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Message.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/Stringable.html"><code>Stringable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/email/src/Message.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mailer">$mailer</a>
+                </dt>
+                <dd>The Mailer instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-boundary">$boundary</a>
+                </dt>
+                <dd>The message boundary.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-headers">$headers</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-attachments">$attachments</a>
+                </dt>
+                <dd>A list of attachments with Content-Disposition equals `attachment`.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-inlineAttachments">$inlineAttachments</a>
+                </dt>
+                <dd>An associative array of attachments with Content-Disposition equals `inline`.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-plainMessage">$plainMessage</a>
+                </dt>
+                <dd>The plain text message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-htmlMessage">$htmlMessage</a>
+                </dt>
+                <dd>The HTML message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-to">$to</a>
+                </dt>
+                <dd>An associative array used in the `To` header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-cc">$cc</a>
+                </dt>
+                <dd>An associative array used in the `Cc` header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-bcc">$bcc</a>
+                </dt>
+                <dd>An associative array used in the `Bcc` header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-replyTo">$replyTo</a>
+                </dt>
+                <dd>An associative array used in the `Reply-To` header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-from">$from</a>
+                </dt>
+                <dd>The values used in the `From` header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-date">$date</a>
+                </dt>
+                <dd>The message Date.</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-mailer">
+                <h4>$mailer</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Email\Mailer $mailer</div>
+                                    <p class="phpdocumentor-summary">The Mailer instance.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-boundary">
+                <h4>$boundary</h4>
+                <div class="phpdocumentor-signature">protected string $boundary</div>
+                                    <p class="phpdocumentor-summary">The message boundary.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-headers">
+                <h4>$headers</h4>
+                <div class="phpdocumentor-signature">protected array $headers = array (
+  &#039;mime-version&#039; =&gt; &#039;1.0&#039;,
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-attachments">
+                <h4>$attachments</h4>
+                <div class="phpdocumentor-signature">protected array $attachments = array (
+)</div>
+                                    <p class="phpdocumentor-summary">A list of attachments with Content-Disposition equals `attachment`.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-inlineAttachments">
+                <h4>$inlineAttachments</h4>
+                <div class="phpdocumentor-signature">protected array $inlineAttachments = array (
+)</div>
+                                    <p class="phpdocumentor-summary">An associative array of attachments with Content-Disposition equals `inline`.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-plainMessage">
+                <h4>$plainMessage</h4>
+                <div class="phpdocumentor-signature">protected string $plainMessage</div>
+                                    <p class="phpdocumentor-summary">The plain text message.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-htmlMessage">
+                <h4>$htmlMessage</h4>
+                <div class="phpdocumentor-signature">protected string $htmlMessage</div>
+                                    <p class="phpdocumentor-summary">The HTML message.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-to">
+                <h4>$to</h4>
+                <div class="phpdocumentor-signature">protected array $to = array (
+)</div>
+                                    <p class="phpdocumentor-summary">An associative array used in the `To` header.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-cc">
+                <h4>$cc</h4>
+                <div class="phpdocumentor-signature">protected array $cc = array (
+)</div>
+                                    <p class="phpdocumentor-summary">An associative array used in the `Cc` header.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-bcc">
+                <h4>$bcc</h4>
+                <div class="phpdocumentor-signature">protected array $bcc = array (
+)</div>
+                                    <p class="phpdocumentor-summary">An associative array used in the `Bcc` header.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-replyTo">
+                <h4>$replyTo</h4>
+                <div class="phpdocumentor-signature">protected array $replyTo = array (
+)</div>
+                                    <p class="phpdocumentor-summary">An associative array used in the `Reply-To` header.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-from">
+                <h4>$from</h4>
+                <div class="phpdocumentor-signature">protected array $from = array (
+)</div>
+                                    <p class="phpdocumentor-summary">The values used in the `From` header.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-date">
+                <h4>$date</h4>
+                <div class="phpdocumentor-signature">protected ?string $date = NULL</div>
+                                    <p class="phpdocumentor-summary">The message Date.</p>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__toString">__toString()</a>
+                </dt>
+                <dd>Render the Message as string.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addAttachment">addAttachment()</a>
+                </dt>
+                <dd>Add a filename to be attached.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addBcc">addBcc()</a>
+                </dt>
+                <dd>Add address and name in the Bcc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addCc">addCc()</a>
+                </dt>
+                <dd>Add address and name in the Cc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addReplyTo">addReplyTo()</a>
+                </dt>
+                <dd>Add address and name in the Reply-To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addTo">addTo()</a>
+                </dt>
+                <dd>Add address and name in the To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getAttachments">getAttachments()</a>
+                </dt>
+                <dd>Get a lis of attachments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getBcc">getBcc()</a>
+                </dt>
+                <dd>Get items of the Bcc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getBoundary">getBoundary()</a>
+                </dt>
+                <dd>Get the boundary.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCc">getCc()</a>
+                </dt>
+                <dd>Get items of the Cc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDate">getDate()</a>
+                </dt>
+                <dd>Get the Date header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFrom">getFrom()</a>
+                </dt>
+                <dd>Get the From header items.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFromAddress">getFromAddress()</a>
+                </dt>
+                <dd>Get the email address of the From header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFromName">getFromName()</a>
+                </dt>
+                <dd>Get the name of the From header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getHeader">getHeader()</a>
+                </dt>
+                <dd>Get a header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getHeaderLines">getHeaderLines()</a>
+                </dt>
+                <dd>Get header lines.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getHeaders">getHeaders()</a>
+                </dt>
+                <dd>Get all headers set.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getHtmlMessage">getHtmlMessage()</a>
+                </dt>
+                <dd>Get the text/html message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getInlineAttachments">getInlineAttachments()</a>
+                </dt>
+                <dd>Get a lis of inline attachments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPlainMessage">getPlainMessage()</a>
+                </dt>
+                <dd>Get the text/plain message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRecipients">getRecipients()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getReplyTo">getReplyTo()</a>
+                </dt>
+                <dd>Get items of the Reply-To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getSubject">getSubject()</a>
+                </dt>
+                <dd>Get the Subject header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getTo">getTo()</a>
+                </dt>
+                <dd>Get items of the To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getXMailer">getXMailer()</a>
+                </dt>
+                <dd>Get the X-Mailer header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getXPriority">getXPriority()</a>
+                </dt>
+                <dd>Get the X-Priority header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeBcc">removeBcc()</a>
+                </dt>
+                <dd>Remove all items of the Bcc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeCc">removeCc()</a>
+                </dt>
+                <dd>Remove all items of the Cc header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeFrom">removeFrom()</a>
+                </dt>
+                <dd>Remove all items of the From header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeHeader">removeHeader()</a>
+                </dt>
+                <dd>Remove a header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeReplyTo">removeReplyTo()</a>
+                </dt>
+                <dd>Remove all items of the Reply-To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-removeTo">removeTo()</a>
+                </dt>
+                <dd>Remove all items of the To header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setBoundary">setBoundary()</a>
+                </dt>
+                <dd>Set the boundary.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDate">setDate()</a>
+                </dt>
+                <dd>Set the Date header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setFrom">setFrom()</a>
+                </dt>
+                <dd>Set the From header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setHeader">setHeader()</a>
+                </dt>
+                <dd>Set a header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setHtmlMessage">setHtmlMessage()</a>
+                </dt>
+                <dd>Set the text/html message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setInlineAttachment">setInlineAttachment()</a>
+                </dt>
+                <dd>Set a filename to be attached inline (image).</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMailer">setMailer()</a>
+                </dt>
+                <dd>Set the Mailer instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setPlainMessage">setPlainMessage()</a>
+                </dt>
+                <dd>Set the text/plain message.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setSubject">setSubject()</a>
+                </dt>
+                <dd>Set the Subject header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setXMailer">setXMailer()</a>
+                </dt>
+                <dd>Set the X-Mailer header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setXPriority">setXPriority()</a>
+                </dt>
+                <dd>Set the X-Priority header.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-formatAddress">formatAddress()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-formatAddressList">formatAddressList()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCharset">getCharset()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getContentType">getContentType()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCrlf">getCrlf()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-prepareHeaders">prepareHeaders()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderAttachments">renderAttachments()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderData">renderData()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderHeaders">renderHeaders()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderHtmlMessage">renderHtmlMessage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderInlineAttachments">renderInlineAttachments()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderMessage">renderMessage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderPlainMessage">renderPlainMessage()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__toString">
+                <h4>__toString()</h4>
+                <div class="phpdocumentor-signature">public function __toString(): string</div>
+                                    <p class="phpdocumentor-summary">Render the Message as string.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addAttachment">
+                <h4>addAttachment()</h4>
+                <div class="phpdocumentor-signature">public function addAttachment(string $filename): static</div>
+                                    <p class="phpdocumentor-summary">Add a filename to be attached.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                            — The filename                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addBcc">
+                <h4>addBcc()</h4>
+                <div class="phpdocumentor-signature">public function addBcc(string $address, ?string $name = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Add address and name in the Bcc header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                            — The email address                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The name or null to don&#039;t set                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addCc">
+                <h4>addCc()</h4>
+                <div class="phpdocumentor-signature">public function addCc(string $address, ?string $name = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Add address and name in the Cc header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                            — The email address                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The name or null to don&#039;t set                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addReplyTo">
+                <h4>addReplyTo()</h4>
+                <div class="phpdocumentor-signature">public function addReplyTo(string $address, ?string $name = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Add address and name in the Reply-To header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                            — The email address                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The name or null to don&#039;t set                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addTo">
+                <h4>addTo()</h4>
+                <div class="phpdocumentor-signature">public function addTo(string $address, ?string $name = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Add address and name in the To header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                            — The email address                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The name or null to don&#039;t set                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getAttachments">
+                <h4>getAttachments()</h4>
+                <div class="phpdocumentor-signature">public function getAttachments(): array</div>
+                                    <p class="phpdocumentor-summary">Get a lis of attachments.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Array of filenames                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getBcc">
+                <h4>getBcc()</h4>
+                <div class="phpdocumentor-signature">public function getBcc(): array</div>
+                                    <p class="phpdocumentor-summary">Get items of the Bcc header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Emails as keys and names as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getBoundary">
+                <h4>getBoundary()</h4>
+                <div class="phpdocumentor-signature">public function getBoundary(): string</div>
+                                    <p class="phpdocumentor-summary">Get the boundary.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RandomException</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCc">
+                <h4>getCc()</h4>
+                <div class="phpdocumentor-signature">public function getCc(): array</div>
+                                    <p class="phpdocumentor-summary">Get items of the Cc header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Emails as keys and names as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDate">
+                <h4>getDate()</h4>
+                <div class="phpdocumentor-signature">public function getDate(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the Date header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The header value or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFrom">
+                <h4>getFrom()</h4>
+                <div class="phpdocumentor-signature">public function getFrom(): array</div>
+                                    <p class="phpdocumentor-summary">Get the From header items.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — email address in key 0 and name in key 1                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFromAddress">
+                <h4>getFromAddress()</h4>
+                <div class="phpdocumentor-signature">public function getFromAddress(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the email address of the From header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The email or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFromName">
+                <h4>getFromName()</h4>
+                <div class="phpdocumentor-signature">public function getFromName(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the name of the From header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The name or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getHeader">
+                <h4>getHeader()</h4>
+                <div class="phpdocumentor-signature">public function getHeader(string $name): ?string</div>
+                                    <p class="phpdocumentor-summary">Get a header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The header name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The header value or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getHeaderLines">
+                <h4>getHeaderLines()</h4>
+                <div class="phpdocumentor-signature">public function getHeaderLines(): array</div>
+                                    <p class="phpdocumentor-summary">Get header lines.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — The header lines                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getHeaders">
+                <h4>getHeaders()</h4>
+                <div class="phpdocumentor-signature">public function getHeaders(): array</div>
+                                    <p class="phpdocumentor-summary">Get all headers set.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — The header names, in lowercase, as keys and the values as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getHtmlMessage">
+                <h4>getHtmlMessage()</h4>
+                <div class="phpdocumentor-signature">public function getHtmlMessage(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the text/html message.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The text/html message or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getInlineAttachments">
+                <h4>getInlineAttachments()</h4>
+                <div class="phpdocumentor-signature">public function getInlineAttachments(): array</div>
+                                    <p class="phpdocumentor-summary">Get a lis of inline attachments.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Content-IDs as keys and filenames as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPlainMessage">
+                <h4>getPlainMessage()</h4>
+                <div class="phpdocumentor-signature">public function getPlainMessage(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the text/plain message.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The message or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRecipients">
+                <h4>getRecipients()</h4>
+                <div class="phpdocumentor-signature">public function getRecipients(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getReplyTo">
+                <h4>getReplyTo()</h4>
+                <div class="phpdocumentor-signature">public function getReplyTo(): array</div>
+                                    <p class="phpdocumentor-summary">Get items of the Reply-To header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Emails as keys and names as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getSubject">
+                <h4>getSubject()</h4>
+                <div class="phpdocumentor-signature">public function getSubject(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the Subject header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The header value or null if not set                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getTo">
+                <h4>getTo()</h4>
+                <div class="phpdocumentor-signature">public function getTo(): array</div>
+                                    <p class="phpdocumentor-summary">Get items of the To header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — Emails as keys and names as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getXMailer">
+                <h4>getXMailer()</h4>
+                <div class="phpdocumentor-signature">public function getXMailer(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get the X-Mailer header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                                    — The X-Mailer header or null                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getXPriority">
+                <h4>getXPriority()</h4>
+                <div class="phpdocumentor-signature">public function getXPriority(): ?\Framework\Email\XPriority</div>
+                                    <p class="phpdocumentor-summary">Get the X-Priority header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Email\XPriority</span>
+                                                    — The {@see XPriority} case or null                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeBcc">
+                <h4>removeBcc()</h4>
+                <div class="phpdocumentor-signature">public function removeBcc(): static</div>
+                                    <p class="phpdocumentor-summary">Remove all items of the Bcc header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeCc">
+                <h4>removeCc()</h4>
+                <div class="phpdocumentor-signature">public function removeCc(): static</div>
+                                    <p class="phpdocumentor-summary">Remove all items of the Cc header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeFrom">
+                <h4>removeFrom()</h4>
+                <div class="phpdocumentor-signature">public function removeFrom(): static</div>
+                                    <p class="phpdocumentor-summary">Remove all items of the From header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeHeader">
+                <h4>removeHeader()</h4>
+                <div class="phpdocumentor-signature">public function removeHeader(string $name): static</div>
+                                    <p class="phpdocumentor-summary">Remove a header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The header name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeReplyTo">
+                <h4>removeReplyTo()</h4>
+                <div class="phpdocumentor-signature">public function removeReplyTo(): static</div>
+                                    <p class="phpdocumentor-summary">Remove all items of the Reply-To header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-removeTo">
+                <h4>removeTo()</h4>
+                <div class="phpdocumentor-signature">public function removeTo(): static</div>
+                                    <p class="phpdocumentor-summary">Remove all items of the To header.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setBoundary">
+                <h4>setBoundary()</h4>
+                <div class="phpdocumentor-signature">public function setBoundary(?string $boundary = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Set the boundary.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$boundary</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RandomException</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDate">
+                <h4>setDate()</h4>
+                <div class="phpdocumentor-signature">public function setDate(?DateTime $datetime = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Set the Date header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?DateTime</span>
+                                                                        <span class="phpdocumentor-parameters__name">$datetime</span>
+                                                                            — A custom DateTime or null to set the current datetime                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setFrom">
+                <h4>setFrom()</h4>
+                <div class="phpdocumentor-signature">public function setFrom(string $address, ?string $name = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Set the From header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                            — The email address                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The name or null to don&#039;t set                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setHeader">
+                <h4>setHeader()</h4>
+                <div class="phpdocumentor-signature">public function setHeader(string $name, string $value): static</div>
+                                    <p class="phpdocumentor-summary">Set a header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The header name                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                            — The header value                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setHtmlMessage">
+                <h4>setHtmlMessage()</h4>
+                <div class="phpdocumentor-signature">public function setHtmlMessage(string $message): static</div>
+                                    <p class="phpdocumentor-summary">Set the text/html message.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                            — The text/html message                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setInlineAttachment">
+                <h4>setInlineAttachment()</h4>
+                <div class="phpdocumentor-signature">public function setInlineAttachment(string $filename, string $cid): static</div>
+                                    <p class="phpdocumentor-summary">Set a filename to be attached inline (image).</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                            — The filename                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$cid</span>
+                                                                            — The Content-ID                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMailer">
+                <h4>setMailer()</h4>
+                <div class="phpdocumentor-signature">public function setMailer(\Framework\Email\Mailer $mailer): static</div>
+                                    <p class="phpdocumentor-summary">Set the Mailer instance.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Email\Mailer</span>
+                                                                        <span class="phpdocumentor-parameters__name">$mailer</span>
+                                                                            — The Mailer instance                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setPlainMessage">
+                <h4>setPlainMessage()</h4>
+                <div class="phpdocumentor-signature">public function setPlainMessage(string $message): static</div>
+                                    <p class="phpdocumentor-summary">Set the text/plain message.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                            — The text/plain message                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setSubject">
+                <h4>setSubject()</h4>
+                <div class="phpdocumentor-signature">public function setSubject(string $subject): static</div>
+                                    <p class="phpdocumentor-summary">Set the Subject header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$subject</span>
+                                                                            — The header value                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setXMailer">
+                <h4>setXMailer()</h4>
+                <div class="phpdocumentor-signature">public function setXMailer(?string $xMailer = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Set the X-Mailer header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$xMailer</span>
+                                                                            — The X-Mailer header or null to set the default                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setXPriority">
+                <h4>setXPriority()</h4>
+                <div class="phpdocumentor-signature">public function setXPriority(\Framework\Email\XPriority $priority): static</div>
+                                    <p class="phpdocumentor-summary">Set the X-Priority header.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Email\XPriority</span>
+                                                                        <span class="phpdocumentor-parameters__name">$priority</span>
+                                                                            — The {@see XPriority} case                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-formatAddress">
+                <h4>formatAddress()</h4>
+                <div class="phpdocumentor-signature">protected static function formatAddress(string $address, ?string $name = NULL): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$address</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-formatAddressList">
+                <h4>formatAddressList()</h4>
+                <div class="phpdocumentor-signature">protected static function formatAddressList(array $addresses): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$addresses</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCharset">
+                <h4>getCharset()</h4>
+                <div class="phpdocumentor-signature">protected function getCharset(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getContentType">
+                <h4>getContentType()</h4>
+                <div class="phpdocumentor-signature">protected function getContentType(string $filename): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filename</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCrlf">
+                <h4>getCrlf()</h4>
+                <div class="phpdocumentor-signature">protected function getCrlf(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-prepareHeaders">
+                <h4>prepareHeaders()</h4>
+                <div class="phpdocumentor-signature">protected function prepareHeaders(): void</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderAttachments">
+                <h4>renderAttachments()</h4>
+                <div class="phpdocumentor-signature">protected function renderAttachments(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderData">
+                <h4>renderData()</h4>
+                <div class="phpdocumentor-signature">protected function renderData(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderHeaders">
+                <h4>renderHeaders()</h4>
+                <div class="phpdocumentor-signature">protected function renderHeaders(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderHtmlMessage">
+                <h4>renderHtmlMessage()</h4>
+                <div class="phpdocumentor-signature">protected function renderHtmlMessage(): ?string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderInlineAttachments">
+                <h4>renderInlineAttachments()</h4>
+                <div class="phpdocumentor-signature">protected function renderInlineAttachments(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderMessage">
+                <h4>renderMessage()</h4>
+                <div class="phpdocumentor-signature">protected function renderMessage(string $message, string $contentType = &#039;text/html&#039;): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$contentType</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderPlainMessage">
+                <h4>renderPlainMessage()</h4>
+                <div class="phpdocumentor-signature">protected function renderPlainMessage(): ?string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

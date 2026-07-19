@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../../../"
+      data-current-page="guides/libraries/validation/index.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../../../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../../../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../../../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../../../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group is-open" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item is-active" href="../../../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../../../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../../../packages/app.html">app</a></li>
+                            <li><a class="" href="../../../packages/api.html">api</a></li>
+                            <li><a class="" href="../../../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../../../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../../../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../../../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../../../packages/config.html">config</a></li>
+                            <li><a class="" href="../../../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../../../packages/database.html">database</a></li>
+                            <li><a class="" href="../../../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../../../packages/date.html">date</a></li>
+                            <li><a class="" href="../../../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../../../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../../../packages/email.html">email</a></li>
+                            <li><a class="" href="../../../packages/events.html">events</a></li>
+                            <li><a class="" href="../../../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../../../packages/front.html">front</a></li>
+                            <li><a class="" href="../../../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../../../packages/http.html">http</a></li>
+                            <li><a class="" href="../../../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../../../packages/image.html">image</a></li>
+                            <li><a class="" href="../../../packages/language.html">language</a></li>
+                            <li><a class="" href="../../../packages/log.html">log</a></li>
+                            <li><a class="" href="../../../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../../../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../../../packages/one.html">one</a></li>
+                            <li><a class="" href="../../../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../../../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../../../packages/session.html">session</a></li>
+                            <li><a class="" href="../../../packages/site.html">site</a></li>
+                            <li><a class="" href="../../../packages/template.html">template</a></li>
+                            <li><a class="" href="../../../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../../../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../../../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Guides</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Validation</li>
+                        </ol>
+</nav>
+<div class="section" id="validation">
+<h1>Validation</h1>
+<p>Webisters Validation Library.</p>
+<ul>
+    <li>
+            <a href="#installation">Installation</a>
+        </li>
+    <li>
+            <a href="#basic-usage">Basic Usage</a>
+        </li>
+    <li>
+            <a href="#setting-rules">Setting Rules</a>
+        </li>
+    <li>
+            <a href="#setting-labels">Setting Labels</a>
+        </li>
+    <li>
+            <a href="#getting-errors">Getting Errors</a>
+        </li>
+    <li>
+            <a href="#validating">Validating</a>
+        </li>
+    <li>
+            <a href="#working-with-arrays">Working with Arrays</a>
+        </li>
+    <li>
+            <a href="#custom-validator">Custom Validator</a>
+        </li>
+    <li>
+            <a href="#available-rules">Available Rules</a>
+        </li>
+    <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>The installation of this library can be done with Composer:</p>
+<pre><code class="language- " >composer require Webisters/validation
+</code></pre>
+</div>
+<div class="section" id="basic-usage">
+<h2>Basic Usage</h2>
+<p>Validation logic typically occurs as follows:</p>
+<pre><code class="language-php " >use Framework\Validation\Validation;
+$validation = new Validation();
+$validation-&gt;setRule(&#039;email&#039;, &#039;required|email&#039;); // static
+$validated = $validation-&gt;validate($_POST); // bool
+if ($validated) {
+    echo &#039;Validated!&#039;;
+} else {
+    echo &#039;Invalid data:&#039;;
+    echo &#039;&lt;ul&gt;&#039;;
+    foreach ($validation-&gt;getErrors() as $error) {
+        echo &quot;&lt;li&gt;{$error}&lt;/li&gt;&quot;;
+    }
+    echo &#039;&lt;/ul&gt;&#039;;
+}
+</code></pre>
+<p>First load the Validation class. Then the rules are set and finally validated.
+Then a response is shown if the validation was valid or not.</p>
+</div>
+<div class="section" id="setting-rules">
+<h2>Setting Rules</h2>
+<p>Rules can be set individually by the <code>setRule</code> method or several at once by
+<code>setRules</code>. The first argument is the name of the field and the second is the
+rules, which can be defined by string separating them with a pipe or by having
+an array of rules as values.</p>
+<pre><code class="language-php " >$validation-&gt;setRule(&#039;email&#039;, &#039;required|email&#039;); // static
+$validation-&gt;setRule(&#039;firstname&#039;, [&#039;required&#039;, &#039;minLength:2&#039;]); // static
+$validation-&gt;setRules([
+    &#039;lastname&#039; =&gt; &#039;required|minLength:2|maxLength:32&#039;
+]); // static
+</code></pre>
+</div>
+<div class="section" id="setting-labels">
+<h2>Setting Labels</h2>
+<p>Error messages show field name as default. And often you need to show a custom
+label like <strong>First Name</strong> instead of <strong>firstname</strong>.</p>
+<p>Labels can be defined individually or by an array.:</p>
+<pre><code class="language-php " >$validation-&gt;setLabel(&#039;email&#039;, &#039;E-mail&#039;); // static
+$validation-&gt;setLabel(&#039;firstname&#039;, &#039;First Name&#039;); // static
+// or
+$validation-&gt;setLabels([
+    &#039;email&#039; =&gt; &#039;E-mail&#039;,
+    &#039;firstname&#039; =&gt; &#039;First Name&#039;,
+]); // static
+</code></pre>
+</div>
+<div class="section" id="getting-errors">
+<h2>Getting Errors</h2>
+<p>Errors can be obtained individually or all at once, as per the example below:</p>
+<pre><code class="language-php " >// Email field error message, or null
+$error = $validation-&gt;getError(&#039;email&#039;); // string or null
+// All errors
+$errors = $validation-&gt;getErrors(); // array
+</code></pre>
+</div>
+<div class="section" id="validating">
+<h2>Validating</h2>
+<p>After defining the rules and labels, the validation of the received data occurs
+through the <code>validate</code> method.</p>
+<p>If you only need to validate the received fields, you can use the <code>validateOnly</code>
+method. Useful for updating only a few fields in the database.</p>
+<pre><code class="language-php " >// Validates all fields
+$validated = $validation-&gt;validate($data); // bool
+// Validates only received fields
+$validated = $validation-&gt;validateOnly($data); // bool
+</code></pre>
+<div class="section" id="validator-check">
+<h3>Validator Check</h3>
+<p>To validate only one field is possible to use only the Validator:</p>
+<pre><code class="language-php " >use Framework\Validation\Validator;
+$validated = Validator::alpha(&#039;name&#039;, $data); // bool
+</code></pre>
+</div>
+</div>
+<div class="section" id="working-with-arrays">
+<h2>Working with Arrays</h2>
+<p>Validator uses the <a href="https://github.com/webisters/helpers">ArraySimple</a>
+class to extract fields and get the correct data value.</p>
+<pre><code class="language-php " >use Framework\Validation\Validation;
+$validation = new Validation();
+$validation-&gt;setLabel(&#039;user[pass]&#039;, &#039;Password&#039;) // static
+           -&gt;setRule(&#039;user[pass]&#039;, &#039;required&#039;); // static
+$data = [
+    &#039;user&#039; =&gt; [
+        &#039;pass&#039; =&gt; &#039;secret&#039;,
+    ],
+];
+$validated = $validation-&gt;validate($data); // true
+</code></pre>
+</div>
+<div class="section" id="custom-validator">
+<h2>Custom Validator</h2>
+<p>It is possible to create a validator with your custom rules.</p>
+<pre><code class="language-php " >use Framework\Validation\Validator;
+class CustomValidator extends Validator
+{
+    public static function phone(string $field, array $data): bool
+    {
+        $data = static::getData($field, $data);
+        if ($data === null) {
+            return false;
+        }
+        return \preg_match(&#039;/^\d{4}-\d{4}$/&#039;, $data);
+    }
+}
+</code></pre>
+<p>Do not forget to create the validation language file with your rules.</p>
+<p>File <strong>Languages/en/validation.php</strong>:</p>
+<pre><code class="language-php " >return [
+    &#039;phone&#039; =&gt; &#039;The {field} field requires a valid phone number.&#039;
+];
+</code></pre>
+<p>So, let the Validation know about your customizations:</p>
+<pre><code class="language-php " >use CustomValidator;
+use Framework\Language\Language;
+use Framework\Validation\Validation;
+$language = new Language();
+$language-&gt;addDirectory(__DIR__ . &#039;/Languages&#039;);
+$validation = new Validation([CustomValidator::class], $language);
+$validation-&gt;setRule(&#039;telephone&#039;, &#039;required|phone&#039;); // static
+$validated = $validation-&gt;validate($_POST); // bool
+$errors = $validation-&gt;getErrors(); // array
+</code></pre>
+</div>
+<div class="section" id="available-rules">
+<h2>Available Rules</h2>
+<p>The available rules are:</p>
+<ul>
+    <li>
+            <a href="#alpha">alpha</a>
+        </li>
+    <li>
+            <a href="#alphanumber">alphaNumber</a>
+        </li>
+    <li>
+            <a href="#array">array</a>
+        </li>
+    <li>
+            <a href="#base64">base64</a>
+        </li>
+    <li>
+            <a href="#between">between</a>
+        </li>
+    <li>
+            <a href="#blank">blank</a>
+        </li>
+    <li>
+            <a href="#bool">bool</a>
+        </li>
+    <li>
+            <a href="#datetime">datetime</a>
+        </li>
+    <li>
+            <a href="#dim">dim</a>
+        </li>
+    <li>
+            <a href="#email">email</a>
+        </li>
+    <li>
+            <a href="https://www.php.net/empty">empty</a>
+        </li>
+    <li>
+            <a href="#equals">equals</a>
+        </li>
+    <li>
+            <a href="#ext">ext</a>
+        </li>
+    <li>
+            <a href="#float">float</a>
+        </li>
+    <li>
+            <a href="#greater">greater</a>
+        </li>
+    <li>
+            <a href="#greaterorequal">greaterOrEqual</a>
+        </li>
+    <li>
+            <a href="#hex">hex</a>
+        </li>
+    <li>
+            <a href="#hexcolor">hexColor</a>
+        </li>
+    <li>
+            <a href="#image">image</a>
+        </li>
+    <li>
+            <a href="#in">in</a>
+        </li>
+    <li>
+            <a href="#int">int</a>
+        </li>
+    <li>
+            <a href="#ip">ip</a>
+        </li>
+    <li>
+            <a href="#isset">isset</a>
+        </li>
+    <li>
+            <a href="#json">json</a>
+        </li>
+    <li>
+            <a href="#latin">latin</a>
+        </li>
+    <li>
+            <a href="#length">length</a>
+        </li>
+    <li>
+            <a href="#less">less</a>
+        </li>
+    <li>
+            <a href="#lessorequal">lessOrEqual</a>
+        </li>
+    <li>
+            <a href="#maxdim">maxDim</a>
+        </li>
+    <li>
+            <a href="#maxlength">maxLength</a>
+        </li>
+    <li>
+            <a href="#maxsize">maxSize</a>
+        </li>
+    <li>
+            <a href="#md5">md5</a>
+        </li>
+    <li>
+            <a href="#mimes">mimes</a>
+        </li>
+    <li>
+            <a href="#mindim">minDim</a>
+        </li>
+    <li>
+            <a href="#minlength">minLength</a>
+        </li>
+    <li>
+            <a href="#notbetween">notBetween</a>
+        </li>
+    <li>
+            <a href="#notequals">notEquals</a>
+        </li>
+    <li>
+            <a href="#notin">notIn</a>
+        </li>
+    <li>
+            <a href="#notregex">notRegex</a>
+        </li>
+    <li>
+            <a href="#null">null</a>
+        </li>
+    <li>
+            <a href="#number">number</a>
+        </li>
+    <li>
+            <a href="#object">object</a>
+        </li>
+    <li>
+            <a href="#optional">optional</a>
+        </li>
+    <li>
+            <a href="#regex">regex</a>
+        </li>
+    <li>
+            <a href="#required">required</a>
+        </li>
+    <li>
+            <a href="#slug">slug</a>
+        </li>
+    <li>
+            <a href="#specialchar">specialChar</a>
+        </li>
+    <li>
+            <a href="#string">string</a>
+        </li>
+    <li>
+            <a href="#timezone">timezone</a>
+        </li>
+    <li>
+            <a href="#uploaded">uploaded</a>
+        </li>
+    <li>
+            <a href="#url">url</a>
+        </li>
+    <li>
+            <a href="#uuid">uuid</a>
+        </li>
+</ul>
+<div class="section" id="alpha">
+<h3>alpha</h3>
+<p>The field requires only alphabetic characters.</p>
+<pre><code class="language- " >alpha
+</code></pre>
+</div>
+<div class="section" id="alphanumber">
+<h3>alphaNumber</h3>
+<p>The field requires only alphabetic and numeric characters.</p>
+<pre><code class="language- " >alphaNumber
+</code></pre>
+</div>
+<div class="section" id="array">
+<h3>array</h3>
+<p>The field requires an array.</p>
+<pre><code class="language- " >array
+</code></pre>
+</div>
+<div class="section" id="base64">
+<h3>base64</h3>
+<p>The field requires a valid base64 string.</p>
+<pre><code class="language- " >base64
+</code></pre>
+</div>
+<div class="section" id="between">
+<h3>between</h3>
+<p>The field must be between <code>{0}</code> and <code>{1}</code>.</p>
+<pre><code class="language-php " >between:$min,$max
+</code></pre>
+<p>The rule must take two parameters: <code>$min</code> and <code>$max</code>.</p>
+<p><code>$min</code> is the minimum value.</p>
+<p><code>$max</code> is the maximum value.</p>
+</div>
+<div class="section" id="blank">
+<h3>blank</h3>
+<p>If the field has a blank string, the validation passes.</p>
+<pre><code class="language- " >blank
+</code></pre>
+</div>
+<div class="section" id="bool">
+<h3>bool</h3>
+<p>The field requires a boolean value.</p>
+<pre><code class="language- " >bool
+</code></pre>
+</div>
+<div class="section" id="datetime">
+<h3>datetime</h3>
+<p>The field must match a required datetime format.</p>
+<pre><code class="language-php " >datetime
+datetime:$format
+</code></pre>
+<p>The rule can take one parameter: <code>$format</code>.</p>
+<p><code>$format</code> is the date format.</p>
+<p>By default the format is <code>Y-m-d H:i:s</code>.</p>
+</div>
+<div class="section" id="dim">
+<h3>dim</h3>
+<p>The field requires an image with the exact dimensions of <code>{0}</code> in width and <code>{1}</code> in height.</p>
+<pre><code class="language-php " >dim:$width,$height
+</code></pre>
+<p>The rule must take two parameters: <code>$width</code> and <code>$height</code>.</p>
+<p><code>$width</code> is the exact width of the image.</p>
+<p><code>$height</code> is the exact height of the image.</p>
+</div>
+<div class="section" id="email">
+<h3>email</h3>
+<p>The field requires a valid email address.</p>
+<pre><code class="language- " >email
+</code></pre>
+</div>
+<div class="section" id="empty">
+<h3>empty</h3>
+<p>If the field is defined and has an <a href="https://www.php.net/empty">empty</a> value,
+the validation passes.</p>
+<pre><code class="language- " >empty
+</code></pre>
+</div>
+<div class="section" id="equals">
+<h3>equals</h3>
+<p>The field must be equals the <code>{0}</code> field.</p>
+<pre><code class="language-php " >equals:$equalsField
+</code></pre>
+<p>The rule must take one parameter: <code>$equalsField</code>.</p>
+<p><code>$equalsField</code> is the name of the field which must be equal to this one.</p>
+</div>
+<div class="section" id="ext">
+<h3>ext</h3>
+<p>The field requires a file with an accepted extension: <code>{args}</code>.</p>
+<pre><code class="language-php " >ext:...$allowedExtensions
+</code></pre>
+<p>The rule can take several parameters: <code>...$allowedExtensions</code>.</p>
+<p><code>...$allowedExtensions</code> is a comma-separated list of file extensions.</p>
+</div>
+<div class="section" id="float">
+<h3>float</h3>
+<p>The field requires a floating point number.</p>
+<pre><code class="language- " >float
+</code></pre>
+</div>
+<div class="section" id="greater">
+<h3>greater</h3>
+<p>The field must be greater than <code>{0}</code>.</p>
+<pre><code class="language-php " >greater:$greaterThan
+</code></pre>
+<p>The rule must take one parameter: <code>$greaterThan</code>.</p>
+<p><code>$greaterThan</code> is the value the field must be greater than this.</p>
+</div>
+<div class="section" id="greaterorequal">
+<h3>greaterOrEqual</h3>
+<p>The field must be greater than or equal to <code>{0}</code>.</p>
+<pre><code class="language-php " >greaterOrEqual:$greaterThanOrEqualTo
+</code></pre>
+<p>The rule must take one parameter: <code>$greaterThanOrEqualTo</code>.</p>
+<p><code>$greaterThanOrEqualTo</code> is the value that the field has greater than or equal to this.</p>
+</div>
+<div class="section" id="hex">
+<h3>hex</h3>
+<p>The field requires a valid hexadecimal string.</p>
+<pre><code class="language- " >hex
+</code></pre>
+</div>
+<div class="section" id="hexcolor">
+<h3>hexColor</h3>
+<p>The field requires a valid hexadecimal color.</p>
+<pre><code class="language- " >hexColor
+</code></pre>
+</div>
+<div class="section" id="image">
+<h3>image</h3>
+<p>The field requires an image.</p>
+<pre><code class="language- " >image
+</code></pre>
+</div>
+<div class="section" id="in">
+<h3>in</h3>
+<p>The field must have one of the listed values.</p>
+<pre><code class="language-php " >in:$in,...$others
+</code></pre>
+<p>The rule must take one parameter: <code>$in</code>. And also <code>...$others</code>.</p>
+<p><code>$in</code> is a value required to be in.</p>
+<p><code>...$others</code> are other valid values to be in.</p>
+</div>
+<div class="section" id="int">
+<h3>int</h3>
+<p>The field requires an integer.</p>
+<pre><code class="language- " >int
+</code></pre>
+</div>
+<div class="section" id="ip">
+<h3>ip</h3>
+<p>The field requires a valid IP address.</p>
+<pre><code class="language-php " >ip
+ip:$version
+</code></pre>
+<p>The rule can take one parameter: <code>$version</code>.</p>
+<p><code>$version</code> can be <code>0</code> for IPv4 and IPv6. <code>4</code> for IPv4 or <code>6</code> for IPv6.</p>
+</div>
+<div class="section" id="isset">
+<h3>isset</h3>
+<p>The field must be sent.</p>
+<pre><code class="language- " >isset
+</code></pre>
+</div>
+<div class="section" id="json">
+<h3>json</h3>
+<p>The field requires a valid JSON string.</p>
+<pre><code class="language- " >json
+</code></pre>
+</div>
+<div class="section" id="latin">
+<h3>latin</h3>
+<p>The field requires only latin characters.</p>
+<pre><code class="language- " >latin
+</code></pre>
+</div>
+<div class="section" id="length">
+<h3>length</h3>
+<p>The field requires exactly <code>{0}</code> characters in length.</p>
+<pre><code class="language-php " >length:$length
+</code></pre>
+<p>The rule can take one parameter: <code>$length</code>.</p>
+<p><code>$length</code> is the exact number of characters the field must receive.</p>
+</div>
+<div class="section" id="less">
+<h3>less</h3>
+<p>The field must be less than <code>{0}</code>.</p>
+<pre><code class="language-php " >less:$lessThan
+</code></pre>
+<p>The rule can take one parameter: <code>$lessThan</code>.</p>
+<p><code>$lessThan</code> is the value that the field has less than this.</p>
+</div>
+<div class="section" id="lessorequal">
+<h3>lessOrEqual</h3>
+<p>The field must be less than or equal to <code>{0}</code>.</p>
+<pre><code class="language-php " >lessOrEqual:$lessThanOrEqualTo
+</code></pre>
+<p>The rule can take one parameter: <code>$lessThanOrEqualTo</code>.</p>
+<p><code>$lessThanOrEqualTo</code> is the value that the field has less than or equal to this.</p>
+</div>
+<div class="section" id="maxdim">
+<h3>maxDim</h3>
+<p>The field requires an image that does not exceed the maximum dimensions of <code>{0}</code> in width and <code>{1}</code> in height.</p>
+<pre><code class="language-php " >maxDim:$width,$height
+</code></pre>
+<p>The rule can take two parameters: <code>$width</code> and <code>$height</code>.</p>
+<p><code>$width</code> is the maximum width the image can be.</p>
+<p><code>$height</code> is the maximum height the image can be.</p>
+</div>
+<div class="section" id="maxlength">
+<h3>maxLength</h3>
+<p>The field requires <code>{0}</code> or less characters in length.</p>
+<pre><code class="language-php " >maxLength:$maxLength
+</code></pre>
+<p>The rule can take one parameter: <code>$maxLength</code>.</p>
+<p><code>$maxLength</code> is the maximum amount of characters that the field must receive.</p>
+</div>
+<div class="section" id="maxsize">
+<h3>maxSize</h3>
+<p>The field requires a file that does not exceed the maximum size of <code>{0}</code> kilobytes.</p>
+<pre><code class="language-php " >maxSize:$kilobytes
+</code></pre>
+<p>The rule can take one parameter: <code>$kilobytes</code>.</p>
+<p><code>$kilobytes</code> is the maximum number of kilobytes that the field file can receive.</p>
+</div>
+<div class="section" id="md5">
+<h3>md5</h3>
+<p>The field requires a valid MD5 hash.</p>
+<pre><code class="language- " >md5
+</code></pre>
+</div>
+<div class="section" id="mimes">
+<h3>mimes</h3>
+<p>The field requires a file with an accepted MIME type: <code>{args}</code>.</p>
+<pre><code class="language-php " >mimes:...$allowedTypes
+</code></pre>
+<p>The rule can take many parameters: <code>...$allowedTypes</code>.</p>
+<p><code>...$allowedTypes</code> are the MIME types of files the field can receive.</p>
+</div>
+<div class="section" id="mindim">
+<h3>minDim</h3>
+<p>The field requires an image having the minimum dimensions of <code>{0}</code> in width and <code>{1}</code> in height.</p>
+<pre><code class="language-php " >minDim:$width,$height
+</code></pre>
+<p>The rule can take two parameters: <code>$width</code> and <code>$height</code>.</p>
+<p><code>$width</code> is the minimum width the image can be.</p>
+<p><code>$height</code> is the minimum height the image can be.</p>
+</div>
+<div class="section" id="minlength">
+<h3>minLength</h3>
+<p>The field requires <code>{0}</code> or more characters in length.</p>
+<pre><code class="language-php " >minLength:$minLength
+</code></pre>
+<p>The rule can take one parameter: <code>$minLength</code>.</p>
+<p><code>$minLength</code> is the minimum number of characters the field must receive.</p>
+</div>
+<div class="section" id="notbetween">
+<h3>notBetween</h3>
+<p>The field can not be between <code>{0}</code> and <code>{1}</code>.</p>
+<pre><code class="language-php " >notBetween:$min,$max
+</code></pre>
+<p>The rule can take two parameters: <code>$min</code> and <code>$max</code>.</p>
+<p><code>$min</code> is the minimum value that the field value must not have.</p>
+<p><code>$max</code> is the maximum value the field value must not have.</p>
+</div>
+<div class="section" id="notequals">
+<h3>notEquals</h3>
+<p>The field can not be equals the <code>{0}</code> field.</p>
+<pre><code class="language-php " >notEquals:$diffField
+</code></pre>
+<p>The rule can take one parameter: <code>$diffField</code>.</p>
+<p><code>$diffField</code> is the name of the field that must have a value different from this one.</p>
+</div>
+<div class="section" id="notin">
+<h3>notIn</h3>
+<p>The field must have a value other than those listed.</p>
+<pre><code class="language-php " >notIn:$notIn,...$others
+</code></pre>
+<p>The rule can take one parameter: <code>$notIn</code>. And also <code>...$others</code>.</p>
+<p><code>$notIn</code> is the value required not to be in.</p>
+<p><code>...$others</code> are other values to not be in.</p>
+</div>
+<div class="section" id="notregex">
+<h3>notRegex</h3>
+<p>The field matches a invalid pattern.</p>
+<pre><code class="language-php " >notRegex:$pattern
+</code></pre>
+<p>The rule can take one parameter: <code>$pattern</code>.</p>
+<p><code>$pattern</code> is the regular expression that the field value must not match.</p>
+</div>
+<div class="section" id="null">
+<h3>null</h3>
+<p>If the field value is null, the validation passes.</p>
+<pre><code class="language- " >null
+</code></pre>
+</div>
+<div class="section" id="number">
+<h3>number</h3>
+<p>The field requires only numeric characters.</p>
+<pre><code class="language- " >number
+</code></pre>
+</div>
+<div class="section" id="object">
+<h3>object</h3>
+<p>The field requires an object.</p>
+<pre><code class="language- " >object
+</code></pre>
+</div>
+<div class="section" id="optional">
+<h3>optional</h3>
+<p>The field is optional. If undefined, validation passes.</p>
+<pre><code class="language- " >optional
+</code></pre>
+</div>
+<div class="section" id="regex">
+<h3>regex</h3>
+<p>The field must match the required pattern.</p>
+<pre><code class="language-php " >regex:$pattern
+</code></pre>
+<p>The rule can take one parameter: <code>$pattern</code>.</p>
+<p><code>$pattern</code> is the regular expression that the value of the field must match.</p>
+</div>
+<div class="section" id="required">
+<h3>required</h3>
+<p>The field is required.</p>
+<pre><code class="language- " >required
+</code></pre>
+</div>
+<div class="section" id="slug">
+<h3>slug</h3>
+<p>The field requires a valid slug.</p>
+<pre><code class="language- " >slug
+</code></pre>
+</div>
+<div class="section" id="specialchar">
+<h3>specialChar</h3>
+<p>The field requires special characters.</p>
+<pre><code class="language-php " >specialChar
+specialChar:$quantity
+specialChar:$quantity,$characters
+</code></pre>
+<p>The rule can take two parameters:: <code>$quantity</code> and <code>$characters</code>.</p>
+<p><code>$quantity</code> is the number of special characters the field value must have.
+By default the value is <code>1</code>.</p>
+<p><code>$characters</code> are the characters considered special. By default they are these:
+<code>!"#$%&\'()*+,-./:;=<>?@[\]^_`{|}~</code>.</p>
+</div>
+<div class="section" id="string">
+<h3>string</h3>
+<p>The field requires a string.</p>
+<pre><code class="language- " >string
+</code></pre>
+</div>
+<div class="section" id="timezone">
+<h3>timezone</h3>
+<p>The field requires a valid timezone.</p>
+<pre><code class="language- " >timezone
+</code></pre>
+</div>
+<div class="section" id="uploaded">
+<h3>uploaded</h3>
+<p>The field requires a file to be uploaded.</p>
+<pre><code class="language- " >uploaded
+</code></pre>
+</div>
+<div class="section" id="url">
+<h3>url</h3>
+<p>The field requires a valid URL address.</p>
+<pre><code class="language- " >url
+</code></pre>
+</div>
+<div class="section" id="uuid">
+<h3>uuid</h3>
+<p>The field requires a valid UUID.</p>
+<pre><code class="language- " >uuid
+</code></pre>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Webisters Validation Library is an easy-to-use tool for, beginners and experienced, PHP developers.<br>It is perfect for validating data coming from a form or API.<br>The more you use it, the more you will learn.</p>
+<div class="phpdocumentor-admonition -note ">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        <p>Did you find something wrong?<br>Be sure to let us know about it with an
+<a href="https://github.com/webisters/validation/issues">issue</a>.<br>Thank you!</p>
+    </article>
+</div>
+</div>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+<nav class="wb-pager" aria-label="Page navigation">
+            <a class="wb-pager__link -prev" href="../../../guides/libraries/testing/index.html">
+            <span class="wb-pager__label">← Previous</span>
+            <span class="wb-pager__title">Testing</span>
+        </a>
+    
+            <span class="wb-pager__placeholder"></span>
+    </nav>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../../../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../../../guides/framework/index.html">Framework</a></li>
+                <li><a href="../../../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../../../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../../../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../../../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../../../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../../../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../../../assets/layout.js" defer></script>
+</body>
+</html>

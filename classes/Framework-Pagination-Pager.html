@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Pager · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Pagination-Pager.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Pagination Pager</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Pager            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Pagination\Pager</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Pager.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/JsonSerializable.html"><code>JsonSerializable</code></a>, <a href="../classes/Stringable.html"><code>Stringable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/pagination/src/Pager.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-currentPage">$currentPage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-previousPage">$previousPage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-nextPage">$nextPage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-lastPage">$lastPage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-itemsPerPage">$itemsPerPage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-totalItems">$totalItems</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-surround">$surround</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-views">$views</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-defaultView">$defaultView</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-url">$url</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-oldUrl">$oldUrl</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-query">$query</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-language">$language</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-currentPage">
+                <h4>$currentPage</h4>
+                <div class="phpdocumentor-signature">protected int $currentPage</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-previousPage">
+                <h4>$previousPage</h4>
+                <div class="phpdocumentor-signature">protected ?int $previousPage = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-nextPage">
+                <h4>$nextPage</h4>
+                <div class="phpdocumentor-signature">protected ?int $nextPage = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-lastPage">
+                <h4>$lastPage</h4>
+                <div class="phpdocumentor-signature">protected int $lastPage</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-itemsPerPage">
+                <h4>$itemsPerPage</h4>
+                <div class="phpdocumentor-signature">protected int $itemsPerPage</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-totalItems">
+                <h4>$totalItems</h4>
+                <div class="phpdocumentor-signature">protected int $totalItems</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-surround">
+                <h4>$surround</h4>
+                <div class="phpdocumentor-signature">protected int $surround = 2</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-views">
+                <h4>$views</h4>
+                <div class="phpdocumentor-signature">protected array $views = array (
+  &#039;head&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/head.php&#039;,
+  &#039;header&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/header.php&#039;,
+  &#039;pager&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/pagination-short.php&#039;,
+  &#039;pagination&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/pagination.php&#039;,
+  &#039;pagination-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/pagination-short.php&#039;,
+  &#039;bootstrap&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bootstrap.php&#039;,
+  &#039;bootstrap-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bootstrap-short.php&#039;,
+  &#039;bootstrap5&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bootstrap.php&#039;,
+  &#039;bootstrap5-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bootstrap-short.php&#039;,
+  &#039;bulma&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bulma.php&#039;,
+  &#039;bulma-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bulma-short.php&#039;,
+  &#039;bulma1&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bulma.php&#039;,
+  &#039;bulma1-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/bulma-short.php&#039;,
+  &#039;foundation&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/foundation.php&#039;,
+  &#039;foundation-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/foundation-short.php&#039;,
+  &#039;foundation6&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/foundation.php&#039;,
+  &#039;foundation6-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/foundation-short.php&#039;,
+  &#039;materialize&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/materialize.php&#039;,
+  &#039;materialize-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/materialize-short.php&#039;,
+  &#039;materialize1&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/materialize.php&#039;,
+  &#039;materialize1-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/materialize-short.php&#039;,
+  &#039;primer&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/primer.php&#039;,
+  &#039;primer-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/primer-short.php&#039;,
+  &#039;primer20&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/primer.php&#039;,
+  &#039;primer20-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/primer-short.php&#039;,
+  &#039;semantic-ui&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/semantic-ui.php&#039;,
+  &#039;semantic-ui-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/semantic-ui-short.php&#039;,
+  &#039;semantic-ui2&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/semantic-ui.php&#039;,
+  &#039;semantic-ui2-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/semantic-ui-short.php&#039;,
+  &#039;tailwind&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/tailwind.php&#039;,
+  &#039;tailwind-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/tailwind-short.php&#039;,
+  &#039;tailwind3&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/tailwind.php&#039;,
+  &#039;tailwind3-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/tailwind-short.php&#039;,
+  &#039;w3&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/w3.php&#039;,
+  &#039;w3-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/w3-short.php&#039;,
+  &#039;w34&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/w3.php&#039;,
+  &#039;w34-short&#039; =&gt; &#039;D:\\WEBISTERS\\libraries\\pagination\\src/Views/w3-short.php&#039;,
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-defaultView">
+                <h4>$defaultView</h4>
+                <div class="phpdocumentor-signature">protected string $defaultView = &#039;pagination&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-url">
+                <h4>$url</h4>
+                <div class="phpdocumentor-signature">protected \Framework\HTTP\URL $url</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-oldUrl">
+                <h4>$oldUrl</h4>
+                <div class="phpdocumentor-signature">protected string $oldUrl</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-query">
+                <h4>$query</h4>
+                <div class="phpdocumentor-signature">protected string $query = &#039;page&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-language">
+                <h4>$language</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Language\Language $language</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Pager constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__toString">__toString()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-get">get()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCurrentPage">getCurrentPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCurrentPageUrl">getCurrentPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDefaultView">getDefaultView()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFirstPage">getFirstPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFirstPageUrl">getFirstPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getItemsPerPage">getItemsPerPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLanguage">getLanguage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLastPage">getLastPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLastPageUrl">getLastPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getNextPage">getNextPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getNextPageUrl">getNextPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getNextPagesUrls">getNextPagesUrls()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPageUrl">getPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPreviousPage">getPreviousPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPreviousPageUrl">getPreviousPageUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPreviousPagesUrls">getPreviousPagesUrls()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getQuery">getQuery()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getSurround">getSurround()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getTotalItems">getTotalItems()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getUrl">getUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getView">getView()</a>
+                </dt>
+                <dd>Get a view filepath.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getViews">getViews()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getWithUrl">getWithUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-jsonSerialize">jsonSerialize()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-render">render()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-renderShort">renderShort()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sanitize">sanitize()</a>
+                </dt>
+                <dd>Sanitize a number.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setAllowedQueries">setAllowedQueries()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDefaultView">setDefaultView()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setLanguage">setLanguage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setQuery">setQuery()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setSurround">setSurround()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setUrl">setUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setView">setView()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-prepareUrl">prepareUrl()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setCurrentPage">setCurrentPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setItemsPerPage">setItemsPerPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setLastPage">setLastPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setNextPage">setNextPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setPreviousPage">setPreviousPage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setTotalItems">setTotalItems()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(string|int $currentPage, string|int $itemsPerPage, int $totalItems, ?\Framework\Language\Language $language = NULL, ?string $url = NULL)</div>
+                                    <p class="phpdocumentor-summary">Pager constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string|int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$currentPage</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string|int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$itemsPerPage</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$totalItems</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Language\Language</span>
+                                                                        <span class="phpdocumentor-parameters__name">$language</span>
+                                                                            — Language instance                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$url</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__toString">
+                <h4>__toString()</h4>
+                <div class="phpdocumentor-signature">public function __toString(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-get">
+                <h4>get()</h4>
+                <div class="phpdocumentor-signature">public function get(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCurrentPage">
+                <h4>getCurrentPage()</h4>
+                <div class="phpdocumentor-signature">public function getCurrentPage(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCurrentPageUrl">
+                <h4>getCurrentPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getCurrentPageUrl(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDefaultView">
+                <h4>getDefaultView()</h4>
+                <div class="phpdocumentor-signature">public function getDefaultView(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFirstPage">
+                <h4>getFirstPage()</h4>
+                <div class="phpdocumentor-signature">public function getFirstPage(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFirstPageUrl">
+                <h4>getFirstPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getFirstPageUrl(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getItemsPerPage">
+                <h4>getItemsPerPage()</h4>
+                <div class="phpdocumentor-signature">public function getItemsPerPage(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLanguage">
+                <h4>getLanguage()</h4>
+                <div class="phpdocumentor-signature">public function getLanguage(): \Framework\Language\Language</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Language\Language</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLastPage">
+                <h4>getLastPage()</h4>
+                <div class="phpdocumentor-signature">public function getLastPage(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLastPageUrl">
+                <h4>getLastPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getLastPageUrl(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getNextPage">
+                <h4>getNextPage()</h4>
+                <div class="phpdocumentor-signature">public function getNextPage(): ?int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getNextPageUrl">
+                <h4>getNextPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getNextPageUrl(): ?string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getNextPagesUrls">
+                <h4>getNextPagesUrls()</h4>
+                <div class="phpdocumentor-signature">public function getNextPagesUrls(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPageUrl">
+                <h4>getPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getPageUrl(?int $page): ?string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$page</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPreviousPage">
+                <h4>getPreviousPage()</h4>
+                <div class="phpdocumentor-signature">public function getPreviousPage(): ?int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPreviousPageUrl">
+                <h4>getPreviousPageUrl()</h4>
+                <div class="phpdocumentor-signature">public function getPreviousPageUrl(): ?string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPreviousPagesUrls">
+                <h4>getPreviousPagesUrls()</h4>
+                <div class="phpdocumentor-signature">public function getPreviousPagesUrls(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getQuery">
+                <h4>getQuery()</h4>
+                <div class="phpdocumentor-signature">public function getQuery(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getSurround">
+                <h4>getSurround()</h4>
+                <div class="phpdocumentor-signature">public function getSurround(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getTotalItems">
+                <h4>getTotalItems()</h4>
+                <div class="phpdocumentor-signature">public function getTotalItems(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getUrl">
+                <h4>getUrl()</h4>
+                <div class="phpdocumentor-signature">public function getUrl(): \Framework\HTTP\URL</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\HTTP\URL</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getView">
+                <h4>getView()</h4>
+                <div class="phpdocumentor-signature">public function getView(string $name): string</div>
+                                    <p class="phpdocumentor-summary">Get a view filepath.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                            — The view name. Default names are: head, header, pager and pagination                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getViews">
+                <h4>getViews()</h4>
+                <div class="phpdocumentor-signature">public function getViews(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getWithUrl">
+                <h4>getWithUrl()</h4>
+                <div class="phpdocumentor-signature">public function getWithUrl(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-jsonSerialize">
+                <h4>jsonSerialize()</h4>
+                <div class="phpdocumentor-signature">public function jsonSerialize(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-render">
+                <h4>render()</h4>
+                <div class="phpdocumentor-signature">public function render(?string $view = NULL): string</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$view</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-renderShort">
+                <h4>renderShort()</h4>
+                <div class="phpdocumentor-signature">public function renderShort(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sanitize">
+                <h4>sanitize()</h4>
+                <div class="phpdocumentor-signature">public static function sanitize(mixed $number): int</div>
+                                    <p class="phpdocumentor-summary">Sanitize a number.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">mixed</span>
+                                                                        <span class="phpdocumentor-parameters__name">$number</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setAllowedQueries">
+                <h4>setAllowedQueries()</h4>
+                <div class="phpdocumentor-signature">public function setAllowedQueries(?array $allowed): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$allowed</span>
+                                                                            — List of queries, an empty array to allow only the default or null to allow all                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDefaultView">
+                <h4>setDefaultView()</h4>
+                <div class="phpdocumentor-signature">public function setDefaultView(string $defaultView): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$defaultView</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setLanguage">
+                <h4>setLanguage()</h4>
+                <div class="phpdocumentor-signature">public function setLanguage(?\Framework\Language\Language $language = NULL): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Language\Language</span>
+                                                                        <span class="phpdocumentor-parameters__name">$language</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setQuery">
+                <h4>setQuery()</h4>
+                <div class="phpdocumentor-signature">public function setQuery(string $query = &#039;page&#039;): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$query</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setSurround">
+                <h4>setSurround()</h4>
+                <div class="phpdocumentor-signature">public function setSurround(int $surround): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$surround</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setUrl">
+                <h4>setUrl()</h4>
+                <div class="phpdocumentor-signature">public function setUrl(\Framework\HTTP\URL|string $currentPageUrl, ?array $allowedQueries = NULL): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\HTTP\URL|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$currentPageUrl</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$allowedQueries</span>
+                                                                            — List of queries, an empty array to allow only the default or null to allow all                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setView">
+                <h4>setView()</h4>
+                <div class="phpdocumentor-signature">public function setView(string $name, string $filepath): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$filepath</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-prepareUrl">
+                <h4>prepareUrl()</h4>
+                <div class="phpdocumentor-signature">protected function prepareUrl(): static</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setCurrentPage">
+                <h4>setCurrentPage()</h4>
+                <div class="phpdocumentor-signature">protected function setCurrentPage(int $currentPage): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$currentPage</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setItemsPerPage">
+                <h4>setItemsPerPage()</h4>
+                <div class="phpdocumentor-signature">protected function setItemsPerPage(int $itemsPerPage): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$itemsPerPage</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setLastPage">
+                <h4>setLastPage()</h4>
+                <div class="phpdocumentor-signature">protected function setLastPage(int $lastPage): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$lastPage</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setNextPage">
+                <h4>setNextPage()</h4>
+                <div class="phpdocumentor-signature">protected function setNextPage(int $nextPage): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$nextPage</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setPreviousPage">
+                <h4>setPreviousPage()</h4>
+                <div class="phpdocumentor-signature">protected function setPreviousPage(int $previousPage): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$previousPage</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setTotalItems">
+                <h4>setTotalItems()</h4>
+                <div class="phpdocumentor-signature">protected function setTotalItems(int $totalItems): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$totalItems</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

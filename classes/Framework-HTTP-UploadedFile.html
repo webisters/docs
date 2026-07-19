@@ -1,0 +1,3906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class UploadedFile · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-HTTP-UploadedFile.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework HTTP UploadedFile</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            UploadedFile            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\HTTP\UploadedFile</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class UploadedFile.</p>
+                
+                        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/http/src/UploadedFile.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-name">$name</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-type">$type</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-tmpName">$tmpName</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-error">$error</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-size">$size</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-fullPath">$fullPath</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-clientType">$clientType</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-clientExtension">$clientExtension</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-extension">$extension</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-errorMessage">$errorMessage</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-isMoved">$isMoved</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-destination">$destination</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mimeTypes">$mimeTypes</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-name">
+                <h4>$name</h4>
+                <div class="phpdocumentor-signature">protected string $name</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-type">
+                <h4>$type</h4>
+                <div class="phpdocumentor-signature">protected string $type</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-tmpName">
+                <h4>$tmpName</h4>
+                <div class="phpdocumentor-signature">protected string $tmpName</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-error">
+                <h4>$error</h4>
+                <div class="phpdocumentor-signature">protected int $error</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-size">
+                <h4>$size</h4>
+                <div class="phpdocumentor-signature">protected int $size</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-fullPath">
+                <h4>$fullPath</h4>
+                <div class="phpdocumentor-signature">protected string $fullPath</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-clientType">
+                <h4>$clientType</h4>
+                <div class="phpdocumentor-signature">protected string $clientType</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-clientExtension">
+                <h4>$clientExtension</h4>
+                <div class="phpdocumentor-signature">protected string $clientExtension</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-extension">
+                <h4>$extension</h4>
+                <div class="phpdocumentor-signature">protected string $extension</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-errorMessage">
+                <h4>$errorMessage</h4>
+                <div class="phpdocumentor-signature">protected string $errorMessage</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-isMoved">
+                <h4>$isMoved</h4>
+                <div class="phpdocumentor-signature">protected bool $isMoved = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-destination">
+                <h4>$destination</h4>
+                <div class="phpdocumentor-signature">protected ?string $destination = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-mimeTypes">
+                <h4>$mimeTypes</h4>
+                <div class="phpdocumentor-signature">protected static array $mimeTypes = array (
+  &#039;application/andrew-inset&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ez&#039;,
+  ),
+  &#039;application/applixware&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aw&#039;,
+  ),
+  &#039;application/atom+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;atom&#039;,
+  ),
+  &#039;application/atomcat+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;atomcat&#039;,
+  ),
+  &#039;application/atomsvc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;atomsvc&#039;,
+  ),
+  &#039;application/ccxml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ccxml&#039;,
+  ),
+  &#039;application/cdmi-capability&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdmia&#039;,
+  ),
+  &#039;application/cdmi-container&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdmic&#039;,
+  ),
+  &#039;application/cdmi-domain&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdmid&#039;,
+  ),
+  &#039;application/cdmi-object&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdmio&#039;,
+  ),
+  &#039;application/cdmi-queue&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdmiq&#039;,
+  ),
+  &#039;application/cu-seeme&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cu&#039;,
+  ),
+  &#039;application/davmount+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;davmount&#039;,
+  ),
+  &#039;application/docbook+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dbk&#039;,
+  ),
+  &#039;application/dssc+der&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dssc&#039;,
+  ),
+  &#039;application/dssc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xdssc&#039;,
+  ),
+  &#039;application/ecmascript&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ecma&#039;,
+  ),
+  &#039;application/emma+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;emma&#039;,
+  ),
+  &#039;application/epub+zip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;epub&#039;,
+  ),
+  &#039;application/exi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;exi&#039;,
+  ),
+  &#039;application/font-tdpfr&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pfr&#039;,
+  ),
+  &#039;application/gml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gml&#039;,
+  ),
+  &#039;application/gpx+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gpx&#039;,
+  ),
+  &#039;application/gxf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gxf&#039;,
+  ),
+  &#039;application/hyperstudio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;stk&#039;,
+  ),
+  &#039;application/inkml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ink&#039;,
+    1 =&gt; &#039;inkml&#039;,
+  ),
+  &#039;application/ipfix&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ipfix&#039;,
+  ),
+  &#039;application/java-archive&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jar&#039;,
+  ),
+  &#039;application/java-serialized-object&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ser&#039;,
+  ),
+  &#039;application/java-vm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;class&#039;,
+  ),
+  &#039;application/javascript&#039; =&gt; 
+  array (
+    0 =&gt; &#039;js&#039;,
+  ),
+  &#039;application/json&#039; =&gt; 
+  array (
+    0 =&gt; &#039;json&#039;,
+  ),
+  &#039;application/jsonml+json&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jsonml&#039;,
+  ),
+  &#039;application/lost+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lostxml&#039;,
+  ),
+  &#039;application/mac-binhex40&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hqx&#039;,
+  ),
+  &#039;application/mac-compactpro&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cpt&#039;,
+  ),
+  &#039;application/mads+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mads&#039;,
+  ),
+  &#039;application/marc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mrc&#039;,
+  ),
+  &#039;application/marcxml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mrcx&#039;,
+  ),
+  &#039;application/mathematica&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ma&#039;,
+    1 =&gt; &#039;mb&#039;,
+    2 =&gt; &#039;nb&#039;,
+  ),
+  &#039;application/mathml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mathml&#039;,
+  ),
+  &#039;application/mbox&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mbox&#039;,
+  ),
+  &#039;application/mediaservercontrol+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mscml&#039;,
+  ),
+  &#039;application/metalink+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;metalink&#039;,
+  ),
+  &#039;application/metalink4+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;meta4&#039;,
+  ),
+  &#039;application/mets+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mets&#039;,
+  ),
+  &#039;application/mods+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mods&#039;,
+  ),
+  &#039;application/mp21&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m21&#039;,
+    1 =&gt; &#039;mp21&#039;,
+  ),
+  &#039;application/mp4&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mp4s&#039;,
+  ),
+  &#039;application/msword&#039; =&gt; 
+  array (
+    0 =&gt; &#039;doc&#039;,
+    1 =&gt; &#039;dot&#039;,
+  ),
+  &#039;application/mxf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mxf&#039;,
+  ),
+  &#039;application/octet-stream&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bin&#039;,
+    1 =&gt; &#039;bpk&#039;,
+    2 =&gt; &#039;deploy&#039;,
+    3 =&gt; &#039;dist&#039;,
+    4 =&gt; &#039;distz&#039;,
+    5 =&gt; &#039;dms&#039;,
+    6 =&gt; &#039;dump&#039;,
+    7 =&gt; &#039;elc&#039;,
+    8 =&gt; &#039;lrf&#039;,
+    9 =&gt; &#039;mar&#039;,
+    10 =&gt; &#039;pkg&#039;,
+    11 =&gt; &#039;so&#039;,
+  ),
+  &#039;application/oda&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oda&#039;,
+  ),
+  &#039;application/oebps-package+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;opf&#039;,
+  ),
+  &#039;application/ogg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ogx&#039;,
+  ),
+  &#039;application/omdoc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;omdoc&#039;,
+  ),
+  &#039;application/onenote&#039; =&gt; 
+  array (
+    0 =&gt; &#039;onepkg&#039;,
+    1 =&gt; &#039;onetmp&#039;,
+    2 =&gt; &#039;onetoc&#039;,
+    3 =&gt; &#039;onetoc2&#039;,
+  ),
+  &#039;application/oxps&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oxps&#039;,
+  ),
+  &#039;application/patch-ops-error+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xer&#039;,
+  ),
+  &#039;application/pdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pdf&#039;,
+  ),
+  &#039;application/pgp-encrypted&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pgp&#039;,
+  ),
+  &#039;application/pgp-signature&#039; =&gt; 
+  array (
+    0 =&gt; &#039;asc&#039;,
+    1 =&gt; &#039;sig&#039;,
+  ),
+  &#039;application/pics-rules&#039; =&gt; 
+  array (
+    0 =&gt; &#039;prf&#039;,
+  ),
+  &#039;application/pkcs10&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p10&#039;,
+  ),
+  &#039;application/pkcs7-mime&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p7c&#039;,
+    1 =&gt; &#039;p7m&#039;,
+  ),
+  &#039;application/pkcs7-signature&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p7s&#039;,
+  ),
+  &#039;application/pkcs8&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p8&#039;,
+  ),
+  &#039;application/pkix-attr-cert&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ac&#039;,
+  ),
+  &#039;application/pkix-cert&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cer&#039;,
+  ),
+  &#039;application/pkix-crl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;crl&#039;,
+  ),
+  &#039;application/pkix-pkipath&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pkipath&#039;,
+  ),
+  &#039;application/pkixcmp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pki&#039;,
+  ),
+  &#039;application/pls+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pls&#039;,
+  ),
+  &#039;application/postscript&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ai&#039;,
+    1 =&gt; &#039;eps&#039;,
+    2 =&gt; &#039;ps&#039;,
+  ),
+  &#039;application/prs.cww&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cww&#039;,
+  ),
+  &#039;application/pskc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pskcxml&#039;,
+  ),
+  &#039;application/rdf+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rdf&#039;,
+  ),
+  &#039;application/reginfo+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rif&#039;,
+  ),
+  &#039;application/relax-ng-compact-syntax&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rnc&#039;,
+  ),
+  &#039;application/resource-lists+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rl&#039;,
+  ),
+  &#039;application/resource-lists-diff+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rld&#039;,
+  ),
+  &#039;application/rls-services+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rs&#039;,
+  ),
+  &#039;application/rpki-ghostbusters&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gbr&#039;,
+  ),
+  &#039;application/rpki-manifest&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mft&#039;,
+  ),
+  &#039;application/rpki-roa&#039; =&gt; 
+  array (
+    0 =&gt; &#039;roa&#039;,
+  ),
+  &#039;application/rsd+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rsd&#039;,
+  ),
+  &#039;application/rss+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rss&#039;,
+  ),
+  &#039;application/rtf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rtf&#039;,
+  ),
+  &#039;application/sbml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sbml&#039;,
+  ),
+  &#039;application/scvp-cv-request&#039; =&gt; 
+  array (
+    0 =&gt; &#039;scq&#039;,
+  ),
+  &#039;application/scvp-cv-response&#039; =&gt; 
+  array (
+    0 =&gt; &#039;scs&#039;,
+  ),
+  &#039;application/scvp-vp-request&#039; =&gt; 
+  array (
+    0 =&gt; &#039;spq&#039;,
+  ),
+  &#039;application/scvp-vp-response&#039; =&gt; 
+  array (
+    0 =&gt; &#039;spp&#039;,
+  ),
+  &#039;application/sdp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sdp&#039;,
+  ),
+  &#039;application/set-payment-initiation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;setpay&#039;,
+  ),
+  &#039;application/set-registration-initiation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;setreg&#039;,
+  ),
+  &#039;application/shf+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;shf&#039;,
+  ),
+  &#039;application/smil+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;smi&#039;,
+    1 =&gt; &#039;smil&#039;,
+  ),
+  &#039;application/sparql-query&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rq&#039;,
+  ),
+  &#039;application/sparql-results+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;srx&#039;,
+  ),
+  &#039;application/srgs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gram&#039;,
+  ),
+  &#039;application/srgs+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;grxml&#039;,
+  ),
+  &#039;application/sru+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sru&#039;,
+  ),
+  &#039;application/ssdl+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ssdl&#039;,
+  ),
+  &#039;application/ssml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ssml&#039;,
+  ),
+  &#039;application/tei+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tei&#039;,
+    1 =&gt; &#039;teicorpus&#039;,
+  ),
+  &#039;application/thraud+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tfi&#039;,
+  ),
+  &#039;application/timestamped-data&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tsd&#039;,
+  ),
+  &#039;application/vnd.3gpp.pic-bw-large&#039; =&gt; 
+  array (
+    0 =&gt; &#039;plb&#039;,
+  ),
+  &#039;application/vnd.3gpp.pic-bw-small&#039; =&gt; 
+  array (
+    0 =&gt; &#039;psb&#039;,
+  ),
+  &#039;application/vnd.3gpp.pic-bw-var&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pvb&#039;,
+  ),
+  &#039;application/vnd.3gpp2.tcap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tcap&#039;,
+  ),
+  &#039;application/vnd.3m.post-it-notes&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pwn&#039;,
+  ),
+  &#039;application/vnd.accpac.simply.aso&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aso&#039;,
+  ),
+  &#039;application/vnd.accpac.simply.imp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;imp&#039;,
+  ),
+  &#039;application/vnd.acucobol&#039; =&gt; 
+  array (
+    0 =&gt; &#039;acu&#039;,
+  ),
+  &#039;application/vnd.acucorp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;acutc&#039;,
+    1 =&gt; &#039;atc&#039;,
+  ),
+  &#039;application/vnd.adobe.air-application-installer-package+zip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;air&#039;,
+  ),
+  &#039;application/vnd.adobe.formscentral.fcdt&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fcdt&#039;,
+  ),
+  &#039;application/vnd.adobe.fxp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fxp&#039;,
+    1 =&gt; &#039;fxpl&#039;,
+  ),
+  &#039;application/vnd.adobe.xdp+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xdp&#039;,
+  ),
+  &#039;application/vnd.adobe.xfdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xfdf&#039;,
+  ),
+  &#039;application/vnd.ahead.space&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ahead&#039;,
+  ),
+  &#039;application/vnd.airzip.filesecure.azf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;azf&#039;,
+  ),
+  &#039;application/vnd.airzip.filesecure.azs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;azs&#039;,
+  ),
+  &#039;application/vnd.amazon.ebook&#039; =&gt; 
+  array (
+    0 =&gt; &#039;azw&#039;,
+  ),
+  &#039;application/vnd.americandynamics.acc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;acc&#039;,
+  ),
+  &#039;application/vnd.amiga.ami&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ami&#039;,
+  ),
+  &#039;application/vnd.android.package-archive&#039; =&gt; 
+  array (
+    0 =&gt; &#039;apk&#039;,
+  ),
+  &#039;application/vnd.anser-web-certificate-issue-initiation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cii&#039;,
+  ),
+  &#039;application/vnd.anser-web-funds-transfer-initiation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fti&#039;,
+  ),
+  &#039;application/vnd.antix.game-component&#039; =&gt; 
+  array (
+    0 =&gt; &#039;atx&#039;,
+  ),
+  &#039;application/vnd.apple.installer+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpkg&#039;,
+  ),
+  &#039;application/vnd.apple.mpegurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m3u8&#039;,
+  ),
+  &#039;application/vnd.aristanetworks.swi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;swi&#039;,
+  ),
+  &#039;application/vnd.astraea-software.iota&#039; =&gt; 
+  array (
+    0 =&gt; &#039;iota&#039;,
+  ),
+  &#039;application/vnd.audiograph&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aep&#039;,
+  ),
+  &#039;application/vnd.blueice.multipass&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpm&#039;,
+  ),
+  &#039;application/vnd.bmi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bmi&#039;,
+  ),
+  &#039;application/vnd.businessobjects&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rep&#039;,
+  ),
+  &#039;application/vnd.chemdraw+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdxml&#039;,
+  ),
+  &#039;application/vnd.chipnuts.karaoke-mmd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mmd&#039;,
+  ),
+  &#039;application/vnd.cinderella&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdy&#039;,
+  ),
+  &#039;application/vnd.claymore&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cla&#039;,
+  ),
+  &#039;application/vnd.cloanto.rp9&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rp9&#039;,
+  ),
+  &#039;application/vnd.clonk.c4group&#039; =&gt; 
+  array (
+    0 =&gt; &#039;c4d&#039;,
+    1 =&gt; &#039;c4f&#039;,
+    2 =&gt; &#039;c4g&#039;,
+    3 =&gt; &#039;c4p&#039;,
+    4 =&gt; &#039;c4u&#039;,
+  ),
+  &#039;application/vnd.cluetrust.cartomobile-config&#039; =&gt; 
+  array (
+    0 =&gt; &#039;c11amc&#039;,
+  ),
+  &#039;application/vnd.cluetrust.cartomobile-config-pkg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;c11amz&#039;,
+  ),
+  &#039;application/vnd.commonspace&#039; =&gt; 
+  array (
+    0 =&gt; &#039;csp&#039;,
+  ),
+  &#039;application/vnd.contact.cmsg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdbcmsg&#039;,
+  ),
+  &#039;application/vnd.cosmocaller&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cmc&#039;,
+  ),
+  &#039;application/vnd.crick.clicker&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clkx&#039;,
+  ),
+  &#039;application/vnd.crick.clicker.keyboard&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clkk&#039;,
+  ),
+  &#039;application/vnd.crick.clicker.palette&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clkp&#039;,
+  ),
+  &#039;application/vnd.crick.clicker.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clkt&#039;,
+  ),
+  &#039;application/vnd.crick.clicker.wordbank&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clkw&#039;,
+  ),
+  &#039;application/vnd.criticaltools.wbs+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wbs&#039;,
+  ),
+  &#039;application/vnd.ctc-posml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pml&#039;,
+  ),
+  &#039;application/vnd.cups-ppd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ppd&#039;,
+  ),
+  &#039;application/vnd.curl.car&#039; =&gt; 
+  array (
+    0 =&gt; &#039;car&#039;,
+  ),
+  &#039;application/vnd.curl.pcurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pcurl&#039;,
+  ),
+  &#039;application/vnd.dart&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dart&#039;,
+  ),
+  &#039;application/vnd.data-vision.rdz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rdz&#039;,
+  ),
+  &#039;application/vnd.dece.data&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvd&#039;,
+    1 =&gt; &#039;uvf&#039;,
+    2 =&gt; &#039;uvvd&#039;,
+    3 =&gt; &#039;uvvf&#039;,
+  ),
+  &#039;application/vnd.dece.ttml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvt&#039;,
+    1 =&gt; &#039;uvvt&#039;,
+  ),
+  &#039;application/vnd.dece.unspecified&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvvx&#039;,
+    1 =&gt; &#039;uvx&#039;,
+  ),
+  &#039;application/vnd.dece.zip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvvz&#039;,
+    1 =&gt; &#039;uvz&#039;,
+  ),
+  &#039;application/vnd.denovo.fcselayout-link&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fe_launch&#039;,
+  ),
+  &#039;application/vnd.dna&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dna&#039;,
+  ),
+  &#039;application/vnd.dolby.mlp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mlp&#039;,
+  ),
+  &#039;application/vnd.dpgraph&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dpg&#039;,
+  ),
+  &#039;application/vnd.dreamfactory&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dfac&#039;,
+  ),
+  &#039;application/vnd.ds-keypoint&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kpxx&#039;,
+  ),
+  &#039;application/vnd.dvb.ait&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ait&#039;,
+  ),
+  &#039;application/vnd.dvb.service&#039; =&gt; 
+  array (
+    0 =&gt; &#039;svc&#039;,
+  ),
+  &#039;application/vnd.dynageo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;geo&#039;,
+  ),
+  &#039;application/vnd.ecowin.chart&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mag&#039;,
+  ),
+  &#039;application/vnd.enliven&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nml&#039;,
+  ),
+  &#039;application/vnd.epson.esf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;esf&#039;,
+  ),
+  &#039;application/vnd.epson.msf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;msf&#039;,
+  ),
+  &#039;application/vnd.epson.quickanime&#039; =&gt; 
+  array (
+    0 =&gt; &#039;qam&#039;,
+  ),
+  &#039;application/vnd.epson.salt&#039; =&gt; 
+  array (
+    0 =&gt; &#039;slt&#039;,
+  ),
+  &#039;application/vnd.epson.ssf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ssf&#039;,
+  ),
+  &#039;application/vnd.eszigno3+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;es3&#039;,
+    1 =&gt; &#039;et3&#039;,
+  ),
+  &#039;application/vnd.ezpix-album&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ez2&#039;,
+  ),
+  &#039;application/vnd.ezpix-package&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ez3&#039;,
+  ),
+  &#039;application/vnd.fdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fdf&#039;,
+  ),
+  &#039;application/vnd.fdsn.mseed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mseed&#039;,
+  ),
+  &#039;application/vnd.fdsn.seed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dataless&#039;,
+    1 =&gt; &#039;seed&#039;,
+  ),
+  &#039;application/vnd.flographit&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gph&#039;,
+  ),
+  &#039;application/vnd.fluxtime.clip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ftc&#039;,
+  ),
+  &#039;application/vnd.framemaker&#039; =&gt; 
+  array (
+    0 =&gt; &#039;book&#039;,
+    1 =&gt; &#039;fm&#039;,
+    2 =&gt; &#039;frame&#039;,
+    3 =&gt; &#039;maker&#039;,
+  ),
+  &#039;application/vnd.frogans.fnc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fnc&#039;,
+  ),
+  &#039;application/vnd.frogans.ltf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ltf&#039;,
+  ),
+  &#039;application/vnd.fsc.weblaunch&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fsc&#039;,
+  ),
+  &#039;application/vnd.fujitsu.oasys&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oas&#039;,
+  ),
+  &#039;application/vnd.fujitsu.oasys2&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oa2&#039;,
+  ),
+  &#039;application/vnd.fujitsu.oasys3&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oa3&#039;,
+  ),
+  &#039;application/vnd.fujitsu.oasysgp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fg5&#039;,
+  ),
+  &#039;application/vnd.fujitsu.oasysprs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bh2&#039;,
+  ),
+  &#039;application/vnd.fujixerox.ddd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ddd&#039;,
+  ),
+  &#039;application/vnd.fujixerox.docuworks&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xdw&#039;,
+  ),
+  &#039;application/vnd.fujixerox.docuworks.binder&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xbd&#039;,
+  ),
+  &#039;application/vnd.fuzzysheet&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fzs&#039;,
+  ),
+  &#039;application/vnd.genomatix.tuxedo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;txd&#039;,
+  ),
+  &#039;application/vnd.geogebra.file&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ggb&#039;,
+  ),
+  &#039;application/vnd.geogebra.tool&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ggt&#039;,
+  ),
+  &#039;application/vnd.geometry-explorer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gex&#039;,
+    1 =&gt; &#039;gre&#039;,
+  ),
+  &#039;application/vnd.geonext&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gxt&#039;,
+  ),
+  &#039;application/vnd.geoplan&#039; =&gt; 
+  array (
+    0 =&gt; &#039;g2w&#039;,
+  ),
+  &#039;application/vnd.geospace&#039; =&gt; 
+  array (
+    0 =&gt; &#039;g3w&#039;,
+  ),
+  &#039;application/vnd.gmx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gmx&#039;,
+  ),
+  &#039;application/vnd.google-earth.kml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kml&#039;,
+  ),
+  &#039;application/vnd.google-earth.kmz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kmz&#039;,
+  ),
+  &#039;application/vnd.grafeq&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gqf&#039;,
+    1 =&gt; &#039;gqs&#039;,
+  ),
+  &#039;application/vnd.groove-account&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gac&#039;,
+  ),
+  &#039;application/vnd.groove-help&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ghf&#039;,
+  ),
+  &#039;application/vnd.groove-identity-message&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gim&#039;,
+  ),
+  &#039;application/vnd.groove-injector&#039; =&gt; 
+  array (
+    0 =&gt; &#039;grv&#039;,
+  ),
+  &#039;application/vnd.groove-tool-message&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gtm&#039;,
+  ),
+  &#039;application/vnd.groove-tool-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tpl&#039;,
+  ),
+  &#039;application/vnd.groove-vcard&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcg&#039;,
+  ),
+  &#039;application/vnd.hal+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hal&#039;,
+  ),
+  &#039;application/vnd.handheld-entertainment+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;zmm&#039;,
+  ),
+  &#039;application/vnd.hbci&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hbci&#039;,
+  ),
+  &#039;application/vnd.hhe.lesson-player&#039; =&gt; 
+  array (
+    0 =&gt; &#039;les&#039;,
+  ),
+  &#039;application/vnd.hp-hpgl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hpgl&#039;,
+  ),
+  &#039;application/vnd.hp-hpid&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hpid&#039;,
+  ),
+  &#039;application/vnd.hp-hps&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hps&#039;,
+  ),
+  &#039;application/vnd.hp-jlyt&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jlt&#039;,
+  ),
+  &#039;application/vnd.hp-pcl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pcl&#039;,
+  ),
+  &#039;application/vnd.hp-pclxl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pclxl&#039;,
+  ),
+  &#039;application/vnd.hydrostatix.sof-data&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sfd-hdstx&#039;,
+  ),
+  &#039;application/vnd.ibm.minipay&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpy&#039;,
+  ),
+  &#039;application/vnd.ibm.modcap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;afp&#039;,
+    1 =&gt; &#039;list3820&#039;,
+    2 =&gt; &#039;listafp&#039;,
+  ),
+  &#039;application/vnd.ibm.rights-management&#039; =&gt; 
+  array (
+    0 =&gt; &#039;irm&#039;,
+  ),
+  &#039;application/vnd.ibm.secure-container&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sc&#039;,
+  ),
+  &#039;application/vnd.iccprofile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;icc&#039;,
+    1 =&gt; &#039;icm&#039;,
+  ),
+  &#039;application/vnd.igloader&#039; =&gt; 
+  array (
+    0 =&gt; &#039;igl&#039;,
+  ),
+  &#039;application/vnd.immervision-ivp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ivp&#039;,
+  ),
+  &#039;application/vnd.immervision-ivu&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ivu&#039;,
+  ),
+  &#039;application/vnd.insors.igm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;igm&#039;,
+  ),
+  &#039;application/vnd.intercon.formnet&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xpw&#039;,
+    1 =&gt; &#039;xpx&#039;,
+  ),
+  &#039;application/vnd.intergeo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;i2g&#039;,
+  ),
+  &#039;application/vnd.intu.qbo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;qbo&#039;,
+  ),
+  &#039;application/vnd.intu.qfx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;qfx&#039;,
+  ),
+  &#039;application/vnd.ipunplugged.rcprofile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rcprofile&#039;,
+  ),
+  &#039;application/vnd.irepository.package+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;irp&#039;,
+  ),
+  &#039;application/vnd.is-xpr&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xpr&#039;,
+  ),
+  &#039;application/vnd.isac.fcs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fcs&#039;,
+  ),
+  &#039;application/vnd.jam&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jam&#039;,
+  ),
+  &#039;application/vnd.jcp.javame.midlet-rms&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rms&#039;,
+  ),
+  &#039;application/vnd.jisp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jisp&#039;,
+  ),
+  &#039;application/vnd.joost.joda-archive&#039; =&gt; 
+  array (
+    0 =&gt; &#039;joda&#039;,
+  ),
+  &#039;application/vnd.kahootz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ktr&#039;,
+    1 =&gt; &#039;ktz&#039;,
+  ),
+  &#039;application/vnd.kde.karbon&#039; =&gt; 
+  array (
+    0 =&gt; &#039;karbon&#039;,
+  ),
+  &#039;application/vnd.kde.kchart&#039; =&gt; 
+  array (
+    0 =&gt; &#039;chrt&#039;,
+  ),
+  &#039;application/vnd.kde.kformula&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kfo&#039;,
+  ),
+  &#039;application/vnd.kde.kivio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;flw&#039;,
+  ),
+  &#039;application/vnd.kde.kontour&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kon&#039;,
+  ),
+  &#039;application/vnd.kde.kpresenter&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kpr&#039;,
+    1 =&gt; &#039;kpt&#039;,
+  ),
+  &#039;application/vnd.kde.kspread&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ksp&#039;,
+  ),
+  &#039;application/vnd.kde.kword&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kwd&#039;,
+    1 =&gt; &#039;kwt&#039;,
+  ),
+  &#039;application/vnd.kenameaapp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;htke&#039;,
+  ),
+  &#039;application/vnd.kidspiration&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kia&#039;,
+  ),
+  &#039;application/vnd.kinar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kne&#039;,
+    1 =&gt; &#039;knp&#039;,
+  ),
+  &#039;application/vnd.koan&#039; =&gt; 
+  array (
+    0 =&gt; &#039;skd&#039;,
+    1 =&gt; &#039;skm&#039;,
+    2 =&gt; &#039;skp&#039;,
+    3 =&gt; &#039;skt&#039;,
+  ),
+  &#039;application/vnd.kodak-descriptor&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sse&#039;,
+  ),
+  &#039;application/vnd.las.las+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lasxml&#039;,
+  ),
+  &#039;application/vnd.llamagraphics.life-balance.desktop&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lbd&#039;,
+  ),
+  &#039;application/vnd.llamagraphics.life-balance.exchange+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lbe&#039;,
+  ),
+  &#039;application/vnd.lotus-1-2-3&#039; =&gt; 
+  array (
+    0 =&gt; &#039;123&#039;,
+  ),
+  &#039;application/vnd.lotus-approach&#039; =&gt; 
+  array (
+    0 =&gt; &#039;apr&#039;,
+  ),
+  &#039;application/vnd.lotus-freelance&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pre&#039;,
+  ),
+  &#039;application/vnd.lotus-notes&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nsf&#039;,
+  ),
+  &#039;application/vnd.lotus-organizer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;org&#039;,
+  ),
+  &#039;application/vnd.lotus-screencam&#039; =&gt; 
+  array (
+    0 =&gt; &#039;scm&#039;,
+  ),
+  &#039;application/vnd.lotus-wordpro&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lwp&#039;,
+  ),
+  &#039;application/vnd.macports.portpkg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;portpkg&#039;,
+  ),
+  &#039;application/vnd.mcd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mcd&#039;,
+  ),
+  &#039;application/vnd.medcalcdata&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mc1&#039;,
+  ),
+  &#039;application/vnd.mediastation.cdkey&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdkey&#039;,
+  ),
+  &#039;application/vnd.mfer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mwf&#039;,
+  ),
+  &#039;application/vnd.mfmp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mfm&#039;,
+  ),
+  &#039;application/vnd.micrografx.flo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;flo&#039;,
+  ),
+  &#039;application/vnd.micrografx.igx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;igx&#039;,
+  ),
+  &#039;application/vnd.mif&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mif&#039;,
+  ),
+  &#039;application/vnd.mobius.daf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;daf&#039;,
+  ),
+  &#039;application/vnd.mobius.dis&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dis&#039;,
+  ),
+  &#039;application/vnd.mobius.mbk&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mbk&#039;,
+  ),
+  &#039;application/vnd.mobius.mqy&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mqy&#039;,
+  ),
+  &#039;application/vnd.mobius.msl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;msl&#039;,
+  ),
+  &#039;application/vnd.mobius.plc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;plc&#039;,
+  ),
+  &#039;application/vnd.mobius.txf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;txf&#039;,
+  ),
+  &#039;application/vnd.mophun.application&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpn&#039;,
+  ),
+  &#039;application/vnd.mophun.certificate&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpc&#039;,
+  ),
+  &#039;application/vnd.mozilla.xul+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xul&#039;,
+  ),
+  &#039;application/vnd.ms-artgalry&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cil&#039;,
+  ),
+  &#039;application/vnd.ms-cab-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cab&#039;,
+  ),
+  &#039;application/vnd.ms-excel&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xla&#039;,
+    1 =&gt; &#039;xlc&#039;,
+    2 =&gt; &#039;xlm&#039;,
+    3 =&gt; &#039;xls&#039;,
+    4 =&gt; &#039;xlt&#039;,
+    5 =&gt; &#039;xlw&#039;,
+  ),
+  &#039;application/vnd.ms-excel.addin.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xlam&#039;,
+  ),
+  &#039;application/vnd.ms-excel.sheet.binary.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xlsb&#039;,
+  ),
+  &#039;application/vnd.ms-excel.sheet.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xlsm&#039;,
+  ),
+  &#039;application/vnd.ms-excel.template.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xltm&#039;,
+  ),
+  &#039;application/vnd.ms-fontobject&#039; =&gt; 
+  array (
+    0 =&gt; &#039;eot&#039;,
+  ),
+  &#039;application/vnd.ms-htmlhelp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;chm&#039;,
+  ),
+  &#039;application/vnd.ms-ims&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ims&#039;,
+  ),
+  &#039;application/vnd.ms-lrm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lrm&#039;,
+  ),
+  &#039;application/vnd.ms-officetheme&#039; =&gt; 
+  array (
+    0 =&gt; &#039;thmx&#039;,
+  ),
+  &#039;application/vnd.ms-pki.seccat&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cat&#039;,
+  ),
+  &#039;application/vnd.ms-pki.stl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;stl&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pot&#039;,
+    1 =&gt; &#039;pps&#039;,
+    2 =&gt; &#039;ppt&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint.addin.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ppam&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint.presentation.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pptm&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint.slide.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sldm&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint.slideshow.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ppsm&#039;,
+  ),
+  &#039;application/vnd.ms-powerpoint.template.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;potm&#039;,
+  ),
+  &#039;application/vnd.ms-project&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mpp&#039;,
+    1 =&gt; &#039;mpt&#039;,
+  ),
+  &#039;application/vnd.ms-word.document.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;docm&#039;,
+  ),
+  &#039;application/vnd.ms-word.template.macroenabled.12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dotm&#039;,
+  ),
+  &#039;application/vnd.ms-works&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wcm&#039;,
+    1 =&gt; &#039;wdb&#039;,
+    2 =&gt; &#039;wks&#039;,
+    3 =&gt; &#039;wps&#039;,
+  ),
+  &#039;application/vnd.ms-wpl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wpl&#039;,
+  ),
+  &#039;application/vnd.ms-xpsdocument&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xps&#039;,
+  ),
+  &#039;application/vnd.mseq&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mseq&#039;,
+  ),
+  &#039;application/vnd.musician&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mus&#039;,
+  ),
+  &#039;application/vnd.muvee.style&#039; =&gt; 
+  array (
+    0 =&gt; &#039;msty&#039;,
+  ),
+  &#039;application/vnd.mynfc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;taglet&#039;,
+  ),
+  &#039;application/vnd.neurolanguage.nlu&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nlu&#039;,
+  ),
+  &#039;application/vnd.nitf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nitf&#039;,
+    1 =&gt; &#039;ntf&#039;,
+  ),
+  &#039;application/vnd.noblenet-directory&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nnd&#039;,
+  ),
+  &#039;application/vnd.noblenet-sealer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nns&#039;,
+  ),
+  &#039;application/vnd.noblenet-web&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nnw&#039;,
+  ),
+  &#039;application/vnd.nokia.n-gage.data&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ngdat&#039;,
+  ),
+  &#039;application/vnd.nokia.n-gage.symbian.install&#039; =&gt; 
+  array (
+    0 =&gt; &#039;n-gage&#039;,
+  ),
+  &#039;application/vnd.nokia.radio-preset&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rpst&#039;,
+  ),
+  &#039;application/vnd.nokia.radio-presets&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rpss&#039;,
+  ),
+  &#039;application/vnd.novadigm.edm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;edm&#039;,
+  ),
+  &#039;application/vnd.novadigm.edx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;edx&#039;,
+  ),
+  &#039;application/vnd.novadigm.ext&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ext&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.chart&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odc&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.chart-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;otc&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.database&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odb&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.formula&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odf&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.formula-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odft&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.graphics&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odg&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.graphics-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;otg&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.image&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odi&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.image-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oti&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.presentation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odp&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.presentation-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;otp&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.spreadsheet&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ods&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.spreadsheet-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ots&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.text&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odt&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.text-master&#039; =&gt; 
+  array (
+    0 =&gt; &#039;odm&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.text-template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ott&#039;,
+  ),
+  &#039;application/vnd.oasis.opendocument.text-web&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oth&#039;,
+  ),
+  &#039;application/vnd.olpc-sugar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xo&#039;,
+  ),
+  &#039;application/vnd.oma.dd2+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dd2&#039;,
+  ),
+  &#039;application/vnd.openofficeorg.extension&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oxt&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.presentationml.presentation&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pptx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.presentationml.slide&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sldx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.presentationml.slideshow&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ppsx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.presentationml.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;potx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xlsx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.spreadsheetml.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xltx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.wordprocessingml.document&#039; =&gt; 
+  array (
+    0 =&gt; &#039;docx&#039;,
+  ),
+  &#039;application/vnd.openxmlformats-officedocument.wordprocessingml.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dotx&#039;,
+  ),
+  &#039;application/vnd.osgeo.mapguide.package&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mgp&#039;,
+  ),
+  &#039;application/vnd.osgi.dp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dp&#039;,
+  ),
+  &#039;application/vnd.osgi.subsystem&#039; =&gt; 
+  array (
+    0 =&gt; &#039;esa&#039;,
+  ),
+  &#039;application/vnd.palm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oprc&#039;,
+    1 =&gt; &#039;pdb&#039;,
+    2 =&gt; &#039;pqa&#039;,
+  ),
+  &#039;application/vnd.pawaafile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;paw&#039;,
+  ),
+  &#039;application/vnd.pg.format&#039; =&gt; 
+  array (
+    0 =&gt; &#039;str&#039;,
+  ),
+  &#039;application/vnd.pg.osasli&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ei6&#039;,
+  ),
+  &#039;application/vnd.picsel&#039; =&gt; 
+  array (
+    0 =&gt; &#039;efif&#039;,
+  ),
+  &#039;application/vnd.pmi.widget&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wg&#039;,
+  ),
+  &#039;application/vnd.pocketlearn&#039; =&gt; 
+  array (
+    0 =&gt; &#039;plf&#039;,
+  ),
+  &#039;application/vnd.powerbuilder6&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pbd&#039;,
+  ),
+  &#039;application/vnd.previewsystems.box&#039; =&gt; 
+  array (
+    0 =&gt; &#039;box&#039;,
+  ),
+  &#039;application/vnd.proteus.magazine&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mgz&#039;,
+  ),
+  &#039;application/vnd.publishare-delta-tree&#039; =&gt; 
+  array (
+    0 =&gt; &#039;qps&#039;,
+  ),
+  &#039;application/vnd.pvi.ptid1&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ptid&#039;,
+  ),
+  &#039;application/vnd.quark.quarkxpress&#039; =&gt; 
+  array (
+    0 =&gt; &#039;qwd&#039;,
+    1 =&gt; &#039;qwt&#039;,
+    2 =&gt; &#039;qxb&#039;,
+    3 =&gt; &#039;qxd&#039;,
+    4 =&gt; &#039;qxl&#039;,
+    5 =&gt; &#039;qxt&#039;,
+  ),
+  &#039;application/vnd.realvnc.bed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bed&#039;,
+  ),
+  &#039;application/vnd.recordare.musicxml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mxl&#039;,
+  ),
+  &#039;application/vnd.recordare.musicxml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;musicxml&#039;,
+  ),
+  &#039;application/vnd.rig.cryptonote&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cryptonote&#039;,
+  ),
+  &#039;application/vnd.rim.cod&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cod&#039;,
+  ),
+  &#039;application/vnd.rn-realmedia&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rm&#039;,
+  ),
+  &#039;application/vnd.rn-realmedia-vbr&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rmvb&#039;,
+  ),
+  &#039;application/vnd.route66.link66+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;link66&#039;,
+  ),
+  &#039;application/vnd.sailingtracker.track&#039; =&gt; 
+  array (
+    0 =&gt; &#039;st&#039;,
+  ),
+  &#039;application/vnd.seemail&#039; =&gt; 
+  array (
+    0 =&gt; &#039;see&#039;,
+  ),
+  &#039;application/vnd.sema&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sema&#039;,
+  ),
+  &#039;application/vnd.semd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;semd&#039;,
+  ),
+  &#039;application/vnd.semf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;semf&#039;,
+  ),
+  &#039;application/vnd.shana.informed.formdata&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ifm&#039;,
+  ),
+  &#039;application/vnd.shana.informed.formtemplate&#039; =&gt; 
+  array (
+    0 =&gt; &#039;itp&#039;,
+  ),
+  &#039;application/vnd.shana.informed.interchange&#039; =&gt; 
+  array (
+    0 =&gt; &#039;iif&#039;,
+  ),
+  &#039;application/vnd.shana.informed.package&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ipk&#039;,
+  ),
+  &#039;application/vnd.simtech-mindmapper&#039; =&gt; 
+  array (
+    0 =&gt; &#039;twd&#039;,
+    1 =&gt; &#039;twds&#039;,
+  ),
+  &#039;application/vnd.smaf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mmf&#039;,
+  ),
+  &#039;application/vnd.smart.teacher&#039; =&gt; 
+  array (
+    0 =&gt; &#039;teacher&#039;,
+  ),
+  &#039;application/vnd.solent.sdkm+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sdkd&#039;,
+    1 =&gt; &#039;sdkm&#039;,
+  ),
+  &#039;application/vnd.spotfire.dxp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dxp&#039;,
+  ),
+  &#039;application/vnd.spotfire.sfs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sfs&#039;,
+  ),
+  &#039;application/vnd.stardivision.calc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sdc&#039;,
+  ),
+  &#039;application/vnd.stardivision.draw&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sda&#039;,
+  ),
+  &#039;application/vnd.stardivision.impress&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sdd&#039;,
+  ),
+  &#039;application/vnd.stardivision.math&#039; =&gt; 
+  array (
+    0 =&gt; &#039;smf&#039;,
+  ),
+  &#039;application/vnd.stardivision.writer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sdw&#039;,
+    1 =&gt; &#039;vor&#039;,
+  ),
+  &#039;application/vnd.stardivision.writer-global&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sgl&#039;,
+  ),
+  &#039;application/vnd.stepmania.package&#039; =&gt; 
+  array (
+    0 =&gt; &#039;smzip&#039;,
+  ),
+  &#039;application/vnd.stepmania.stepchart&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sm&#039;,
+  ),
+  &#039;application/vnd.sun.xml.calc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxc&#039;,
+  ),
+  &#039;application/vnd.sun.xml.calc.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;stc&#039;,
+  ),
+  &#039;application/vnd.sun.xml.draw&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxd&#039;,
+  ),
+  &#039;application/vnd.sun.xml.draw.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;std&#039;,
+  ),
+  &#039;application/vnd.sun.xml.impress&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxi&#039;,
+  ),
+  &#039;application/vnd.sun.xml.impress.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sti&#039;,
+  ),
+  &#039;application/vnd.sun.xml.math&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxm&#039;,
+  ),
+  &#039;application/vnd.sun.xml.writer&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxw&#039;,
+  ),
+  &#039;application/vnd.sun.xml.writer.global&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sxg&#039;,
+  ),
+  &#039;application/vnd.sun.xml.writer.template&#039; =&gt; 
+  array (
+    0 =&gt; &#039;stw&#039;,
+  ),
+  &#039;application/vnd.sus-calendar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sus&#039;,
+    1 =&gt; &#039;susp&#039;,
+  ),
+  &#039;application/vnd.svd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;svd&#039;,
+  ),
+  &#039;application/vnd.symbian.install&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sis&#039;,
+    1 =&gt; &#039;sisx&#039;,
+  ),
+  &#039;application/vnd.syncml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xsm&#039;,
+  ),
+  &#039;application/vnd.syncml.dm+wbxml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bdm&#039;,
+  ),
+  &#039;application/vnd.syncml.dm+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xdm&#039;,
+  ),
+  &#039;application/vnd.tao.intent-module-archive&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tao&#039;,
+  ),
+  &#039;application/vnd.tcpdump.pcap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cap&#039;,
+    1 =&gt; &#039;dmp&#039;,
+    2 =&gt; &#039;pcap&#039;,
+  ),
+  &#039;application/vnd.tmobile-livetv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tmo&#039;,
+  ),
+  &#039;application/vnd.trid.tpt&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tpt&#039;,
+  ),
+  &#039;application/vnd.triscape.mxs&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mxs&#039;,
+  ),
+  &#039;application/vnd.trueapp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tra&#039;,
+  ),
+  &#039;application/vnd.ufdl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ufd&#039;,
+    1 =&gt; &#039;ufdl&#039;,
+  ),
+  &#039;application/vnd.uiq.theme&#039; =&gt; 
+  array (
+    0 =&gt; &#039;utz&#039;,
+  ),
+  &#039;application/vnd.umajin&#039; =&gt; 
+  array (
+    0 =&gt; &#039;umj&#039;,
+  ),
+  &#039;application/vnd.unity&#039; =&gt; 
+  array (
+    0 =&gt; &#039;unityweb&#039;,
+  ),
+  &#039;application/vnd.uoml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uoml&#039;,
+  ),
+  &#039;application/vnd.vcx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcx&#039;,
+  ),
+  &#039;application/vnd.visio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vsd&#039;,
+    1 =&gt; &#039;vss&#039;,
+    2 =&gt; &#039;vst&#039;,
+    3 =&gt; &#039;vsw&#039;,
+  ),
+  &#039;application/vnd.visionary&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vis&#039;,
+  ),
+  &#039;application/vnd.vsf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vsf&#039;,
+  ),
+  &#039;application/vnd.wap.wbxml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wbxml&#039;,
+  ),
+  &#039;application/vnd.wap.wmlc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmlc&#039;,
+  ),
+  &#039;application/vnd.wap.wmlscriptc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmlsc&#039;,
+  ),
+  &#039;application/vnd.webturbo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wtb&#039;,
+  ),
+  &#039;application/vnd.wolfram.player&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nbp&#039;,
+  ),
+  &#039;application/vnd.wordperfect&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wpd&#039;,
+  ),
+  &#039;application/vnd.wqd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wqd&#039;,
+  ),
+  &#039;application/vnd.wt.stf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;stf&#039;,
+  ),
+  &#039;application/vnd.xara&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xar&#039;,
+  ),
+  &#039;application/vnd.xfdl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xfdl&#039;,
+  ),
+  &#039;application/vnd.yamaha.hv-dic&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hvd&#039;,
+  ),
+  &#039;application/vnd.yamaha.hv-script&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hvs&#039;,
+  ),
+  &#039;application/vnd.yamaha.hv-voice&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hvp&#039;,
+  ),
+  &#039;application/vnd.yamaha.openscoreformat&#039; =&gt; 
+  array (
+    0 =&gt; &#039;osf&#039;,
+  ),
+  &#039;application/vnd.yamaha.openscoreformat.osfpvg+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;osfpvg&#039;,
+  ),
+  &#039;application/vnd.yamaha.smaf-audio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;saf&#039;,
+  ),
+  &#039;application/vnd.yamaha.smaf-phrase&#039; =&gt; 
+  array (
+    0 =&gt; &#039;spf&#039;,
+  ),
+  &#039;application/vnd.yellowriver-custom-menu&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cmp&#039;,
+  ),
+  &#039;application/vnd.zul&#039; =&gt; 
+  array (
+    0 =&gt; &#039;zir&#039;,
+    1 =&gt; &#039;zirz&#039;,
+  ),
+  &#039;application/vnd.zzazz.deck+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;zaz&#039;,
+  ),
+  &#039;application/voicexml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vxml&#039;,
+  ),
+  &#039;application/widget&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wgt&#039;,
+  ),
+  &#039;application/winhlp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hlp&#039;,
+  ),
+  &#039;application/wsdl+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wsdl&#039;,
+  ),
+  &#039;application/wspolicy+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wspolicy&#039;,
+  ),
+  &#039;application/x-7z-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;7z&#039;,
+  ),
+  &#039;application/x-abiword&#039; =&gt; 
+  array (
+    0 =&gt; &#039;abw&#039;,
+  ),
+  &#039;application/x-ace-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ace&#039;,
+  ),
+  &#039;application/x-apple-diskimage&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dmg&#039;,
+  ),
+  &#039;application/x-authorware-bin&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aab&#039;,
+    1 =&gt; &#039;u32&#039;,
+    2 =&gt; &#039;vox&#039;,
+    3 =&gt; &#039;x32&#039;,
+  ),
+  &#039;application/x-authorware-map&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aam&#039;,
+  ),
+  &#039;application/x-authorware-seg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aas&#039;,
+  ),
+  &#039;application/x-bcpio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bcpio&#039;,
+  ),
+  &#039;application/x-bittorrent&#039; =&gt; 
+  array (
+    0 =&gt; &#039;torrent&#039;,
+  ),
+  &#039;application/x-blorb&#039; =&gt; 
+  array (
+    0 =&gt; &#039;blb&#039;,
+    1 =&gt; &#039;blorb&#039;,
+  ),
+  &#039;application/x-bzip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bz&#039;,
+  ),
+  &#039;application/x-bzip2&#039; =&gt; 
+  array (
+    0 =&gt; &#039;boz&#039;,
+    1 =&gt; &#039;bz2&#039;,
+  ),
+  &#039;application/x-cbr&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cb7&#039;,
+    1 =&gt; &#039;cba&#039;,
+    2 =&gt; &#039;cbr&#039;,
+    3 =&gt; &#039;cbt&#039;,
+    4 =&gt; &#039;cbz&#039;,
+  ),
+  &#039;application/x-cdlink&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcd&#039;,
+  ),
+  &#039;application/x-cfs-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cfs&#039;,
+  ),
+  &#039;application/x-chat&#039; =&gt; 
+  array (
+    0 =&gt; &#039;chat&#039;,
+  ),
+  &#039;application/x-chess-pgn&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pgn&#039;,
+  ),
+  &#039;application/x-conference&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nsc&#039;,
+  ),
+  &#039;application/x-cpio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cpio&#039;,
+  ),
+  &#039;application/x-csh&#039; =&gt; 
+  array (
+    0 =&gt; &#039;csh&#039;,
+  ),
+  &#039;application/x-debian-package&#039; =&gt; 
+  array (
+    0 =&gt; &#039;deb&#039;,
+    1 =&gt; &#039;udeb&#039;,
+  ),
+  &#039;application/x-dgc-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dgc&#039;,
+  ),
+  &#039;application/x-director&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cct&#039;,
+    1 =&gt; &#039;cst&#039;,
+    2 =&gt; &#039;cxt&#039;,
+    3 =&gt; &#039;dcr&#039;,
+    4 =&gt; &#039;dir&#039;,
+    5 =&gt; &#039;dxr&#039;,
+    6 =&gt; &#039;fgd&#039;,
+    7 =&gt; &#039;swa&#039;,
+    8 =&gt; &#039;w3d&#039;,
+  ),
+  &#039;application/x-doom&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wad&#039;,
+  ),
+  &#039;application/x-dtbncx+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ncx&#039;,
+  ),
+  &#039;application/x-dtbook+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dtb&#039;,
+  ),
+  &#039;application/x-dtbresource+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;res&#039;,
+  ),
+  &#039;application/x-dvi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dvi&#039;,
+  ),
+  &#039;application/x-envoy&#039; =&gt; 
+  array (
+    0 =&gt; &#039;evy&#039;,
+  ),
+  &#039;application/x-eva&#039; =&gt; 
+  array (
+    0 =&gt; &#039;eva&#039;,
+  ),
+  &#039;application/x-font-bdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bdf&#039;,
+  ),
+  &#039;application/x-font-ghostscript&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gsf&#039;,
+  ),
+  &#039;application/x-font-linux-psf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;psf&#039;,
+  ),
+  &#039;application/x-font-pcf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pcf&#039;,
+  ),
+  &#039;application/x-font-snf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;snf&#039;,
+  ),
+  &#039;application/x-font-type1&#039; =&gt; 
+  array (
+    0 =&gt; &#039;afm&#039;,
+    1 =&gt; &#039;pfa&#039;,
+    2 =&gt; &#039;pfb&#039;,
+    3 =&gt; &#039;pfm&#039;,
+  ),
+  &#039;application/x-freearc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;arc&#039;,
+  ),
+  &#039;application/x-futuresplash&#039; =&gt; 
+  array (
+    0 =&gt; &#039;spl&#039;,
+  ),
+  &#039;application/x-gca-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gca&#039;,
+  ),
+  &#039;application/x-glulx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ulx&#039;,
+  ),
+  &#039;application/x-gnumeric&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gnumeric&#039;,
+  ),
+  &#039;application/x-gramps-xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gramps&#039;,
+  ),
+  &#039;application/x-gtar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gtar&#039;,
+  ),
+  &#039;application/x-hdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;hdf&#039;,
+  ),
+  &#039;application/x-install-instructions&#039; =&gt; 
+  array (
+    0 =&gt; &#039;install&#039;,
+  ),
+  &#039;application/x-iso9660-image&#039; =&gt; 
+  array (
+    0 =&gt; &#039;iso&#039;,
+  ),
+  &#039;application/x-java-jnlp-file&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jnlp&#039;,
+  ),
+  &#039;application/x-latex&#039; =&gt; 
+  array (
+    0 =&gt; &#039;latex&#039;,
+  ),
+  &#039;application/x-lzh-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lha&#039;,
+    1 =&gt; &#039;lzh&#039;,
+  ),
+  &#039;application/x-mie&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mie&#039;,
+  ),
+  &#039;application/x-mobipocket-ebook&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mobi&#039;,
+    1 =&gt; &#039;prc&#039;,
+  ),
+  &#039;application/x-ms-application&#039; =&gt; 
+  array (
+    0 =&gt; &#039;application&#039;,
+  ),
+  &#039;application/x-ms-shortcut&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lnk&#039;,
+  ),
+  &#039;application/x-ms-wmd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmd&#039;,
+  ),
+  &#039;application/x-ms-wmz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmz&#039;,
+  ),
+  &#039;application/x-ms-xbap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xbap&#039;,
+  ),
+  &#039;application/x-msaccess&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mdb&#039;,
+  ),
+  &#039;application/x-msbinder&#039; =&gt; 
+  array (
+    0 =&gt; &#039;obd&#039;,
+  ),
+  &#039;application/x-mscardfile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;crd&#039;,
+  ),
+  &#039;application/x-msclip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;clp&#039;,
+  ),
+  &#039;application/x-msdownload&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bat&#039;,
+    1 =&gt; &#039;com&#039;,
+    2 =&gt; &#039;dll&#039;,
+    3 =&gt; &#039;exe&#039;,
+    4 =&gt; &#039;msi&#039;,
+  ),
+  &#039;application/x-msmediaview&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m13&#039;,
+    1 =&gt; &#039;m14&#039;,
+    2 =&gt; &#039;mvb&#039;,
+  ),
+  &#039;application/x-msmetafile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;emf&#039;,
+    1 =&gt; &#039;emz&#039;,
+    2 =&gt; &#039;wmf&#039;,
+    3 =&gt; &#039;wmz&#039;,
+  ),
+  &#039;application/x-msmoney&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mny&#039;,
+  ),
+  &#039;application/x-mspublisher&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pub&#039;,
+  ),
+  &#039;application/x-msschedule&#039; =&gt; 
+  array (
+    0 =&gt; &#039;scd&#039;,
+  ),
+  &#039;application/x-msterminal&#039; =&gt; 
+  array (
+    0 =&gt; &#039;trm&#039;,
+  ),
+  &#039;application/x-mswrite&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wri&#039;,
+  ),
+  &#039;application/x-netcdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdf&#039;,
+    1 =&gt; &#039;nc&#039;,
+  ),
+  &#039;application/x-nzb&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nzb&#039;,
+  ),
+  &#039;application/x-pkcs12&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p12&#039;,
+    1 =&gt; &#039;pfx&#039;,
+  ),
+  &#039;application/x-pkcs7-certificates&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p7b&#039;,
+    1 =&gt; &#039;spc&#039;,
+  ),
+  &#039;application/x-pkcs7-certreqresp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p7r&#039;,
+  ),
+  &#039;application/x-rar-compressed&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rar&#039;,
+  ),
+  &#039;application/x-research-info-systems&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ris&#039;,
+  ),
+  &#039;application/x-sh&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sh&#039;,
+  ),
+  &#039;application/x-shar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;shar&#039;,
+  ),
+  &#039;application/x-shockwave-flash&#039; =&gt; 
+  array (
+    0 =&gt; &#039;swf&#039;,
+  ),
+  &#039;application/x-silverlight-app&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xap&#039;,
+  ),
+  &#039;application/x-sql&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sql&#039;,
+  ),
+  &#039;application/x-stuffit&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sit&#039;,
+  ),
+  &#039;application/x-stuffitx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sitx&#039;,
+  ),
+  &#039;application/x-subrip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;srt&#039;,
+  ),
+  &#039;application/x-sv4cpio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sv4cpio&#039;,
+  ),
+  &#039;application/x-sv4crc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sv4crc&#039;,
+  ),
+  &#039;application/x-t3vm-image&#039; =&gt; 
+  array (
+    0 =&gt; &#039;t3&#039;,
+  ),
+  &#039;application/x-tads&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gam&#039;,
+  ),
+  &#039;application/x-tar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tar&#039;,
+  ),
+  &#039;application/x-tcl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tcl&#039;,
+  ),
+  &#039;application/x-tex&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tex&#039;,
+  ),
+  &#039;application/x-tex-tfm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tfm&#039;,
+  ),
+  &#039;application/x-texinfo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;texi&#039;,
+    1 =&gt; &#039;texinfo&#039;,
+  ),
+  &#039;application/x-tgif&#039; =&gt; 
+  array (
+    0 =&gt; &#039;obj&#039;,
+  ),
+  &#039;application/x-ustar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ustar&#039;,
+  ),
+  &#039;application/x-wais-source&#039; =&gt; 
+  array (
+    0 =&gt; &#039;src&#039;,
+  ),
+  &#039;application/x-x509-ca-cert&#039; =&gt; 
+  array (
+    0 =&gt; &#039;crt&#039;,
+    1 =&gt; &#039;der&#039;,
+  ),
+  &#039;application/x-xfig&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fig&#039;,
+  ),
+  &#039;application/x-xliff+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xlf&#039;,
+  ),
+  &#039;application/x-xpinstall&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xpi&#039;,
+  ),
+  &#039;application/x-xz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xz&#039;,
+  ),
+  &#039;application/x-zmachine&#039; =&gt; 
+  array (
+    0 =&gt; &#039;z1&#039;,
+    1 =&gt; &#039;z2&#039;,
+    2 =&gt; &#039;z3&#039;,
+    3 =&gt; &#039;z4&#039;,
+    4 =&gt; &#039;z5&#039;,
+    5 =&gt; &#039;z6&#039;,
+    6 =&gt; &#039;z7&#039;,
+    7 =&gt; &#039;z8&#039;,
+  ),
+  &#039;application/xaml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xaml&#039;,
+  ),
+  &#039;application/xcap-diff+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xdf&#039;,
+  ),
+  &#039;application/xenc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xenc&#039;,
+  ),
+  &#039;application/xhtml+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xht&#039;,
+    1 =&gt; &#039;xhtml&#039;,
+  ),
+  &#039;application/xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xml&#039;,
+    1 =&gt; &#039;xsl&#039;,
+  ),
+  &#039;application/xml-dtd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dtd&#039;,
+  ),
+  &#039;application/xop+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xop&#039;,
+  ),
+  &#039;application/xproc+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xpl&#039;,
+  ),
+  &#039;application/xslt+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xslt&#039;,
+  ),
+  &#039;application/xspf+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xspf&#039;,
+  ),
+  &#039;application/xv+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mxml&#039;,
+    1 =&gt; &#039;xhvml&#039;,
+    2 =&gt; &#039;xvm&#039;,
+    3 =&gt; &#039;xvml&#039;,
+  ),
+  &#039;application/yang&#039; =&gt; 
+  array (
+    0 =&gt; &#039;yang&#039;,
+  ),
+  &#039;application/yin+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;yin&#039;,
+  ),
+  &#039;application/zip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;zip&#039;,
+  ),
+  &#039;audio/adpcm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;adp&#039;,
+  ),
+  &#039;audio/basic&#039; =&gt; 
+  array (
+    0 =&gt; &#039;au&#039;,
+    1 =&gt; &#039;snd&#039;,
+  ),
+  &#039;audio/midi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;kar&#039;,
+    1 =&gt; &#039;mid&#039;,
+    2 =&gt; &#039;midi&#039;,
+    3 =&gt; &#039;rmi&#039;,
+  ),
+  &#039;audio/mp4&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m4a&#039;,
+    1 =&gt; &#039;mp4a&#039;,
+  ),
+  &#039;audio/mpeg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m2a&#039;,
+    1 =&gt; &#039;m3a&#039;,
+    2 =&gt; &#039;mp2&#039;,
+    3 =&gt; &#039;mp2a&#039;,
+    4 =&gt; &#039;mp3&#039;,
+    5 =&gt; &#039;mpga&#039;,
+  ),
+  &#039;audio/ogg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;oga&#039;,
+    1 =&gt; &#039;ogg&#039;,
+    2 =&gt; &#039;spx&#039;,
+  ),
+  &#039;audio/s3m&#039; =&gt; 
+  array (
+    0 =&gt; &#039;s3m&#039;,
+  ),
+  &#039;audio/silk&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sil&#039;,
+  ),
+  &#039;audio/vnd.dece.audio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uva&#039;,
+    1 =&gt; &#039;uvva&#039;,
+  ),
+  &#039;audio/vnd.digital-winds&#039; =&gt; 
+  array (
+    0 =&gt; &#039;eol&#039;,
+  ),
+  &#039;audio/vnd.dra&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dra&#039;,
+  ),
+  &#039;audio/vnd.dts&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dts&#039;,
+  ),
+  &#039;audio/vnd.dts.hd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dtshd&#039;,
+  ),
+  &#039;audio/vnd.lucent.voice&#039; =&gt; 
+  array (
+    0 =&gt; &#039;lvp&#039;,
+  ),
+  &#039;audio/vnd.ms-playready.media.pya&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pya&#039;,
+  ),
+  &#039;audio/vnd.nuera.ecelp4800&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ecelp4800&#039;,
+  ),
+  &#039;audio/vnd.nuera.ecelp7470&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ecelp7470&#039;,
+  ),
+  &#039;audio/vnd.nuera.ecelp9600&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ecelp9600&#039;,
+  ),
+  &#039;audio/vnd.rip&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rip&#039;,
+  ),
+  &#039;audio/webm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;weba&#039;,
+  ),
+  &#039;audio/x-aac&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aac&#039;,
+  ),
+  &#039;audio/x-aiff&#039; =&gt; 
+  array (
+    0 =&gt; &#039;aif&#039;,
+    1 =&gt; &#039;aifc&#039;,
+    2 =&gt; &#039;aiff&#039;,
+  ),
+  &#039;audio/x-caf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;caf&#039;,
+  ),
+  &#039;audio/x-flac&#039; =&gt; 
+  array (
+    0 =&gt; &#039;flac&#039;,
+  ),
+  &#039;audio/x-matroska&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mka&#039;,
+  ),
+  &#039;audio/x-mpegurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m3u&#039;,
+  ),
+  &#039;audio/x-ms-wax&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wax&#039;,
+  ),
+  &#039;audio/x-ms-wma&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wma&#039;,
+  ),
+  &#039;audio/x-pn-realaudio&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ra&#039;,
+    1 =&gt; &#039;ram&#039;,
+  ),
+  &#039;audio/x-pn-realaudio-plugin&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rmp&#039;,
+  ),
+  &#039;audio/x-wav&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wav&#039;,
+  ),
+  &#039;audio/xm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xm&#039;,
+  ),
+  &#039;chemical/x-cdx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cdx&#039;,
+  ),
+  &#039;chemical/x-cif&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cif&#039;,
+  ),
+  &#039;chemical/x-cmdf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cmdf&#039;,
+  ),
+  &#039;chemical/x-cml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cml&#039;,
+  ),
+  &#039;chemical/x-csml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;csml&#039;,
+  ),
+  &#039;chemical/x-xyz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xyz&#039;,
+  ),
+  &#039;font/collection&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ttc&#039;,
+  ),
+  &#039;font/otf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;otf&#039;,
+  ),
+  &#039;font/ttf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ttf&#039;,
+  ),
+  &#039;font/woff&#039; =&gt; 
+  array (
+    0 =&gt; &#039;woff&#039;,
+  ),
+  &#039;font/woff2&#039; =&gt; 
+  array (
+    0 =&gt; &#039;woff2&#039;,
+  ),
+  &#039;image/bmp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;bmp&#039;,
+  ),
+  &#039;image/cgm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cgm&#039;,
+  ),
+  &#039;image/g3fax&#039; =&gt; 
+  array (
+    0 =&gt; &#039;g3&#039;,
+  ),
+  &#039;image/gif&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gif&#039;,
+  ),
+  &#039;image/ief&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ief&#039;,
+  ),
+  &#039;image/jpeg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jpe&#039;,
+    1 =&gt; &#039;jpeg&#039;,
+    2 =&gt; &#039;jpg&#039;,
+  ),
+  &#039;image/ktx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ktx&#039;,
+  ),
+  &#039;image/png&#039; =&gt; 
+  array (
+    0 =&gt; &#039;png&#039;,
+  ),
+  &#039;image/prs.btif&#039; =&gt; 
+  array (
+    0 =&gt; &#039;btif&#039;,
+  ),
+  &#039;image/sgi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sgi&#039;,
+  ),
+  &#039;image/svg+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;svg&#039;,
+    1 =&gt; &#039;svgz&#039;,
+  ),
+  &#039;image/tiff&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tif&#039;,
+    1 =&gt; &#039;tiff&#039;,
+  ),
+  &#039;image/vnd.adobe.photoshop&#039; =&gt; 
+  array (
+    0 =&gt; &#039;psd&#039;,
+  ),
+  &#039;image/vnd.dece.graphic&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvg&#039;,
+    1 =&gt; &#039;uvi&#039;,
+    2 =&gt; &#039;uvvg&#039;,
+    3 =&gt; &#039;uvvi&#039;,
+  ),
+  &#039;image/vnd.djvu&#039; =&gt; 
+  array (
+    0 =&gt; &#039;djv&#039;,
+    1 =&gt; &#039;djvu&#039;,
+  ),
+  &#039;image/vnd.dvb.subtitle&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sub&#039;,
+  ),
+  &#039;image/vnd.dwg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dwg&#039;,
+  ),
+  &#039;image/vnd.dxf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dxf&#039;,
+  ),
+  &#039;image/vnd.fastbidsheet&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fbs&#039;,
+  ),
+  &#039;image/vnd.fpx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fpx&#039;,
+  ),
+  &#039;image/vnd.fst&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fst&#039;,
+  ),
+  &#039;image/vnd.fujixerox.edmics-mmr&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mmr&#039;,
+  ),
+  &#039;image/vnd.fujixerox.edmics-rlc&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rlc&#039;,
+  ),
+  &#039;image/vnd.ms-modi&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mdi&#039;,
+  ),
+  &#039;image/vnd.ms-photo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wdp&#039;,
+  ),
+  &#039;image/vnd.net-fpx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;npx&#039;,
+  ),
+  &#039;image/vnd.wap.wbmp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wbmp&#039;,
+  ),
+  &#039;image/vnd.xiff&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xif&#039;,
+  ),
+  &#039;image/webp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;webp&#039;,
+  ),
+  &#039;image/x-3ds&#039; =&gt; 
+  array (
+    0 =&gt; &#039;3ds&#039;,
+  ),
+  &#039;image/x-cmu-raster&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ras&#039;,
+  ),
+  &#039;image/x-cmx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;cmx&#039;,
+  ),
+  &#039;image/x-freehand&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fh&#039;,
+    1 =&gt; &#039;fh4&#039;,
+    2 =&gt; &#039;fh5&#039;,
+    3 =&gt; &#039;fh7&#039;,
+    4 =&gt; &#039;fhc&#039;,
+  ),
+  &#039;image/x-icon&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ico&#039;,
+  ),
+  &#039;image/x-mrsid-image&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sid&#039;,
+  ),
+  &#039;image/x-pcx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pcx&#039;,
+  ),
+  &#039;image/x-pict&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pct&#039;,
+    1 =&gt; &#039;pic&#039;,
+  ),
+  &#039;image/x-portable-anymap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pnm&#039;,
+  ),
+  &#039;image/x-portable-bitmap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pbm&#039;,
+  ),
+  &#039;image/x-portable-graymap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pgm&#039;,
+  ),
+  &#039;image/x-portable-pixmap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ppm&#039;,
+  ),
+  &#039;image/x-rgb&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rgb&#039;,
+  ),
+  &#039;image/x-tga&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tga&#039;,
+  ),
+  &#039;image/x-xbitmap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xbm&#039;,
+  ),
+  &#039;image/x-xpixmap&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xpm&#039;,
+  ),
+  &#039;image/x-xwindowdump&#039; =&gt; 
+  array (
+    0 =&gt; &#039;xwd&#039;,
+  ),
+  &#039;message/rfc822&#039; =&gt; 
+  array (
+    0 =&gt; &#039;eml&#039;,
+    1 =&gt; &#039;mime&#039;,
+  ),
+  &#039;model/iges&#039; =&gt; 
+  array (
+    0 =&gt; &#039;iges&#039;,
+    1 =&gt; &#039;igs&#039;,
+  ),
+  &#039;model/mesh&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mesh&#039;,
+    1 =&gt; &#039;msh&#039;,
+    2 =&gt; &#039;silo&#039;,
+  ),
+  &#039;model/vnd.collada+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dae&#039;,
+  ),
+  &#039;model/vnd.dwf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dwf&#039;,
+  ),
+  &#039;model/vnd.gdl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gdl&#039;,
+  ),
+  &#039;model/vnd.gtw&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gtw&#039;,
+  ),
+  &#039;model/vnd.mts&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mts&#039;,
+  ),
+  &#039;model/vnd.vtu&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vtu&#039;,
+  ),
+  &#039;model/vrml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vrml&#039;,
+    1 =&gt; &#039;wrl&#039;,
+  ),
+  &#039;model/x3d+binary&#039; =&gt; 
+  array (
+    0 =&gt; &#039;x3db&#039;,
+    1 =&gt; &#039;x3dbz&#039;,
+  ),
+  &#039;model/x3d+vrml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;x3dv&#039;,
+    1 =&gt; &#039;x3dvz&#039;,
+  ),
+  &#039;model/x3d+xml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;x3d&#039;,
+    1 =&gt; &#039;x3dz&#039;,
+  ),
+  &#039;text/cache-manifest&#039; =&gt; 
+  array (
+    0 =&gt; &#039;appcache&#039;,
+  ),
+  &#039;text/calendar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ics&#039;,
+    1 =&gt; &#039;ifb&#039;,
+  ),
+  &#039;text/css&#039; =&gt; 
+  array (
+    0 =&gt; &#039;css&#039;,
+  ),
+  &#039;text/csv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;csv&#039;,
+  ),
+  &#039;text/html&#039; =&gt; 
+  array (
+    0 =&gt; &#039;htm&#039;,
+    1 =&gt; &#039;html&#039;,
+  ),
+  &#039;text/n3&#039; =&gt; 
+  array (
+    0 =&gt; &#039;n3&#039;,
+  ),
+  &#039;text/plain&#039; =&gt; 
+  array (
+    0 =&gt; &#039;conf&#039;,
+    1 =&gt; &#039;def&#039;,
+    2 =&gt; &#039;in&#039;,
+    3 =&gt; &#039;list&#039;,
+    4 =&gt; &#039;log&#039;,
+    5 =&gt; &#039;text&#039;,
+    6 =&gt; &#039;txt&#039;,
+  ),
+  &#039;text/prs.lines.tag&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dsc&#039;,
+  ),
+  &#039;text/richtext&#039; =&gt; 
+  array (
+    0 =&gt; &#039;rtx&#039;,
+  ),
+  &#039;text/sgml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sgm&#039;,
+    1 =&gt; &#039;sgml&#039;,
+  ),
+  &#039;text/tab-separated-values&#039; =&gt; 
+  array (
+    0 =&gt; &#039;tsv&#039;,
+  ),
+  &#039;text/troff&#039; =&gt; 
+  array (
+    0 =&gt; &#039;man&#039;,
+    1 =&gt; &#039;me&#039;,
+    2 =&gt; &#039;ms&#039;,
+    3 =&gt; &#039;roff&#039;,
+    4 =&gt; &#039;t&#039;,
+    5 =&gt; &#039;tr&#039;,
+  ),
+  &#039;text/turtle&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ttl&#039;,
+  ),
+  &#039;text/uri-list&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uri&#039;,
+    1 =&gt; &#039;uris&#039;,
+    2 =&gt; &#039;urls&#039;,
+  ),
+  &#039;text/vcard&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcard&#039;,
+  ),
+  &#039;text/vnd.curl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;curl&#039;,
+  ),
+  &#039;text/vnd.curl.dcurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dcurl&#039;,
+  ),
+  &#039;text/vnd.curl.mcurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mcurl&#039;,
+  ),
+  &#039;text/vnd.curl.scurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;scurl&#039;,
+  ),
+  &#039;text/vnd.dvb.subtitle&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sub&#039;,
+  ),
+  &#039;text/vnd.fly&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fly&#039;,
+  ),
+  &#039;text/vnd.fmi.flexstor&#039; =&gt; 
+  array (
+    0 =&gt; &#039;flx&#039;,
+  ),
+  &#039;text/vnd.graphviz&#039; =&gt; 
+  array (
+    0 =&gt; &#039;gv&#039;,
+  ),
+  &#039;text/vnd.in3d.3dml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;3dml&#039;,
+  ),
+  &#039;text/vnd.in3d.spot&#039; =&gt; 
+  array (
+    0 =&gt; &#039;spot&#039;,
+  ),
+  &#039;text/vnd.sun.j2me.app-descriptor&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jad&#039;,
+  ),
+  &#039;text/vnd.wap.wml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wml&#039;,
+  ),
+  &#039;text/vnd.wap.wmlscript&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmls&#039;,
+  ),
+  &#039;text/x-asm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;asm&#039;,
+    1 =&gt; &#039;s&#039;,
+  ),
+  &#039;text/x-c&#039; =&gt; 
+  array (
+    0 =&gt; &#039;c&#039;,
+    1 =&gt; &#039;cc&#039;,
+    2 =&gt; &#039;cpp&#039;,
+    3 =&gt; &#039;cxx&#039;,
+    4 =&gt; &#039;dic&#039;,
+    5 =&gt; &#039;h&#039;,
+    6 =&gt; &#039;hh&#039;,
+  ),
+  &#039;text/x-fortran&#039; =&gt; 
+  array (
+    0 =&gt; &#039;f&#039;,
+    1 =&gt; &#039;f77&#039;,
+    2 =&gt; &#039;f90&#039;,
+    3 =&gt; &#039;for&#039;,
+  ),
+  &#039;text/x-java-source&#039; =&gt; 
+  array (
+    0 =&gt; &#039;java&#039;,
+  ),
+  &#039;text/x-nfo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;nfo&#039;,
+  ),
+  &#039;text/x-opml&#039; =&gt; 
+  array (
+    0 =&gt; &#039;opml&#039;,
+  ),
+  &#039;text/x-pascal&#039; =&gt; 
+  array (
+    0 =&gt; &#039;p&#039;,
+    1 =&gt; &#039;pas&#039;,
+  ),
+  &#039;text/x-setext&#039; =&gt; 
+  array (
+    0 =&gt; &#039;etx&#039;,
+  ),
+  &#039;text/x-sfv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;sfv&#039;,
+  ),
+  &#039;text/x-uuencode&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uu&#039;,
+  ),
+  &#039;text/x-vcalendar&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcs&#039;,
+  ),
+  &#039;text/x-vcard&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vcf&#039;,
+  ),
+  &#039;video/3gpp&#039; =&gt; 
+  array (
+    0 =&gt; &#039;3gp&#039;,
+  ),
+  &#039;video/3gpp2&#039; =&gt; 
+  array (
+    0 =&gt; &#039;3g2&#039;,
+  ),
+  &#039;video/h261&#039; =&gt; 
+  array (
+    0 =&gt; &#039;h261&#039;,
+  ),
+  &#039;video/h263&#039; =&gt; 
+  array (
+    0 =&gt; &#039;h263&#039;,
+  ),
+  &#039;video/h264&#039; =&gt; 
+  array (
+    0 =&gt; &#039;h264&#039;,
+  ),
+  &#039;video/jpeg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jpgv&#039;,
+  ),
+  &#039;video/jpm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;jpgm&#039;,
+    1 =&gt; &#039;jpm&#039;,
+  ),
+  &#039;video/mj2&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mj2&#039;,
+    1 =&gt; &#039;mjp2&#039;,
+  ),
+  &#039;video/mp4&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mp4&#039;,
+    1 =&gt; &#039;mp4v&#039;,
+    2 =&gt; &#039;mpg4&#039;,
+  ),
+  &#039;video/mpeg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m1v&#039;,
+    1 =&gt; &#039;m2v&#039;,
+    2 =&gt; &#039;mpe&#039;,
+    3 =&gt; &#039;mpeg&#039;,
+    4 =&gt; &#039;mpg&#039;,
+  ),
+  &#039;video/ogg&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ogv&#039;,
+  ),
+  &#039;video/quicktime&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mov&#039;,
+    1 =&gt; &#039;qt&#039;,
+  ),
+  &#039;video/vnd.dece.hd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvh&#039;,
+    1 =&gt; &#039;uvvh&#039;,
+  ),
+  &#039;video/vnd.dece.mobile&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvm&#039;,
+    1 =&gt; &#039;uvvm&#039;,
+  ),
+  &#039;video/vnd.dece.pd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvp&#039;,
+    1 =&gt; &#039;uvvp&#039;,
+  ),
+  &#039;video/vnd.dece.sd&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvs&#039;,
+    1 =&gt; &#039;uvvs&#039;,
+  ),
+  &#039;video/vnd.dece.video&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvv&#039;,
+    1 =&gt; &#039;uvvv&#039;,
+  ),
+  &#039;video/vnd.dvb.file&#039; =&gt; 
+  array (
+    0 =&gt; &#039;dvb&#039;,
+  ),
+  &#039;video/vnd.fvt&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fvt&#039;,
+  ),
+  &#039;video/vnd.mpegurl&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m4u&#039;,
+    1 =&gt; &#039;mxu&#039;,
+  ),
+  &#039;video/vnd.ms-playready.media.pyv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;pyv&#039;,
+  ),
+  &#039;video/vnd.uvvu.mp4&#039; =&gt; 
+  array (
+    0 =&gt; &#039;uvu&#039;,
+    1 =&gt; &#039;uvvu&#039;,
+  ),
+  &#039;video/vnd.vivo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;viv&#039;,
+  ),
+  &#039;video/webm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;webm&#039;,
+  ),
+  &#039;video/x-f4v&#039; =&gt; 
+  array (
+    0 =&gt; &#039;f4v&#039;,
+  ),
+  &#039;video/x-fli&#039; =&gt; 
+  array (
+    0 =&gt; &#039;fli&#039;,
+  ),
+  &#039;video/x-flv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;flv&#039;,
+  ),
+  &#039;video/x-m4v&#039; =&gt; 
+  array (
+    0 =&gt; &#039;m4v&#039;,
+  ),
+  &#039;video/x-matroska&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mk3d&#039;,
+    1 =&gt; &#039;mks&#039;,
+    2 =&gt; &#039;mkv&#039;,
+  ),
+  &#039;video/x-mng&#039; =&gt; 
+  array (
+    0 =&gt; &#039;mng&#039;,
+  ),
+  &#039;video/x-ms-asf&#039; =&gt; 
+  array (
+    0 =&gt; &#039;asf&#039;,
+    1 =&gt; &#039;asx&#039;,
+  ),
+  &#039;video/x-ms-vob&#039; =&gt; 
+  array (
+    0 =&gt; &#039;vob&#039;,
+  ),
+  &#039;video/x-ms-wm&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wm&#039;,
+  ),
+  &#039;video/x-ms-wmv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmv&#039;,
+  ),
+  &#039;video/x-ms-wmx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wmx&#039;,
+  ),
+  &#039;video/x-ms-wvx&#039; =&gt; 
+  array (
+    0 =&gt; &#039;wvx&#039;,
+  ),
+  &#039;video/x-msvideo&#039; =&gt; 
+  array (
+    0 =&gt; &#039;avi&#039;,
+  ),
+  &#039;video/x-sgi-movie&#039; =&gt; 
+  array (
+    0 =&gt; &#039;movie&#039;,
+  ),
+  &#039;video/x-smv&#039; =&gt; 
+  array (
+    0 =&gt; &#039;smv&#039;,
+  ),
+  &#039;x-conference/x-cooltalk&#039; =&gt; 
+  array (
+    0 =&gt; &#039;ice&#039;,
+  ),
+)</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>UploadedFile constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getClientExtension">getClientExtension()</a>
+                </dt>
+                <dd>Gets the file extension based on the filename sent from the client.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getClientType">getClientType()</a>
+                </dt>
+                <dd>Gets the file MIME content-type sent from the client.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDestination">getDestination()</a>
+                </dt>
+                <dd>The destination filename to which the uploaded file was moved.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getError">getError()</a>
+                </dt>
+                <dd>Gets the error code associated with this file upload.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getErrorMessage">getErrorMessage()</a>
+                </dt>
+                <dd>Gets the error message based on the file upload error code.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getExtension">getExtension()</a>
+                </dt>
+                <dd>Gets a file extension based on the MIME content-type.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getFullPath">getFullPath()</a>
+                </dt>
+                <dd>Gets the full path as submitted by the browser.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getName">getName()</a>
+                </dt>
+                <dd>Gets the uploaded file name sent in the request.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getSize">getSize()</a>
+                </dt>
+                <dd>Gets the size, in bytes, of the uploaded file.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getTmpName">getTmpName()</a>
+                </dt>
+                <dd>Gets the temporary filename of the file in which the uploaded file was stored on the server.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getType">getType()</a>
+                </dt>
+                <dd>Gets the MIME content-type from the uploaded file stored on the server.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isMoved">isMoved()</a>
+                </dt>
+                <dd>Tells if the uploaded file has been moved to a new destination.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isValid">isValid()</a>
+                </dt>
+                <dd>Tells if the file upload has no errors and is stored in the temporary directory.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-move">move()</a>
+                </dt>
+                <dd>Moves the uploaded file to a new destination.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setErrorMessage">setErrorMessage()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(array $file)</div>
+                                    <p class="phpdocumentor-summary">UploadedFile constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$file</span>
+                                                                            — a $_FILE item                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getClientExtension">
+                <h4>getClientExtension()</h4>
+                <div class="phpdocumentor-signature">public function getClientExtension(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the file extension based on the filename sent from the client.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>WARNING! This info is not secure. Use the getExtension method.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getClientType">
+                <h4>getClientType()</h4>
+                <div class="phpdocumentor-signature">public function getClientType(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the file MIME content-type sent from the client.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>WARNING! This info is not secure. Use the getType method.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDestination">
+                <h4>getDestination()</h4>
+                <div class="phpdocumentor-signature">public function getDestination(): ?string</div>
+                                    <p class="phpdocumentor-summary">The destination filename to which the uploaded file was moved.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getError">
+                <h4>getError()</h4>
+                <div class="phpdocumentor-signature">public function getError(): int</div>
+                                    <p class="phpdocumentor-summary">Gets the error code associated with this file upload.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getErrorMessage">
+                <h4>getErrorMessage()</h4>
+                <div class="phpdocumentor-signature">public function getErrorMessage(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the error message based on the file upload error code.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>WARNING! This message should not be showed to the final user.<br />
+Use Validation errors instead.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getExtension">
+                <h4>getExtension()</h4>
+                <div class="phpdocumentor-signature">public function getExtension(): string</div>
+                                    <p class="phpdocumentor-summary">Gets a file extension based on the MIME content-type.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getFullPath">
+                <h4>getFullPath()</h4>
+                <div class="phpdocumentor-signature">public function getFullPath(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the full path as submitted by the browser.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>WARNING! This value does not always contain a real directory structure,<br />
+and cannot be trusted.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getName">
+                <h4>getName()</h4>
+                <div class="phpdocumentor-signature">public function getName(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the uploaded file name sent in the request.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getSize">
+                <h4>getSize()</h4>
+                <div class="phpdocumentor-signature">public function getSize(): int</div>
+                                    <p class="phpdocumentor-summary">Gets the size, in bytes, of the uploaded file.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getTmpName">
+                <h4>getTmpName()</h4>
+                <div class="phpdocumentor-signature">public function getTmpName(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the temporary filename of the file in which the uploaded file was stored on the server.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getType">
+                <h4>getType()</h4>
+                <div class="phpdocumentor-signature">public function getType(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the MIME content-type from the uploaded file stored on the server.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isMoved">
+                <h4>isMoved()</h4>
+                <div class="phpdocumentor-signature">public function isMoved(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if the uploaded file has been moved to a new destination.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isValid">
+                <h4>isValid()</h4>
+                <div class="phpdocumentor-signature">public function isValid(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if the file upload has no errors and is stored in the temporary directory.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-move">
+                <h4>move()</h4>
+                <div class="phpdocumentor-signature">public function move(string $destination, bool $overwrite = false): bool</div>
+                                    <p class="phpdocumentor-summary">Moves the uploaded file to a new destination.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$destination</span>
+                                                                            — The filename to move the file                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$overwrite</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setErrorMessage">
+                <h4>setErrorMessage()</h4>
+                <div class="phpdocumentor-signature">protected function setErrorMessage(int $code): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$code</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

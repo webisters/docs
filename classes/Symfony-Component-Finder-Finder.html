@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Finder · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Symfony-Component-Finder-Finder.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Symfony Component Finder Finder</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Finder            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Symfony\Component\Finder\Finder</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Finder allows to build rules to find files and directories.</p>
+                            <div class="phpdocumentor-description">
+                                    <p>It is a thin wrapper around several specialized iterator classes.</p>
+                                    <p>All rules may be invoked several times.</p>
+                                    <p>All methods return the current Finder object to allow chaining:</p>
+                                    <p>    $finder = Finder::create()-&gt;files()-&gt;name(&#039;*.php&#039;)-&gt;in(__DIR__);</p>
+                            </div>
+        
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/IteratorAggregate.html"><code>IteratorAggregate</code></a>, <a href="../classes/Countable.html"><code>Countable</code></a>, <a href="../classes/Traversable.html"><code>Traversable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">D:/WEBISTERS/projects/app/vendor/symfony/finder/Finder.php</span>
+            </p>
+        
+                <h3 id="constants">
+            Constants <a href="#constants" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -constant">
+                    <a href="#const-IGNORE_VCS_FILES">IGNORE_VCS_FILES</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -constant">
+                    <a href="#const-IGNORE_DOT_FILES">IGNORE_DOT_FILES</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -constant">
+                    <a href="#const-IGNORE_VCS_IGNORED_FILES">IGNORE_VCS_IGNORED_FILES</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mode">$mode</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-names">$names</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-notNames">$notNames</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-exclude">$exclude</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-filters">$filters</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-pruneFilters">$pruneFilters</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-depths">$depths</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-sizes">$sizes</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-followLinks">$followLinks</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-reverseSorting">$reverseSorting</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-sort">$sort</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-ignore">$ignore</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-dirs">$dirs</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-dates">$dates</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-iterators">$iterators</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-contains">$contains</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-notContains">$notContains</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-paths">$paths</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-notPaths">$notPaths</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-ignoreUnreadableDirs">$ignoreUnreadableDirs</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-vcsPatterns">$vcsPatterns</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-mode">
+                <h4>$mode</h4>
+                <div class="phpdocumentor-signature">private int $mode = 0</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-names">
+                <h4>$names</h4>
+                <div class="phpdocumentor-signature">private array $names = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-notNames">
+                <h4>$notNames</h4>
+                <div class="phpdocumentor-signature">private array $notNames = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-exclude">
+                <h4>$exclude</h4>
+                <div class="phpdocumentor-signature">private array $exclude = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-filters">
+                <h4>$filters</h4>
+                <div class="phpdocumentor-signature">private array $filters = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-pruneFilters">
+                <h4>$pruneFilters</h4>
+                <div class="phpdocumentor-signature">private array $pruneFilters = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-depths">
+                <h4>$depths</h4>
+                <div class="phpdocumentor-signature">private array $depths = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-sizes">
+                <h4>$sizes</h4>
+                <div class="phpdocumentor-signature">private array $sizes = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-followLinks">
+                <h4>$followLinks</h4>
+                <div class="phpdocumentor-signature">private bool $followLinks = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-reverseSorting">
+                <h4>$reverseSorting</h4>
+                <div class="phpdocumentor-signature">private bool $reverseSorting = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-sort">
+                <h4>$sort</h4>
+                <div class="phpdocumentor-signature">private Closure|int|false $sort = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-ignore">
+                <h4>$ignore</h4>
+                <div class="phpdocumentor-signature">private int $ignore = 0</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-dirs">
+                <h4>$dirs</h4>
+                <div class="phpdocumentor-signature">private array $dirs = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-dates">
+                <h4>$dates</h4>
+                <div class="phpdocumentor-signature">private array $dates = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-iterators">
+                <h4>$iterators</h4>
+                <div class="phpdocumentor-signature">private array $iterators = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-contains">
+                <h4>$contains</h4>
+                <div class="phpdocumentor-signature">private array $contains = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-notContains">
+                <h4>$notContains</h4>
+                <div class="phpdocumentor-signature">private array $notContains = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-paths">
+                <h4>$paths</h4>
+                <div class="phpdocumentor-signature">private array $paths = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-notPaths">
+                <h4>$notPaths</h4>
+                <div class="phpdocumentor-signature">private array $notPaths = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-ignoreUnreadableDirs">
+                <h4>$ignoreUnreadableDirs</h4>
+                <div class="phpdocumentor-signature">private bool $ignoreUnreadableDirs = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-vcsPatterns">
+                <h4>$vcsPatterns</h4>
+                <div class="phpdocumentor-signature">private static array $vcsPatterns = array (
+  0 =&gt; &#039;.svn&#039;,
+  1 =&gt; &#039;_svn&#039;,
+  2 =&gt; &#039;CVS&#039;,
+  3 =&gt; &#039;_darcs&#039;,
+  4 =&gt; &#039;.arch-params&#039;,
+  5 =&gt; &#039;.monotone&#039;,
+  6 =&gt; &#039;.bzr&#039;,
+  7 =&gt; &#039;.git&#039;,
+  8 =&gt; &#039;.hg&#039;,
+)</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addVCSPattern">addVCSPattern()</a>
+                </dt>
+                <dd>Adds VCS patterns.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-append">append()</a>
+                </dt>
+                <dd>Appends an existing set of files/directories to the finder.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-contains">contains()</a>
+                </dt>
+                <dd>Adds tests that file contents must match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-count">count()</a>
+                </dt>
+                <dd>Counts all the results collected by the iterators.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-create">create()</a>
+                </dt>
+                <dd>Creates a new Finder.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-date">date()</a>
+                </dt>
+                <dd>Adds tests for file dates (last modified).</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-depth">depth()</a>
+                </dt>
+                <dd>Adds tests for the directory depth.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-directories">directories()</a>
+                </dt>
+                <dd>Restricts the matching to directories only.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-exclude">exclude()</a>
+                </dt>
+                <dd>Excludes directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-files">files()</a>
+                </dt>
+                <dd>Restricts the matching to files only.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-filter">filter()</a>
+                </dt>
+                <dd>Filters the iterator with an anonymous function.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-followLinks">followLinks()</a>
+                </dt>
+                <dd>Forces the following of symlinks.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getIterator">getIterator()</a>
+                </dt>
+                <dd>Returns an Iterator for the current Finder configuration.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-hasResults">hasResults()</a>
+                </dt>
+                <dd>Check if any results were found.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ignoreDotFiles">ignoreDotFiles()</a>
+                </dt>
+                <dd>Excludes &quot;hidden&quot; directories and files (starting with a dot).</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ignoreUnreadableDirs">ignoreUnreadableDirs()</a>
+                </dt>
+                <dd>Tells finder to ignore unreadable directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ignoreVCS">ignoreVCS()</a>
+                </dt>
+                <dd>Forces the finder to ignore version control directories.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ignoreVCSIgnored">ignoreVCSIgnored()</a>
+                </dt>
+                <dd>Forces Finder to obey .gitignore and ignore files based on rules listed there.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-in">in()</a>
+                </dt>
+                <dd>Searches files and directories which match defined rules.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-name">name()</a>
+                </dt>
+                <dd>Adds rules that files must match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-notContains">notContains()</a>
+                </dt>
+                <dd>Adds tests that file contents must not match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-notName">notName()</a>
+                </dt>
+                <dd>Adds rules that files must not match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-notPath">notPath()</a>
+                </dt>
+                <dd>Adds rules that filenames must not match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-path">path()</a>
+                </dt>
+                <dd>Adds rules that filenames must match.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-reverseSorting">reverseSorting()</a>
+                </dt>
+                <dd>Reverses the sorting.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-size">size()</a>
+                </dt>
+                <dd>Adds tests for file sizes.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sort">sort()</a>
+                </dt>
+                <dd>Sorts files and directories by an anonymous function.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByAccessedTime">sortByAccessedTime()</a>
+                </dt>
+                <dd>Sorts files and directories by the last accessed time.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByCaseInsensitiveName">sortByCaseInsensitiveName()</a>
+                </dt>
+                <dd>Sorts files and directories by name case insensitive.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByChangedTime">sortByChangedTime()</a>
+                </dt>
+                <dd>Sorts files and directories by the last inode changed time.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByExtension">sortByExtension()</a>
+                </dt>
+                <dd>Sorts files and directories by extension.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByModifiedTime">sortByModifiedTime()</a>
+                </dt>
+                <dd>Sorts files and directories by the last modified time.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByName">sortByName()</a>
+                </dt>
+                <dd>Sorts files and directories by name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortBySize">sortBySize()</a>
+                </dt>
+                <dd>Sorts files and directories by size.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-sortByType">sortByType()</a>
+                </dt>
+                <dd>Sorts files and directories by type (directories before files), then by name.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-normalizeDir">normalizeDir()</a>
+                </dt>
+                <dd>Normalizes given directory names by removing trailing slashes.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-searchInDirectory">searchInDirectory()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct()</div>
+                                
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addVCSPattern">
+                <h4>addVCSPattern()</h4>
+                <div class="phpdocumentor-signature">public static function addVCSPattern(array|string $pattern): void</div>
+                                    <p class="phpdocumentor-summary">Adds VCS patterns.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$pattern</span>
+                                                                            — VCS patterns to ignore                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-append">
+                <h4>append()</h4>
+                <div class="phpdocumentor-signature">public function append(iterable $iterator): static</div>
+                                    <p class="phpdocumentor-summary">Appends an existing set of files/directories to the finder.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>The set can be another Finder, an Iterator, an IteratorAggregate, or even a plain array.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">iterable</span>
+                                                                        <span class="phpdocumentor-parameters__name">$iterator</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-contains">
+                <h4>contains()</h4>
+                <div class="phpdocumentor-signature">public function contains(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds tests that file contents must match.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Strings or PCRE patterns can be used:</p>
+                                                    <p>    $finder-&gt;contains(&#039;Lorem ipsum&#039;)<br />
+    $finder-&gt;contains(&#039;/Lorem ipsum/i&#039;)<br />
+    $finder-&gt;contains([&#039;dolor&#039;, &#039;/ipsum/i&#039;])</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (string or regexp) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-count">
+                <h4>count()</h4>
+                <div class="phpdocumentor-signature">public function count(): int</div>
+                                    <p class="phpdocumentor-summary">Counts all the results collected by the iterators.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-create">
+                <h4>create()</h4>
+                <div class="phpdocumentor-signature">public static function create(): static</div>
+                                    <p class="phpdocumentor-summary">Creates a new Finder.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-date">
+                <h4>date()</h4>
+                <div class="phpdocumentor-signature">public function date(array|string $dates): static</div>
+                                    <p class="phpdocumentor-summary">Adds tests for file dates (last modified).</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>The date must be something that strtotime() is able to parse:</p>
+                                                    <p>    $finder-&gt;date(&#039;since yesterday&#039;);<br />
+    $finder-&gt;date(&#039;until 2 days ago&#039;);<br />
+    $finder-&gt;date(&#039;&gt; now - 2 hours&#039;);<br />
+    $finder-&gt;date(&#039;&gt;= 2005-10-15&#039;);<br />
+    $finder-&gt;date([&#039;&gt;= 2005-10-15&#039;, &#039;&lt;= 2006-05-27&#039;]);</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$dates</span>
+                                                                            — A date range string or an array of date ranges                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-depth">
+                <h4>depth()</h4>
+                <div class="phpdocumentor-signature">public function depth(array|string|int $levels): static</div>
+                                    <p class="phpdocumentor-summary">Adds tests for the directory depth.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Usage:</p>
+                                                    <p>    $finder-&gt;depth(&#039;&gt; 1&#039;) // the Finder will start matching at level 1.<br />
+    $finder-&gt;depth(&#039;&lt; 3&#039;) // the Finder will descend at most 3 levels of directories below the starting point.<br />
+    $finder-&gt;depth([&#039;&gt;= 1&#039;, &#039;&lt; 3&#039;])</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string|int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$levels</span>
+                                                                            — The depth level expression or an array of depth levels                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-directories">
+                <h4>directories()</h4>
+                <div class="phpdocumentor-signature">public function directories(): static</div>
+                                    <p class="phpdocumentor-summary">Restricts the matching to directories only.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-exclude">
+                <h4>exclude()</h4>
+                <div class="phpdocumentor-signature">public function exclude(array|string $dirs): static</div>
+                                    <p class="phpdocumentor-summary">Excludes directories.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Directories passed as argument must be relative to the ones defined with the `in()` method. For example:</p>
+                                                    <p>    $finder-&gt;in(__DIR__)-&gt;exclude(&#039;ruby&#039;);</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$dirs</span>
+                                                                            — A directory path or an array of directories                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-files">
+                <h4>files()</h4>
+                <div class="phpdocumentor-signature">public function files(): static</div>
+                                    <p class="phpdocumentor-summary">Restricts the matching to files only.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-filter">
+                <h4>filter()</h4>
+                <div class="phpdocumentor-signature">public function filter(Closure $closure, bool $prune = false): static</div>
+                                    <p class="phpdocumentor-summary">Filters the iterator with an anonymous function.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>The anonymous function receives a \SplFileInfo and must return false<br />
+to remove files.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure</span>
+                                                                        <span class="phpdocumentor-parameters__name">$closure</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$prune</span>
+                                                                            — Whether to skip traversing directories further                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-followLinks">
+                <h4>followLinks()</h4>
+                <div class="phpdocumentor-signature">public function followLinks(): static</div>
+                                    <p class="phpdocumentor-summary">Forces the following of symlinks.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getIterator">
+                <h4>getIterator()</h4>
+                <div class="phpdocumentor-signature">public function getIterator(): Iterator</div>
+                                    <p class="phpdocumentor-summary">Returns an Iterator for the current Finder configuration.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This method implements the IteratorAggregate interface.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">Iterator</span>
+                                                    — SplFileInfo&gt;                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>\LogicException if the in() method has not been called</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-hasResults">
+                <h4>hasResults()</h4>
+                <div class="phpdocumentor-signature">public function hasResults(): bool</div>
+                                    <p class="phpdocumentor-summary">Check if any results were found.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ignoreDotFiles">
+                <h4>ignoreDotFiles()</h4>
+                <div class="phpdocumentor-signature">public function ignoreDotFiles(bool $ignoreDotFiles): static</div>
+                                    <p class="phpdocumentor-summary">Excludes &quot;hidden&quot; directories and files (starting with a dot).</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This option is enabled by default.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$ignoreDotFiles</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ignoreUnreadableDirs">
+                <h4>ignoreUnreadableDirs()</h4>
+                <div class="phpdocumentor-signature">public function ignoreUnreadableDirs(bool $ignore = true): static</div>
+                                    <p class="phpdocumentor-summary">Tells finder to ignore unreadable directories.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>By default, scanning unreadable directories content throws an AccessDeniedException.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$ignore</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ignoreVCS">
+                <h4>ignoreVCS()</h4>
+                <div class="phpdocumentor-signature">public function ignoreVCS(bool $ignoreVCS): static</div>
+                                    <p class="phpdocumentor-summary">Forces the finder to ignore version control directories.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This option is enabled by default.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$ignoreVCS</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ignoreVCSIgnored">
+                <h4>ignoreVCSIgnored()</h4>
+                <div class="phpdocumentor-signature">public function ignoreVCSIgnored(bool $ignoreVCSIgnored): static</div>
+                                    <p class="phpdocumentor-summary">Forces Finder to obey .gitignore and ignore files based on rules listed there.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This option is disabled by default.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$ignoreVCSIgnored</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-in">
+                <h4>in()</h4>
+                <div class="phpdocumentor-signature">public function in(array|string $dirs): static</div>
+                                    <p class="phpdocumentor-summary">Searches files and directories which match defined rules.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$dirs</span>
+                                                                            — A directory path or an array of directories                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>DirectoryNotFoundException if one of the directories does not exist</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-name">
+                <h4>name()</h4>
+                <div class="phpdocumentor-signature">public function name(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds rules that files must match.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>You can use patterns (delimited with / sign), globs or simple strings.</p>
+                                                    <p>    $finder-&gt;name(&#039;/\.php$/&#039;)<br />
+    $finder-&gt;name(&#039;*.php&#039;) // same as above, without dot files<br />
+    $finder-&gt;name(&#039;test.php&#039;)<br />
+    $finder-&gt;name([&#039;test.py&#039;, &#039;test.php&#039;])</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (a regexp, a glob, or a string) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-notContains">
+                <h4>notContains()</h4>
+                <div class="phpdocumentor-signature">public function notContains(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds tests that file contents must not match.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Strings or PCRE patterns can be used:</p>
+                                                    <p>    $finder-&gt;notContains(&#039;Lorem ipsum&#039;)<br />
+    $finder-&gt;notContains(&#039;/Lorem ipsum/i&#039;)<br />
+    $finder-&gt;notContains([&#039;lorem&#039;, &#039;/dolor/i&#039;])</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (string or regexp) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-notName">
+                <h4>notName()</h4>
+                <div class="phpdocumentor-signature">public function notName(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds rules that files must not match.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (a regexp, a glob, or a string) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-notPath">
+                <h4>notPath()</h4>
+                <div class="phpdocumentor-signature">public function notPath(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds rules that filenames must not match.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>You can use patterns (delimited with / sign) or simple strings.</p>
+                                                    <p>    $finder-&gt;notPath(&#039;some/special/dir&#039;)<br />
+    $finder-&gt;notPath(&#039;/some\/special\/dir/&#039;) // same as above<br />
+    $finder-&gt;notPath([&#039;some/file.txt&#039;, &#039;another/file.log&#039;])</p>
+                                                    <p>Use only / as dirname separator.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (a regexp or a string) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-path">
+                <h4>path()</h4>
+                <div class="phpdocumentor-signature">public function path(array|string $patterns): static</div>
+                                    <p class="phpdocumentor-summary">Adds rules that filenames must match.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>You can use patterns (delimited with / sign) or simple strings.</p>
+                                                    <p>    $finder-&gt;path(&#039;some/special/dir&#039;)<br />
+    $finder-&gt;path(&#039;/some\/special\/dir/&#039;) // same as above<br />
+    $finder-&gt;path([&#039;some dir&#039;, &#039;another/dir&#039;])</p>
+                                                    <p>Use only / as dirname separator.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$patterns</span>
+                                                                            — A pattern (a regexp or a string) or an array of patterns                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-reverseSorting">
+                <h4>reverseSorting()</h4>
+                <div class="phpdocumentor-signature">public function reverseSorting(): static</div>
+                                    <p class="phpdocumentor-summary">Reverses the sorting.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-size">
+                <h4>size()</h4>
+                <div class="phpdocumentor-signature">public function size(array|string|int $sizes): static</div>
+                                    <p class="phpdocumentor-summary">Adds tests for file sizes.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>$finder-&gt;size(&#039;&gt; 10K&#039;);<br />
+    $finder-&gt;size(&#039;&lt;= 1Ki&#039;);<br />
+    $finder-&gt;size(4);<br />
+    $finder-&gt;size([&#039;&gt; 10K&#039;, &#039;&lt; 20K&#039;])</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string|int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$sizes</span>
+                                                                            — A size range string or an integer or an array of size ranges                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sort">
+                <h4>sort()</h4>
+                <div class="phpdocumentor-signature">public function sort(Closure $closure): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by an anonymous function.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>The anonymous function receives two \SplFileInfo instances to compare.</p>
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure</span>
+                                                                        <span class="phpdocumentor-parameters__name">$closure</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByAccessedTime">
+                <h4>sortByAccessedTime()</h4>
+                <div class="phpdocumentor-signature">public function sortByAccessedTime(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by the last accessed time.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This is the time that the file was last accessed, read or written to.</p>
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByCaseInsensitiveName">
+                <h4>sortByCaseInsensitiveName()</h4>
+                <div class="phpdocumentor-signature">public function sortByCaseInsensitiveName(bool $useNaturalSort = false): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by name case insensitive.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$useNaturalSort</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByChangedTime">
+                <h4>sortByChangedTime()</h4>
+                <div class="phpdocumentor-signature">public function sortByChangedTime(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by the last inode changed time.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This is the time that the inode information was last modified (permissions, owner, group or other metadata).</p>
+                                                    <p>On Windows, since inode is not available, changed time is actually the file creation time.</p>
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByExtension">
+                <h4>sortByExtension()</h4>
+                <div class="phpdocumentor-signature">public function sortByExtension(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by extension.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByModifiedTime">
+                <h4>sortByModifiedTime()</h4>
+                <div class="phpdocumentor-signature">public function sortByModifiedTime(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by the last modified time.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This is the last time the actual contents of the file were last modified.</p>
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByName">
+                <h4>sortByName()</h4>
+                <div class="phpdocumentor-signature">public function sortByName(bool $useNaturalSort = false): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by name.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$useNaturalSort</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortBySize">
+                <h4>sortBySize()</h4>
+                <div class="phpdocumentor-signature">public function sortBySize(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by size.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-sortByType">
+                <h4>sortByType()</h4>
+                <div class="phpdocumentor-signature">public function sortByType(): static</div>
+                                    <p class="phpdocumentor-summary">Sorts files and directories by type (directories before files), then by name.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>This can be slow as all the matching files and directories must be retrieved for comparison.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-normalizeDir">
+                <h4>normalizeDir()</h4>
+                <div class="phpdocumentor-signature">private function normalizeDir(string $dir): string</div>
+                                    <p class="phpdocumentor-summary">Normalizes given directory names by removing trailing slashes.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Excluding: (s)ftp:// or ssh2.(s)ftp:// wrapper</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$dir</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-searchInDirectory">
+                <h4>searchInDirectory()</h4>
+                <div class="phpdocumentor-signature">private function searchInDirectory(string $dir): Iterator</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$dir</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">Iterator</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

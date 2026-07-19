@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Database · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Database-Database.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Database Database</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Database            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Database\Database</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Database.</p>
+                
+                        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/database/src/Database.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-mysqli">$mysqli</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-config">$config</a>
+                </dt>
+                <dd>Connection configurations.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-failoverIndex">$failoverIndex</a>
+                </dt>
+                <dd>The current $config failover index to be used in a connection.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-inTransaction">$inTransaction</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-lastQuery">$lastQuery</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-logger">$logger</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-debugCollector">$debugCollector</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-mysqli">
+                <h4>$mysqli</h4>
+                <div class="phpdocumentor-signature">protected ?mysqli $mysqli</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-config">
+                <h4>$config</h4>
+                <div class="phpdocumentor-signature">protected array $config = array (
+)</div>
+                                    <p class="phpdocumentor-summary">Connection configurations.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-failoverIndex">
+                <h4>$failoverIndex</h4>
+                <div class="phpdocumentor-signature">protected ?int $failoverIndex = NULL</div>
+                                    <p class="phpdocumentor-summary">The current $config failover index to be used in a connection.</p>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-inTransaction">
+                <h4>$inTransaction</h4>
+                <div class="phpdocumentor-signature">protected bool $inTransaction = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-lastQuery">
+                <h4>$lastQuery</h4>
+                <div class="phpdocumentor-signature">protected string $lastQuery = &#039;&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-logger">
+                <h4>$logger</h4>
+                <div class="phpdocumentor-signature">protected ?\Framework\Log\Logger $logger</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-debugCollector">
+                <h4>$debugCollector</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Database\Debug\DatabaseCollector $debugCollector</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Database constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__destruct">__destruct()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-alterSchema">alterSchema()</a>
+                </dt>
+                <dd>Call a ALTER SCHEMA statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-alterTable">alterTable()</a>
+                </dt>
+                <dd>Call a ALTER TABLE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-close">close()</a>
+                </dt>
+                <dd>Closes the connection if it is open.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-createSchema">createSchema()</a>
+                </dt>
+                <dd>Call a CREATE SCHEMA statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-createTable">createTable()</a>
+                </dt>
+                <dd>Call a CREATE TABLE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-delete">delete()</a>
+                </dt>
+                <dd>Call a DELETE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-dropSchema">dropSchema()</a>
+                </dt>
+                <dd>Call a DROP SCHEMA statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-dropTable">dropTable()</a>
+                </dt>
+                <dd>Call a DROP TABLE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-exec">exec()</a>
+                </dt>
+                <dd>Executes an SQL statement and return the number of affected rows.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getConfig">getConfig()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getConnection">getConnection()</a>
+                </dt>
+                <dd>Gets the MySQLi connection.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getError">getError()</a>
+                </dt>
+                <dd>Get latest error.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getErrors">getErrors()</a>
+                </dt>
+                <dd>Get a list of the latest errors.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getInsertId">getInsertId()</a>
+                </dt>
+                <dd>Gets the LAST_INSERT_ID().</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLastQuery">getLastQuery()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getWarnings">getWarnings()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getWarningsCount">getWarningsCount()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-insert">insert()</a>
+                </dt>
+                <dd>Call a INSERT statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isOpen">isOpen()</a>
+                </dt>
+                <dd>Tells if the connection is open.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-loadData">loadData()</a>
+                </dt>
+                <dd>Call a LOAD DATA statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-ping">ping()</a>
+                </dt>
+                <dd>Pings the server, or tries to reconnect if the connection has gone down.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-prepare">prepare()</a>
+                </dt>
+                <dd>Prepares a statement for execution and returns a PreparedStatement object.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-protectIdentifier">protectIdentifier()</a>
+                </dt>
+                <dd>Protect identifier.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-query">query()</a>
+                </dt>
+                <dd>Executes an SQL statement, returning a result set as a Result object.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-quote">quote()</a>
+                </dt>
+                <dd>Quote SQL values.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-reconnect">reconnect()</a>
+                </dt>
+                <dd>Closes the current and opens a new connection with the last config.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-replace">replace()</a>
+                </dt>
+                <dd>Call a REPLACE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-select">select()</a>
+                </dt>
+                <dd>Call a SELECT statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDebugCollector">setDebugCollector()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-transaction">transaction()</a>
+                </dt>
+                <dd>Run statements in a transaction.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-update">update()</a>
+                </dt>
+                <dd>Call a UPDATE statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-use">use()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-with">with()</a>
+                </dt>
+                <dd>Call a WITH statement.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addToDebug">addToDebug()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-connect">connect()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-finalizeAddToDebug">finalizeAddToDebug()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-log">log()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makeConfig">makeConfig()</a>
+                </dt>
+                <dd>Make Base Connection configurations.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setCollations">setCollations()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setTimezone">setTimezone()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(array|string $username, ?string $password = NULL, ?string $schema = NULL, string $host = &#039;localhost&#039;, int $port = 3306, ?\Framework\Log\Logger $logger = NULL, ?\Framework\Database\Debug\DatabaseCollector $collector = NULL)</div>
+                                    <p class="phpdocumentor-summary">Database constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$username</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$password</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schema</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$host</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$port</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Log\Logger</span>
+                                                                        <span class="phpdocumentor-parameters__name">$logger</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Database\Debug\DatabaseCollector</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collector</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>mysqli_sql_exception if connections fail</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__destruct">
+                <h4>__destruct()</h4>
+                <div class="phpdocumentor-signature">public function __destruct()</div>
+                                
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-alterSchema">
+                <h4>alterSchema()</h4>
+                <div class="phpdocumentor-signature">public function alterSchema(?string $schemaName = NULL): \Framework\Database\Definition\AlterSchema</div>
+                                    <p class="phpdocumentor-summary">Call a ALTER SCHEMA statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schemaName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\AlterSchema</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-alterTable">
+                <h4>alterTable()</h4>
+                <div class="phpdocumentor-signature">public function alterTable(?string $tableName = NULL): \Framework\Database\Definition\AlterTable</div>
+                                    <p class="phpdocumentor-summary">Call a ALTER TABLE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$tableName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\AlterTable</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-close">
+                <h4>close()</h4>
+                <div class="phpdocumentor-signature">public function close(): bool</div>
+                                    <p class="phpdocumentor-summary">Closes the connection if it is open.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-createSchema">
+                <h4>createSchema()</h4>
+                <div class="phpdocumentor-signature">public function createSchema(?string $schemaName = NULL): \Framework\Database\Definition\CreateSchema</div>
+                                    <p class="phpdocumentor-summary">Call a CREATE SCHEMA statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schemaName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\CreateSchema</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-createTable">
+                <h4>createTable()</h4>
+                <div class="phpdocumentor-signature">public function createTable(?string $tableName = NULL): \Framework\Database\Definition\CreateTable</div>
+                                    <p class="phpdocumentor-summary">Call a CREATE TABLE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$tableName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\CreateTable</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-delete">
+                <h4>delete()</h4>
+                <div class="phpdocumentor-signature">public function delete(Closure|array|string|null $reference = NULL, Closure|array|string ...$references): \Framework\Database\Manipulation\Delete</div>
+                                    <p class="phpdocumentor-summary">Call a DELETE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string|null</span>
+                                                                        <span class="phpdocumentor-parameters__name">$reference</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$references</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\Delete</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-dropSchema">
+                <h4>dropSchema()</h4>
+                <div class="phpdocumentor-signature">public function dropSchema(?string $schemaName = NULL): \Framework\Database\Definition\DropSchema</div>
+                                    <p class="phpdocumentor-summary">Call a DROP SCHEMA statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schemaName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\DropSchema</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-dropTable">
+                <h4>dropTable()</h4>
+                <div class="phpdocumentor-signature">public function dropTable(?string $table = NULL, string ...$tables): \Framework\Database\Definition\DropTable</div>
+                                    <p class="phpdocumentor-summary">Call a DROP TABLE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$table</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$tables</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Definition\DropTable</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-exec">
+                <h4>exec()</h4>
+                <div class="phpdocumentor-signature">public function exec(string $statement): string|int</div>
+                                    <p class="phpdocumentor-summary">Executes an SQL statement and return the number of affected rows.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$statement</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string|int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getConfig">
+                <h4>getConfig()</h4>
+                <div class="phpdocumentor-signature">public function getConfig(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getConnection">
+                <h4>getConnection()</h4>
+                <div class="phpdocumentor-signature">public function getConnection(): mysqli</div>
+                                    <p class="phpdocumentor-summary">Gets the MySQLi connection.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">mysqli</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getError">
+                <h4>getError()</h4>
+                <div class="phpdocumentor-signature">public function getError(): ?string</div>
+                                    <p class="phpdocumentor-summary">Get latest error.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getErrors">
+                <h4>getErrors()</h4>
+                <div class="phpdocumentor-signature">public function getErrors(): array</div>
+                                    <p class="phpdocumentor-summary">Get a list of the latest errors.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getInsertId">
+                <h4>getInsertId()</h4>
+                <div class="phpdocumentor-signature">public function getInsertId(): string|int</div>
+                                    <p class="phpdocumentor-summary">Gets the LAST_INSERT_ID().</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Note: When an insert has many rows, this function returns the id of the<br />
+first row inserted!<br />
+That is default on MySQL.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string|int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLastQuery">
+                <h4>getLastQuery()</h4>
+                <div class="phpdocumentor-signature">public function getLastQuery(): string</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getWarnings">
+                <h4>getWarnings()</h4>
+                <div class="phpdocumentor-signature">public function getWarnings(): mysqli_warning|false</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">mysqli_warning|false</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getWarningsCount">
+                <h4>getWarningsCount()</h4>
+                <div class="phpdocumentor-signature">public function getWarningsCount(): int</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">int</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-insert">
+                <h4>insert()</h4>
+                <div class="phpdocumentor-signature">public function insert(?string $intoTable = NULL): \Framework\Database\Manipulation\Insert</div>
+                                    <p class="phpdocumentor-summary">Call a INSERT statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$intoTable</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\Insert</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isOpen">
+                <h4>isOpen()</h4>
+                <div class="phpdocumentor-signature">public function isOpen(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if the connection is open.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-loadData">
+                <h4>loadData()</h4>
+                <div class="phpdocumentor-signature">public function loadData(?string $intoTable = NULL): \Framework\Database\Manipulation\LoadData</div>
+                                    <p class="phpdocumentor-summary">Call a LOAD DATA statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$intoTable</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\LoadData</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-ping">
+                <h4>ping()</h4>
+                <div class="phpdocumentor-signature">public function ping(): bool</div>
+                                    <p class="phpdocumentor-summary">Pings the server, or tries to reconnect if the connection has gone down.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-prepare">
+                <h4>prepare()</h4>
+                <div class="phpdocumentor-signature">public function prepare(string $statement): \Framework\Database\PreparedStatement</div>
+                                    <p class="phpdocumentor-summary">Prepares a statement for execution and returns a PreparedStatement object.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$statement</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\PreparedStatement</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException if prepared statement fail</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-protectIdentifier">
+                <h4>protectIdentifier()</h4>
+                <div class="phpdocumentor-signature">public function protectIdentifier(string $identifier): string</div>
+                                    <p class="phpdocumentor-summary">Protect identifier.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$identifier</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-query">
+                <h4>query()</h4>
+                <div class="phpdocumentor-signature">public function query(string $statement, bool $buffered = true): \Framework\Database\Result</div>
+                                    <p class="phpdocumentor-summary">Executes an SQL statement, returning a result set as a Result object.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Must be: SELECT, SHOW, DESCRIBE or EXPLAIN</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$statement</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$buffered</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Result</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException if $statement does not return result</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-quote">
+                <h4>quote()</h4>
+                <div class="phpdocumentor-signature">public function quote(string|int|float|bool|null $value): string|int|float</div>
+                                    <p class="phpdocumentor-summary">Quote SQL values.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string|int|float|bool|null</span>
+                                                                        <span class="phpdocumentor-parameters__name">$value</span>
+                                                                            — Value to be quoted                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string|int|float</span>
+                                                    — If the value is null, returns a string containing the word &quot;NULL&quot;. If is false, &quot;FALSE&quot;. If is true, &quot;TRUE&quot;. If is a string, returns the quoted string. The types int or float returns the same input value.                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException For invalid value type</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-reconnect">
+                <h4>reconnect()</h4>
+                <div class="phpdocumentor-signature">public function reconnect(): static</div>
+                                    <p class="phpdocumentor-summary">Closes the current and opens a new connection with the last config.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-replace">
+                <h4>replace()</h4>
+                <div class="phpdocumentor-signature">public function replace(?string $intoTable = NULL): \Framework\Database\Manipulation\Replace</div>
+                                    <p class="phpdocumentor-summary">Call a REPLACE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$intoTable</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\Replace</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-select">
+                <h4>select()</h4>
+                <div class="phpdocumentor-signature">public function select(Closure|array|string|null $reference = NULL, Closure|array|string ...$references): \Framework\Database\Manipulation\Select</div>
+                                    <p class="phpdocumentor-summary">Call a SELECT statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string|null</span>
+                                                                        <span class="phpdocumentor-parameters__name">$reference</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$references</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\Select</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDebugCollector">
+                <h4>setDebugCollector()</h4>
+                <div class="phpdocumentor-signature">public function setDebugCollector(\Framework\Database\Debug\DatabaseCollector $collector): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Database\Debug\DatabaseCollector</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collector</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-transaction">
+                <h4>transaction()</h4>
+                <div class="phpdocumentor-signature">public function transaction(callable $statements): static</div>
+                                    <p class="phpdocumentor-summary">Run statements in a transaction.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">callable</span>
+                                                                        <span class="phpdocumentor-parameters__name">$statements</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>Exception if statements fail</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>LogicException if transaction already is active</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-update">
+                <h4>update()</h4>
+                <div class="phpdocumentor-signature">public function update(Closure|array|string|null $reference = NULL, Closure|array|string ...$references): \Framework\Database\Manipulation\Update</div>
+                                    <p class="phpdocumentor-summary">Call a UPDATE statement.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string|null</span>
+                                                                        <span class="phpdocumentor-parameters__name">$reference</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$references</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\Update</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-use">
+                <h4>use()</h4>
+                <div class="phpdocumentor-signature">public function use(string $schema): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schema</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>mysqli_sql_exception if schema is unknown</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-with">
+                <h4>with()</h4>
+                <div class="phpdocumentor-signature">public function with(): \Framework\Database\Manipulation\With</div>
+                                    <p class="phpdocumentor-summary">Call a WITH statement.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Database\Manipulation\With</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addToDebug">
+                <h4>addToDebug()</h4>
+                <div class="phpdocumentor-signature">protected function addToDebug(Closure $function): mixed</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure</span>
+                                                                        <span class="phpdocumentor-parameters__name">$function</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">mixed</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-connect">
+                <h4>connect()</h4>
+                <div class="phpdocumentor-signature">protected function connect(array|string $username, ?string $password = NULL, ?string $schema = NULL, string $host = &#039;localhost&#039;, int $port = 3306): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$username</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$password</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$schema</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$host</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$port</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>mysqli_sql_exception if connection fail</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-finalizeAddToDebug">
+                <h4>finalizeAddToDebug()</h4>
+                <div class="phpdocumentor-signature">protected function finalizeAddToDebug(float $start, ?string $description = NULL): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">float</span>
+                                                                        <span class="phpdocumentor-parameters__name">$start</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$description</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-log">
+                <h4>log()</h4>
+                <div class="phpdocumentor-signature">protected function log(string $message, \Framework\Log\LogLevel $level = \Framework\Log\LogLevel::ERROR): void</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$message</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Log\LogLevel</span>
+                                                                        <span class="phpdocumentor-parameters__name">$level</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">void</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makeConfig">
+                <h4>makeConfig()</h4>
+                <div class="phpdocumentor-signature">protected function makeConfig(array $config): array</div>
+                                    <p class="phpdocumentor-summary">Make Base Connection configurations.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$config</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setCollations">
+                <h4>setCollations()</h4>
+                <div class="phpdocumentor-signature">protected function setCollations(string $charset, string $collation): bool</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$charset</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collation</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setTimezone">
+                <h4>setTimezone()</h4>
+                <div class="phpdocumentor-signature">protected function setTimezone(string $timezone): bool</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$timezone</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

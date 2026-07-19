@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../../../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../../../"
+      data-current-page="guides/libraries/language/index.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../../../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../../../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../../../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../../../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../../../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group is-open" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item is-active" href="../../../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../../../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../../../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../../../packages/app.html">app</a></li>
+                            <li><a class="" href="../../../packages/api.html">api</a></li>
+                            <li><a class="" href="../../../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../../../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../../../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../../../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../../../packages/config.html">config</a></li>
+                            <li><a class="" href="../../../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../../../packages/database.html">database</a></li>
+                            <li><a class="" href="../../../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../../../packages/date.html">date</a></li>
+                            <li><a class="" href="../../../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../../../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../../../packages/email.html">email</a></li>
+                            <li><a class="" href="../../../packages/events.html">events</a></li>
+                            <li><a class="" href="../../../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../../../packages/front.html">front</a></li>
+                            <li><a class="" href="../../../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../../../packages/http.html">http</a></li>
+                            <li><a class="" href="../../../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../../../packages/image.html">image</a></li>
+                            <li><a class="" href="../../../packages/language.html">language</a></li>
+                            <li><a class="" href="../../../packages/log.html">log</a></li>
+                            <li><a class="" href="../../../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../../../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../../../packages/one.html">one</a></li>
+                            <li><a class="" href="../../../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../../../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../../../packages/session.html">session</a></li>
+                            <li><a class="" href="../../../packages/site.html">site</a></li>
+                            <li><a class="" href="../../../packages/template.html">template</a></li>
+                            <li><a class="" href="../../../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../../../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../../../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Guides</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Language</li>
+                        </ol>
+</nav>
+<div class="section" id="language">
+<h1>Language</h1>
+<p>Webisters Language Library</p>
+<ul>
+    <li>
+            <a href="#installation">Installation</a>
+        </li>
+    <li>
+            <a href="#getting-started">Getting Started</a>
+        </li>
+    <li>
+            <a href="#adding-language-lines">Adding Language lines</a>
+        </li>
+    <li>
+            <a href="#rendering-messages">Rendering messages</a>
+        </li>
+    <li>
+            <a href="#fallback">Fallback</a>
+        </li>
+    <li>
+            <a href="#file-language-directories">File Language Directories</a>
+        </li>
+    <li>
+            <a href="#localization-for-web-pages">Localization for web pages</a>
+        </li>
+    <li>
+            <a href="#currencies-dates-and-ordinals">Currencies, dates and ordinals</a>
+        </li>
+    <li>
+            <a href="#using-language-and-http-libraries-together">Using Language and HTTP libraries together</a>
+        </li>
+    <li>
+            <a href="#database-integration">Database Integration</a>
+        </li>
+    <li>
+            <a href="#conclusion">Conclusion</a>
+        </li>
+</ul>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<p>The installation of this library can be done with Composer:</p>
+<pre><code class="language- " >composer require Webisters/language
+</code></pre>
+</div>
+<div class="section" id="getting-started">
+<h2>Getting Started</h2>
+<p>The Language library is built to manage texts used for
+<a href="https://en.wikipedia.org/wiki/Internationalization_and_localization">Internationalization and Localization</a>
+of applications.</p>
+<p>An object of the Language class can be instantiated like this:</p>
+<pre><code class="language-php " >use Framework\Language\Language;
+$language = new Language();
+</code></pre>
+<p>The default locale is <code>en</code>.</p>
+<p>A different locale can be passed in the first argument of the constructor and an
+array of <a href="#file-language-directories">File Language Directories</a> in the second:</p>
+<pre><code class="language-php " >$language = new Language(&#039;jp&#039;, [
+    __DIR__ . &#039;/Languages&#039;,
+    __DIR__ . &#039;/foo&#039;,
+    &#039;/usr/share/app/languages&#039;,
+]);
+</code></pre>
+<div class="section" id="supported-locales">
+<h3>Supported Locales</h3>
+<p>Message lines will only be rendered in supported locales.</p>
+<p>They can be set as in this example:</p>
+<pre><code class="language-php " >$language-&gt;setSupportedLocales([
+    &#039;es&#039;,
+    &#039;pt&#039;,
+    &#039;pt-br&#039;,
+]); // static
+</code></pre>
+<p>And you can get them like this:</p>
+<pre><code class="language-php " >$locales = $language-&gt;getSupportedLocales(); // array
+</code></pre>
+</div>
+</div>
+<div class="section" id="adding-language-lines">
+<h2>Adding Language lines</h2>
+<p>Message lines can be added at any time.</p>
+<p>Let&#039;s see an example adding messages to the <code>contact</code> file, in the <code>en</code> and
+<code>pt-br</code> locales:</p>
+<pre><code class="language-php " >$language-&gt;addLines(&#039;en&#039;, &#039;contact&#039;, [
+    &#039;name&#039; =&gt; &#039;Name&#039;,
+    &#039;message&#039; =&gt; &#039;Message&#039;,
+    &#039;send&#039; =&gt; &#039;Send&#039;,
+    &#039;thanks&#039; =&gt; &#039;Thanks for contacting us, {name}!&#039;
+])-&gt;addLines(&#039;pt-br&#039;, &#039;contact&#039;, [
+    &#039;name&#039; =&gt; &#039;Nome&#039;,
+    &#039;message&#039; =&gt; &#039;Mensagem&#039;,
+    &#039;send&#039; =&gt; &#039;Enviar&#039;,
+    &#039;thanks&#039; =&gt; &#039;Obrigado por nos contatar, {name}!&#039;,
+]); // static
+</code></pre>
+</div>
+<div class="section" id="rendering-messages">
+<h2>Rendering messages</h2>
+<p>It is possible to get the value of a line through the <code>Language::render</code> method.</p>
+<p>In the first parameter, enter the name of the file and in the second, the name
+of the line. As in the example below:</p>
+<pre><code class="language-php " >echo $language-&gt;render(&#039;contact&#039;, &#039;name&#039;);
+</code></pre>
+<p>If the current locale is <code>en</code> it will print:</p>
+<pre><code class="language- " >Name
+</code></pre>
+<div class="section" id="rendering-with-arguments">
+<h3>Rendering with arguments</h3>
+<p>The <code>thanks</code> line has the <code>{name}</code> placeholder.<br>With placeholders you can add custom values. Like, for example, to show a name:</p>
+<pre><code class="language-php " >$name = &#039;John&#039;;
+echo $language-&gt;render(&#039;contact&#039;, &#039;thanks&#039;, [&#039;name&#039; =&gt; $name]);
+</code></pre>
+<p>Will print:</p>
+<pre><code class="language- " >Thanks for contacting us, John!
+</code></pre>
+</div>
+<div class="section" id="rendering-messages-with-custom-locales-on-the-fly">
+<h3>Rendering messages with custom locales on the fly</h3>
+<p>In the fourth parameter of the <code>render</code> method, it is possible to set the name
+of a supported locale:</p>
+<pre><code class="language-php " >echo $language-&gt;render(&#039;contact&#039;, &#039;message&#039;, [], &#039;pt-br&#039;);
+</code></pre>
+<p>Will print:</p>
+<pre><code class="language- " >Mensagem
+</code></pre>
+<p>Using placeholders:</p>
+<pre><code class="language-php " >$name = &#039;João&#039;;
+echo $language-&gt;render(&#039;contact&#039;, &#039;thanks&#039;, [&#039;name&#039; =&gt; $name], &#039;pt-br&#039;);
+</code></pre>
+<p>Will print:</p>
+<pre><code class="language- " >Obrigado por nos contatar, João!
+</code></pre>
+</div>
+<div class="section" id="current-locale">
+<h3>Current Locale</h3>
+<p>If the application has a default locale, but it is necessary to get the lines
+from a different locale several times, it is more advantageous to use the
+<code>Language::setCurrentLocale</code> method.</p>
+<p>Once the current locale is set, all the next message lines will come to that
+locale, if the line is available, otherwise it will enter the <a href="#fallback">Fallback</a> system.</p>
+<p>In the example below, the default locale is still <code>en</code>. But by calling the
+<code>setCurrentLocale</code> method it is no longer necessary to set the fourth parameter:</p>
+<pre><code class="language-php " >$language-&gt;setCurrentLocale(&#039;pt-br&#039;); // static
+echo $language-&gt;render(&#039;contact&#039;, &#039;name&#039;);
+</code></pre>
+<p>Will print:</p>
+<pre><code class="language- " >Nome
+</code></pre>
+<pre><code class="language-php " >echo $language-&gt;render(&#039;contact&#039;, &#039;thanks&#039;, [&#039;name&#039; =&gt; &#039;Johnny Bravo&#039;]);
+</code></pre>
+<p>Will print:</p>
+<pre><code class="language- " >Obrigado por nos contatar, Johnny Bravo!
+</code></pre>
+</div>
+<div class="section" id="lang">
+<h3>lang</h3>
+<p>To render messages, you can also use the <code>lang</code> method. Which does the same
+thing as the <code>render</code> method, but the file and line name must be concatenated
+with a dot:</p>
+<pre><code class="language-php " >echo $language-&gt;lang(&#039;contact.thanks&#039;, [&#039;name&#039; =&gt; $name]);
+</code></pre>
+</div>
+</div>
+<div class="section" id="fallback">
+<h2>Fallback</h2>
+<p>The fallback system allows rendering a non-existing line in the current locale
+with a line from the parent locale, the default locale, or none.</p>
+<p>The fallback levels are present in the enum <strong>Framework\Language\FallbackLevel</strong>.</p>
+<ul>
+    <li>
+            <a href="#fallback-to-none">Fallback to None</a>
+        </li>
+    <li>
+            <a href="#fallback-to-parent-locale">Fallback to Parent Locale</a>
+        </li>
+    <li>
+            <a href="#fallback-to-default-locale">Fallback to Default Locale</a>
+        </li>
+</ul>
+<div class="section" id="fallback-to-none">
+<h3>Fallback to None</h3>
+<p>You can disable fallback with:</p>
+<pre><code class="language-php " >$language-&gt;setFallbackLevel(FallbackLevel::none); // static
+</code></pre>
+<p>This way, lines not found in the current locale will return a string.<br>For example: <code>contact.thanks</code>.</p>
+</div>
+<div class="section" id="fallback-to-parent-locale">
+<h3>Fallback to Parent Locale</h3>
+<p>Parent locales are, for example: <code>en</code> to <code>en-us</code> and <code>pt</code> to <code>pt-br</code>.</p>
+<pre><code class="language-php " >$language-&gt;setFallbackLevel(FallbackLevel::parent); // static
+</code></pre>
+<p>In the example below, only lines to the <code>pt</code> locale will be added,
+and calls to <code>pt-br</code> will work:</p>
+<pre><code class="language-php " >$language-&gt;addLines(&#039;pt&#039;, &#039;words&#039;, [
+    &#039;beautifulDay&#039; =&gt; &#039;Dia bonito.&#039;,
+    &#039;busName&#039; =&gt; &#039;Nós chamamos &quot;bus&quot; de autocarro.&#039;,
+]); // static
+echo $language-&gt;render(&#039;beautifulDay&#039;, &#039;words&#039;, &#039;pt-br&#039;) . &#039;&lt;br&gt;&#039;;
+echo $language-&gt;render(&#039;busName&#039;, &#039;words&#039;, &#039;pt-br&#039;) . &#039;&lt;br&gt;&#039;;
+</code></pre>
+<pre><code class="language- " >Dia bonito.&lt;br&gt;
+Nós chamamos &quot;bus&quot; de autocarro.&lt;br&gt;
+</code></pre>
+<p>Some child languages have differences from the parent language.</p>
+<p>This happens in Brazilian Portuguese, where some words have different
+interpretations than Portuguese from Portugal.</p>
+<p>For example, &quot;bus&quot; in Brazil is <code>ônibus</code> and in Portugal it is <code>autocarro</code>.</p>
+<p>You can add specific lines for child locales. Let&#039;s see:</p>
+<pre><code class="language-php " >$language-&gt;addLines(&#039;pt-br&#039;, &#039;words&#039;, [
+    &#039;busName&#039; =&gt; &#039;Nós chamamos &quot;bus&quot; de ônibus.&#039;,
+]); // static
+echo $language-&gt;render(&#039;beautifulDay&#039;, &#039;words&#039;, &#039;pt-br&#039;) . &#039;&lt;br&gt;&#039;;
+echo $language-&gt;render(&#039;busName&#039;, &#039;words&#039;, &#039;pt-br&#039;) . &#039;&lt;br&gt;&#039;;
+</code></pre>
+<p>Will render the message of <code>words.beautifulDay</code> found in the parent locale
+<code>pt</code> and <code>words.busName</code> directly from <code>pt-br</code>:</p>
+<pre><code class="language- " >Dia bonito.&lt;br&gt;
+Nós chamamos &quot;bus&quot; de ônibus.&lt;br&gt;
+</code></pre>
+</div>
+<div class="section" id="fallback-to-default-locale">
+<h3>Fallback to Default Locale</h3>
+<p>Language&#039;s behavior is to fetch the file from the current location.<br>If the file is not found, it looks for the parent locale.<br>If not found, it looks for the default locale.<br>If not found, the file and line names will be returned.</p>
+<p>If the Fallback Level has been changed, you can set it like this:</p>
+<pre><code class="language-php " >$language-&gt;setFallbackLevel(FallbackLevel::default); // static
+</code></pre>
+</div>
+</div>
+<div class="section" id="file-language-directories">
+<h2>File Language Directories</h2>
+<p>Language lines can be loaded automatically.</p>
+<p>To do this, add a base directory:</p>
+<pre><code class="language-php " >$directory = __DIR__ . &#039;/Languages&#039;;
+$language-&gt;addDirectory($directory); // static
+</code></pre>
+<p>Inside the base directory there should be subdirectories with locale names and
+inside them there should be language files that return an array.</p>
+<p>Let&#039;s see an example with the language file <strong>Languages/en/contact.php</strong>:</p>
+<pre><code class="language-php " >return [
+    &#039;name&#039; =&gt; &#039;Name&#039;,
+    &#039;message&#039; =&gt; &#039;Message&#039;,
+    &#039;send&#039; =&gt; &#039;Send&#039;,
+];
+</code></pre>
+<p>Then you can call them with the render methods:</p>
+<pre><code class="language-php " >echo $language-&gt;lang(&#039;contact.message&#039;);
+</code></pre>
+<p>File loading may vary depending on the
+<a href="https://en.wikipedia.org/wiki/Case_sensitivity#In_filesystems">Case Sensitivity</a>
+of the operating systems file system.</p>
+<p>For example, these two paths can be considered the same on Windows:</p>
+<ul>
+    <li>
+            <strong>Languages/en-us/contact.php</strong>
+        </li>
+    <li>
+            <strong>Languages/en-US/contact.php</strong>
+        </li>
+</ul>
+<p>But they are different on Linux.</p>
+<p>For greater compatibility, we advise using lowercase locale directory names and
+hyphenated separations.<br>Lowercase,
+<a href="https://en.wikipedia.org/wiki/Camel_case#Programming_and_coding">camel case</a>
+or <a href="https://en.wikipedia.org/wiki/Snake_case">snake case</a>
+for filenames and array keys.</p>
+</div>
+<div class="section" id="localization-for-web-pages">
+<h2>Localization for web pages</h2>
+<p>HTML documents can have the language specified by the <code>lang</code> attribute.</p>
+<p>Let&#039;s look at an example, showing the Arabic language, <code>ar</code>.</p>
+<pre><code class="language-php " >&lt;html lang=&quot;&lt;?= $language-&gt;getCurrentLocale() ?&gt;&quot;&gt;
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-html " >&lt;html lang=&quot;ar&quot;&gt;
+</code></pre>
+<p>It is also possible to specify the text direction through the <code>dir</code> attribute.</p>
+<p>The Language class is able to identify the directionality of the current locale
+automatically.</p>
+<p>Let&#039;s see:</p>
+<pre><code class="language-php " >&lt;html lang=&quot;&lt;?= $language-&gt;getCurrentLocale() ?&gt;&quot; dir=&quot;&lt;?=
+$language-&gt;getCurrentLocaleDirection() ?&gt;&quot;&gt;
+</code></pre>
+<p>Will show:</p>
+<pre><code class="language-html " >&lt;html lang=&quot;ar&quot; dir=&quot;rtl&quot;&gt;
+</code></pre>
+</div>
+<div class="section" id="currencies-dates-and-ordinals">
+<h2>Currencies, dates and ordinals</h2>
+<div class="section" id="currencies">
+<h3>Currencies</h3>
+<p>Numbers with currency symbols can be obtained with the <code>Language::currency</code> method.</p>
+<p>For example:</p>
+<pre><code class="language-php " >echo $language-&gt;currency(10.5, &#039;USD&#039;); // US$ 10,50
+echo $language-&gt;currency(10.5, &#039;JPY&#039;); // JP¥ 10
+</code></pre>
+<p>Note that the Language class does not do any currency conversion. Just format.</p>
+</div>
+<div class="section" id="dates">
+<h3>Dates</h3>
+<p>Dates can be rendered in multiple locales, in the following formats:</p>
+<ul>
+    <li>
+            <a href="#short-dates">Short Dates</a>
+        </li>
+    <li>
+            <a href="#medium-dates">Medium Dates</a>
+        </li>
+    <li>
+            <a href="#long-dates">Long Dates</a>
+        </li>
+    <li>
+            <a href="#full-dates">Full Dates</a>
+        </li>
+</ul>
+<div class="section" id="short-dates">
+<h4>Short Dates</h4>
+<p>Second argument by default is <code>'short'</code>:</p>
+<pre><code class="language-php " >echo $language-&gt;date(time());
+</code></pre>
+<p>It will print as in the example below:</p>
+<pre><code class="language- " >8/13/18
+</code></pre>
+</div>
+<div class="section" id="medium-dates">
+<h4>Medium Dates</h4>
+<p>Second argument can be <code>'medium'</code>:</p>
+<pre><code class="language-php " >echo $language-&gt;date(time(), &#039;medium&#039;);
+</code></pre>
+<p>It will print as in the example below:</p>
+<pre><code class="language- " >Aug 13, 2018
+</code></pre>
+</div>
+<div class="section" id="long-dates">
+<h4>Long Dates</h4>
+<p>Second argument can be <code>'long'</code>:</p>
+<pre><code class="language-php " >echo $language-&gt;date(time(), &#039;long&#039;);
+</code></pre>
+<p>It will print as in the example below:</p>
+<pre><code class="language- " >August 13, 2018
+</code></pre>
+</div>
+<div class="section" id="full-dates">
+<h4>Full Dates</h4>
+<p>Second argument can be <code>'full'</code>:</p>
+<pre><code class="language-php " >echo $language-&gt;date(time(), &#039;full&#039;);
+</code></pre>
+<p>It will print as in the example below:</p>
+<pre><code class="language- " >Monday, August 13, 2018
+</code></pre>
+</div>
+</div>
+<div class="section" id="ordinals">
+<h3>Ordinals</h3>
+<p>Ordinal numbers in English:</p>
+<pre><code class="language-php " >$language-&gt;ordinal(1); // 1st
+$language-&gt;ordinal(2); // 2nd
+$language-&gt;ordinal(5); // 5th
+</code></pre>
+<p>Ordinal numbers in different locales:</p>
+<pre><code class="language-php " >$language-&gt;ordinal(1, &#039;de&#039;); // 1º
+$language-&gt;ordinal(2, &#039;fr&#039;); // 2º
+$language-&gt;ordinal(5, &#039;id&#039;); // 3º
+</code></pre>
+</div>
+</div>
+<div class="section" id="using-language-and-http-libraries-together">
+<h2>Using Language and HTTP libraries together</h2>
+<p>Let&#039;s create a small structure to show an automatically localized page,
+negotiating the User-Agent language using the
+<a href="https://github.com/webisters/http">HTTP Library</a>.</p>
+<p>Go to the terminal and run:</p>
+<pre><code class="language- " >mkdir -p app/{languages/{en,es,pt-br},public}
+cd app
+composer require Webisters/{http,language}
+</code></pre>
+<p>This is the directory tree created:</p>
+<pre><code class="language- " >app
+├── languages
+│   ├── en
+│   ├── es
+│   └── pt-br
+├── public
+└── vendor
+</code></pre>
+<p>Create the <strong>public/index.php</strong> file:</p>
+<pre><code class="language-php " >&lt;?php
+require __DIR__ . &#039;/../vendor/autoload.php&#039;;
+use Framework\HTTP\Request;
+use Framework\Language\Language;
+$request = new Request();
+$supported = [&#039;en&#039;, &#039;es&#039;, &#039;pt-br&#039;];
+$negotiated = $request-&gt;negotiateLanguage($supported);
+$language = new Language();
+$language-&gt;addDirectory(__DIR__ . &#039;/../languages&#039;)
+         -&gt;setSupportedLocales($supported)
+         -&gt;setCurrentLocale($negotiated);
+?&gt;
+&lt;h1&gt;Webisters App&lt;/h1&gt;
+&lt;p&gt;&lt;?= $language-&gt;lang(&#039;home.welcome&#039;) ?&gt;&lt;/p&gt;
+</code></pre>
+<p>If the language negotiated in the HTTP request is, for example, <code>es</code>, which
+has been set as a supported locale, the Language object will try to get the value
+of the <code>welcome</code> key from the array returned in the <strong>languages/es/home.php</strong> file:</p>
+<p>This is the content of  <strong>languages/es/home.php</strong>:</p>
+<pre><code class="language-php " >&lt;?php
+return [
+    &#039;welcome&#039; =&gt; &#039;¡Bienvenido!&#039;
+];
+</code></pre>
+<p>Once this is done, up the PHP development server:</p>
+<pre><code class="language- " >php -S localhost:8080 -t public/
+</code></pre>
+<p>In another terminal, make a request with curl:</p>
+<pre><code class="language- " >curl -H &quot;Accept-Language: es&quot; http://localhost:8080
+</code></pre>
+<p>The content of the HTTP response will be:</p>
+<pre><code class="language-html " >&lt;h1&gt;Webisters App&lt;/h1&gt;
+&lt;p&gt;¡Bienvenido!&lt;/p&gt;
+</code></pre>
+<div class="section" id="challenge">
+<h5>Challenge:</h5>
+<ul>
+    <li>
+            Make requests with other languages.
+        </li>
+    <li>
+            Add the default locale file.
+        </li>
+    <li>
+            Implement an <a href="https://en.wikipedia.org/wiki/Right-to-left_script">RTL</a> page with HTML attributes and access it with a web browser.
+        </li>
+</ul>
+</div>
+</div>
+<div class="section" id="database-integration">
+<h2>Database Integration</h2>
+<p>We will see how to fetch language messages in a database.</p>
+<p>In this example, we will use the <a href="https://github.com/webisters/database">Database Library</a>
+and we will extend the Language class.</p>
+<p>First, we create the database schema called <strong>app</strong> and in it we will create the
+table <strong>Language</strong> and we will insert some lines for testing:</p>
+<pre><code class="language-php " >use Framework\Database\Database;
+use Framework\Database\Definition\Table\TableDefinition;
+$database = new Database(&#039;root&#039;, &#039;password&#039;);
+$database-&gt;createSchema(&#039;app&#039;)-&gt;run();
+$database-&gt;use(&#039;app&#039;);
+$database-&gt;createTable(&#039;Languages&#039;)-&gt;definition(function (TableDefinition $def) {
+    $def-&gt;column(&#039;locale&#039;)-&gt;varchar(5);
+    $def-&gt;column(&#039;file&#039;)-&gt;varchar(32);
+    $def-&gt;column(&#039;line&#039;)-&gt;varchar(64);
+    $def-&gt;column(&#039;message&#039;)-&gt;varchar(255);
+})-&gt;run();
+$database-&gt;insert(&#039;Languages&#039;)-&gt;values([
+    [&#039;en&#039;, &#039;home&#039;, &#039;welcome&#039;, &#039;Welcome!&#039;],
+    [&#039;es&#039;, &#039;home&#039;, &#039;welcome&#039;, &#039;¡Bienvenido!&#039;],
+    [&#039;pt-br&#039;, &#039;home&#039;, &#039;welcome&#039;, &#039;Bem-vindo!&#039;],
+])-&gt;run();
+</code></pre>
+<p>Once that&#039;s done, we&#039;ll extend the Language class, adding functionality to
+interact with the database:</p>
+<pre><code class="language-php " >use Framework\Language\Language;
+class DatabaseLanguage extends Language
+{
+    protected Database $database;
+    protected string $databaseTable = &#039;Languages&#039;;
+    public function setDatabase(Database $database) : static
+    {
+        $this-&gt;database = $database;
+        return $this;
+    }
+    protected function findLines(string $locale, string $file) : static
+    {
+        parent::findLines($locale, $file);
+        if (isset($this-&gt;database)) {
+            $result = $this-&gt;database-&gt;select()
+                -&gt;from($this-&gt;databaseTable)
+                -&gt;whereEqual(&#039;locale&#039;, $locale)
+                -&gt;whereEqual(&#039;file&#039;, $file)
+                -&gt;run();
+            $lines = [];
+            while ($row = $result-&gt;fetch()) {
+                $lines[$row-&gt;line] = $row-&gt;message;
+            }
+            $this-&gt;addLines($locale, $file, $lines);
+        }
+        return $this;
+    }
+}
+</code></pre>
+<p>So we can render the messages directly from the database:</p>
+<pre><code class="language-php " >$database = new Database(&#039;root&#039;, &#039;password&#039;);
+$database-&gt;use(&#039;app&#039;);
+$language = new DatabaseLanguage();
+$language-&gt;setDatabase($database);
+echo $language-&gt;render(&#039;home&#039;, &#039;welcome&#039;);
+</code></pre>
+</div>
+<div class="section" id="conclusion">
+<h2>Conclusion</h2>
+<p>Webisters Language Library is an easy-to-use tool for, beginners and experienced, PHP developers.<br>It is perfect for adapting applications to different languages.<br>The more you use it, the more you will learn.</p>
+<div class="phpdocumentor-admonition -note ">
+            <svg class="phpdocumentor-admonition__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
+                    <article>
+        <p>Did you find something wrong?<br>Be sure to let us know about it with an
+<a href="https://github.com/webisters/language/issues">issue</a>.<br>Thank you!</p>
+    </article>
+</div>
+</div>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+<nav class="wb-pager" aria-label="Page navigation">
+            <a class="wb-pager__link -prev" href="../../../guides/libraries/image/index.html">
+            <span class="wb-pager__label">← Previous</span>
+            <span class="wb-pager__title">Image</span>
+        </a>
+    
+            <a class="wb-pager__link -next" href="../../../guides/libraries/log/index.html">
+            <span class="wb-pager__label">Next →</span>
+            <span class="wb-pager__title">Log</span>
+        </a>
+    </nav>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../../../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../../../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../../../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../../../guides/framework/index.html">Framework</a></li>
+                <li><a href="../../../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../../../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../../../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../../../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../../../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../../../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../../../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../../../assets/layout.js" defer></script>
+</body>
+</html>
+                    

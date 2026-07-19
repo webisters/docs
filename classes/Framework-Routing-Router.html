@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Class Router · Webisters Docs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0052ff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/override.css">
+</head>
+<body id="top"
+      data-webisters-root="../"
+      data-current-page="classes/Framework-Routing-Router.php">
+
+    <header class="wb-topbar" role="banner">
+        <div class="wb-topbar__inner">
+            <button class="wb-icon-btn wb-menu-toggle" type="button" aria-label="Toggle navigation" data-wb-menu>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="36" height="36"></span>
+                <span class="wb-brand__name">Docs</span>
+            </a>
+
+            <div class="wb-topbar__spacer"></div>
+
+            <div class="wb-search" data-wb-search>
+                <svg class="wb-search__icon" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="7"/>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input type="search"
+                       class="wb-search__field"
+                       placeholder="Search the docs…"
+                       autocomplete="off"
+                       spellcheck="false"
+                       aria-label="Search the docs"
+                       data-wb-search-input>
+                <kbd class="wb-search__kbd">⌘K</kbd>
+                <div class="wb-search__results" data-wb-search-results role="listbox"></div>
+            </div>
+
+            <nav class="wb-nav" aria-label="Primary">
+                <a class="wb-nav__link" href="../guides/framework/index.html">Framework</a>
+                <a class="wb-nav__link" href="../guides/libraries/index.html">Libraries</a>
+                <a class="wb-nav__link" href="../guides/projects/index.html">Projects</a>
+                <a class="wb-nav__link" href="../contributors.html">Contributors</a>
+            </nav>
+
+            <a class="wb-icon-btn" href="https://github.com/webisters" aria-label="GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.27-.01-1-.02-1.96-3.2.69-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.69-1.27-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.34.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.05 11.05 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.12 3.04.74.81 1.18 1.84 1.18 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.77 1.06.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .31.21.68.8.56 4.56-1.53 7.85-5.83 7.85-10.91C23.5 5.65 18.35.5 12 .5z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <main class="phpdocumentor" role="main">
+        <div class="phpdocumentor-section">
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar" aria-label="Documentation navigation">
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Guides</h2>
+        <h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/webisters/index.html">Webisters CLI</a></h4><h4 class="phpdocumentor-sidebar__root-namespace"><a class="" href="../guides/framework/index.html">Framework</a></h4><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Projects</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/projects/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/app/index.html">App</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/api/index.html">API</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/one/index.html">One</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/site/index.html">Site</a></li><li><a class="phpdocumentor-list__item" href="../guides/projects/template/index.html">Template</a></li></ul></div></div><div class="wb-group" data-wb-group><div class="wb-group__head" data-wb-group-toggle><span>Libraries</span><svg class="wb-group__caret" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></div><div class="wb-group__body"><ul class="phpdocumentor-list"><li><a class="phpdocumentor-list__item" href="../guides/libraries/index.html">Overview</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/autoload/index.html">Autoload</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cache/index.html">Cache</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/cli/index.html">CLI</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/coding-standard/index.html">Coding Standard</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/config/index.html">Config</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/crypto/index.html">Crypto</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database/index.html">Database</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/database-extra/index.html">Database Extra</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/date/index.html">Date</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/debug/index.html">Debug</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/dev-commands/index.html">Dev Commands</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/email/index.html">Email</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/events/index.html">Events</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/factories/index.html">Factories</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/front/index.html">Front</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/helpers/index.html">Helpers</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http/index.html">HTTP</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/http-client/index.html">HTTP Client</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/image/index.html">Image</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/language/index.html">Language</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/log/index.html">Log</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/minify/index.html">Minify</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/mvc/index.html">MVC</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/pagination/index.html">Pagination</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/routing/index.html">Routing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/session/index.html">Session</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/testing/index.html">Testing</a></li><li><a class="phpdocumentor-list__item" href="../guides/libraries/validation/index.html">Validation</a></li></ul></div></div>    </section>
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Packages</h2>
+        <ul class="phpdocumentor-list">
+                            <li><a class="" href="../packages/framework.html">framework</a></li>
+                            <li><a class="" href="../packages/app.html">app</a></li>
+                            <li><a class="" href="../packages/api.html">api</a></li>
+                            <li><a class="" href="../packages/autoload.html">autoload</a></li>
+                            <li><a class="" href="../packages/cache.html">cache</a></li>
+                            <li><a class="" href="../packages/cli.html">cli</a></li>
+                            <li><a class="" href="../packages/coding-standard.html">coding-standard</a></li>
+                            <li><a class="" href="../packages/config.html">config</a></li>
+                            <li><a class="" href="../packages/crypto.html">crypto</a></li>
+                            <li><a class="" href="../packages/database.html">database</a></li>
+                            <li><a class="" href="../packages/database-extra.html">database-extra</a></li>
+                            <li><a class="" href="../packages/date.html">date</a></li>
+                            <li><a class="" href="../packages/debug.html">debug</a></li>
+                            <li><a class="" href="../packages/dev-commands.html">dev-commands</a></li>
+                            <li><a class="" href="../packages/email.html">email</a></li>
+                            <li><a class="" href="../packages/events.html">events</a></li>
+                            <li><a class="" href="../packages/factories.html">factories</a></li>
+                            <li><a class="" href="../packages/front.html">front</a></li>
+                            <li><a class="" href="../packages/helpers.html">helpers</a></li>
+                            <li><a class="" href="../packages/http.html">http</a></li>
+                            <li><a class="" href="../packages/http-client.html">http-client</a></li>
+                            <li><a class="" href="../packages/image.html">image</a></li>
+                            <li><a class="" href="../packages/language.html">language</a></li>
+                            <li><a class="" href="../packages/log.html">log</a></li>
+                            <li><a class="" href="../packages/minify.html">minify</a></li>
+                            <li><a class="" href="../packages/mvc.html">mvc</a></li>
+                            <li><a class="" href="../packages/one.html">one</a></li>
+                            <li><a class="" href="../packages/pagination.html">pagination</a></li>
+                            <li><a class="" href="../packages/routing.html">routing</a></li>
+                            <li><a class="" href="../packages/session.html">session</a></li>
+                            <li><a class="" href="../packages/site.html">site</a></li>
+                            <li><a class="" href="../packages/template.html">template</a></li>
+                            <li><a class="" href="../packages/testing.html">testing</a></li>
+                            <li><a class="" href="../packages/validation.html">validation</a></li>
+                    </ul>
+    </section>
+</aside>
+<div class="phpdocumentor-column -eight phpdocumentor-content">
+<nav aria-label="Breadcrumb">
+    <ol class="wb-breadcrumb">
+        <li><a href="../index.html">Docs</a></li>
+                    <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Classes</li>
+                                <li class="wb-breadcrumb__sep" aria-hidden="true">/</li>
+                            <li class="wb-breadcrumb__current">Framework Routing Router</li>
+                        </ol>
+</nav>
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+            Router            <span class="phpdocumentor-element__type">class</span>
+                                </h2>
+        <p class="phpdocumentor-element__fully-qualified-name">
+            <code>Framework\Routing\Router</code>
+        </p>
+
+                            <p class="phpdocumentor-summary">Class Router.</p>
+                
+                                    <p class="phpdocumentor-element__implements">
+                Implements:
+                <a href="../classes/JsonSerializable.html"><code>JsonSerializable</code></a>            </p>
+        
+                    <p class="phpdocumentor-element-found-in">
+                Defined in <span class="phpdocumentor-element-found-in__file">libraries/routing/src/Router.php</span>
+            </p>
+        
+        
+                <h3 id="properties">
+            Properties <a href="#properties" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-defaultRouteActionMethod">$defaultRouteActionMethod</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-defaultRouteNotFound">$defaultRouteNotFound</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-placeholders">$placeholders</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-collections">$collections</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedCollection">$matchedCollection</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedRoute">$matchedRoute</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedOrigin">$matchedOrigin</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedOriginArguments">$matchedOriginArguments</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedPath">$matchedPath</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-matchedPathArguments">$matchedPathArguments</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-autoOptions">$autoOptions</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-autoMethods">$autoMethods</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-response">$response</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-language">$language</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -property">
+                    <a href="#prop-debugCollector">$debugCollector</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-property" id="prop-defaultRouteActionMethod">
+                <h4>$defaultRouteActionMethod</h4>
+                <div class="phpdocumentor-signature">protected string $defaultRouteActionMethod = &#039;index&#039;</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-defaultRouteNotFound">
+                <h4>$defaultRouteNotFound</h4>
+                <div class="phpdocumentor-signature">protected Closure|string $defaultRouteNotFound</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-placeholders">
+                <h4>$placeholders</h4>
+                <div class="phpdocumentor-signature">protected static array $placeholders = array (
+  &#039;{alpha}&#039; =&gt; &#039;([a-zA-Z]+)&#039;,
+  &#039;{alphanum}&#039; =&gt; &#039;([a-zA-Z0-9]+)&#039;,
+  &#039;{any}&#039; =&gt; &#039;(.*)&#039;,
+  &#039;{hex}&#039; =&gt; &#039;([[:xdigit:]]+)&#039;,
+  &#039;{int}&#039; =&gt; &#039;([0-9]{1,18}+)&#039;,
+  &#039;{md5}&#039; =&gt; &#039;([a-f0-9]{32}+)&#039;,
+  &#039;{num}&#039; =&gt; &#039;([0-9]+)&#039;,
+  &#039;{port}&#039; =&gt; &#039;([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])&#039;,
+  &#039;{scheme}&#039; =&gt; &#039;(https?)&#039;,
+  &#039;{segment}&#039; =&gt; &#039;([^/]+)&#039;,
+  &#039;{slug}&#039; =&gt; &#039;([a-z0-9_-]+)&#039;,
+  &#039;{subdomain}&#039; =&gt; &#039;([^.]+)&#039;,
+  &#039;{title}&#039; =&gt; &#039;([a-zA-Z0-9_-]+)&#039;,
+  &#039;{uuid}&#039; =&gt; &#039;([0-9A-Fa-f]{8}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{4}-[0-9A-Fa-f]{12}+)&#039;,
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-collections">
+                <h4>$collections</h4>
+                <div class="phpdocumentor-signature">protected array $collections = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedCollection">
+                <h4>$matchedCollection</h4>
+                <div class="phpdocumentor-signature">protected ?\Framework\Routing\RouteCollection $matchedCollection = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedRoute">
+                <h4>$matchedRoute</h4>
+                <div class="phpdocumentor-signature">protected ?\Framework\Routing\Route $matchedRoute = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedOrigin">
+                <h4>$matchedOrigin</h4>
+                <div class="phpdocumentor-signature">protected ?string $matchedOrigin = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedOriginArguments">
+                <h4>$matchedOriginArguments</h4>
+                <div class="phpdocumentor-signature">protected array $matchedOriginArguments = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedPath">
+                <h4>$matchedPath</h4>
+                <div class="phpdocumentor-signature">protected ?string $matchedPath = NULL</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-matchedPathArguments">
+                <h4>$matchedPathArguments</h4>
+                <div class="phpdocumentor-signature">protected array $matchedPathArguments = array (
+)</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-autoOptions">
+                <h4>$autoOptions</h4>
+                <div class="phpdocumentor-signature">protected bool $autoOptions = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-autoMethods">
+                <h4>$autoMethods</h4>
+                <div class="phpdocumentor-signature">protected bool $autoMethods = false</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-response">
+                <h4>$response</h4>
+                <div class="phpdocumentor-signature">protected \Framework\HTTP\Response $response</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-language">
+                <h4>$language</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Language\Language $language</div>
+                            </div>
+                    <div class="phpdocumentor-property" id="prop-debugCollector">
+                <h4>$debugCollector</h4>
+                <div class="phpdocumentor-signature">protected \Framework\Routing\Debug\RoutingCollector $debugCollector</div>
+                            </div>
+                
+                <h3 id="methods">
+            Methods <a href="#methods" class="headerlink">#</a>
+        </h3>
+        <dl class="phpdocumentor-table-of-contents">
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__construct">__construct()</a>
+                </dt>
+                <dd>Router constructor.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-__get">__get()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addPlaceholder">addPlaceholder()</a>
+                </dt>
+                <dd>Adds Router placeholders.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-fillPlaceholders">fillPlaceholders()</a>
+                </dt>
+                <dd>Fills argument values into a string with placeholders.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getCollections">getCollections()</a>
+                </dt>
+                <dd>Gets all Route Collections.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDebugCollector">getDebugCollector()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDefaultRouteActionMethod">getDefaultRouteActionMethod()</a>
+                </dt>
+                <dd>Gets the default route action method.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getLanguage">getLanguage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedCollection">getMatchedCollection()</a>
+                </dt>
+                <dd>Gets the matched Route Collection.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedOrigin">getMatchedOrigin()</a>
+                </dt>
+                <dd>Gets the matched URL Origin.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedOriginArguments">getMatchedOriginArguments()</a>
+                </dt>
+                <dd>Gets the matched URL Origin arguments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedPath">getMatchedPath()</a>
+                </dt>
+                <dd>Gets the matched URL Path.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedPathArguments">getMatchedPathArguments()</a>
+                </dt>
+                <dd>Gets the matched URL Path arguments.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedRoute">getMatchedRoute()</a>
+                </dt>
+                <dd>Gets the matched Route.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getMatchedUrl">getMatchedUrl()</a>
+                </dt>
+                <dd>Gets the matched URL.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getNamedRoute">getNamedRoute()</a>
+                </dt>
+                <dd>Gets a named route.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getPlaceholders">getPlaceholders()</a>
+                </dt>
+                <dd>Gets all Router placeholders.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getResponse">getResponse()</a>
+                </dt>
+                <dd>Gets the HTTP Response instance.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRouteNotFound">getRouteNotFound()</a>
+                </dt>
+                <dd>Gets the Route Not Found.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRoutes">getRoutes()</a>
+                </dt>
+                <dd>Gets all routes, except the not found.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-hasNamedRoute">hasNamedRoute()</a>
+                </dt>
+                <dd>Tells if it has a named route.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isAutoMethods">isAutoMethods()</a>
+                </dt>
+                <dd>Tells if auto methods is enabled.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-isAutoOptions">isAutoOptions()</a>
+                </dt>
+                <dd>Tells if auto options is enabled.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-jsonSerialize">jsonSerialize()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-match">match()</a>
+                </dt>
+                <dd>Match HTTP Method and URL against RouteCollections to process the request.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-replacePlaceholders">replacePlaceholders()</a>
+                </dt>
+                <dd>Replaces string placeholders with patterns or patterns with placeholders.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-serve">serve()</a>
+                </dt>
+                <dd>Serves a RouteCollection to a specific Origin.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setAutoMethods">setAutoMethods()</a>
+                </dt>
+                <dd>Enable/disable the feature of auto-detect and show HTTP allowed methods via the Allow header when a route with the requested method does not exist.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setAutoOptions">setAutoOptions()</a>
+                </dt>
+                <dd>Enable/disable the feature of auto-detect and show HTTP allowed methods via the Allow header when the Request has the OPTIONS method.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDebugCollector">setDebugCollector()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDefaultRouteActionMethod">setDefaultRouteActionMethod()</a>
+                </dt>
+                <dd>Set the class method name to be called when a Route action is set without a method.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setDefaultRouteNotFound">setDefaultRouteNotFound()</a>
+                </dt>
+                <dd>Sets the Default Route Not Found action.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setLanguage">setLanguage()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addCollection">addCollection()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-addServedCollection">addServedCollection()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getAllowedMethods">getAllowedMethods()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getAlternativeRoute">getAlternativeRoute()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getDefaultRouteNotFound">getDefaultRouteNotFound()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-getRouteWithAllowHeader">getRouteWithAllowHeader()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makeMatchedRoute">makeMatchedRoute()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-makePath">makePath()</a>
+                </dt>
+                <dd>Creates a path without a trailing slash to be able to match both with and without a slash at the end.</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-matchCollection">matchCollection()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-matchRoute">matchRoute()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedCollection">setMatchedCollection()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedOrigin">setMatchedOrigin()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedOriginArguments">setMatchedOriginArguments()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedPath">setMatchedPath()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedPathArguments">setMatchedPathArguments()</a>
+                </dt>
+                <dd>—</dd>
+                            <dt class="phpdocumentor-table-of-contents__entry -method">
+                    <a href="#method-setMatchedRoute">setMatchedRoute()</a>
+                </dt>
+                <dd>—</dd>
+                    </dl>
+
+                    <div class="phpdocumentor-method" id="method-__construct">
+                <h4>__construct()</h4>
+                <div class="phpdocumentor-signature">public function __construct(\Framework\HTTP\Response $response, ?\Framework\Language\Language $language = NULL)</div>
+                                    <p class="phpdocumentor-summary">Router constructor.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\HTTP\Response</span>
+                                                                        <span class="phpdocumentor-parameters__name">$response</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Language\Language</span>
+                                                                        <span class="phpdocumentor-parameters__name">$language</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-__get">
+                <h4>__get()</h4>
+                <div class="phpdocumentor-signature">public function __get(string $property): mixed</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$property</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">mixed</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addPlaceholder">
+                <h4>addPlaceholder()</h4>
+                <div class="phpdocumentor-signature">public function addPlaceholder(array|string $placeholder, ?string $pattern = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Adds Router placeholders.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$placeholder</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$pattern</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-fillPlaceholders">
+                <h4>fillPlaceholders()</h4>
+                <div class="phpdocumentor-signature">public function fillPlaceholders(string $string, string ...$arguments): string</div>
+                                    <p class="phpdocumentor-summary">Fills argument values into a string with placeholders.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                            — The input string                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                                    — The string with argument values in place of placeholders                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>InvalidArgumentException if param not required, empty or invalid</code></dd>
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException if a pattern position is not found</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getCollections">
+                <h4>getCollections()</h4>
+                <div class="phpdocumentor-signature">public function getCollections(): array</div>
+                                    <p class="phpdocumentor-summary">Gets all Route Collections.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDebugCollector">
+                <h4>getDebugCollector()</h4>
+                <div class="phpdocumentor-signature">public function getDebugCollector(): ?\Framework\Routing\Debug\RoutingCollector</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\Debug\RoutingCollector</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDefaultRouteActionMethod">
+                <h4>getDefaultRouteActionMethod()</h4>
+                <div class="phpdocumentor-signature">public function getDefaultRouteActionMethod(): string</div>
+                                    <p class="phpdocumentor-summary">Gets the default route action method.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Normally, it is &quot;index&quot;.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getLanguage">
+                <h4>getLanguage()</h4>
+                <div class="phpdocumentor-signature">public function getLanguage(): \Framework\Language\Language</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Language\Language</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedCollection">
+                <h4>getMatchedCollection()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedCollection(): ?\Framework\Routing\RouteCollection</div>
+                                    <p class="phpdocumentor-summary">Gets the matched Route Collection.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Note: Will return null if no URL Origin was matched in a Route Collection</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\RouteCollection</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedOrigin">
+                <h4>getMatchedOrigin()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedOrigin(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the matched URL Origin.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedOriginArguments">
+                <h4>getMatchedOriginArguments()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedOriginArguments(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the matched URL Origin arguments.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedPath">
+                <h4>getMatchedPath()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedPath(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the matched URL Path.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedPathArguments">
+                <h4>getMatchedPathArguments()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedPathArguments(): array</div>
+                                    <p class="phpdocumentor-summary">Gets the matched URL Path arguments.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedRoute">
+                <h4>getMatchedRoute()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedRoute(): ?\Framework\Routing\Route</div>
+                                    <p class="phpdocumentor-summary">Gets the matched Route.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getMatchedUrl">
+                <h4>getMatchedUrl()</h4>
+                <div class="phpdocumentor-signature">public function getMatchedUrl(): ?string</div>
+                                    <p class="phpdocumentor-summary">Gets the matched URL.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Note: This method does not return the URL query. If it is needed, get<br />
+with {@see Request::getUrl()}.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getNamedRoute">
+                <h4>getNamedRoute()</h4>
+                <div class="phpdocumentor-signature">public function getNamedRoute(string $name): \Framework\Routing\Route</div>
+                                    <p class="phpdocumentor-summary">Gets a named route.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                            </div>
+                
+                                    <dl class="phpdocumentor-tag-list">
+                                                    <dt>throws</dt>
+                            <dd><code>RuntimeException if named route not found</code></dd>
+                                            </dl>
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getPlaceholders">
+                <h4>getPlaceholders()</h4>
+                <div class="phpdocumentor-signature">public function getPlaceholders(): array</div>
+                                    <p class="phpdocumentor-summary">Gets all Router placeholders.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getResponse">
+                <h4>getResponse()</h4>
+                <div class="phpdocumentor-signature">public function getResponse(): \Framework\HTTP\Response</div>
+                                    <p class="phpdocumentor-summary">Gets the HTTP Response instance.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\HTTP\Response</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRouteNotFound">
+                <h4>getRouteNotFound()</h4>
+                <div class="phpdocumentor-signature">public function getRouteNotFound(): \Framework\Routing\Route</div>
+                                    <p class="phpdocumentor-summary">Gets the Route Not Found.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>Must be called after {@see Router::match()} and will return the Route<br />
+Not Found from the matched collection or the Default Route Not Found<br />
+from the router.</p>
+                                            </div>
+                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRoutes">
+                <h4>getRoutes()</h4>
+                <div class="phpdocumentor-signature">public function getRoutes(): array</div>
+                                    <p class="phpdocumentor-summary">Gets all routes, except the not found.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                                    — The HTTP Methods as keys and its Routes as values                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-hasNamedRoute">
+                <h4>hasNamedRoute()</h4>
+                <div class="phpdocumentor-signature">public function hasNamedRoute(string $name): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if it has a named route.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$name</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isAutoMethods">
+                <h4>isAutoMethods()</h4>
+                <div class="phpdocumentor-signature">public function isAutoMethods(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if auto methods is enabled.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-isAutoOptions">
+                <h4>isAutoOptions()</h4>
+                <div class="phpdocumentor-signature">public function isAutoOptions(): bool</div>
+                                    <p class="phpdocumentor-summary">Tells if auto options is enabled.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">bool</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-jsonSerialize">
+                <h4>jsonSerialize()</h4>
+                <div class="phpdocumentor-signature">public function jsonSerialize(): array</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-match">
+                <h4>match()</h4>
+                <div class="phpdocumentor-signature">public function match(): \Framework\Routing\Route</div>
+                                    <p class="phpdocumentor-summary">Match HTTP Method and URL against RouteCollections to process the request.</p>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                                    — Always returns a Route, even if it is the Route Not Found                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-replacePlaceholders">
+                <h4>replacePlaceholders()</h4>
+                <div class="phpdocumentor-signature">public function replacePlaceholders(string $string, bool $flip = false): string</div>
+                                    <p class="phpdocumentor-summary">Replaces string placeholders with patterns or patterns with placeholders.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$string</span>
+                                                                            — The string with placeholders or patterns                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$flip</span>
+                                                                            — Set true to replace patterns with placeholders                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-serve">
+                <h4>serve()</h4>
+                <div class="phpdocumentor-signature">public function serve(?string $origin, callable $callable, ?string $collectionName = NULL): static</div>
+                                    <p class="phpdocumentor-summary">Serves a RouteCollection to a specific Origin.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                            — URL Origin. A string in the following format: `{scheme}://{hostname}[:{port}]`. Null to auto-detect.                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">callable</span>
+                                                                        <span class="phpdocumentor-parameters__name">$callable</span>
+                                                                            — A function receiving an instance of RouteCollection as the first parameter                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collectionName</span>
+                                                                            — The RouteCollection name                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setAutoMethods">
+                <h4>setAutoMethods()</h4>
+                <div class="phpdocumentor-signature">public function setAutoMethods(bool $enabled = true): static</div>
+                                    <p class="phpdocumentor-summary">Enable/disable the feature of auto-detect and show HTTP allowed methods via the Allow header when a route with the requested method does not exist.</p>
+                                                    <div class="phpdocumentor-description">
+                                                    <p>A response with code 405 &quot;Method Not Allowed&quot; will trigger.</p>
+                                            </div>
+                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$enabled</span>
+                                                                            — true to enable, false to disable                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setAutoOptions">
+                <h4>setAutoOptions()</h4>
+                <div class="phpdocumentor-signature">public function setAutoOptions(bool $enabled = true): static</div>
+                                    <p class="phpdocumentor-summary">Enable/disable the feature of auto-detect and show HTTP allowed methods via the Allow header when the Request has the OPTIONS method.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">bool</span>
+                                                                        <span class="phpdocumentor-parameters__name">$enabled</span>
+                                                                            — true to enable, false to disable                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDebugCollector">
+                <h4>setDebugCollector()</h4>
+                <div class="phpdocumentor-signature">public function setDebugCollector(\Framework\Routing\Debug\RoutingCollector $debugCollector): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\Debug\RoutingCollector</span>
+                                                                        <span class="phpdocumentor-parameters__name">$debugCollector</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDefaultRouteActionMethod">
+                <h4>setDefaultRouteActionMethod()</h4>
+                <div class="phpdocumentor-signature">public function setDefaultRouteActionMethod(string $action): static</div>
+                                    <p class="phpdocumentor-summary">Set the class method name to be called when a Route action is set without a method.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$action</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setDefaultRouteNotFound">
+                <h4>setDefaultRouteNotFound()</h4>
+                <div class="phpdocumentor-signature">public function setDefaultRouteNotFound(Closure|string $action): static</div>
+                                    <p class="phpdocumentor-summary">Sets the Default Route Not Found action.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">Closure|string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$action</span>
+                                                                            — the function to run when no Route path is found                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setLanguage">
+                <h4>setLanguage()</h4>
+                <div class="phpdocumentor-signature">public function setLanguage(?\Framework\Language\Language $language = NULL): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?\Framework\Language\Language</span>
+                                                                        <span class="phpdocumentor-parameters__name">$language</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addCollection">
+                <h4>addCollection()</h4>
+                <div class="phpdocumentor-signature">protected function addCollection(\Framework\Routing\RouteCollection $collection): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collection</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-addServedCollection">
+                <h4>addServedCollection()</h4>
+                <div class="phpdocumentor-signature">protected function addServedCollection(?string $origin, callable $callable, ?string $collectionName = NULL): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">callable</span>
+                                                                        <span class="phpdocumentor-parameters__name">$callable</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">?string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collectionName</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getAllowedMethods">
+                <h4>getAllowedMethods()</h4>
+                <div class="phpdocumentor-signature">protected function getAllowedMethods(\Framework\Routing\RouteCollection $collection): array</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collection</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">array</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getAlternativeRoute">
+                <h4>getAlternativeRoute()</h4>
+                <div class="phpdocumentor-signature">protected function getAlternativeRoute(string $method, \Framework\Routing\RouteCollection $collection): \Framework\Routing\Route</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$method</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collection</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getDefaultRouteNotFound">
+                <h4>getDefaultRouteNotFound()</h4>
+                <div class="phpdocumentor-signature">protected function getDefaultRouteNotFound(): \Framework\Routing\Route</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-getRouteWithAllowHeader">
+                <h4>getRouteWithAllowHeader()</h4>
+                <div class="phpdocumentor-signature">protected function getRouteWithAllowHeader(\Framework\Routing\RouteCollection $collection, int $code): ?\Framework\Routing\Route</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collection</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">int</span>
+                                                                        <span class="phpdocumentor-parameters__name">$code</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makeMatchedRoute">
+                <h4>makeMatchedRoute()</h4>
+                <div class="phpdocumentor-signature">protected function makeMatchedRoute(): \Framework\Routing\Route</div>
+                                
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-makePath">
+                <h4>makePath()</h4>
+                <div class="phpdocumentor-signature">protected function makePath(string $path): string</div>
+                                    <p class="phpdocumentor-summary">Creates a path without a trailing slash to be able to match both with and without a slash at the end.</p>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$path</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">string</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-matchCollection">
+                <h4>matchCollection()</h4>
+                <div class="phpdocumentor-signature">protected function matchCollection(string $origin): ?\Framework\Routing\RouteCollection</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\RouteCollection</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-matchRoute">
+                <h4>matchRoute()</h4>
+                <div class="phpdocumentor-signature">protected function matchRoute(string $method, \Framework\Routing\RouteCollection $collection, string $path): ?\Framework\Routing\Route</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$method</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$collection</span>
+                                                                    </li>
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$path</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">?\Framework\Routing\Route</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedCollection">
+                <h4>setMatchedCollection()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedCollection(\Framework\Routing\RouteCollection $matchedCollection): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\RouteCollection</span>
+                                                                        <span class="phpdocumentor-parameters__name">$matchedCollection</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedOrigin">
+                <h4>setMatchedOrigin()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedOrigin(string $origin): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$origin</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedOriginArguments">
+                <h4>setMatchedOriginArguments()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedOriginArguments(array $arguments): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedPath">
+                <h4>setMatchedPath()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedPath(string $path): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">string</span>
+                                                                        <span class="phpdocumentor-parameters__name">$path</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedPathArguments">
+                <h4>setMatchedPathArguments()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedPathArguments(array $arguments): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">array</span>
+                                                                        <span class="phpdocumentor-parameters__name">$arguments</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                    <div class="phpdocumentor-method" id="method-setMatchedRoute">
+                <h4>setMatchedRoute()</h4>
+                <div class="phpdocumentor-signature">protected function setMatchedRoute(\Framework\Routing\Route $route): static</div>
+                                
+                                    <div class="phpdocumentor-parameters">
+                        <strong>Parameters</strong>
+                        <ul class="phpdocumentor-parameters__list">
+                                                            <li class="phpdocumentor-parameters__item">
+                                                                            <span class="phpdocumentor-parameters__type">\Framework\Routing\Route</span>
+                                                                        <span class="phpdocumentor-parameters__name">$route</span>
+                                                                    </li>
+                                                    </ul>
+                    </div>
+                
+                                    <div class="phpdocumentor-returns">
+                        <strong>Returns</strong>
+                        <span class="phpdocumentor-returns__type">static</span>
+                                            </div>
+                
+                            </div>
+                
+            </article>
+        </div><!-- /.phpdocumentor-content -->
+    </div><!-- /.phpdocumentor-section -->
+</main>
+
+<a href="#top" class="phpdocumentor-back-to-top" data-wb-top aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="18 15 12 9 6 15"/>
+    </svg>
+</a>
+
+<footer class="wb-footer" role="contentinfo">
+    <div class="wb-footer__inner">
+        <div class="wb-footer__brand">
+            <a class="wb-brand" href="../index.html">
+                <span class="wb-brand__logo" aria-hidden="true"><img src="../assets/logo.svg" alt="" width="40" height="40"></span>
+                <span class="wb-brand__name">Webisters
+                    <span class="wb-brand__suffix">docs</span>
+                </span>
+            </a>
+            <p>A modern, lightweight full-stack PHP framework with batteries-included libraries and project templates.</p>
+        </div>
+        <div>
+            <h4>Get Started</h4>
+            <ul>
+                <li><a href="../guides/webisters/index.html">Webisters CLI</a></li>
+                <li><a href="../guides/framework/index.html">Framework</a></li>
+                <li><a href="../guides/projects/index.html">Project Templates</a></li>
+                <li><a href="../guides/libraries/index.html">Libraries</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Libraries</h4>
+            <ul>
+                <li><a href="../guides/libraries/mvc/index.html">MVC</a></li>
+                <li><a href="../guides/libraries/routing/index.html">Routing</a></li>
+                <li><a href="../guides/libraries/database/index.html">Database</a></li>
+                <li><a href="../guides/libraries/http/index.html">HTTP</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4>Community</h4>
+            <ul>
+                <li><a href="../contributors.html">Contributors</a></li>
+                <li><a href="https://webisters.com">webisters</a></li>
+                <li><a href="https://github.com/webisters">GitHub</a></li>
+                <li><a href="https://twitter.com/WebistersFramework">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="wb-footer__bottom">
+        <span>&copy; 2026 Webisters &middot; <span class="render-time">Powered by ZAWAT OFFICIALS </span></span>
+        <span class="wb-footer__social">
+            <a href="https://github.com/webisters" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/WebistersFramework" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@WebistersFramework" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/WebistersFramework" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </span>
+    </div>
+</footer>
+
+<script src="../assets/layout.js" defer></script>
+</body>
+</html>

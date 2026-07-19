@@ -1,0 +1,1246 @@
+/* =========================================================================
+   Webisters Docs — Modern minimal theme
+   Primary: blue (#0052ff)  Background: white
+   ========================================================================= */
+
+/* ---------- Design tokens ---------- */
+:root {
+    /* Brand */
+    --primary: #0052ff;
+    --primary-600: #0046d6;
+    --primary-700: #003bb3;
+    --primary-50: #e8f0ff;
+    --primary-100: #d6e3ff;
+
+    /* Neutrals (light) */
+    --bg: #ffffff;
+    --bg-elev: #ffffff;
+    --bg-soft: #f7f9fc;
+    --bg-code: #f5f8fd;
+    --surface: #ffffff;
+    --border: #e5e9f2;
+    --border-strong: #d3d9e6;
+    --text: #0b1b2b;
+    --text-soft: #3b4860;
+    --muted: #6b7892;
+    --inline-code-bg: #eef3fb;
+    --inline-code-fg: #0b1b2b;
+    --shadow-sm: 0 1px 2px rgba(11, 27, 43, 0.04);
+    --shadow-md: 0 4px 16px rgba(11, 27, 43, 0.06);
+    --shadow-lg: 0 12px 32px rgba(11, 27, 43, 0.08);
+
+    /* Layout */
+    --topbar-h: 64px;
+    --sidebar-w: 280px;
+    --toc-w: 220px;
+    --content-max: 760px;
+    --radius-sm: 6px;
+    --radius: 10px;
+    --radius-lg: 14px;
+
+    /* Type */
+    --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, "SF Mono",
+        Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+img { max-width: 100%; height: auto; border-radius: var(--radius-sm); }
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin: 2rem 0 .75rem;
+    scroll-margin-top: calc(var(--topbar-h) + 16px);
+}
+h1 { font-size: 2.25rem; margin-top: .5rem; letter-spacing: -0.02em; }
+h2 { font-size: 1.5rem; padding-bottom: .35rem; border-bottom: 1px solid var(--border); }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.02rem; color: var(--text-soft); }
+
+p { margin: .85rem 0; color: var(--text); }
+p, li { font-size: 1rem; }
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color .15s ease;
+}
+a:hover { color: var(--primary-600); text-decoration: underline; text-underline-offset: 3px; }
+
+hr { border: 0; border-top: 1px solid var(--border); margin: 2rem 0; }
+
+ul, ol { padding-left: 1.4rem; }
+li { margin: .25rem 0; }
+
+strong { color: var(--text); font-weight: 600; }
+
+/* ---------- Code ---------- */
+code {
+    font-family: var(--font-mono);
+    background: var(--inline-code-bg);
+    color: var(--inline-code-fg);
+    padding: .12rem .4rem;
+    border-radius: 4px;
+    font-size: .92em;
+    border: 0;
+}
+pre {
+    position: relative;
+    background: var(--bg-code);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+    overflow: auto;
+    margin: 1rem 0;
+    font-size: .9rem;
+    line-height: 1.55;
+    box-shadow: var(--shadow-sm);
+}
+pre code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+    font-size: inherit;
+}
+
+/* Copy button injected by JS */
+.code-copy {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--surface);
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: .75rem;
+    padding: .25rem .55rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity .15s ease, color .15s ease, border-color .15s ease;
+    font-family: var(--font-sans);
+}
+pre:hover .code-copy { opacity: 1; }
+.code-copy:hover { color: var(--primary); border-color: var(--primary); }
+.code-copy.is-copied { color: #16a34a; border-color: #16a34a; }
+
+/* ---------- Layout shell ---------- */
+.phpdocumentor {
+    display: block;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+}
+.phpdocumentor-section {
+    display: grid;
+    grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: flex-start;
+}
+
+/* Hide legacy mobile menu toggle by default; we use our own */
+.phpdocumentor-sidebar__menu-button,
+.phpdocumentor-sidebar__menu-icon { display: none; }
+
+/* ---------- Topbar (built by JS) ---------- */
+.wb-topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: saturate(180%) blur(10px);
+    -webkit-backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+.wb-topbar__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    height: var(--topbar-h);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.wb-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+}
+.wb-brand:hover { color: var(--text); text-decoration: none; }
+.wb-brand__logo {
+    width: 36px; height: 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.wb-brand__logo img,
+.wb-brand__logo svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.wb-brand__name { display: inline-block; }
+.wb-brand__suffix { color: var(--muted); font-weight: 500; margin-left: .25rem; }
+
+.wb-topbar__spacer { flex: 1; }
+
+.wb-search {
+    position: relative;
+    flex: 0 1 360px;
+}
+.wb-search__field {
+    width: 100%;
+    height: 38px;
+    padding: 0 .9rem 0 2.2rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: .92rem;
+    font-family: inherit;
+    transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.wb-search__field::placeholder { color: var(--muted); }
+.wb-search__field:focus {
+    outline: none;
+    border-color: var(--primary);
+    background: var(--surface);
+    box-shadow: 0 0 0 3px var(--primary-50);
+}
+.wb-search__icon {
+    position: absolute;
+    left: .7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    pointer-events: none;
+}
+.wb-search__kbd {
+    position: absolute;
+    right: .55rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: .7rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .05rem .35rem;
+    background: var(--surface);
+    pointer-events: none;
+}
+.wb-search__results {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    max-height: 360px;
+    overflow: auto;
+    padding: .35rem;
+    display: none;
+}
+.wb-search__results.is-open { display: block; }
+.wb-search__result {
+    display: block;
+    padding: .55rem .7rem;
+    color: var(--text);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: .92rem;
+}
+.wb-search__result small { color: var(--muted); display: block; font-size: .76rem; margin-top: 2px; }
+.wb-search__result:hover,
+.wb-search__result.is-active {
+    background: var(--primary-50);
+    color: var(--primary);
+    text-decoration: none;
+}
+.wb-search__empty {
+    padding: .7rem .9rem;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.wb-nav {
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+.wb-nav__link {
+    color: var(--text-soft);
+    padding: .45rem .65rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: .92rem;
+    font-weight: 500;
+    transition: color .15s ease, background .15s ease;
+}
+.wb-nav__link:hover { color: var(--primary); background: var(--primary-50); text-decoration: none; }
+
+.wb-icon-btn {
+    display: inline-grid;
+    place-items: center;
+    width: 38px; height: 38px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-soft);
+    cursor: pointer;
+    transition: color .15s ease, background .15s ease, border-color .15s ease;
+}
+.wb-icon-btn:hover { color: var(--primary); background: var(--primary-50); border-color: var(--border); }
+.wb-icon-btn svg { width: 18px; height: 18px; }
+
+/* Mobile menu toggle */
+.wb-menu-toggle { display: none; }
+
+/* ---------- Sidebar ---------- */
+.phpdocumentor-sidebar {
+    padding: 1.5rem 1rem 2rem 0;
+    border-right: 1px solid var(--border);
+}
+
+.phpdocumentor-sidebar__category { margin-bottom: 1.5rem; }
+.phpdocumentor-sidebar__category-header {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 .6rem .6rem;
+}
+
+.phpdocumentor-sidebar__root-namespace {
+    margin: .15rem 0;
+    font-size: .94rem;
+    font-weight: 600;
+}
+.phpdocumentor-sidebar__root-namespace a {
+    display: block;
+    padding: .4rem .6rem;
+    color: var(--text-soft);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: color .12s ease, background .12s ease;
+}
+.phpdocumentor-sidebar__root-namespace a:hover { color: var(--primary); background: var(--primary-50); }
+
+.phpdocumentor-sidebar .phpdocumentor-list { list-style: none; padding: 0; margin: .2rem 0 .4rem; }
+.phpdocumentor-sidebar .phpdocumentor-list li { margin: 0; }
+.phpdocumentor-sidebar .phpdocumentor-list a {
+    display: block;
+    padding: .35rem .6rem .35rem 1.2rem;
+    color: var(--text-soft);
+    border-left: 2px solid transparent;
+    font-size: .91rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 0 6px 6px 0;
+    transition: color .12s ease, background .12s ease, border-color .12s ease;
+}
+.phpdocumentor-sidebar .phpdocumentor-list a:hover {
+    color: var(--primary);
+    background: var(--primary-50);
+}
+.phpdocumentor-sidebar .phpdocumentor-list a.is-active,
+.phpdocumentor-sidebar__root-namespace a.is-active {
+    color: var(--primary);
+    background: var(--primary-50);
+    border-left-color: var(--primary);
+    font-weight: 600;
+}
+
+/* Collapsible group */
+.wb-group { margin: .2rem 0; }
+.wb-group__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .4rem .6rem;
+    color: var(--text);
+    font-weight: 600;
+    font-size: .94rem;
+    cursor: pointer;
+    border-radius: 6px;
+    user-select: none;
+}
+.wb-group__head:hover { background: var(--primary-50); color: var(--primary); }
+.wb-group__caret { transition: transform .2s ease; color: var(--muted); }
+.wb-group.is-open .wb-group__caret { transform: rotate(90deg); }
+.wb-group__body { display: none; }
+.wb-group.is-open .wb-group__body { display: block; }
+
+/* ---------- Content area ---------- */
+.phpdocumentor-content {
+    padding: 2rem 0 3rem 2rem;
+    min-width: 0;
+}
+.phpdocumentor-content > div.section,
+.phpdocumentor-content > article {
+    max-width: var(--content-max);
+}
+
+/* Breadcrumb */
+.wb-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .35rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem;
+    font-size: .88rem;
+    color: var(--muted);
+}
+.wb-breadcrumb a { color: var(--muted); text-decoration: none; }
+.wb-breadcrumb a:hover { color: var(--primary); }
+.wb-breadcrumb__sep { color: var(--border-strong); }
+.wb-breadcrumb__current { color: var(--text-soft); }
+
+/* Nested section indentation reset — keep things flat */
+.phpdocumentor-content .section { margin-top: 1.5rem; }
+
+/* Prev/next nav */
+.wb-pager {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}
+.wb-pager__link {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--bg-elev);
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.wb-pager__link:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+    text-decoration: none;
+    transform: translateY(-1px);
+}
+.wb-pager__link.-next { text-align: right; align-items: flex-end; }
+.wb-pager__label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+.wb-pager__title { font-weight: 600; font-size: 1rem; color: var(--text); margin-top: .25rem; }
+.wb-pager__placeholder { visibility: hidden; }
+
+/* Admonitions */
+.phpdocumentor-admonition {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+    padding: 1rem 1.1rem;
+    background: var(--primary-50);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius);
+    margin: 1.25rem 0;
+}
+.phpdocumentor-admonition__icon {
+    color: var(--primary);
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+.phpdocumentor-admonition__icon svg {
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+/* Defensive: any direct SVG child of an admonition stays a reasonable size,
+   in case the markup uses <svg class="phpdocumentor-admonition__icon"> directly
+   (no wrapper) — which is the phpDocumentor template default. */
+.phpdocumentor-admonition > svg {
+    flex: 0 0 22px;
+    width: 22px;
+    height: 22px;
+    display: block;
+}
+.phpdocumentor-admonition article {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.phpdocumentor-admonition article p { margin: 0; }
+
+/* Page TOC list (the bullet list near top of every guide page) */
+.phpdocumentor-content > div.section > ul:first-of-type,
+.phpdocumentor-content > div.section > h1 + ul {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1rem 1rem 2.25rem;
+    list-style-type: decimal;
+}
+
+/* Buttons */
+.btn, .btn-primary, .wb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    padding: .65rem 1.05rem;
+    background: var(--primary);
+    color: #fff;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: .92rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.wb-btn:hover, .btn:hover, .btn-primary:hover {
+    background: var(--primary-600);
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 6px 16px rgba(0, 82, 255, 0.25);
+}
+.wb-btn.-ghost {
+    background: transparent;
+    color: var(--text);
+    border-color: var(--border-strong);
+}
+.wb-btn.-ghost:hover { color: var(--primary); border-color: var(--primary); background: var(--primary-50); }
+
+/* ---------- Homepage hero & cards ---------- */
+.wb-hero {
+    padding: 4rem 0 3rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2.5rem;
+}
+.wb-hero__eyebrow {
+    display: inline-block;
+    padding: .3rem .7rem;
+    border: 1px solid var(--border);
+    background: var(--primary-50);
+    color: var(--primary);
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    margin-bottom: 1.25rem;
+}
+.wb-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+    margin: 0 0 1rem;
+    background: linear-gradient(180deg, var(--text) 0%, var(--text-soft) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.wb-hero p.wb-hero__lead {
+    font-size: 1.2rem;
+    color: var(--text-soft);
+    max-width: 640px;
+    margin: 0 auto 1.75rem;
+    line-height: 1.55;
+}
+.wb-hero__ctas { display: inline-flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+.wb-hero__install {
+    margin: 2rem auto 0;
+    max-width: 520px;
+    background: var(--bg-code);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: .75rem 1rem;
+    display: flex; align-items: center; gap: .6rem;
+    font-family: var(--font-mono);
+    font-size: .92rem;
+    color: var(--text);
+    text-align: left;
+}
+.wb-hero__install .dollar { color: var(--primary); user-select: none; }
+
+.wb-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+.wb-card {
+    display: block;
+    padding: 1.25rem;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text);
+    transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.wb-card:hover {
+    border-color: var(--primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: var(--text);
+}
+.wb-card__icon {
+    display: grid;
+    place-items: center;
+    width: 36px; height: 36px;
+    border-radius: 8px;
+    background: var(--primary-50);
+    color: var(--primary);
+    margin-bottom: .8rem;
+}
+.wb-card__title { font-weight: 700; font-size: 1.02rem; margin: 0 0 .25rem; color: var(--text); }
+.wb-card__desc { color: var(--muted); font-size: .9rem; margin: 0; }
+
+.wb-section-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 2.5rem 0 1rem;
+}
+.wb-section-head h2 {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+}
+.wb-section-head a { font-size: .9rem; }
+
+/* Pill list for packages */
+.wb-pills { display: flex; flex-wrap: wrap; gap: .4rem; list-style: none; padding: 0; margin: 0; }
+.wb-pills a {
+    display: inline-block;
+    padding: .35rem .75rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    color: var(--text-soft);
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all .15s ease;
+}
+.wb-pills a:hover {
+    background: var(--primary-50);
+    color: var(--primary);
+    border-color: var(--primary);
+    text-decoration: none;
+}
+
+/* ---------- Footer ---------- */
+.wb-footer {
+    border-top: 1px solid var(--border);
+    background: var(--bg-soft);
+    margin-top: 4rem;
+    padding: 2.5rem 1.5rem 1.5rem;
+}
+.wb-footer__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 2rem;
+}
+.wb-footer h4 {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+    margin: 0 0 .8rem;
+    font-weight: 700;
+}
+.wb-footer ul { list-style: none; padding: 0; margin: 0; }
+.wb-footer li { margin: .35rem 0; }
+.wb-footer a {
+    color: var(--text-soft);
+    font-size: .9rem;
+    text-decoration: none;
+}
+.wb-footer a:hover { color: var(--primary); text-decoration: none; }
+.wb-footer__brand p { color: var(--muted); font-size: .9rem; margin: .75rem 0 0; max-width: 280px; }
+.wb-footer__bottom {
+    max-width: 1400px;
+    margin: 2rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--muted);
+    font-size: .85rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.wb-footer__social { display: inline-flex; gap: .35rem; }
+.wb-footer__social a {
+    display: inline-grid; place-items: center;
+    width: 34px; height: 34px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text-soft);
+    transition: all .15s ease;
+}
+.wb-footer__social a:hover { color: var(--primary); border-color: var(--primary); }
+
+/* Floating back-to-top button */
+.phpdocumentor-back-to-top {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 44px; height: 44px;
+    padding: 12px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: var(--shadow-md);
+    z-index: 40;
+    transition: opacity .2s ease, background .15s ease, transform .15s ease;
+}
+.phpdocumentor-back-to-top.is-visible { display: inline-flex; }
+.phpdocumentor-back-to-top:hover {
+    color: #fff;
+    background: var(--primary-600);
+    transform: translateY(-2px);
+}
+.phpdocumentor-back-to-top svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* Search results legacy panel (kept hidden, replaced by our search) */
+.phpdocumentor-search-results { display: none !important; }
+
+/* Visually hidden helper */
+.visually-hidden {
+    position: absolute !important;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+}
+
+/* Focus visibility */
+a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid var(--primary-50);
+    outline-offset: 2px;
+    border-radius: 6px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    .wb-footer__inner { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 860px) {
+    .phpdocumentor-section {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    .phpdocumentor-sidebar {
+        position: fixed;
+        top: var(--topbar-h);
+        left: 0;
+        bottom: 0;
+        width: 86%;
+        max-width: 320px;
+        height: auto;
+        background: var(--bg);
+        z-index: 45;
+        transform: translateX(-100%);
+        transition: transform .25s ease;
+        border-right: 1px solid var(--border);
+        padding: 1.25rem 1rem 3rem;
+        box-shadow: var(--shadow-lg);
+    }
+    body.wb-nav-open .phpdocumentor-sidebar { transform: translateX(0); }
+    body.wb-nav-open::after {
+        content: "";
+        position: fixed; inset: var(--topbar-h) 0 0 0;
+        background: rgba(11, 18, 32, 0.4);
+        z-index: 44;
+    }
+    .phpdocumentor-content { padding: 1.5rem 0 2rem; }
+    .wb-menu-toggle { display: inline-grid; }
+    .wb-nav { display: none; }
+    .wb-search { flex: 1 1 auto; }
+    .wb-search__kbd { display: none; }
+    .wb-hero h1 { font-size: 2.1rem; }
+    .wb-hero p.wb-hero__lead { font-size: 1.05rem; }
+    .wb-pager { grid-template-columns: 1fr; }
+    .wb-footer__inner { grid-template-columns: 1fr; }
+    h1 { font-size: 1.85rem; }
+}
+
+/* Print */
+@media print {
+    .wb-topbar, .phpdocumentor-sidebar, .wb-footer, .phpdocumentor-back-to-top, .code-copy { display: none !important; }
+    .phpdocumentor-section { grid-template-columns: 1fr; }
+    .phpdocumentor-content { padding: 0; }
+}
+
+/* =========================================================================
+   phpDocumentor API reference pages (classes/, packages/, interfaces/, etc.)
+   ========================================================================= */
+
+/* Loosen the 760px content-max constraint for API pages — they have wider tables/signatures */
+.phpdocumentor-content > article.phpdocumentor-element {
+    max-width: 980px;
+}
+
+/* Breadcrumbs shown above class/package title */
+.phpdocumentor-breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    align-items: center;
+    font-size: .85rem;
+    color: var(--muted);
+}
+.phpdocumentor-breadcrumbs li { margin: 0; }
+.phpdocumentor-breadcrumbs li::after {
+    content: "/";
+    color: var(--border-strong);
+    margin-left: .4rem;
+}
+.phpdocumentor-breadcrumbs li:last-child::after { content: ""; }
+.phpdocumentor-breadcrumbs a { color: var(--muted); text-decoration: none; }
+.phpdocumentor-breadcrumbs a:hover { color: var(--primary); }
+
+/* Element article wrapper */
+.phpdocumentor-element {
+    background: var(--bg);
+}
+
+/* The big page title (e.g. ConfigCollection, framework) */
+.phpdocumentor-content__title {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    margin: .25rem 0 .25rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* Element type chip shown next to the title (e.g. "class", "interface") */
+.phpdocumentor-element__type,
+.phpdocumentor-element-name__modifier {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: .15rem .55rem;
+    background: var(--primary-50);
+    color: var(--primary);
+    border: 1px solid var(--primary-100);
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-left: .5rem;
+}
+
+/* Fully-qualified class name displayed under the title */
+.phpdocumentor-element__fully-qualified-name,
+.phpdocumentor-element__extends,
+.phpdocumentor-element__implements {
+    font-family: var(--font-mono);
+    font-size: .85rem;
+    color: var(--muted);
+    margin: .25rem 0;
+}
+.phpdocumentor-element__fully-qualified-name a,
+.phpdocumentor-element__extends a,
+.phpdocumentor-element__implements a {
+    color: var(--text-soft);
+    text-decoration: none;
+}
+.phpdocumentor-element__fully-qualified-name a:hover,
+.phpdocumentor-element__extends a:hover,
+.phpdocumentor-element__implements a:hover { color: var(--primary); }
+
+/* Section headings inside the article (h2/h3 are already styled globally) */
+.phpdocumentor-element h3 {
+    margin-top: 2rem;
+    padding-top: .5rem;
+}
+
+/* Headerlink anchor next to headings */
+.headerlink {
+    opacity: 0;
+    margin-left: .35rem;
+    color: var(--muted);
+    font-size: .8em;
+    transition: opacity .15s ease, color .15s ease;
+}
+h1:hover .headerlink,
+h2:hover .headerlink,
+h3:hover .headerlink,
+h4:hover .headerlink,
+h5:hover .headerlink { opacity: 1; }
+.headerlink:hover { color: var(--primary); }
+
+/* Table-of-contents (definition list of members) */
+.phpdocumentor-table-of-contents {
+    display: grid;
+    grid-template-columns: minmax(180px, auto) 1fr;
+    gap: .25rem 1.25rem;
+    padding: 1rem 1.1rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin: 1rem 0 1.5rem;
+}
+.phpdocumentor-table-of-contents dt,
+.phpdocumentor-table-of-contents__entry {
+    grid-column: 1;
+    margin: 0;
+    padding: .35rem 0;
+    font-family: var(--font-mono);
+    font-size: .9rem;
+    font-weight: 600;
+    border-bottom: 1px dashed var(--border);
+    display: flex;
+    align-items: center;
+    gap: .45rem;
+}
+.phpdocumentor-table-of-contents dd {
+    grid-column: 2;
+    margin: 0;
+    padding: .35rem 0;
+    color: var(--text-soft);
+    font-size: .92rem;
+    border-bottom: 1px dashed var(--border);
+}
+.phpdocumentor-table-of-contents dt:last-of-type,
+.phpdocumentor-table-of-contents dd:last-of-type,
+.phpdocumentor-table-of-contents__entry:last-of-type { border-bottom: 0; }
+
+.phpdocumentor-table-of-contents__entry a,
+.phpdocumentor-table-of-contents dt a {
+    color: var(--primary);
+    text-decoration: none;
+}
+.phpdocumentor-table-of-contents__entry a:hover,
+.phpdocumentor-table-of-contents dt a:hover { text-decoration: underline; }
+
+.phpdocumentor-table-of-contents__entry abbr {
+    border: none;
+    text-decoration: none;
+    cursor: help;
+}
+
+/* Type indicator chips before each TOC entry */
+.phpdocumentor-table-of-contents__entry::before {
+    display: inline-grid;
+    place-items: center;
+    width: 22px; height: 22px;
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: .7rem;
+    font-weight: 700;
+    flex-shrink: 0;
+    line-height: 1;
+}
+.phpdocumentor-table-of-contents__entry.-class::before { content: "C"; background: #e8f0ff; color: #0046d6; }
+.phpdocumentor-table-of-contents__entry.-interface::before { content: "I"; background: #fef3c7; color: #92400e; }
+.phpdocumentor-table-of-contents__entry.-trait::before { content: "T"; background: #ede9fe; color: #6d28d9; }
+.phpdocumentor-table-of-contents__entry.-enum::before { content: "E"; background: #dcfce7; color: #166534; }
+.phpdocumentor-table-of-contents__entry.-method::before { content: "M"; background: #e0f2fe; color: #075985; }
+.phpdocumentor-table-of-contents__entry.-property::before { content: "P"; background: #fce7f3; color: #9d174d; }
+.phpdocumentor-table-of-contents__entry.-constant::before { content: "K"; background: #f1f5f9; color: #334155; }
+.phpdocumentor-table-of-contents__entry.-function::before { content: "ƒ"; background: #fef9c3; color: #854d0e; }
+
+/* Method / property / constant member cards */
+.phpdocumentor-method,
+.phpdocumentor-property,
+.phpdocumentor-constant,
+.phpdocumentor-function {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.1rem 1.2rem;
+    margin: 1.25rem 0;
+    background: var(--bg-elev);
+    box-shadow: var(--shadow-sm);
+}
+.phpdocumentor-method h4,
+.phpdocumentor-property h4,
+.phpdocumentor-constant h4,
+.phpdocumentor-function h4,
+.phpdocumentor-element__name {
+    font-family: var(--font-mono);
+    font-size: 1.05rem;
+    margin: 0 0 .35rem;
+    color: var(--text);
+    word-break: break-word;
+}
+
+/* Method/function signature blocks */
+.phpdocumentor-signature {
+    font-family: var(--font-mono);
+    font-size: .88rem;
+    line-height: 1.6;
+    background: var(--bg-code);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--primary);
+    border-radius: var(--radius);
+    padding: .8rem 1rem;
+    margin: .5rem 0 .9rem;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+.phpdocumentor-signature__visibility { color: #9d174d; font-weight: 600; }
+.phpdocumentor-signature__name { color: var(--primary); font-weight: 700; }
+.phpdocumentor-signature__type { color: #166534; }
+.phpdocumentor-signature__argument__name { color: #92400e; }
+.phpdocumentor-signature__argument__return-type { color: #166534; }
+
+/* Inline modifier badges (public/protected/private/static/abstract/final) */
+.phpdocumentor-element-found-in,
+.phpdocumentor-element__extends-list,
+.phpdocumentor-element__used-by-list {
+    font-size: .85rem;
+    color: var(--muted);
+    margin: .25rem 0;
+}
+.phpdocumentor-element-found-in a { color: var(--muted); }
+.phpdocumentor-element-found-in a:hover { color: var(--primary); }
+
+/* Summary box (the short description right under the title) */
+.phpdocumentor-summary,
+.phpdocumentor-element__summary {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+    margin: .25rem 0 1rem;
+    line-height: 1.55;
+}
+
+/* Description body */
+.phpdocumentor-description,
+.phpdocumentor-element__description {
+    color: var(--text);
+}
+
+/* Tag list (param, return, throws, etc.) */
+.phpdocumentor-tag-list,
+dl.phpdocumentor-tag {
+    display: grid;
+    grid-template-columns: minmax(120px, auto) 1fr;
+    gap: .4rem 1.2rem;
+    margin: .75rem 0;
+    padding: .75rem 1rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    font-size: .9rem;
+}
+.phpdocumentor-tag-list dt,
+.phpdocumentor-tag-list__definition,
+dl.phpdocumentor-tag dt {
+    grid-column: 1;
+    margin: 0;
+    font-family: var(--font-mono);
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: lowercase;
+}
+.phpdocumentor-tag-list dt::before { content: "@"; }
+.phpdocumentor-tag-list dd,
+.phpdocumentor-tag-list__description,
+dl.phpdocumentor-tag dd {
+    grid-column: 2;
+    margin: 0;
+    color: var(--text-soft);
+}
+
+/* Parameters list and similar tables */
+.phpdocumentor-parameters,
+.phpdocumentor-returns {
+    margin: .75rem 0;
+}
+.phpdocumentor-parameters__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.phpdocumentor-parameters__item {
+    padding: .6rem 0;
+    border-bottom: 1px dashed var(--border);
+}
+.phpdocumentor-parameters__item:last-child { border-bottom: 0; }
+.phpdocumentor-parameters__name {
+    font-family: var(--font-mono);
+    color: var(--text);
+    font-weight: 600;
+}
+.phpdocumentor-parameters__type,
+.phpdocumentor-returns__type {
+    font-family: var(--font-mono);
+    color: #166534;
+    background: #dcfce7;
+    padding: .05rem .35rem;
+    border-radius: 4px;
+    font-size: .82rem;
+    margin-right: .35rem;
+}
+
+/* "On this page" right-rail TOC (if rendered) */
+.phpdocumentor-on-this-page-section {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1rem 1.1rem;
+    margin: 1rem 0 1.5rem;
+}
+.phpdocumentor-on-this-page-section h2,
+.phpdocumentor-on-this-page-section__title {
+    font-size: .72rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    color: var(--muted);
+    margin: 0 0 .6rem;
+    border: 0;
+    padding: 0;
+    font-weight: 700;
+}
+.phpdocumentor-on-this-page-section ul,
+.phpdocumentor-list-of-elements {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.phpdocumentor-on-this-page-section li,
+.phpdocumentor-list-of-elements li { margin: .25rem 0; }
+.phpdocumentor-on-this-page-section a,
+.phpdocumentor-list-of-elements a {
+    color: var(--text-soft);
+    text-decoration: none;
+    font-size: .9rem;
+}
+.phpdocumentor-on-this-page-section a:hover,
+.phpdocumentor-list-of-elements a:hover { color: var(--primary); }
+
+/* "Found in" file path indicator */
+.phpdocumentor-element-found-in__file {
+    font-family: var(--font-mono);
+    color: var(--text-soft);
+    background: var(--inline-code-bg);
+    padding: .1rem .4rem;
+    border-radius: 4px;
+    font-size: .82rem;
+}
+
+/* Source code block displayed at end of pages */
+.phpdocumentor-element__source,
+.phpdocumentor-source {
+    margin: 1.5rem 0;
+}
+.phpdocumentor-element__source pre,
+.phpdocumentor-source pre {
+    max-height: 480px;
+}
+
+/* Inheritance diagrams / class hierarchy lists */
+.phpdocumentor-class-hierarchy,
+.phpdocumentor-class-graph {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+
+/* Generic phpDocumentor tables */
+.phpdocumentor table,
+table.phpdocumentor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: .92rem;
+    background: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+.phpdocumentor table th,
+table.phpdocumentor-table th {
+    text-align: left;
+    background: var(--bg-soft);
+    color: var(--text);
+    font-weight: 700;
+    padding: .6rem .8rem;
+    border-bottom: 1px solid var(--border);
+}
+.phpdocumentor table td,
+table.phpdocumentor-table td {
+    padding: .55rem .8rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-soft);
+}
+.phpdocumentor table tr:last-child td,
+table.phpdocumentor-table tr:last-child td { border-bottom: 0; }
+
+/* Responsive tweak for TOC list on narrow screens */
+@media (max-width: 700px) {
+    .phpdocumentor-table-of-contents,
+    .phpdocumentor-tag-list,
+    dl.phpdocumentor-tag {
+        grid-template-columns: 1fr;
+        gap: .25rem;
+    }
+    .phpdocumentor-table-of-contents dt { padding-bottom: 0; border-bottom: 0; }
+    .phpdocumentor-table-of-contents dd { padding-top: 0; margin-bottom: .6rem; }
+}

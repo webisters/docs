@@ -71,7 +71,7 @@ $autoWrap = preg_match('#^(classes|files|namespaces|interfaces|traits|enums|repo
 $_SERVER['WEBISTERS_DEBUG_AUTO_WRAP'] = $autoWrap ? 'YES' : 'NO';
 
 if (!$autoWrap) {
-    // Normal page that already includes header.php/footer.php – serve as-is.
+    // Normal page that already includes header.php/footer.php - serve as-is.
     // Set SCRIPT_FILENAME so config.php calculates ROOT correctly.
     $_SERVER['SCRIPT_FILENAME'] = $target;
     $_SERVER['SCRIPT_NAME']     = '/' . $uri;
@@ -127,7 +127,7 @@ $bodyHtml = preg_replace('#<a[^>]*phpdocumentor-back-to-top[^>]*>.*?</a>#is', ''
 //    so we can re-render them through the wrapper.
 $bodyHtml = preg_replace('#</?main[^>]*>#i', '', $bodyHtml);
 $bodyHtml = preg_replace('#<div[^>]*phpdocumentor-section[^>]*>#i', '', $bodyHtml);
-// Closing div for section is harder to target; let it stand – it's harmless.
+// Closing div for section is harder to target; let it stand - it's harmless.
 
 // 6. Render with the Webisters chrome.
 //    Pass the target file path to config.php via $_SERVER,

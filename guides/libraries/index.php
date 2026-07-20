@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../includes/sidebar.php';
 
 // One curated card per library: title, short description, FontAwesome icon.
 $libraries = [
-    ['mvc',             'MVC',              'cubes',            'The kernel – App class, services, controllers, models and views.'],
+    ['mvc',             'MVC',              'cubes',            'The kernel - App class, services, controllers, models and views.'],
     ['routing',         'Routing',          'route',            'Expressive, fast HTTP routing with named routes and route groups.'],
     ['http',            'HTTP',             'paper-plane',      'PSR-style request/response with first-class JSON support.'],
     ['http-client',     'HTTP Client',      'paper-plane',      'Fluent client for making outbound HTTP requests.'],

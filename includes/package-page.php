@@ -8,12 +8,12 @@
  * docblock summary.
  *
  * Inputs (set by the caller before including this file):
- *   $packageSlug        – required, e.g. "mvc", "testing", "coding-standard"
- *   $packageTitle       – optional, override the page title (defaults to slug)
- *   $packageLead        – optional, lead paragraph above the class list
- *   $packageGuideUrl    – optional, link rendered when no PHP classes exist
+ *   $packageSlug        - required, e.g. "mvc", "testing", "coding-standard"
+ *   $packageTitle       - optional, override the page title (defaults to slug)
+ *   $packageLead        - optional, lead paragraph above the class list
+ *   $packageGuideUrl    - optional, link rendered when no PHP classes exist
  *                         (e.g. for sass-only or project-template packages)
- *   $packageExtraNotice – optional, additional HTML rendered above the list
+ *   $packageExtraNotice - optional, additional HTML rendered above the list
  */
 
 if (!isset($packageSlug) || $packageSlug === '') {
@@ -117,7 +117,7 @@ require_once __DIR__ . '/sidebar.php';
                         <abbr title="\<?php echo htmlspecialchars($el['fqcn']); ?>"><?php echo htmlspecialchars($el['name']); ?></abbr>
                     </a>
                 </dt>
-                <dd><?php echo htmlspecialchars($el['summary'] !== '' ? $el['summary'] : '–'); ?></dd>
+                <dd><?php echo htmlspecialchars($el['summary'] !== '' ? $el['summary'] : '-'); ?></dd>
             <?php endforeach; ?>
         </dl>
     <?php } ?>

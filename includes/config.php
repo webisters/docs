@@ -104,7 +104,7 @@ $PACKAGES = [
 ];
 
 /**
- * Ordered reading sequence – drives the prev/next pager at the bottom of every
+ * Ordered reading sequence - drives the prev/next pager at the bottom of every
  * page. Order: intro → CLI → framework → projects → libraries (alphabetical).
  */
 $PAGE_ORDER = [

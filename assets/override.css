@@ -1,5 +1,5 @@
 /* =========================================================================
-   Webisters Docs – Modern minimal theme
+   Webisters Docs - Modern minimal theme
    Primary: blue (#0052ff)  Background: white
    ========================================================================= */
 
@@ -436,7 +436,7 @@ pre:hover .code-copy { opacity: 1; }
 .wb-breadcrumb__sep { color: var(--border-strong); }
 .wb-breadcrumb__current { color: var(--text-soft); }
 
-/* Nested section indentation reset – keep things flat */
+/* Nested section indentation reset - keep things flat */
 .phpdocumentor-content .section { margin-top: 1.5rem; }
 
 /* Prev/next nav */
@@ -495,7 +495,7 @@ pre:hover .code-copy { opacity: 1; }
 }
 /* Defensive: any direct SVG child of an admonition stays a reasonable size,
    in case the markup uses <svg class="phpdocumentor-admonition__icon"> directly
-   (no wrapper) – which is the phpDocumentor template default. */
+   (no wrapper) - which is the phpDocumentor template default. */
 .phpdocumentor-admonition > svg {
     flex: 0 0 22px;
     width: 22px;
@@ -831,7 +831,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
    phpDocumentor API reference pages (classes/, packages/, interfaces/, etc.)
    ========================================================================= */
 
-/* Loosen the 760px content-max constraint for API pages – they have wider tables/signatures */
+/* Loosen the 760px content-max constraint for API pages - they have wider tables/signatures */
 .phpdocumentor-content > article.phpdocumentor-element {
     max-width: 980px;
 }

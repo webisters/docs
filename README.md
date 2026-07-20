@@ -44,12 +44,17 @@ BASE=http://127.0.0.1:9090 OUT=./_site php build-static.php
 
 ## Deploy
 
-The contents of `_site/` are published to the `gh-pages` branch (served by GitHub
-Pages). The `CNAME` file on that branch pins the custom domain `docs.webisters.com`.
+The contents of `_site/` live on the `gh-pages` branch. A GitHub Actions workflow
+on that branch (`.github/workflows/pages.yml`) uploads the branch as a Pages
+artifact and deploys it — so **any push to `gh-pages` republishes the site**.
+The `CNAME` file pins the custom domain `docs.webisters.com`; `.github/` and
+`CNAME` are ignored when copying the freshly built `_site/` over the top.
 
 ```bash
 git worktree add ../_docs_ghpages gh-pages
 cp -r _site/* _site/.nojekyll ../_docs_ghpages/
-# (keep ../_docs_ghpages/CNAME)
+# (keep ../_docs_ghpages/CNAME and ../_docs_ghpages/.github)
 cd ../_docs_ghpages && git add -A && git commit -m "Rebuild docs" && git push
 ```
+
+Pages is configured with `build_type: workflow` (not the legacy branch pipeline).

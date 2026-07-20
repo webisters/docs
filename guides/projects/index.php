@@ -4,9 +4,9 @@ require_once __DIR__ . '/../../includes/header.php';
 require_once __DIR__ . '/../../includes/sidebar.php';
 
 $projects = [
-    ['app',      'App',      'layer-group', 'Full-stack MVC application - controllers, models, views, the works.', 'webisters/app',  'new-app'],
-    ['api',      'API',      'bolt',        'MVC tuned for JSON responses - perfect for headless backends and SPAs.', 'webisters/api',  'new-api'],
-    ['one',      'One',      'file-code',   'A single-file project - quick APIs and prototypes, all functions in one place.', 'webisters/one',  'new-one'],
+    ['app',      'App',      'layer-group', 'Full-stack MVC application – controllers, models, views, the works.', 'webisters/app',  'new-app'],
+    ['api',      'API',      'bolt',        'MVC tuned for JSON responses – perfect for headless backends and SPAs.', 'webisters/api',  'new-api'],
+    ['one',      'One',      'file-code',   'A single-file project – quick APIs and prototypes, all functions in one place.', 'webisters/one',  'new-one'],
     ['site',     'Site',     'globe',       'Static-site template for landing pages, marketing and content-first builds.',  'webisters/site', 'new-site'],
     ['template', 'Template', 'shapes',      'Shared view-template engine used by every Webisters project.',           'webisters/template', null],
 ];
@@ -14,7 +14,7 @@ $projects = [
 <div class="section" id="projects">
     <h1>Projects</h1>
     <p>Webisters ships four ready-to-use project templates plus a shared
-    template engine. Pick the shape that matches your build - every template
+    template engine. Pick the shape that matches your build – every template
     sits on top of the same library set, so you can swap or grow into another
     as your project evolves.</p>
 
@@ -54,10 +54,10 @@ composer install</code></pre>
     <h2 id="comparison">Picking a template</h2>
     <p>Not sure which one to start with? A short cheat-sheet:</p>
     <ul>
-        <li><strong>App</strong> - start here for a typical web app with pages, forms, sessions and a database.</li>
-        <li><strong>API</strong> - pick this for a JSON-only backend powering a SPA or mobile client.</li>
-        <li><strong>One</strong> - perfect for a tiny service, a prototype, or a single endpoint you want in one file.</li>
-        <li><strong>Site</strong> - content-driven sites without a database: marketing pages, documentation, landing pages.</li>
+        <li><strong>App</strong> – start here for a typical web app with pages, forms, sessions and a database.</li>
+        <li><strong>API</strong> – pick this for a JSON-only backend powering a SPA or mobile client.</li>
+        <li><strong>One</strong> – perfect for a tiny service, a prototype, or a single endpoint you want in one file.</li>
+        <li><strong>Site</strong> – content-driven sites without a database: marketing pages, documentation, landing pages.</li>
     </ul>
 </div>
 <?php

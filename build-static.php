@@ -39,7 +39,7 @@ function is_external(string $val): bool {
 
 /** Resolve a (possibly relative) link against the current URL path directory. */
 function resolve_url(string $currentPath, string $link): string {
-    // Split off query/hash - only the path participates in resolution.
+    // Split off query/hash – only the path participates in resolution.
     $link = preg_replace('/[?#].*$/', '', $link) ?? $link;
     if ($link === '') {
         return $currentPath;

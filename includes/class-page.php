@@ -5,7 +5,7 @@
  * Renders auto-generated API documentation for any Framework\* class
  * by introspecting it via Reflection.
  *
- * Expected input: $_SERVER['WEBISTERS_CLASS'] - fully-qualified class name
+ * Expected input: $_SERVER['WEBISTERS_CLASS'] – fully-qualified class name
  *                 (e.g. "Framework\MVC\App"), set by router.php.
  *
  * If invoked directly without WEBISTERS_CLASS set, infers the class from
@@ -372,7 +372,7 @@ require __DIR__ . '/sidebar.php';
                 <dt class="phpdocumentor-table-of-contents__entry -constant">
                     <a href="#const-<?php echo htmlspecialchars($c->getName()); ?>"><?php echo htmlspecialchars($c->getName()); ?></a>
                 </dt>
-                <dd><?php echo htmlspecialchars($cDoc !== '' ? $cDoc : '-'); ?></dd>
+                <dd><?php echo htmlspecialchars($cDoc !== '' ? $cDoc : '–'); ?></dd>
             <?php endforeach; ?>
         </dl>
         <?php endif; ?>
@@ -393,7 +393,7 @@ require __DIR__ . '/sidebar.php';
                 <dt class="phpdocumentor-table-of-contents__entry -property">
                     <a href="#prop-<?php echo htmlspecialchars($p->getName()); ?>">$<?php echo htmlspecialchars($p->getName()); ?></a>
                 </dt>
-                <dd><?php echo htmlspecialchars($pDoc !== '' ? $pDoc : '-'); ?></dd>
+                <dd><?php echo htmlspecialchars($pDoc !== '' ? $pDoc : '–'); ?></dd>
             <?php endforeach; ?>
         </dl>
 
@@ -433,7 +433,7 @@ require __DIR__ . '/sidebar.php';
                 <dt class="phpdocumentor-table-of-contents__entry -method">
                     <a href="#method-<?php echo htmlspecialchars($m->getName()); ?>"><?php echo htmlspecialchars($m->getName()); ?>()</a>
                 </dt>
-                <dd><?php echo htmlspecialchars($mDoc !== '' ? $mDoc : '-'); ?></dd>
+                <dd><?php echo htmlspecialchars($mDoc !== '' ? $mDoc : '–'); ?></dd>
             <?php endforeach; ?>
         </dl>
 
@@ -489,7 +489,7 @@ require __DIR__ . '/sidebar.php';
                                     <?php endif; ?>
                                     <span class="phpdocumentor-parameters__name">$<?php echo htmlspecialchars($p->getName()); ?></span>
                                     <?php if ($tag && $tag['desc']): ?>
-                                        - <?php echo htmlspecialchars($tag['desc']); ?>
+                                        – <?php echo htmlspecialchars($tag['desc']); ?>
                                     <?php endif; ?>
                                 </li>
                             <?php endforeach; ?>
@@ -505,7 +505,7 @@ require __DIR__ . '/sidebar.php';
                         <strong>Returns</strong>
                         <span class="phpdocumentor-returns__type"><?php echo htmlspecialchars($returnType ?: ($returnTag['type'] ?? '')); ?></span>
                         <?php if ($returnTag && $returnTag['desc']): ?>
-                            - <?php echo htmlspecialchars($returnTag['desc']); ?>
+                            – <?php echo htmlspecialchars($returnTag['desc']); ?>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>

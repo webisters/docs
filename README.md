@@ -8,15 +8,15 @@ the `gh-pages` branch while this `main` branch holds the source.
 
 ## Layout
 
-- `index.php`, `contributors.php` — top-level pages
-- `guides/` — hand-written guides (framework, projects, libraries)
-- `packages/` — per-package landing pages
-- `includes/` — shared templates (`header.php`, `sidebar.php`, `footer.php`, `config.php`, …)
-- `includes/class-page.php` — renders a class-reference page for any `Framework\*`
+- `index.php`, `contributors.php` - top-level pages
+- `guides/` - hand-written guides (framework, projects, libraries)
+- `packages/` - per-package landing pages
+- `includes/` - shared templates (`header.php`, `sidebar.php`, `footer.php`, `config.php`, …)
+- `includes/class-page.php` - renders a class-reference page for any `Framework\*`
   class via PHP Reflection against `../../libraries/<slug>/src`
-- `assets/` — `override.css`, `layout.js` (client-side search), `logo.svg`
-- `router.php` — PHP built-in server router (dev only)
-- `build-static.php` — crawls the dev server and mirrors every page to `_site/`
+- `assets/` - `override.css`, `layout.js` (client-side search), `logo.svg`
+- `router.php` - PHP built-in server router (dev only)
+- `build-static.php` - crawls the dev server and mirrors every page to `_site/`
 
 ## Preview locally
 
@@ -46,7 +46,7 @@ BASE=http://127.0.0.1:9090 OUT=./_site php build-static.php
 
 The contents of `_site/` live on the `gh-pages` branch. A GitHub Actions workflow
 on that branch (`.github/workflows/pages.yml`) uploads the branch as a Pages
-artifact and deploys it — so **any push to `gh-pages` republishes the site**.
+artifact and deploys it - so **any push to `gh-pages` republishes the site**.
 The `CNAME` file pins the custom domain `docs.webisters.com`; `.github/` and
 `CNAME` are ignored when copying the freshly built `_site/` over the top.
 

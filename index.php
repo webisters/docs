@@ -1,5 +1,5 @@
 <?php
-$pageTitle = 'Webisters Docs — Modern PHP framework';
+$pageTitle = 'Webisters Docs - Modern PHP framework';
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/sidebar.php';
 ?>
@@ -34,17 +34,17 @@ require_once __DIR__ . '/includes/sidebar.php';
     <a class="wb-card" href="<?php echo ROOT; ?>guides/projects/app/index.php">
         <span class="wb-card__icon"><i class="fas fa-layer-group"></i></span>
         <h3 class="wb-card__title">App</h3>
-        <p class="wb-card__desc">Full-stack MVC application — controllers, models, views, the works.</p>
+        <p class="wb-card__desc">Full-stack MVC application - controllers, models, views, the works.</p>
     </a>
     <a class="wb-card" href="<?php echo ROOT; ?>guides/projects/api/index.php">
         <span class="wb-card__icon"><i class="fas fa-bolt"></i></span>
         <h3 class="wb-card__title">API</h3>
-        <p class="wb-card__desc">MVC tuned for JSON responses — perfect for headless backends and SPAs.</p>
+        <p class="wb-card__desc">MVC tuned for JSON responses - perfect for headless backends and SPAs.</p>
     </a>
     <a class="wb-card" href="<?php echo ROOT; ?>guides/projects/one/index.php">
         <span class="wb-card__icon"><i class="fas fa-file-code"></i></span>
         <h3 class="wb-card__title">One</h3>
-        <p class="wb-card__desc">A single-file project — quick APIs and prototypes, all functions in one place.</p>
+        <p class="wb-card__desc">A single-file project - quick APIs and prototypes, all functions in one place.</p>
     </a>
     <a class="wb-card" href="<?php echo ROOT; ?>guides/projects/site/index.php">
         <span class="wb-card__icon"><i class="fas fa-globe"></i></span>
@@ -61,7 +61,7 @@ require_once __DIR__ . '/includes/sidebar.php';
     <a class="wb-card" href="<?php echo ROOT; ?>guides/libraries/mvc/index.php">
         <span class="wb-card__icon"><i class="fas fa-cubes"></i></span>
         <h3 class="wb-card__title">MVC</h3>
-        <p class="wb-card__desc">The kernel — App class, services, controllers, models and views.</p>
+        <p class="wb-card__desc">The kernel - App class, services, controllers, models and views.</p>
     </a>
     <a class="wb-card" href="<?php echo ROOT; ?>guides/libraries/routing/index.php">
         <span class="wb-card__icon"><i class="fas fa-route"></i></span>

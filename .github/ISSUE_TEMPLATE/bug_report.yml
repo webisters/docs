@@ -1,0 +1,63 @@
+name: Bug report
+description: Report a broken page, link, or build on the documentation site.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+
+        **Do not report security vulnerabilities here.** See SECURITY.md and email
+        `thewebisters@gmail.com` instead.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you start
+      options:
+        - label: I searched existing issues and this is not a duplicate.
+          required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: URL on docs.webisters.com, or the source file path in this repository.
+      placeholder: "https://docs.webisters.com/guides/routing"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did you see it?
+      options:
+        - Published site (docs.webisters.com)
+        - Local dev server (router.php)
+        - Static build (build-static.php)
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error output
+      description: PHP error, build log, or browser console output.
+      render: shell
+    validations:
+      required: false
